@@ -56,11 +56,11 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="src\android\AndTelnet.vb" />
-    <Compile Include="src\formularios\frmPrincipal.vb">
+    <Compile Include="es.jafs\android\AndTelnet.vb" />
+    <Compile Include="es.jafs\formularios\frmPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="src\formularios\frmPrincipal.Designer.vb">
+    <Compile Include="es.jafs\formularios\frmPrincipal.Designer.vb">
       <DependentUpon>frmPrincipal.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
@@ -81,7 +81,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="src\formularios\frmPrincipal.resx">
+    <EmbeddedResource Include="es.jafs\formularios\frmPrincipal.resx">
       <SubType>Designer</SubType>
       <DependentUpon>frmPrincipal.vb</DependentUpon>
     </EmbeddedResource>
