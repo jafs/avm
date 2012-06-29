@@ -30,6 +30,7 @@ Partial Class frmPrincipal
         Me.btnEnviar = New System.Windows.Forms.Button()
         Me.tcPestanas = New System.Windows.Forms.TabControl()
         Me.tpBattery = New System.Windows.Forms.TabPage()
+        Me.btnBatEstado = New System.Windows.Forms.Button()
         Me.btnBatCapacity = New System.Windows.Forms.Button()
         Me.lblBatCapacity = New System.Windows.Forms.Label()
         Me.cmbBatHealth = New System.Windows.Forms.ComboBox()
@@ -42,7 +43,6 @@ Partial Class frmPrincipal
         Me.imIconos = New System.Windows.Forms.ImageList(Me.components)
         Me.lblConsola = New System.Windows.Forms.Label()
         Me.imMenu = New System.Windows.Forms.ImageList(Me.components)
-        Me.btnBatEstado = New System.Windows.Forms.Button()
         Me.tcPestanas.SuspendLayout()
         Me.tpBattery.SuspendLayout()
         CType(Me.nudBatCapacity, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -160,6 +160,15 @@ Partial Class frmPrincipal
         Me.tpBattery.TabIndex = 0
         Me.tpBattery.Text = "Battery"
         '
+        'btnBatEstado
+        '
+        Me.btnBatEstado.Location = New System.Drawing.Point(146, 110)
+        Me.btnBatEstado.Name = "btnBatEstado"
+        Me.btnBatEstado.Size = New System.Drawing.Size(75, 23)
+        Me.btnBatEstado.TabIndex = 12
+        Me.btnBatEstado.Text = "Status"
+        Me.btnBatEstado.UseVisualStyleBackColor = True
+        '
         'btnBatCapacity
         '
         Me.btnBatCapacity.Location = New System.Drawing.Point(153, 84)
@@ -257,7 +266,7 @@ Partial Class frmPrincipal
         Me.lblConsola.Name = "lblConsola"
         Me.lblConsola.Size = New System.Drawing.Size(48, 13)
         Me.lblConsola.TabIndex = 9
-        Me.lblConsola.Text = "Consola:"
+        Me.lblConsola.Text = "Console:"
         '
         'imMenu
         '
@@ -266,15 +275,6 @@ Partial Class frmPrincipal
         Me.imMenu.Images.SetKeyName(0, "battery-caution.png")
         Me.imMenu.Images.SetKeyName(1, "utilities-terminal.png")
         Me.imMenu.Images.SetKeyName(2, "preferences-desktop-remote-desktop.png")
-        '
-        'btnBatEstado
-        '
-        Me.btnBatEstado.Location = New System.Drawing.Point(146, 110)
-        Me.btnBatEstado.Name = "btnBatEstado"
-        Me.btnBatEstado.Size = New System.Drawing.Size(75, 23)
-        Me.btnBatEstado.TabIndex = 12
-        Me.btnBatEstado.Text = "Status"
-        Me.btnBatEstado.UseVisualStyleBackColor = True
         '
         'frmPrincipal
         '
@@ -295,7 +295,7 @@ Partial Class frmPrincipal
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmPrincipal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Android GUI Config"
+        Me.Text = "Android Virtual Management"
         Me.tcPestanas.ResumeLayout(False)
         Me.tpBattery.ResumeLayout(False)
         Me.tpBattery.PerformLayout()
