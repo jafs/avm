@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="es.jafs\android\AndTelnet.vb" />
+    <Compile Include="es.jafs\android\Utilidades.vb" />
     <Compile Include="es.jafs\formularios\frmPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +103,13 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\bateria64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sensores64.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
