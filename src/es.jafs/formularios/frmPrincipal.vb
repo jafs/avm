@@ -46,9 +46,9 @@ Public Class frmPrincipal
     Private Sub chkCargaAc_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkCargaAc.CheckedChanged
         If tcPestanas.Enabled Then
             If (chkCargaAc.Checked) Then
-                enviarComando("power ac on")
+                enviarComando(Comando.POWER_AC_ON)
             Else
-                enviarComando("power ac off")
+                enviarComando(Comando.POWER_AC_OFF)
             End If
         End If
     End Sub
@@ -59,7 +59,7 @@ Public Class frmPrincipal
     ''' <param name="e">Datos del evento</param>
     Private Sub cmbBatStat_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbBatStat.SelectedIndexChanged
         If tcPestanas.Enabled Then
-            enviarComando("power status " + cmbBatStat.SelectedItem.ToString)
+            enviarComando(Comando.POWER_STATUS + cmbBatStat.SelectedItem.ToString)
         End If
     End Sub
 
@@ -69,7 +69,7 @@ Public Class frmPrincipal
     ''' <param name="e">Datos del evento</param>
     Private Sub chkBatPresent_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkBatPresent.CheckedChanged
         If tcPestanas.Enabled Then
-            enviarComando("power present " + chkBatPresent.Checked.ToString)
+            enviarComando(Comando.POWER_PRESENT + chkBatPresent.Checked.ToString)
         End If
     End Sub
 
@@ -79,7 +79,7 @@ Public Class frmPrincipal
     ''' <param name="e">Datos del evento</param>
     Private Sub cmbBatHealth_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbBatHealth.SelectedIndexChanged
         If tcPestanas.Enabled Then
-            enviarComando("power health " + cmbBatHealth.SelectedItem.ToString)
+            enviarComando(Comando.POWER_HEALTH + cmbBatHealth.SelectedItem.ToString)
         End If
     End Sub
 
@@ -88,7 +88,7 @@ Public Class frmPrincipal
     ''' <param name="sender">Emisor del evento</param>
     ''' <param name="e">Datos del evento</param>
     Private Sub btnBatCapacity_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBatCapacity.Click
-        enviarComando("power capacity " + nudBatCapacity.Value.ToString)
+        enviarComando(Comando.POWER_CAPACITY + nudBatCapacity.Value.ToString)
     End Sub
 
 
@@ -96,13 +96,14 @@ Public Class frmPrincipal
     ''' <param name="sender">Emisor del evento.</param>
     ''' <param name="e">Datos del evento.</param>
     Private Sub btnBatEstado_Click(sender As System.Object, e As System.EventArgs) Handles btnBatEstado.Click
-        enviarComando("power display")
+        enviarComando(Comando.POWER_DISPLAY)
+        getBateria()
     End Sub
 
 
     ''' <summary>Obtiene el estado de la batería.</summary>
     Private Sub getBateria()
-        Dim sResultado As String = objTelnet.consultar("power display")
+        Dim sResultado As String = objTelnet.consultar(Comando.POWER_DISPLAY)
         sResultado = sResultado.Replace(vbCr & "" & vbCrLf, vbNewLine)
 
         Dim arsValores As String() = sResultado.Split(CChar(vbNewLine))
@@ -129,7 +130,7 @@ Public Class frmPrincipal
                     End If
             Next
         Else
-            MessageBox.Show("No hay valores")
+            MessageBox.Show("There is no values")
         End If
     End Sub
 
@@ -148,6 +149,7 @@ Public Class frmPrincipal
             txtRecv.ScrollToCaret()
         Else
             MessageBox.Show("There is no connection")
+            btnConectar.Focus()
         End If
     End Sub
 
@@ -162,12 +164,17 @@ Public Class frmPrincipal
             Dim sResultado As String = String.Empty
 
             sResultado = objTelnet.conectar()
-            txtRecv.Text += sResultado
 
-            bConexion = (sResultado.Contains("OK"))
+            If sResultado Is Nothing Or sResultado.Length = 0 Then
+                bConexion = False
+            Else
+                txtRecv.Text += sResultado
 
-            If bConexion Then
-                getBateria()
+                bConexion = (sResultado.Contains(AndTelnet.RES_OK))
+
+                If bConexion Then
+                    getBateria()
+                End If
             End If
         End If
         actualizarControles()
@@ -186,6 +193,226 @@ Public Class frmPrincipal
             btnConectar.Text = "Disconnect"
         Else
             btnConectar.Text = "Connect"
+        End If
+    End Sub
+
+
+
+    ' ######################################
+    ' SENSORES
+    ' ######################################
+    ''' <summary>Controla el cambio de sensor.</summary>
+    ''' <param name="sender">Emisor del evento</param>
+    ''' <param name="e">Datos del evento</param>
+    Private Sub cmbSensores_SelectedIndexChanged(sender As System.Object, e As System.EventArgs) Handles cmbSensores.SelectedIndexChanged
+        If cmbSensores.SelectedItem Is Nothing Then
+            btnSenSet.Enabled = False
+            btnSenUpdate.Enabled = False
+        Else
+            cambiarSensor(cmbSensores.SelectedItem.ToString)
+            If Not btnSenSet.Enabled Then
+                btnSenSet.Enabled = True
+            End If
+            If Not btnSenUpdate.Enabled Then
+                btnSenUpdate.Enabled = True
+            End If
+        End If
+    End Sub
+
+
+    ''' <summary>Controla el clic en el botón de actualización de valores de sensor.</summary>
+    ''' <param name="sender">Emisor del evento</param>
+    ''' <param name="e">Datos del evento</param>
+    Private Sub btnSenUpdate_Click(sender As System.Object, e As System.EventArgs) Handles btnSenUpdate.Click
+        If cmbSensores.SelectedItem Is Nothing Then
+            MessageBox.Show("You must to select a sensor.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            cmbSensores.Focus()
+        Else
+            getSensor(cmbSensores.SelectedItem.ToString)
+        End If
+    End Sub
+
+
+    ''' <summary>Controla el clic en el botón de guardado de valores del sensor.</summary>
+    ''' <param name="sender">Emisor del evento</param>
+    ''' <param name="e">Datos del evento</param>
+    Private Sub btnSenSet_Click(sender As System.Object, e As System.EventArgs) Handles btnSenSet.Click
+        If cmbSensores.SelectedItem Is Nothing Then
+            MessageBox.Show("You must to select a sensor.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            cmbSensores.Focus()
+        Else
+            enviarComando(Comando.SENSOR_SET & cmbSensores.SelectedItem.ToString & " " & _
+                          Utilidades.decimalToCad(nudSenValor1.Value) & ":" & _
+                          Utilidades.decimalToCad(nudSenValor2.Value) & ":" & _
+                          Utilidades.decimalToCad(nudSenValor3.Value))
+        End If
+    End Sub
+
+
+    ''' <summary>Actualiza el estado de sensores así como sus valores.</summary>
+    ''' <param name="sSensor">Nombre del sensor</param>
+    Private Sub cambiarSensor(ByRef sSensor As String)
+        Select Case sSensor
+            Case Comando.SEN_ACCELERATION, Comando.SEN_MAGNETIC_FIELD
+                lblSenValor1.Text = "X-Axis:"
+                nudSenValor1.Enabled = True
+                nudSenValor1.Minimum = -100
+                nudSenValor1.Maximum = 100
+                lblSenValor2.Text = "Y-Axis:"
+                nudSenValor2.Enabled = True
+                nudSenValor2.Minimum = -100
+                nudSenValor2.Maximum = 100
+                lblSenValor3.Text = "Z-Axis:"
+                nudSenValor3.Enabled = True
+                nudSenValor3.Minimum = -100
+                nudSenValor3.Maximum = 100
+            Case Comando.SEN_ORIENTATION
+                lblSenValor1.Text = "Azimuth:"
+                nudSenValor1.Enabled = True
+                nudSenValor1.Minimum = 0
+                nudSenValor1.Maximum = 359
+                lblSenValor2.Text = "Pitch:"
+                nudSenValor2.Enabled = True
+                nudSenValor2.Minimum = -180
+                nudSenValor2.Maximum = 180
+                lblSenValor3.Text = "Roll:"
+                nudSenValor3.Enabled = True
+                nudSenValor3.Minimum = -90
+                nudSenValor3.Maximum = 90
+            Case Comando.SEN_TEMPERATURE
+                lblSenValor1.Text = "Temp:"
+                nudSenValor1.Enabled = True
+                nudSenValor1.Minimum = 0
+                nudSenValor1.Maximum = 359
+                lblSenValor2.Text = "Not used:"
+                nudSenValor2.Enabled = False
+                nudSenValor2.Value = 0
+                lblSenValor3.Text = "Not used:"
+                nudSenValor3.Enabled = False
+                nudSenValor3.Value = 0
+            Case Comando.SEN_PROXIMITY
+                lblSenValor1.Text = "Distance:"
+                nudSenValor1.Enabled = True
+                nudSenValor1.Minimum = 0
+                nudSenValor1.Maximum = 359
+                lblSenValor2.Text = "Not used:"
+                nudSenValor2.Enabled = False
+                nudSenValor2.Value = 0
+                lblSenValor3.Text = "Not used:"
+                nudSenValor3.Enabled = False
+                nudSenValor3.Value = 0
+        End Select
+
+        getSensor(sSensor)
+    End Sub
+
+
+    ''' <summary>Obtiene el estado del sensor recibido como argumento.</summary>
+    ''' <param name="sSensor">Nombre del sensor</param>
+    Private Sub getSensor(ByRef sSensor As String)
+        Dim sResultado As String = objTelnet.consultar(Comando.SENSOR_GET & sSensor)
+        sResultado = sResultado.Replace(vbCr & "" & vbCrLf, vbNewLine)
+
+        If sResultado.Contains(AndTelnet.RES_OK) Then
+            Dim arsValores As String() = sResultado.Split(CChar(vbNewLine))
+
+            If arsValores.Length > 0 Then
+                For Each sValor As String In arsValores
+                    If sValor.Contains(sSensor) Then
+                        Dim sValores As String = sValor.Substring(sValor.IndexOf("=") + 2)
+                        Dim arsDatos As String() = sValores.Split(CChar(":"))
+
+                        Try
+                            Select Case sSensor
+                                Case Comando.SEN_ACCELERATION, Comando.SEN_MAGNETIC_FIELD, Comando.SEN_ORIENTATION
+                                    nudSenValor1.Value = Utilidades.cadToDecimal(arsDatos(0))
+                                    nudSenValor2.Value = Utilidades.cadToDecimal(arsDatos(1))
+                                    nudSenValor3.Value = Utilidades.cadToDecimal(arsDatos(2))
+                                Case Else
+                                    nudSenValor1.Value = Utilidades.cadToDecimal(arsDatos(0))
+                                    nudSenValor2.Value = 0
+                                    nudSenValor3.Value = 0
+                            End Select
+                        Catch e As ArgumentException
+                            MessageBox.Show("Error when read some value of sensor", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        End Try
+                    End If
+                Next
+            Else
+                MessageBox.Show("There is no values")
+            End If
+        End If
+    End Sub
+
+
+
+    ' ######################################
+    ' SMS
+    ' ######################################
+    ''' <summary>Controla el cambio en el texto de mensaje.</summary>
+    ''' <param name="sender">Emisor del evento</param>
+    ''' <param name="e">Datos del evento</param>
+    Private Sub txtSmsMessage_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtSmsMessage.TextChanged
+        lblSmsRest.Text = txtSmsMessage.Text.Length.ToString
+        btnSmsSend.Enabled = (txtSmsNumero.Text.Length > 0 And txtSmsMessage.Text.Length > 0)
+    End Sub
+
+
+    ''' <summary>Controla el cambio en el texto del número de teléfono.</summary>
+    ''' <param name="sender">Emisor del evento</param>
+    ''' <param name="e">Datos del evento</param>
+    Private Sub mtbSmsNumero_TextChanged(sender As System.Object, e As System.EventArgs)
+        btnSmsSend.Enabled = (txtSmsNumero.Text.Length > 0 And txtSmsMessage.Text.Length > 0)
+    End Sub
+
+
+    ''' <summary>Clic sobre el botón de envío de SMS.</summary>
+    ''' <param name="sender">Emisor del evento</param>
+    ''' <param name="e">Datos del evento</param>
+    Private Sub btnSmsSend_Click(sender As System.Object, e As System.EventArgs) Handles btnSmsSend.Click
+        enviarSms()
+    End Sub
+
+
+    ''' <summary>Envía un SMS con los datos actuales.</summary>
+    Private Sub enviarSms()
+        Dim bValido As Boolean = True
+        Dim sNumero As String = Nothing
+
+        ' Validación de prefijo.
+        If txtSmsPrefijo.Text.Length > 0 Then
+            Dim iNumero As Integer = 0
+            bValido = Integer.TryParse(txtSmsPrefijo.Text, iNumero)
+            If bValido Then
+                sNumero = "+" & iNumero
+            Else
+                MessageBox.Show("Enter a valid prefix", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                txtSmsPrefijo.Focus()
+                txtSmsPrefijo.SelectAll()
+            End If
+        End If
+
+        ' Validación de número.
+        If bValido Then
+            Dim iNumero As Integer = 0
+            bValido = Integer.TryParse(txtSmsNumero.Text, iNumero)
+            If bValido Then
+                sNumero &= iNumero
+            Else
+                MessageBox.Show("Enter a valid phone number", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                txtSmsNumero.Focus()
+                txtSmsNumero.SelectAll()
+            End If
+        End If
+
+        ' Envío de mensaje si todo es correcto.
+        If bValido Then
+            If txtSmsMessage.Text.Length = 0 Then
+                MessageBox.Show("Enter a message to send.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                txtSmsMessage.Focus()
+            Else
+                enviarComando(Comando.SMS_SEND & sNumero & " " & txtSmsMessage.Text)
+            End If
         End If
     End Sub
 End Class
