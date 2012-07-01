@@ -59,5 +59,26 @@ Namespace My.Resources
                 resourceCulture = value
             End Set
         End Property
+        
+        Friend ReadOnly Property bateria64() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("bateria64", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property sensores64() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("sensores64", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property sms64() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("sms64", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
     End Module
 End Namespace

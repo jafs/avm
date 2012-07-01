@@ -19,25 +19,14 @@ Public Class AndTelnet
     ''' <summary>Indica si se ha establecido conexión.</summary>
     Dim bConexion As Boolean = False
 
+    ''' <summary>Constante que indica un resultado correcto.</summary>
+    Public Const RES_OK As String = "OK"
+    ''' <summary>Constante que indica un resultado erróneo.</summary>
+    Public Const RES_ERROR As String = "KO"
     ''' <summary>Dirección IP por defecto.</summary>
     Const DEF_DIRECCION As String = "127.0.0.1"
     ''' <summary>Puerto de conexión por defecto.</summary>
     Const DEF_PUERTO As Integer = 5554
-
-
-    ' ''' <summary>
-    ' ''' Constructor por defecto para la clase.
-    ' ''' </summary>
-    ' ''' <param name="iPuerto">Puerto de conexión a la máquina virtual.</param>
-    ' ''' <param name="sDireccion">Dirección de conexión a la máquina virtual.</param>
-    'Public Sub New(ByVal iPuerto As Integer, ByRef sDireccion As String)
-    '    Me.iPuerto = iPuerto
-    '    Try
-    '        objDireccionIp = IPAddress.Parse(sDireccion)
-    '    Catch ex As Exception
-    '        MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-    '    End Try
-    'End Sub
 
 
     ''' <summary>
@@ -55,63 +44,57 @@ Public Class AndTelnet
     End Property
 
 
-    ''' <summary>
-    ''' Realiza una conexión con la máquina virtual Android.
-    ''' </summary>
+    ''' <summary>Realiza una conexión con la máquina virtual Android.</summary>
     Public Function conectar() As String
         ' Cadena con la respuesta del servidor.
         Dim sResultado As String = String.Empty
 
         ' Extra la dirección IP, que de momento será fija
-        objDireccionIp = IPAddress.Parse(DEF_DIRECCION)
-
-        ' Crea un punto de conexión con la dirección IP y el puerto recibido. En caso
-        ' de que el puerto recibido sea nulo se establecerá un valor por defecto.
-        If iPuerto = 0 Then
-            objConexion = New IPEndPoint(objDireccionIp, DEF_PUERTO)
-        Else
-            objConexion = New IPEndPoint(objDireccionIp, iPuerto)
-        End If
-
-        Try
-            ' Crea y conecta el socket
-            objSocket = New Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp)
-            objSocket.Connect(objConexion)
-        Catch oEX As SocketException
-            MessageBox.Show("Error: " + oEX.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            Return sResultado
-        End Try
-
-        ' Create a byte array for recieving bytes from the telnet socket
-        Dim RecvBytes(255) As [Byte]
-
-        ' If we get to here then all seems good (we are connected)
-        Try
-            ' Double check we are connected
-            If objSocket.Connected Then
-                ' Data returned from the telnet socet
-                Dim sRecibido As String = String.Empty
-                ' NumBytes: Number of bytes return from telnet socket (count)
-                Dim NumBytes As Integer = 0
-                bConexion = True
-
-                ' loop getting 256 bytes of data from telnet socket at a time
-                Do
-                    ' RecvBytes with contain 256 bytes if data returned
-                    ' numbytes with have the count of bytes returned
-                    NumBytes = objSocket.Receive(RecvBytes, RecvBytes.Length, 0)
-                    sRecibido = sRecibido + Encoding.ASCII.GetString(RecvBytes, 0, NumBytes)
-                Loop While Not sRecibido.EndsWith("OK" + vbCrLf) And Not sRecibido.EndsWith("KO" + vbCrLf)
-
-                ' Send recieved bytes to the output text box
-                sResultado += sRecibido
-
-                ' Cleanup
-                sRecibido = Nothing
+        If IPAddress.TryParse(DEF_DIRECCION, objDireccionIp) Then
+            ' Crea un punto de conexión con la dirección IP y el puerto recibido. En caso
+            ' de que el puerto recibido sea nulo se establecerá un valor por defecto.
+            If iPuerto = 0 Then
+                objConexion = New IPEndPoint(objDireccionIp, DEF_PUERTO)
+            Else
+                objConexion = New IPEndPoint(objDireccionIp, iPuerto)
             End If
-        Catch oEX As Exception
-            ' Error cleanup etc needed
-        End Try
+
+            Try
+                ' Crea y conecta el socket
+                objSocket = New Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp)
+                objSocket.Connect(objConexion)
+            Catch ex As SocketException
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Return sResultado
+            End Try
+
+            ' Array de bytes en el que recivir las respuestas del socket.
+            Dim RecvBytes(511) As [Byte]
+
+            ' Si hay conexión se procede con la recepción de datos.
+            Try
+                ' Verificación de que hay conexión.
+                If objSocket.Connected Then
+                    ' Almacena los datos recibidos desde el socket.
+                    Dim sRecibido As String = String.Empty
+                    ' Número de bytes devueltos por el socket.
+                    Dim iNumBytes As Integer = 0
+                    bConexion = True
+
+                    ' Bucle en el que se reciben 512 bytes en cada iteración.
+                    Do
+                        iNumBytes = objSocket.Receive(RecvBytes, RecvBytes.Length, 0)
+                        sRecibido += Encoding.ASCII.GetString(RecvBytes, 0, iNumBytes)
+                    Loop While Not sRecibido.EndsWith(RES_OK & vbCrLf) And Not sRecibido.EndsWith(RES_ERROR & vbCrLf)
+
+                    sResultado += sRecibido
+
+                    sRecibido = Nothing
+                End If
+            Catch oEX As Exception
+                MessageBox.Show("Error with virtual machine connection", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End Try
+        End If
 
         Return sResultado
     End Function
@@ -163,7 +146,7 @@ Public Class AndTelnet
                         ' numbytes with have the count of bytes returned
                         iNumBytes = objSocket.Receive(arbRecibidos, arbRecibidos.Length, 0)
                         sRecibido += Encoding.ASCII.GetString(arbRecibidos, 0, iNumBytes)
-                    Loop While Not sRecibido.EndsWith("OK" + vbCrLf) And Not sRecibido.Contains("KO:")
+                    Loop While Not sRecibido.EndsWith(RES_OK & vbCrLf) And Not sRecibido.Contains(RES_ERROR)
                     sRecibido = sRecibido.Replace(vbLf, vbNewLine)
                 Else
                     MessageBox.Show("El Socket se ha desconectado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
