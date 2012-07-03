@@ -151,6 +151,8 @@ Public Class frmPrincipal
             MessageBox.Show("There is no connection")
             btnConectar.Focus()
         End If
+
+        txtComando.SelectAll()
     End Sub
 
 
