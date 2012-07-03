@@ -11,6 +11,7 @@ Version 0.5.1 - 01/07/2012
 * New commands int auto-complete.
 * Better connection control.
 * Small optimizations.
+
 Version 0.5 - 29/06/2012
 * Battery management for virtual machine.
 
@@ -35,13 +36,13 @@ This program is free software: you can redistribute it and/or modify it under th
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License along with this program. If not, see (http://www.gnu.org/licenses/).
+You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/.
 
 For more info, read the license.txt file.
 
 
 Credits
 -------
-Icons by: GNOME icon artistsAuthor http://gnome.org
-AVM home page: http://jafs.es/aplicaciones/android-virtual-management/
-GPLv3 2012 José Antonio Fuentes Santiago (jafs@jafs.es).
+* Icons by: GNOME icon artistsAuthor http://gnome.org
+* AVM home page: http://jafs.es/aplicaciones/android-virtual-management/
+* GPLv3 2012 José Antonio Fuentes Santiago (jafs@jafs.es).
