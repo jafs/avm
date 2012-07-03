@@ -56,6 +56,8 @@ Partial Class frmPrincipal
         Me.cmbSensores = New System.Windows.Forms.ComboBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.tpSms = New System.Windows.Forms.TabPage()
+        Me.txtSmsNumero = New System.Windows.Forms.TextBox()
+        Me.txtSmsPrefijo = New System.Windows.Forms.TextBox()
         Me.btnSmsSend = New System.Windows.Forms.Button()
         Me.lblSmsTotal = New System.Windows.Forms.Label()
         Me.lblSmsRest = New System.Windows.Forms.Label()
@@ -66,8 +68,6 @@ Partial Class frmPrincipal
         Me.Label2 = New System.Windows.Forms.Label()
         Me.imIconos = New System.Windows.Forms.ImageList(Me.components)
         Me.scDivisor = New System.Windows.Forms.SplitContainer()
-        Me.txtSmsPrefijo = New System.Windows.Forms.TextBox()
-        Me.txtSmsNumero = New System.Windows.Forms.TextBox()
         Me.tcPestanas.SuspendLayout()
         Me.tpBattery.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -103,13 +103,13 @@ Partial Class frmPrincipal
         Me.txtRecv.Name = "txtRecv"
         Me.txtRecv.ReadOnly = True
         Me.txtRecv.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtRecv.Size = New System.Drawing.Size(471, 189)
+        Me.txtRecv.Size = New System.Drawing.Size(564, 189)
         Me.txtRecv.TabIndex = 1
         '
         'btnSalir
         '
         Me.btnSalir.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnSalir.Location = New System.Drawing.Point(390, 5)
+        Me.btnSalir.Location = New System.Drawing.Point(483, 5)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(89, 24)
         Me.btnSalir.TabIndex = 2
@@ -137,19 +137,19 @@ Partial Class frmPrincipal
         '
         'txtComando
         '
-        Me.txtComando.AutoCompleteCustomSource.AddRange(New String() {"h", "help", "?", "event", "geo", "gsm", "cdma", "kill", "network", "power", "power display", "power ac", "power ac on", "power ac off", "power status", "power status unknown", "power status charging", "power status discharging", "power status not-charging", "power present", "power present true", "power present false", "power health", "power health unknown", "power health good", "power health overheat", "power health dead", "power health overvoltage", "power health failure", "power capacity", "quit", "exit", "redir", "sms", "avd", "window", "qemu", "sensor", "sensor status", "sensor get", "sensor get acceleration", "sensor get magnetic-field", "sensor get orientation", "sensor get temperature", "sensor get proximity", "sensor set", "sensor set acceleration", "sensor set magnetic-field", "sensor set orientation", "sensor set temperature", "sensor set proximity"})
+        Me.txtComando.AutoCompleteCustomSource.AddRange(New String() {"h", "help", "?", "event", "event send", "event types", "event codes", "event text", "geo", "geo nmea", "geo fix", "gsm", "gsm list", "gsm call", "gsm busy", "gsm hold", "gsm accept", "gsm cancel", "gsm data", "gsm voice", "gsm status", "cdma", "cdma ssource", "cdma prl_version", "kill", "network", "network status", "network speed", "network delay", "network capture", "network capture start", "network capture stop", "power display", "power ac", "power ac on", "power ac off", "power status", "power status unknown", "power status charging", "power status discharging", "power status not-charging", "power present", "power present true", "power present false", "power health", "power health unknown", "power health good", "power health overheat", "power health dead", "power health overvoltage", "power health failure", "power capacity", "quit", "exit", "redir", "redir list", "redit add", "redir del", "sms", "sms send", "sms pdu", "avd", "avd stop", "avd start", "avd status", "avd name", "avd snapshot list", "avd snapshot save", "avd snapshot load", "avd snapshot del", "window", "window scale", "qemu", "qemu monitor", "sensor", "sensor status", "sensor get", "sensor get acceleration", "sensor get magnetic-field", "sensor get orientation", "sensor get temperature", "sensor get proximity", "sensor set", "sensor set acceleration", "sensor set magnetic-field", "sensor set orientation", "sensor set temperature", "sensor set proximity"})
         Me.txtComando.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.txtComando.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
         Me.txtComando.Enabled = False
         Me.txtComando.Location = New System.Drawing.Point(0, 195)
         Me.txtComando.Name = "txtComando"
-        Me.txtComando.Size = New System.Drawing.Size(390, 20)
+        Me.txtComando.Size = New System.Drawing.Size(483, 20)
         Me.txtComando.TabIndex = 6
         '
         'btnEnviar
         '
         Me.btnEnviar.Enabled = False
-        Me.btnEnviar.Location = New System.Drawing.Point(396, 193)
+        Me.btnEnviar.Location = New System.Drawing.Point(489, 193)
         Me.btnEnviar.Name = "btnEnviar"
         Me.btnEnviar.Size = New System.Drawing.Size(75, 23)
         Me.btnEnviar.TabIndex = 7
@@ -168,7 +168,7 @@ Partial Class frmPrincipal
         Me.tcPestanas.Location = New System.Drawing.Point(0, 0)
         Me.tcPestanas.Name = "tcPestanas"
         Me.tcPestanas.SelectedIndex = 0
-        Me.tcPestanas.Size = New System.Drawing.Size(471, 160)
+        Me.tcPestanas.Size = New System.Drawing.Size(564, 160)
         Me.tcPestanas.TabIndex = 8
         '
         'tpBattery
@@ -189,7 +189,7 @@ Partial Class frmPrincipal
         Me.tpBattery.Location = New System.Drawing.Point(4, 23)
         Me.tpBattery.Name = "tpBattery"
         Me.tpBattery.Padding = New System.Windows.Forms.Padding(3)
-        Me.tpBattery.Size = New System.Drawing.Size(463, 133)
+        Me.tpBattery.Size = New System.Drawing.Size(556, 133)
         Me.tpBattery.TabIndex = 0
         Me.tpBattery.Text = "Battery"
         Me.tpBattery.UseVisualStyleBackColor = True
@@ -461,6 +461,24 @@ Partial Class frmPrincipal
         Me.tpSms.Text = "SMS"
         Me.tpSms.UseVisualStyleBackColor = True
         '
+        'txtSmsNumero
+        '
+        Me.txtSmsNumero.Location = New System.Drawing.Point(110, 7)
+        Me.txtSmsNumero.MaxLength = 12
+        Me.txtSmsNumero.Name = "txtSmsNumero"
+        Me.txtSmsNumero.Size = New System.Drawing.Size(115, 20)
+        Me.txtSmsNumero.TabIndex = 1
+        Me.txtSmsNumero.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'txtSmsPrefijo
+        '
+        Me.txtSmsPrefijo.Location = New System.Drawing.Point(59, 7)
+        Me.txtSmsPrefijo.MaxLength = 4
+        Me.txtSmsPrefijo.Name = "txtSmsPrefijo"
+        Me.txtSmsPrefijo.Size = New System.Drawing.Size(45, 20)
+        Me.txtSmsPrefijo.TabIndex = 0
+        Me.txtSmsPrefijo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'btnSmsSend
         '
         Me.btnSmsSend.Enabled = False
@@ -559,28 +577,10 @@ Partial Class frmPrincipal
         Me.scDivisor.Panel2.Controls.Add(Me.txtRecv)
         Me.scDivisor.Panel2.Controls.Add(Me.txtComando)
         Me.scDivisor.Panel2.Controls.Add(Me.btnEnviar)
-        Me.scDivisor.Size = New System.Drawing.Size(471, 381)
+        Me.scDivisor.Size = New System.Drawing.Size(564, 381)
         Me.scDivisor.SplitterDistance = 160
         Me.scDivisor.SplitterWidth = 2
         Me.scDivisor.TabIndex = 9
-        '
-        'txtSmsPrefijo
-        '
-        Me.txtSmsPrefijo.Location = New System.Drawing.Point(59, 7)
-        Me.txtSmsPrefijo.MaxLength = 4
-        Me.txtSmsPrefijo.Name = "txtSmsPrefijo"
-        Me.txtSmsPrefijo.Size = New System.Drawing.Size(45, 20)
-        Me.txtSmsPrefijo.TabIndex = 0
-        Me.txtSmsPrefijo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'txtSmsNumero
-        '
-        Me.txtSmsNumero.Location = New System.Drawing.Point(110, 7)
-        Me.txtSmsNumero.MaxLength = 12
-        Me.txtSmsNumero.Name = "txtSmsNumero"
-        Me.txtSmsNumero.Size = New System.Drawing.Size(115, 20)
-        Me.txtSmsNumero.TabIndex = 1
-        Me.txtSmsNumero.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'frmPrincipal
         '
@@ -588,7 +588,7 @@ Partial Class frmPrincipal
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(486, 431)
+        Me.ClientSize = New System.Drawing.Size(579, 431)
         Me.Controls.Add(Me.scDivisor)
         Me.Controls.Add(Me.txtPuerto)
         Me.Controls.Add(Me.lblPuerto)
@@ -597,7 +597,6 @@ Partial Class frmPrincipal
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
-        Me.MaximumSize = New System.Drawing.Size(492, 457)
         Me.MinimumSize = New System.Drawing.Size(492, 457)
         Me.Name = "frmPrincipal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
