@@ -66,24 +66,24 @@ Partial Class frmPrincipal
         Me.lblSmsNumber = New System.Windows.Forms.Label()
         Me.imgSms = New System.Windows.Forms.PictureBox()
         Me.lblSmsDesc = New System.Windows.Forms.Label()
-        Me.imIconos = New System.Windows.Forms.ImageList(Me.components)
-        Me.scDivisor = New System.Windows.Forms.SplitContainer()
         Me.tpGps = New System.Windows.Forms.TabPage()
-        Me.imgGps = New System.Windows.Forms.PictureBox()
-        Me.lblGpsDesc = New System.Windows.Forms.Label()
-        Me.lblGpsLongitud = New System.Windows.Forms.Label()
-        Me.nudGpsLonGrados = New System.Windows.Forms.NumericUpDown()
-        Me.nudGpsLonMin = New System.Windows.Forms.NumericUpDown()
-        Me.nudGpsLonSec = New System.Windows.Forms.NumericUpDown()
-        Me.lblGpsLatitud = New System.Windows.Forms.Label()
+        Me.btnGpsSet = New System.Windows.Forms.Button()
+        Me.chkGpsSatelites = New System.Windows.Forms.CheckBox()
+        Me.nudGpsSatelites = New System.Windows.Forms.NumericUpDown()
+        Me.nudGpsAltitude = New System.Windows.Forms.NumericUpDown()
+        Me.chkGpsAltitude = New System.Windows.Forms.CheckBox()
         Me.nudGpsLatSec = New System.Windows.Forms.NumericUpDown()
         Me.nudGpsLatMin = New System.Windows.Forms.NumericUpDown()
         Me.nudGpsLatGrados = New System.Windows.Forms.NumericUpDown()
-        Me.chkGpsAltitude = New System.Windows.Forms.CheckBox()
-        Me.nudGpsAltitude = New System.Windows.Forms.NumericUpDown()
-        Me.nudGpsSatelites = New System.Windows.Forms.NumericUpDown()
-        Me.chkGpsSatelites = New System.Windows.Forms.CheckBox()
-        Me.btnGpsSet = New System.Windows.Forms.Button()
+        Me.lblGpsLatitud = New System.Windows.Forms.Label()
+        Me.nudGpsLonSec = New System.Windows.Forms.NumericUpDown()
+        Me.nudGpsLonMin = New System.Windows.Forms.NumericUpDown()
+        Me.nudGpsLonGrados = New System.Windows.Forms.NumericUpDown()
+        Me.lblGpsLongitud = New System.Windows.Forms.Label()
+        Me.imgGps = New System.Windows.Forms.PictureBox()
+        Me.lblGpsDesc = New System.Windows.Forms.Label()
+        Me.imIconos = New System.Windows.Forms.ImageList(Me.components)
+        Me.scDivisor = New System.Windows.Forms.SplitContainer()
         Me.tcPestanas.SuspendLayout()
         Me.tpBattery.SuspendLayout()
         CType(Me.imgBateria, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -95,19 +95,19 @@ Partial Class frmPrincipal
         CType(Me.imgSensores, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tpSms.SuspendLayout()
         CType(Me.imgSms, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.scDivisor.Panel1.SuspendLayout()
-        Me.scDivisor.Panel2.SuspendLayout()
-        Me.scDivisor.SuspendLayout()
         Me.tpGps.SuspendLayout()
-        CType(Me.imgGps, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.nudGpsLonGrados, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.nudGpsLonMin, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.nudGpsLonSec, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nudGpsSatelites, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nudGpsAltitude, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nudGpsLatSec, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nudGpsLatMin, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nudGpsLatGrados, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.nudGpsAltitude, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.nudGpsSatelites, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nudGpsLonSec, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nudGpsLonMin, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nudGpsLonGrados, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgGps, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.scDivisor.Panel1.SuspendLayout()
+        Me.scDivisor.Panel2.SuspendLayout()
+        Me.scDivisor.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnConectar
@@ -582,6 +582,171 @@ Partial Class frmPrincipal
         Me.lblSmsDesc.Text = "Here you can send sms" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "messages to the virtual" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "machine. Specify the origin" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "numb" & _
     "er, write the message," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and press Send button."
         '
+        'tpGps
+        '
+        Me.tpGps.Controls.Add(Me.btnGpsSet)
+        Me.tpGps.Controls.Add(Me.chkGpsSatelites)
+        Me.tpGps.Controls.Add(Me.nudGpsSatelites)
+        Me.tpGps.Controls.Add(Me.nudGpsAltitude)
+        Me.tpGps.Controls.Add(Me.chkGpsAltitude)
+        Me.tpGps.Controls.Add(Me.nudGpsLatSec)
+        Me.tpGps.Controls.Add(Me.nudGpsLatMin)
+        Me.tpGps.Controls.Add(Me.nudGpsLatGrados)
+        Me.tpGps.Controls.Add(Me.lblGpsLatitud)
+        Me.tpGps.Controls.Add(Me.nudGpsLonSec)
+        Me.tpGps.Controls.Add(Me.nudGpsLonMin)
+        Me.tpGps.Controls.Add(Me.nudGpsLonGrados)
+        Me.tpGps.Controls.Add(Me.lblGpsLongitud)
+        Me.tpGps.Controls.Add(Me.imgGps)
+        Me.tpGps.Controls.Add(Me.lblGpsDesc)
+        Me.tpGps.ImageIndex = 3
+        Me.tpGps.Location = New System.Drawing.Point(4, 23)
+        Me.tpGps.Name = "tpGps"
+        Me.tpGps.Size = New System.Drawing.Size(459, 133)
+        Me.tpGps.TabIndex = 3
+        Me.tpGps.Text = "GPS"
+        Me.tpGps.UseVisualStyleBackColor = True
+        '
+        'btnGpsSet
+        '
+        Me.btnGpsSet.Location = New System.Drawing.Point(141, 69)
+        Me.btnGpsSet.Name = "btnGpsSet"
+        Me.btnGpsSet.Size = New System.Drawing.Size(56, 46)
+        Me.btnGpsSet.TabIndex = 37
+        Me.btnGpsSet.Text = "Set" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "location"
+        Me.btnGpsSet.UseVisualStyleBackColor = True
+        '
+        'chkGpsSatelites
+        '
+        Me.chkGpsSatelites.AutoSize = True
+        Me.chkGpsSatelites.Enabled = False
+        Me.chkGpsSatelites.Location = New System.Drawing.Point(9, 96)
+        Me.chkGpsSatelites.Margin = New System.Windows.Forms.Padding(3, 0, 3, 0)
+        Me.chkGpsSatelites.Name = "chkGpsSatelites"
+        Me.chkGpsSatelites.Size = New System.Drawing.Size(71, 17)
+        Me.chkGpsSatelites.TabIndex = 36
+        Me.chkGpsSatelites.Text = "Satellites:"
+        Me.chkGpsSatelites.UseVisualStyleBackColor = True
+        '
+        'nudGpsSatelites
+        '
+        Me.nudGpsSatelites.Enabled = False
+        Me.nudGpsSatelites.Location = New System.Drawing.Point(90, 95)
+        Me.nudGpsSatelites.Maximum = New Decimal(New Integer() {12, 0, 0, 0})
+        Me.nudGpsSatelites.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.nudGpsSatelites.Name = "nudGpsSatelites"
+        Me.nudGpsSatelites.Size = New System.Drawing.Size(44, 20)
+        Me.nudGpsSatelites.TabIndex = 35
+        Me.nudGpsSatelites.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        '
+        'nudGpsAltitude
+        '
+        Me.nudGpsAltitude.DecimalPlaces = 2
+        Me.nudGpsAltitude.Enabled = False
+        Me.nudGpsAltitude.Location = New System.Drawing.Point(69, 69)
+        Me.nudGpsAltitude.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
+        Me.nudGpsAltitude.Name = "nudGpsAltitude"
+        Me.nudGpsAltitude.Size = New System.Drawing.Size(65, 20)
+        Me.nudGpsAltitude.TabIndex = 33
+        '
+        'chkGpsAltitude
+        '
+        Me.chkGpsAltitude.AutoSize = True
+        Me.chkGpsAltitude.Location = New System.Drawing.Point(9, 70)
+        Me.chkGpsAltitude.Name = "chkGpsAltitude"
+        Me.chkGpsAltitude.Size = New System.Drawing.Size(64, 17)
+        Me.chkGpsAltitude.TabIndex = 32
+        Me.chkGpsAltitude.Text = "Altitude:"
+        Me.chkGpsAltitude.UseVisualStyleBackColor = True
+        '
+        'nudGpsLatSec
+        '
+        Me.nudGpsLatSec.Location = New System.Drawing.Point(161, 43)
+        Me.nudGpsLatSec.Maximum = New Decimal(New Integer() {59, 0, 0, 0})
+        Me.nudGpsLatSec.Name = "nudGpsLatSec"
+        Me.nudGpsLatSec.Size = New System.Drawing.Size(36, 20)
+        Me.nudGpsLatSec.TabIndex = 28
+        '
+        'nudGpsLatMin
+        '
+        Me.nudGpsLatMin.Location = New System.Drawing.Point(119, 43)
+        Me.nudGpsLatMin.Maximum = New Decimal(New Integer() {59, 0, 0, 0})
+        Me.nudGpsLatMin.Name = "nudGpsLatMin"
+        Me.nudGpsLatMin.Size = New System.Drawing.Size(36, 20)
+        Me.nudGpsLatMin.TabIndex = 27
+        '
+        'nudGpsLatGrados
+        '
+        Me.nudGpsLatGrados.Location = New System.Drawing.Point(69, 43)
+        Me.nudGpsLatGrados.Maximum = New Decimal(New Integer() {90, 0, 0, 0})
+        Me.nudGpsLatGrados.Minimum = New Decimal(New Integer() {90, 0, 0, -2147483648})
+        Me.nudGpsLatGrados.Name = "nudGpsLatGrados"
+        Me.nudGpsLatGrados.Size = New System.Drawing.Size(44, 20)
+        Me.nudGpsLatGrados.TabIndex = 26
+        '
+        'lblGpsLatitud
+        '
+        Me.lblGpsLatitud.AutoSize = True
+        Me.lblGpsLatitud.Location = New System.Drawing.Point(6, 45)
+        Me.lblGpsLatitud.Name = "lblGpsLatitud"
+        Me.lblGpsLatitud.Size = New System.Drawing.Size(48, 13)
+        Me.lblGpsLatitud.TabIndex = 25
+        Me.lblGpsLatitud.Text = "Latitude:"
+        '
+        'nudGpsLonSec
+        '
+        Me.nudGpsLonSec.Location = New System.Drawing.Point(161, 17)
+        Me.nudGpsLonSec.Maximum = New Decimal(New Integer() {59, 0, 0, 0})
+        Me.nudGpsLonSec.Name = "nudGpsLonSec"
+        Me.nudGpsLonSec.Size = New System.Drawing.Size(36, 20)
+        Me.nudGpsLonSec.TabIndex = 24
+        '
+        'nudGpsLonMin
+        '
+        Me.nudGpsLonMin.Location = New System.Drawing.Point(119, 17)
+        Me.nudGpsLonMin.Maximum = New Decimal(New Integer() {59, 0, 0, 0})
+        Me.nudGpsLonMin.Name = "nudGpsLonMin"
+        Me.nudGpsLonMin.Size = New System.Drawing.Size(36, 20)
+        Me.nudGpsLonMin.TabIndex = 23
+        '
+        'nudGpsLonGrados
+        '
+        Me.nudGpsLonGrados.Location = New System.Drawing.Point(69, 17)
+        Me.nudGpsLonGrados.Maximum = New Decimal(New Integer() {180, 0, 0, 0})
+        Me.nudGpsLonGrados.Minimum = New Decimal(New Integer() {180, 0, 0, -2147483648})
+        Me.nudGpsLonGrados.Name = "nudGpsLonGrados"
+        Me.nudGpsLonGrados.Size = New System.Drawing.Size(44, 20)
+        Me.nudGpsLonGrados.TabIndex = 22
+        '
+        'lblGpsLongitud
+        '
+        Me.lblGpsLongitud.AutoSize = True
+        Me.lblGpsLongitud.Location = New System.Drawing.Point(6, 19)
+        Me.lblGpsLongitud.Name = "lblGpsLongitud"
+        Me.lblGpsLongitud.Size = New System.Drawing.Size(57, 13)
+        Me.lblGpsLongitud.TabIndex = 21
+        Me.lblGpsLongitud.Text = "Longitude:"
+        '
+        'imgGps
+        '
+        Me.imgGps.Image = Global.avm.My.Resources.Resources.gps64
+        Me.imgGps.Location = New System.Drawing.Point(251, 34)
+        Me.imgGps.Name = "imgGps"
+        Me.imgGps.Size = New System.Drawing.Size(64, 64)
+        Me.imgGps.TabIndex = 20
+        Me.imgGps.TabStop = False
+        '
+        'lblGpsDesc
+        '
+        Me.lblGpsDesc.AutoSize = True
+        Me.lblGpsDesc.Location = New System.Drawing.Point(321, 27)
+        Me.lblGpsDesc.Name = "lblGpsDesc"
+        Me.lblGpsDesc.Size = New System.Drawing.Size(141, 78)
+        Me.lblGpsDesc.TabIndex = 19
+        Me.lblGpsDesc.Text = "Here you will be able to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "change the GPS location." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Enter the longitude and" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "lati" & _
+    "tude coordinates to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "change the position. Altitude" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and satellites are optional." & _
+    ""
+        '
         'imIconos
         '
         Me.imIconos.ImageStream = CType(resources.GetObject("imIconos.ImageStream"), System.Windows.Forms.ImageListStreamer)
@@ -614,171 +779,6 @@ Partial Class frmPrincipal
         Me.scDivisor.SplitterDistance = 160
         Me.scDivisor.SplitterWidth = 2
         Me.scDivisor.TabIndex = 9
-        '
-        'tpGps
-        '
-        Me.tpGps.Controls.Add(Me.btnGpsSet)
-        Me.tpGps.Controls.Add(Me.chkGpsSatelites)
-        Me.tpGps.Controls.Add(Me.nudGpsSatelites)
-        Me.tpGps.Controls.Add(Me.nudGpsAltitude)
-        Me.tpGps.Controls.Add(Me.chkGpsAltitude)
-        Me.tpGps.Controls.Add(Me.nudGpsLatSec)
-        Me.tpGps.Controls.Add(Me.nudGpsLatMin)
-        Me.tpGps.Controls.Add(Me.nudGpsLatGrados)
-        Me.tpGps.Controls.Add(Me.lblGpsLatitud)
-        Me.tpGps.Controls.Add(Me.nudGpsLonSec)
-        Me.tpGps.Controls.Add(Me.nudGpsLonMin)
-        Me.tpGps.Controls.Add(Me.nudGpsLonGrados)
-        Me.tpGps.Controls.Add(Me.lblGpsLongitud)
-        Me.tpGps.Controls.Add(Me.imgGps)
-        Me.tpGps.Controls.Add(Me.lblGpsDesc)
-        Me.tpGps.ImageIndex = 3
-        Me.tpGps.Location = New System.Drawing.Point(4, 23)
-        Me.tpGps.Name = "tpGps"
-        Me.tpGps.Size = New System.Drawing.Size(459, 133)
-        Me.tpGps.TabIndex = 3
-        Me.tpGps.Text = "GPS"
-        Me.tpGps.UseVisualStyleBackColor = True
-        '
-        'imgGps
-        '
-        Me.imgGps.Image = Global.avm.My.Resources.Resources.gps64
-        Me.imgGps.Location = New System.Drawing.Point(251, 34)
-        Me.imgGps.Name = "imgGps"
-        Me.imgGps.Size = New System.Drawing.Size(64, 64)
-        Me.imgGps.TabIndex = 20
-        Me.imgGps.TabStop = False
-        '
-        'lblGpsDesc
-        '
-        Me.lblGpsDesc.AutoSize = True
-        Me.lblGpsDesc.Location = New System.Drawing.Point(321, 27)
-        Me.lblGpsDesc.Name = "lblGpsDesc"
-        Me.lblGpsDesc.Size = New System.Drawing.Size(141, 78)
-        Me.lblGpsDesc.TabIndex = 19
-        Me.lblGpsDesc.Text = "Here you will be able to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "change the GPS location." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Enter the longitude and" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "lati" & _
-    "tude coordinates to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "change the position. Altitude" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and satellites are optional." & _
-    ""
-        '
-        'lblGpsLongitud
-        '
-        Me.lblGpsLongitud.AutoSize = True
-        Me.lblGpsLongitud.Location = New System.Drawing.Point(6, 19)
-        Me.lblGpsLongitud.Name = "lblGpsLongitud"
-        Me.lblGpsLongitud.Size = New System.Drawing.Size(57, 13)
-        Me.lblGpsLongitud.TabIndex = 21
-        Me.lblGpsLongitud.Text = "Longitude:"
-        '
-        'nudGpsLonGrados
-        '
-        Me.nudGpsLonGrados.Location = New System.Drawing.Point(69, 17)
-        Me.nudGpsLonGrados.Maximum = New Decimal(New Integer() {180, 0, 0, 0})
-        Me.nudGpsLonGrados.Minimum = New Decimal(New Integer() {180, 0, 0, -2147483648})
-        Me.nudGpsLonGrados.Name = "nudGpsLonGrados"
-        Me.nudGpsLonGrados.Size = New System.Drawing.Size(44, 20)
-        Me.nudGpsLonGrados.TabIndex = 22
-        '
-        'nudGpsLonMin
-        '
-        Me.nudGpsLonMin.Location = New System.Drawing.Point(119, 17)
-        Me.nudGpsLonMin.Maximum = New Decimal(New Integer() {59, 0, 0, 0})
-        Me.nudGpsLonMin.Name = "nudGpsLonMin"
-        Me.nudGpsLonMin.Size = New System.Drawing.Size(36, 20)
-        Me.nudGpsLonMin.TabIndex = 23
-        '
-        'nudGpsLonSec
-        '
-        Me.nudGpsLonSec.Location = New System.Drawing.Point(161, 17)
-        Me.nudGpsLonSec.Maximum = New Decimal(New Integer() {59, 0, 0, 0})
-        Me.nudGpsLonSec.Name = "nudGpsLonSec"
-        Me.nudGpsLonSec.Size = New System.Drawing.Size(36, 20)
-        Me.nudGpsLonSec.TabIndex = 24
-        '
-        'lblGpsLatitud
-        '
-        Me.lblGpsLatitud.AutoSize = True
-        Me.lblGpsLatitud.Location = New System.Drawing.Point(6, 45)
-        Me.lblGpsLatitud.Name = "lblGpsLatitud"
-        Me.lblGpsLatitud.Size = New System.Drawing.Size(48, 13)
-        Me.lblGpsLatitud.TabIndex = 25
-        Me.lblGpsLatitud.Text = "Latitude:"
-        '
-        'nudGpsLatSec
-        '
-        Me.nudGpsLatSec.Location = New System.Drawing.Point(161, 43)
-        Me.nudGpsLatSec.Maximum = New Decimal(New Integer() {59, 0, 0, 0})
-        Me.nudGpsLatSec.Name = "nudGpsLatSec"
-        Me.nudGpsLatSec.Size = New System.Drawing.Size(36, 20)
-        Me.nudGpsLatSec.TabIndex = 28
-        '
-        'nudGpsLatMin
-        '
-        Me.nudGpsLatMin.Location = New System.Drawing.Point(119, 43)
-        Me.nudGpsLatMin.Maximum = New Decimal(New Integer() {59, 0, 0, 0})
-        Me.nudGpsLatMin.Name = "nudGpsLatMin"
-        Me.nudGpsLatMin.Size = New System.Drawing.Size(36, 20)
-        Me.nudGpsLatMin.TabIndex = 27
-        '
-        'nudGpsLatGrados
-        '
-        Me.nudGpsLatGrados.Location = New System.Drawing.Point(69, 43)
-        Me.nudGpsLatGrados.Maximum = New Decimal(New Integer() {90, 0, 0, 0})
-        Me.nudGpsLatGrados.Minimum = New Decimal(New Integer() {90, 0, 0, -2147483648})
-        Me.nudGpsLatGrados.Name = "nudGpsLatGrados"
-        Me.nudGpsLatGrados.Size = New System.Drawing.Size(44, 20)
-        Me.nudGpsLatGrados.TabIndex = 26
-        '
-        'chkGpsAltitude
-        '
-        Me.chkGpsAltitude.AutoSize = True
-        Me.chkGpsAltitude.Location = New System.Drawing.Point(9, 70)
-        Me.chkGpsAltitude.Name = "chkGpsAltitude"
-        Me.chkGpsAltitude.Size = New System.Drawing.Size(64, 17)
-        Me.chkGpsAltitude.TabIndex = 32
-        Me.chkGpsAltitude.Text = "Altitude:"
-        Me.chkGpsAltitude.UseVisualStyleBackColor = True
-        '
-        'nudGpsAltitude
-        '
-        Me.nudGpsAltitude.DecimalPlaces = 2
-        Me.nudGpsAltitude.Enabled = False
-        Me.nudGpsAltitude.Location = New System.Drawing.Point(69, 69)
-        Me.nudGpsAltitude.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
-        Me.nudGpsAltitude.Name = "nudGpsAltitude"
-        Me.nudGpsAltitude.Size = New System.Drawing.Size(65, 20)
-        Me.nudGpsAltitude.TabIndex = 33
-        '
-        'nudGpsSatelites
-        '
-        Me.nudGpsSatelites.Enabled = False
-        Me.nudGpsSatelites.Location = New System.Drawing.Point(90, 95)
-        Me.nudGpsSatelites.Maximum = New Decimal(New Integer() {12, 0, 0, 0})
-        Me.nudGpsSatelites.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.nudGpsSatelites.Name = "nudGpsSatelites"
-        Me.nudGpsSatelites.Size = New System.Drawing.Size(44, 20)
-        Me.nudGpsSatelites.TabIndex = 35
-        Me.nudGpsSatelites.Value = New Decimal(New Integer() {1, 0, 0, 0})
-        '
-        'chkGpsSatelites
-        '
-        Me.chkGpsSatelites.AutoSize = True
-        Me.chkGpsSatelites.Enabled = False
-        Me.chkGpsSatelites.Location = New System.Drawing.Point(9, 96)
-        Me.chkGpsSatelites.Margin = New System.Windows.Forms.Padding(3, 0, 3, 0)
-        Me.chkGpsSatelites.Name = "chkGpsSatelites"
-        Me.chkGpsSatelites.Size = New System.Drawing.Size(71, 17)
-        Me.chkGpsSatelites.TabIndex = 36
-        Me.chkGpsSatelites.Text = "Satellites:"
-        Me.chkGpsSatelites.UseVisualStyleBackColor = True
-        '
-        'btnGpsSet
-        '
-        Me.btnGpsSet.Location = New System.Drawing.Point(141, 69)
-        Me.btnGpsSet.Name = "btnGpsSet"
-        Me.btnGpsSet.Size = New System.Drawing.Size(56, 46)
-        Me.btnGpsSet.TabIndex = 37
-        Me.btnGpsSet.Text = "Set" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "location"
-        Me.btnGpsSet.UseVisualStyleBackColor = True
         '
         'frmPrincipal
         '
@@ -813,21 +813,21 @@ Partial Class frmPrincipal
         Me.tpSms.ResumeLayout(False)
         Me.tpSms.PerformLayout()
         CType(Me.imgSms, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tpGps.ResumeLayout(False)
+        Me.tpGps.PerformLayout()
+        CType(Me.nudGpsSatelites, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nudGpsAltitude, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nudGpsLatSec, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nudGpsLatMin, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nudGpsLatGrados, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nudGpsLonSec, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nudGpsLonMin, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nudGpsLonGrados, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgGps, System.ComponentModel.ISupportInitialize).EndInit()
         Me.scDivisor.Panel1.ResumeLayout(False)
         Me.scDivisor.Panel2.ResumeLayout(False)
         Me.scDivisor.Panel2.PerformLayout()
         Me.scDivisor.ResumeLayout(False)
-        Me.tpGps.ResumeLayout(False)
-        Me.tpGps.PerformLayout()
-        CType(Me.imgGps, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.nudGpsLonGrados, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.nudGpsLonMin, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.nudGpsLonSec, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.nudGpsLatSec, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.nudGpsLatMin, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.nudGpsLatGrados, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.nudGpsAltitude, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.nudGpsSatelites, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
