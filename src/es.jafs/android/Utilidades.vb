@@ -39,8 +39,7 @@ Public Class Utilidades
     ''' <returns>Valor decimal convertido</returns>
     Public Shared Function decimalToCad(ByVal dDecimal As Decimal) As String
         Dim sValor As String = "0"
-
-        sValor = dDecimal.ToString
+        sValor = Format(dDecimal, "0.00").ToString
         If My.Application.Culture.NumberFormat.NumberDecimalSeparator.Equals(",") And sValor.Contains(",") Then
             sValor = sValor.Replace(",", ".")
         End If

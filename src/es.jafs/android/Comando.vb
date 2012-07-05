@@ -1,5 +1,8 @@
 ﻿''' <summary>Clase que contiene todos los comandos utlizados por la máquina virtual.</summary>
 Public Class Comando
+    ''' <summary>Comando de envío de posición GPS.</summary>
+    Public Const GEO_FIX As String = "geo fix "
+
     ''' <summary>Comando de activación de carga AC.</summary>
     Public Const POWER_AC_ON As String = "power ac on"
     ''' <summary>Comando de desactivación de carga AC.</summary>
