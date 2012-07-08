@@ -30,7 +30,6 @@ Partial Class frmPrincipal
         Me.btnEnviar = New System.Windows.Forms.Button()
         Me.tcPestanas = New System.Windows.Forms.TabControl()
         Me.tpBattery = New System.Windows.Forms.TabPage()
-        Me.imgBateria = New System.Windows.Forms.PictureBox()
         Me.lblBatDesc = New System.Windows.Forms.Label()
         Me.btnBatEstado = New System.Windows.Forms.Button()
         Me.btnBatCapacity = New System.Windows.Forms.Button()
@@ -54,7 +53,6 @@ Partial Class frmPrincipal
         Me.lblSenValor1 = New System.Windows.Forms.Label()
         Me.lblSensor = New System.Windows.Forms.Label()
         Me.cmbSensores = New System.Windows.Forms.ComboBox()
-        Me.imgSensores = New System.Windows.Forms.PictureBox()
         Me.tpSms = New System.Windows.Forms.TabPage()
         Me.txtSmsNumero = New System.Windows.Forms.TextBox()
         Me.txtSmsPrefijo = New System.Windows.Forms.TextBox()
@@ -64,7 +62,6 @@ Partial Class frmPrincipal
         Me.txtSmsMessage = New System.Windows.Forms.TextBox()
         Me.lblSmsMessage = New System.Windows.Forms.Label()
         Me.lblSmsNumber = New System.Windows.Forms.Label()
-        Me.imgSms = New System.Windows.Forms.PictureBox()
         Me.lblSmsDesc = New System.Windows.Forms.Label()
         Me.tpGps = New System.Windows.Forms.TabPage()
         Me.btnGpsSet = New System.Windows.Forms.Button()
@@ -80,21 +77,36 @@ Partial Class frmPrincipal
         Me.nudGpsLonMin = New System.Windows.Forms.NumericUpDown()
         Me.nudGpsLonGrados = New System.Windows.Forms.NumericUpDown()
         Me.lblGpsLongitud = New System.Windows.Forms.Label()
-        Me.imgGps = New System.Windows.Forms.PictureBox()
         Me.lblGpsDesc = New System.Windows.Forms.Label()
         Me.scDivisor = New System.Windows.Forms.SplitContainer()
         Me.imIconos = New System.Windows.Forms.ImageList(Me.components)
+        Me.tpGsm1 = New System.Windows.Forms.TabPage()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.imgBateria = New System.Windows.Forms.PictureBox()
+        Me.imgSensores = New System.Windows.Forms.PictureBox()
+        Me.imgSms = New System.Windows.Forms.PictureBox()
+        Me.imgGps = New System.Windows.Forms.PictureBox()
+        Me.imgGsm = New System.Windows.Forms.PictureBox()
+        Me.lblGsmDatos = New System.Windows.Forms.Label()
+        Me.cmbGsmDatos = New System.Windows.Forms.ComboBox()
+        Me.cmbGsmVoz = New System.Windows.Forms.ComboBox()
+        Me.lblGsmVoz = New System.Windows.Forms.Label()
+        Me.btnGsmUpdate = New System.Windows.Forms.Button()
+        Me.lblGsmRssi = New System.Windows.Forms.Label()
+        Me.nudGsmRssi = New System.Windows.Forms.NumericUpDown()
+        Me.chkGsmNoRssi = New System.Windows.Forms.CheckBox()
+        Me.nudGsmBer = New System.Windows.Forms.NumericUpDown()
+        Me.chkGsmNoBer = New System.Windows.Forms.CheckBox()
+        Me.btnGsmSet = New System.Windows.Forms.Button()
+        Me.chkGsmBerOn = New System.Windows.Forms.CheckBox()
         Me.tcPestanas.SuspendLayout()
         Me.tpBattery.SuspendLayout()
-        CType(Me.imgBateria, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nudBatCapacity, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tpSensors.SuspendLayout()
         CType(Me.nudSenValor2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nudSenValor3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nudSenValor1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.imgSensores, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tpSms.SuspendLayout()
-        CType(Me.imgSms, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tpGps.SuspendLayout()
         CType(Me.nudGpsSatelites, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nudGpsAltitude, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -104,10 +116,17 @@ Partial Class frmPrincipal
         CType(Me.nudGpsLonSec, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nudGpsLonMin, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nudGpsLonGrados, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.imgGps, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.scDivisor.Panel1.SuspendLayout()
         Me.scDivisor.Panel2.SuspendLayout()
         Me.scDivisor.SuspendLayout()
+        Me.tpGsm1.SuspendLayout()
+        CType(Me.imgBateria, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgSensores, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgSms, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgGps, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgGsm, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nudGsmRssi, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nudGsmBer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnConectar
@@ -163,7 +182,7 @@ Partial Class frmPrincipal
         '
         'txtComando
         '
-        Me.txtComando.AutoCompleteCustomSource.AddRange(New String() {"h", "help", "?", "event", "event send", "event types", "event codes", "event text", "geo", "geo nmea", "geo fix", "gsm", "gsm list", "gsm call", "gsm busy", "gsm hold", "gsm accept", "gsm cancel", "gsm data", "gsm voice", "gsm status", "cdma", "cdma ssource", "cdma prl_version", "kill", "network", "network status", "network speed", "network delay", "network capture", "network capture start", "network capture stop", "power display", "power ac", "power ac on", "power ac off", "power status", "power status unknown", "power status charging", "power status discharging", "power status not-charging", "power present", "power present true", "power present false", "power health", "power health unknown", "power health good", "power health overheat", "power health dead", "power health overvoltage", "power health failure", "power capacity", "quit", "exit", "redir", "redir list", "redit add", "redir del", "sms", "sms send", "sms pdu", "avd", "avd stop", "avd start", "avd status", "avd name", "avd snapshot list", "avd snapshot save", "avd snapshot load", "avd snapshot del", "window", "window scale", "qemu", "qemu monitor", "sensor", "sensor status", "sensor get", "sensor get acceleration", "sensor get magnetic-field", "sensor get orientation", "sensor get temperature", "sensor get proximity", "sensor set", "sensor set acceleration", "sensor set magnetic-field", "sensor set orientation", "sensor set temperature", "sensor set proximity"})
+        Me.txtComando.AutoCompleteCustomSource.AddRange(New String() {"h", "help", "?", "event", "event send", "event types", "event codes", "event text", "geo", "geo nmea", "geo fix", "gsm", "gsm list", "gsm call", "gsm busy", "gsm hold", "gsm accept", "gsm cancel", "gsm data unregistered", "gsm data home", "gsm data roaming", "gsm data searching", "gsm data denied", "gsm data off", "gsm data on", "gsm voice", "gsm voice unregistered", "gsm voice home", "gsm voice roaming", "gsm voice searching", "gsm voice denied", "gsm voice off", "gsm voice on", "gsm status", "gsm signal", "cdma", "cdma ssource", "cdma prl_version", "kill", "network", "network status", "network speed", "network delay", "network capture", "network capture start", "network capture stop", "power display", "power ac", "power ac on", "power ac off", "power status", "power status unknown", "power status charging", "power status discharging", "power status not-charging", "power present", "power present true", "power present false", "power health", "power health unknown", "power health good", "power health overheat", "power health dead", "power health overvoltage", "power health failure", "power capacity", "quit", "exit", "redir", "redir list", "redit add", "redir del", "sms", "sms send", "sms pdu", "avd", "avd stop", "avd start", "avd status", "avd name", "avd snapshot list", "avd snapshot save", "avd snapshot load", "avd snapshot del", "window", "window scale", "qemu", "qemu monitor", "sensor", "sensor status", "sensor get", "sensor get acceleration", "sensor get magnetic-field", "sensor get orientation", "sensor get temperature", "sensor get proximity", "sensor set", "sensor set acceleration", "sensor set magnetic-field", "sensor set orientation", "sensor set temperature", "sensor set proximity"})
         Me.txtComando.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.txtComando.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
         Me.txtComando.Enabled = False
@@ -191,6 +210,7 @@ Partial Class frmPrincipal
         Me.tcPestanas.Controls.Add(Me.tpSensors)
         Me.tcPestanas.Controls.Add(Me.tpSms)
         Me.tcPestanas.Controls.Add(Me.tpGps)
+        Me.tcPestanas.Controls.Add(Me.tpGsm1)
         Me.tcPestanas.Enabled = False
         Me.tcPestanas.HotTrack = True
         Me.tcPestanas.ImageList = Me.imIconos
@@ -215,22 +235,13 @@ Partial Class frmPrincipal
         Me.tpBattery.Controls.Add(Me.lblEstado)
         Me.tpBattery.Controls.Add(Me.chkCargaAc)
         Me.tpBattery.ImageIndex = 0
-        Me.tpBattery.Location = New System.Drawing.Point(4, 22)
+        Me.tpBattery.Location = New System.Drawing.Point(4, 23)
         Me.tpBattery.Name = "tpBattery"
         Me.tpBattery.Padding = New System.Windows.Forms.Padding(3)
-        Me.tpBattery.Size = New System.Drawing.Size(459, 134)
+        Me.tpBattery.Size = New System.Drawing.Size(459, 133)
         Me.tpBattery.TabIndex = 0
         Me.tpBattery.Text = "Battery"
         Me.tpBattery.UseVisualStyleBackColor = True
-        '
-        'imgBateria
-        '
-        Me.imgBateria.Image = Global.avm.My.Resources.Resources.bateria64
-        Me.imgBateria.Location = New System.Drawing.Point(251, 34)
-        Me.imgBateria.Name = "imgBateria"
-        Me.imgBateria.Size = New System.Drawing.Size(64, 64)
-        Me.imgBateria.TabIndex = 14
-        Me.imgBateria.TabStop = False
         '
         'lblBatDesc
         '
@@ -460,15 +471,6 @@ Partial Class frmPrincipal
         Me.cmbSensores.Size = New System.Drawing.Size(158, 21)
         Me.cmbSensores.TabIndex = 0
         '
-        'imgSensores
-        '
-        Me.imgSensores.Image = Global.avm.My.Resources.Resources.sensores64
-        Me.imgSensores.Location = New System.Drawing.Point(251, 34)
-        Me.imgSensores.Name = "imgSensores"
-        Me.imgSensores.Size = New System.Drawing.Size(64, 64)
-        Me.imgSensores.TabIndex = 16
-        Me.imgSensores.TabStop = False
-        '
         'tpSms
         '
         Me.tpSms.Controls.Add(Me.txtSmsNumero)
@@ -479,8 +481,8 @@ Partial Class frmPrincipal
         Me.tpSms.Controls.Add(Me.txtSmsMessage)
         Me.tpSms.Controls.Add(Me.lblSmsMessage)
         Me.tpSms.Controls.Add(Me.lblSmsNumber)
-        Me.tpSms.Controls.Add(Me.imgSms)
         Me.tpSms.Controls.Add(Me.lblSmsDesc)
+        Me.tpSms.Controls.Add(Me.imgSms)
         Me.tpSms.ImageIndex = 2
         Me.tpSms.Location = New System.Drawing.Point(4, 23)
         Me.tpSms.Name = "tpSms"
@@ -563,15 +565,6 @@ Partial Class frmPrincipal
         Me.lblSmsNumber.TabIndex = 19
         Me.lblSmsNumber.Text = "Number:"
         '
-        'imgSms
-        '
-        Me.imgSms.Image = Global.avm.My.Resources.Resources.sms64
-        Me.imgSms.Location = New System.Drawing.Point(251, 34)
-        Me.imgSms.Name = "imgSms"
-        Me.imgSms.Size = New System.Drawing.Size(64, 64)
-        Me.imgSms.TabIndex = 18
-        Me.imgSms.TabStop = False
-        '
         'lblSmsDesc
         '
         Me.lblSmsDesc.AutoSize = True
@@ -597,8 +590,8 @@ Partial Class frmPrincipal
         Me.tpGps.Controls.Add(Me.nudGpsLonMin)
         Me.tpGps.Controls.Add(Me.nudGpsLonGrados)
         Me.tpGps.Controls.Add(Me.lblGpsLongitud)
-        Me.tpGps.Controls.Add(Me.imgGps)
         Me.tpGps.Controls.Add(Me.lblGpsDesc)
+        Me.tpGps.Controls.Add(Me.imgGps)
         Me.tpGps.ImageIndex = 3
         Me.tpGps.Location = New System.Drawing.Point(4, 23)
         Me.tpGps.Name = "tpGps"
@@ -727,15 +720,6 @@ Partial Class frmPrincipal
         Me.lblGpsLongitud.TabIndex = 21
         Me.lblGpsLongitud.Text = "Longitude:"
         '
-        'imgGps
-        '
-        Me.imgGps.Image = Global.avm.My.Resources.Resources.gps64
-        Me.imgGps.Location = New System.Drawing.Point(251, 34)
-        Me.imgGps.Name = "imgGps"
-        Me.imgGps.Size = New System.Drawing.Size(64, 64)
-        Me.imgGps.TabIndex = 20
-        Me.imgGps.TabStop = False
-        '
         'lblGpsDesc
         '
         Me.lblGpsDesc.AutoSize = True
@@ -779,6 +763,200 @@ Partial Class frmPrincipal
         Me.imIconos.Images.SetKeyName(1, "sensores16.png")
         Me.imIconos.Images.SetKeyName(2, "sms16.png")
         Me.imIconos.Images.SetKeyName(3, "gps16.png")
+        Me.imIconos.Images.SetKeyName(4, "gsm16.png")
+        '
+        'tpGsm1
+        '
+        Me.tpGsm1.Controls.Add(Me.chkGsmBerOn)
+        Me.tpGsm1.Controls.Add(Me.btnGsmSet)
+        Me.tpGsm1.Controls.Add(Me.chkGsmNoBer)
+        Me.tpGsm1.Controls.Add(Me.nudGsmBer)
+        Me.tpGsm1.Controls.Add(Me.chkGsmNoRssi)
+        Me.tpGsm1.Controls.Add(Me.nudGsmRssi)
+        Me.tpGsm1.Controls.Add(Me.lblGsmRssi)
+        Me.tpGsm1.Controls.Add(Me.btnGsmUpdate)
+        Me.tpGsm1.Controls.Add(Me.cmbGsmVoz)
+        Me.tpGsm1.Controls.Add(Me.lblGsmVoz)
+        Me.tpGsm1.Controls.Add(Me.cmbGsmDatos)
+        Me.tpGsm1.Controls.Add(Me.lblGsmDatos)
+        Me.tpGsm1.Controls.Add(Me.imgGsm)
+        Me.tpGsm1.Controls.Add(Me.Label1)
+        Me.tpGsm1.ImageIndex = 4
+        Me.tpGsm1.Location = New System.Drawing.Point(4, 23)
+        Me.tpGsm1.Name = "tpGsm1"
+        Me.tpGsm1.Padding = New System.Windows.Forms.Padding(3)
+        Me.tpGsm1.Size = New System.Drawing.Size(459, 133)
+        Me.tpGsm1.TabIndex = 4
+        Me.tpGsm1.Text = "GSM 1"
+        Me.tpGsm1.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(321, 40)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(125, 52)
+        Me.Label1.TabIndex = 21
+        Me.Label1.Text = "The first GSM tab, allows" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "to change the status of" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "data and voice, and set" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "the " & _
+    "signal levels."
+        '
+        'imgBateria
+        '
+        Me.imgBateria.Image = Global.avm.My.Resources.Resources.bateria64
+        Me.imgBateria.Location = New System.Drawing.Point(251, 34)
+        Me.imgBateria.Name = "imgBateria"
+        Me.imgBateria.Size = New System.Drawing.Size(64, 64)
+        Me.imgBateria.TabIndex = 14
+        Me.imgBateria.TabStop = False
+        '
+        'imgSensores
+        '
+        Me.imgSensores.Image = Global.avm.My.Resources.Resources.sensores64
+        Me.imgSensores.Location = New System.Drawing.Point(251, 34)
+        Me.imgSensores.Name = "imgSensores"
+        Me.imgSensores.Size = New System.Drawing.Size(64, 64)
+        Me.imgSensores.TabIndex = 16
+        Me.imgSensores.TabStop = False
+        '
+        'imgSms
+        '
+        Me.imgSms.Image = Global.avm.My.Resources.Resources.sms64
+        Me.imgSms.Location = New System.Drawing.Point(251, 34)
+        Me.imgSms.Name = "imgSms"
+        Me.imgSms.Size = New System.Drawing.Size(64, 64)
+        Me.imgSms.TabIndex = 18
+        Me.imgSms.TabStop = False
+        '
+        'imgGps
+        '
+        Me.imgGps.Image = Global.avm.My.Resources.Resources.gps64
+        Me.imgGps.Location = New System.Drawing.Point(251, 34)
+        Me.imgGps.Name = "imgGps"
+        Me.imgGps.Size = New System.Drawing.Size(64, 64)
+        Me.imgGps.TabIndex = 20
+        Me.imgGps.TabStop = False
+        '
+        'imgGsm
+        '
+        Me.imgGsm.Image = Global.avm.My.Resources.Resources.gsm64
+        Me.imgGsm.Location = New System.Drawing.Point(251, 34)
+        Me.imgGsm.Name = "imgGsm"
+        Me.imgGsm.Size = New System.Drawing.Size(64, 64)
+        Me.imgGsm.TabIndex = 22
+        Me.imgGsm.TabStop = False
+        '
+        'lblGsmDatos
+        '
+        Me.lblGsmDatos.AutoSize = True
+        Me.lblGsmDatos.Location = New System.Drawing.Point(6, 17)
+        Me.lblGsmDatos.Name = "lblGsmDatos"
+        Me.lblGsmDatos.Size = New System.Drawing.Size(33, 13)
+        Me.lblGsmDatos.TabIndex = 23
+        Me.lblGsmDatos.Text = "Data:"
+        '
+        'cmbGsmDatos
+        '
+        Me.cmbGsmDatos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbGsmDatos.FormattingEnabled = True
+        Me.cmbGsmDatos.Items.AddRange(New Object() {"unregistered", "home", "roaming", "searching", "denied", "off", "on"})
+        Me.cmbGsmDatos.Location = New System.Drawing.Point(45, 14)
+        Me.cmbGsmDatos.Name = "cmbGsmDatos"
+        Me.cmbGsmDatos.Size = New System.Drawing.Size(121, 21)
+        Me.cmbGsmDatos.TabIndex = 24
+        '
+        'cmbGsmVoz
+        '
+        Me.cmbGsmVoz.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbGsmVoz.FormattingEnabled = True
+        Me.cmbGsmVoz.Items.AddRange(New Object() {"unregistered", "home", "roaming", "searching", "denied", "off", "on"})
+        Me.cmbGsmVoz.Location = New System.Drawing.Point(45, 41)
+        Me.cmbGsmVoz.Name = "cmbGsmVoz"
+        Me.cmbGsmVoz.Size = New System.Drawing.Size(121, 21)
+        Me.cmbGsmVoz.TabIndex = 26
+        '
+        'lblGsmVoz
+        '
+        Me.lblGsmVoz.AutoSize = True
+        Me.lblGsmVoz.Location = New System.Drawing.Point(6, 44)
+        Me.lblGsmVoz.Name = "lblGsmVoz"
+        Me.lblGsmVoz.Size = New System.Drawing.Size(37, 13)
+        Me.lblGsmVoz.TabIndex = 25
+        Me.lblGsmVoz.Text = "Voice:"
+        '
+        'btnGsmUpdate
+        '
+        Me.btnGsmUpdate.Location = New System.Drawing.Point(187, 14)
+        Me.btnGsmUpdate.Name = "btnGsmUpdate"
+        Me.btnGsmUpdate.Size = New System.Drawing.Size(52, 48)
+        Me.btnGsmUpdate.TabIndex = 27
+        Me.btnGsmUpdate.Text = "Update"
+        Me.btnGsmUpdate.UseVisualStyleBackColor = True
+        '
+        'lblGsmRssi
+        '
+        Me.lblGsmRssi.AutoSize = True
+        Me.lblGsmRssi.Location = New System.Drawing.Point(6, 71)
+        Me.lblGsmRssi.Name = "lblGsmRssi"
+        Me.lblGsmRssi.Size = New System.Drawing.Size(35, 13)
+        Me.lblGsmRssi.TabIndex = 28
+        Me.lblGsmRssi.Text = "RSSI:"
+        '
+        'nudGsmRssi
+        '
+        Me.nudGsmRssi.Location = New System.Drawing.Point(66, 68)
+        Me.nudGsmRssi.Maximum = New Decimal(New Integer() {31, 0, 0, 0})
+        Me.nudGsmRssi.Name = "nudGsmRssi"
+        Me.nudGsmRssi.Size = New System.Drawing.Size(37, 20)
+        Me.nudGsmRssi.TabIndex = 29
+        '
+        'chkGsmNoRssi
+        '
+        Me.chkGsmNoRssi.AutoSize = True
+        Me.chkGsmNoRssi.Location = New System.Drawing.Point(109, 70)
+        Me.chkGsmNoRssi.Name = "chkGsmNoRssi"
+        Me.chkGsmNoRssi.Size = New System.Drawing.Size(72, 17)
+        Me.chkGsmNoRssi.TabIndex = 30
+        Me.chkGsmNoRssi.Text = "Unknown"
+        Me.chkGsmNoRssi.UseVisualStyleBackColor = True
+        '
+        'nudGsmBer
+        '
+        Me.nudGsmBer.Enabled = False
+        Me.nudGsmBer.Location = New System.Drawing.Point(66, 92)
+        Me.nudGsmBer.Maximum = New Decimal(New Integer() {7, 0, 0, 0})
+        Me.nudGsmBer.Name = "nudGsmBer"
+        Me.nudGsmBer.Size = New System.Drawing.Size(37, 20)
+        Me.nudGsmBer.TabIndex = 32
+        '
+        'chkGsmNoBer
+        '
+        Me.chkGsmNoBer.AutoSize = True
+        Me.chkGsmNoBer.Enabled = False
+        Me.chkGsmNoBer.Location = New System.Drawing.Point(109, 93)
+        Me.chkGsmNoBer.Name = "chkGsmNoBer"
+        Me.chkGsmNoBer.Size = New System.Drawing.Size(72, 17)
+        Me.chkGsmNoBer.TabIndex = 33
+        Me.chkGsmNoBer.Text = "Unknown"
+        Me.chkGsmNoBer.UseVisualStyleBackColor = True
+        '
+        'btnGsmSet
+        '
+        Me.btnGsmSet.Location = New System.Drawing.Point(187, 68)
+        Me.btnGsmSet.Name = "btnGsmSet"
+        Me.btnGsmSet.Size = New System.Drawing.Size(52, 46)
+        Me.btnGsmSet.TabIndex = 34
+        Me.btnGsmSet.Text = "Set"
+        Me.btnGsmSet.UseVisualStyleBackColor = True
+        '
+        'chkGsmBerOn
+        '
+        Me.chkGsmBerOn.AutoSize = True
+        Me.chkGsmBerOn.Location = New System.Drawing.Point(9, 95)
+        Me.chkGsmBerOn.Name = "chkGsmBerOn"
+        Me.chkGsmBerOn.Size = New System.Drawing.Size(51, 17)
+        Me.chkGsmBerOn.TabIndex = 35
+        Me.chkGsmBerOn.Text = "BER:"
+        Me.chkGsmBerOn.UseVisualStyleBackColor = True
         '
         'frmPrincipal
         '
@@ -802,17 +980,14 @@ Partial Class frmPrincipal
         Me.tcPestanas.ResumeLayout(False)
         Me.tpBattery.ResumeLayout(False)
         Me.tpBattery.PerformLayout()
-        CType(Me.imgBateria, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nudBatCapacity, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tpSensors.ResumeLayout(False)
         Me.tpSensors.PerformLayout()
         CType(Me.nudSenValor2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nudSenValor3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nudSenValor1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.imgSensores, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tpSms.ResumeLayout(False)
         Me.tpSms.PerformLayout()
-        CType(Me.imgSms, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tpGps.ResumeLayout(False)
         Me.tpGps.PerformLayout()
         CType(Me.nudGpsSatelites, System.ComponentModel.ISupportInitialize).EndInit()
@@ -823,11 +998,19 @@ Partial Class frmPrincipal
         CType(Me.nudGpsLonSec, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nudGpsLonMin, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nudGpsLonGrados, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.imgGps, System.ComponentModel.ISupportInitialize).EndInit()
         Me.scDivisor.Panel1.ResumeLayout(False)
         Me.scDivisor.Panel2.ResumeLayout(False)
         Me.scDivisor.Panel2.PerformLayout()
         Me.scDivisor.ResumeLayout(False)
+        Me.tpGsm1.ResumeLayout(False)
+        Me.tpGsm1.PerformLayout()
+        CType(Me.imgBateria, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgSensores, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgSms, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgGps, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgGsm, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nudGsmRssi, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nudGsmBer, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -895,5 +1078,20 @@ Partial Class frmPrincipal
     Friend WithEvents nudGpsLonGrados As System.Windows.Forms.NumericUpDown
     Friend WithEvents lblGpsLongitud As System.Windows.Forms.Label
     Friend WithEvents imIconos As System.Windows.Forms.ImageList
+    Friend WithEvents tpGsm1 As System.Windows.Forms.TabPage
+    Friend WithEvents imgGsm As System.Windows.Forms.PictureBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents btnGsmUpdate As System.Windows.Forms.Button
+    Friend WithEvents cmbGsmVoz As System.Windows.Forms.ComboBox
+    Friend WithEvents lblGsmVoz As System.Windows.Forms.Label
+    Friend WithEvents cmbGsmDatos As System.Windows.Forms.ComboBox
+    Friend WithEvents lblGsmDatos As System.Windows.Forms.Label
+    Friend WithEvents btnGsmSet As System.Windows.Forms.Button
+    Friend WithEvents chkGsmNoBer As System.Windows.Forms.CheckBox
+    Friend WithEvents nudGsmBer As System.Windows.Forms.NumericUpDown
+    Friend WithEvents chkGsmNoRssi As System.Windows.Forms.CheckBox
+    Friend WithEvents nudGsmRssi As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblGsmRssi As System.Windows.Forms.Label
+    Friend WithEvents chkGsmBerOn As System.Windows.Forms.CheckBox
 
 End Class

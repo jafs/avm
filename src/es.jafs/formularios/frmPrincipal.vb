@@ -9,6 +9,8 @@ Public Class frmPrincipal
     Dim bConexion As Boolean = False
     ''' <summary>Objeto de conexión a Telnet.</summary>
     Dim objTelnet As New AndTelnet()
+    ''' <summary>Indica si actualmente se está en modo consulta.</summary>
+    Dim bModoConsulta As Boolean = False
 
 
     ''' <summary>Controla el clic sobre el botón de conexión.</summary>
@@ -44,7 +46,7 @@ Public Class frmPrincipal
     ''' <param name="sender">Emisor del evento</param>
     ''' <param name="e">Datos del evento</param>
     Private Sub chkCargaAc_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkCargaAc.CheckedChanged
-        If tcPestanas.Enabled Then
+        If Not bModoConsulta Then
             If (chkCargaAc.Checked) Then
                 enviarComando(Comando.POWER_AC_ON)
             Else
@@ -58,7 +60,7 @@ Public Class frmPrincipal
     ''' <param name="sender">Emisor del evento</param>
     ''' <param name="e">Datos del evento</param>
     Private Sub cmbBatStat_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbBatStat.SelectedIndexChanged
-        If tcPestanas.Enabled Then
+        If Not bModoConsulta Then
             enviarComando(Comando.POWER_STATUS + cmbBatStat.SelectedItem.ToString)
         End If
     End Sub
@@ -68,7 +70,7 @@ Public Class frmPrincipal
     ''' <param name="sender">Emisor del evento</param>
     ''' <param name="e">Datos del evento</param>
     Private Sub chkBatPresent_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkBatPresent.CheckedChanged
-        If tcPestanas.Enabled Then
+        If Not bModoConsulta Then
             enviarComando(Comando.POWER_PRESENT + chkBatPresent.Checked.ToString)
         End If
     End Sub
@@ -78,7 +80,7 @@ Public Class frmPrincipal
     ''' <param name="sender">Emisor del evento</param>
     ''' <param name="e">Datos del evento</param>
     Private Sub cmbBatHealth_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbBatHealth.SelectedIndexChanged
-        If tcPestanas.Enabled Then
+        If Not bModoConsulta Then
             enviarComando(Comando.POWER_HEALTH + cmbBatHealth.SelectedItem.ToString)
         End If
     End Sub
@@ -105,6 +107,7 @@ Public Class frmPrincipal
     Private Sub getBateria()
         Dim sResultado As String = objTelnet.consultar(Comando.POWER_DISPLAY)
         sResultado = sResultado.Replace(vbCr & "" & vbCrLf, vbNewLine)
+        bModoConsulta = True
 
         Dim arsValores As String() = sResultado.Split(CChar(vbNewLine))
 
@@ -132,6 +135,8 @@ Public Class frmPrincipal
         Else
             MessageBox.Show("There is no values")
         End If
+
+        bModoConsulta = False
     End Sub
 
 
@@ -176,6 +181,7 @@ Public Class frmPrincipal
 
                 If bConexion Then
                     getBateria()
+                    getGsmStatus()
                 End If
             End If
         End If
@@ -462,5 +468,92 @@ Public Class frmPrincipal
         End If
 
         enviarComando(Comando.GEO_FIX & sSentencia)
+    End Sub
+
+
+
+    ' ######################################
+    ' GSM
+    ' ######################################
+    ''' <summary>Establece el nivel de señal GSM.</summary>
+    ''' <param name="sender">Emisor del evento.</param>
+    ''' <param name="e">Datos del evento.</param>
+    Private Sub btnGsmSet_Click(sender As System.Object, e As System.EventArgs) Handles btnGsmSet.Click
+        Dim sSentencia As String = String.Empty
+
+        If chkGsmNoRssi.Checked Then
+            sSentencia &= Comando.GSM_SIGNAL_UNKNOWN & " "
+        Else
+            sSentencia &= nudGsmRssi.Value & " "
+        End If
+
+        If chkGsmBerOn.Checked Then
+            If chkGsmNoBer.Checked Then
+                sSentencia &= Comando.GSM_SIGNAL_UNKNOWN
+            Else
+                sSentencia &= nudGsmBer.Value
+            End If
+        End If
+
+        enviarComando(Comando.GSM_SIGNAL & sSentencia)
+    End Sub
+
+
+    ''' <summary>Activa/desactiva el envío de datos de señal BER.</summary>
+    ''' <param name="sender">Emisor del evento.</param>
+    ''' <param name="e">Datos del evento.</param>
+    Private Sub chkGsmBerOn_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles chkGsmBerOn.CheckedChanged
+        nudGsmBer.Enabled = chkGsmBerOn.Checked
+        chkGsmNoBer.Enabled = chkGsmBerOn.Checked
+    End Sub
+
+
+    ''' <summary>Establece el estado de datos GSM.</summary>
+    ''' <param name="sender">Emisor del evento.</param>
+    ''' <param name="e">Datos del evento.</param>
+    Private Sub cmbGsmDatos_SelectedIndexChanged(sender As System.Object, e As System.EventArgs) Handles cmbGsmDatos.SelectedIndexChanged
+        If Not bModoConsulta Then
+            enviarComando(Comando.GSM_DATA + cmbGsmDatos.SelectedItem.ToString)
+        End If
+    End Sub
+
+
+    ''' <summary>Establece el estado de voz GSM.</summary>
+    ''' <param name="sender">Emisor del evento.</param>
+    ''' <param name="e">Datos del evento.</param>
+    Private Sub cmbGsmVoz_SelectedIndexChanged(sender As System.Object, e As System.EventArgs) Handles cmbGsmVoz.SelectedIndexChanged
+        If Not bModoConsulta Then
+            enviarComando(Comando.GSM_VOICE + cmbGsmVoz.SelectedItem.ToString)
+        End If
+    End Sub
+
+    Private Sub btnGsmUpdate_Click(sender As System.Object, e As System.EventArgs) Handles btnGsmUpdate.Click
+        enviarComando(Comando.GSM_STATUS)
+        getGsmStatus()
+    End Sub
+
+
+    ''' <summary>Obtiene el estado de datos y voz GSM.</summary>
+    Private Sub getGsmStatus()
+        Dim sResultado As String = objTelnet.consultar(Comando.GSM_STATUS)
+        sResultado = sResultado.Replace(vbCr & "" & vbCrLf, vbNewLine)
+        bModoConsulta = True
+
+        Dim arsValores As String() = sResultado.Split(CChar(vbNewLine))
+
+        ' Recorre los valores y establece los parámetros leídos.
+        If arsValores.Length > 0 Then
+            For Each sValor As String In arsValores
+                If sValor.Contains("voice") Then
+                    cmbGsmVoz.SelectedItem = sValor.Substring(sValor.IndexOf(":") + 1).Trim
+                ElseIf sValor.Contains("data") Then
+                    cmbGsmDatos.SelectedItem = sValor.Substring(sValor.IndexOf(":") + 1).Trim
+                End If
+            Next
+        Else
+            MessageBox.Show("There is no values")
+        End If
+
+        bModoConsulta = False
     End Sub
 End Class

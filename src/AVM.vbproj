@@ -192,6 +192,7 @@
   <ItemGroup>
     <Content Include="es.jafs\recursos\license.txt" />
     <Content Include="es.jafs\recursos\readme.txt" />
+    <None Include="Resources\gsm64.png" />
     <None Include="Resources\sms64.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
