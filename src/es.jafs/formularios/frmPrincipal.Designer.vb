@@ -82,8 +82,8 @@ Partial Class frmPrincipal
         Me.lblGpsLongitud = New System.Windows.Forms.Label()
         Me.imgGps = New System.Windows.Forms.PictureBox()
         Me.lblGpsDesc = New System.Windows.Forms.Label()
-        Me.imIconos = New System.Windows.Forms.ImageList(Me.components)
         Me.scDivisor = New System.Windows.Forms.SplitContainer()
+        Me.imIconos = New System.Windows.Forms.ImageList(Me.components)
         Me.tcPestanas.SuspendLayout()
         Me.tpBattery.SuspendLayout()
         CType(Me.imgBateria, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -215,10 +215,10 @@ Partial Class frmPrincipal
         Me.tpBattery.Controls.Add(Me.lblEstado)
         Me.tpBattery.Controls.Add(Me.chkCargaAc)
         Me.tpBattery.ImageIndex = 0
-        Me.tpBattery.Location = New System.Drawing.Point(4, 23)
+        Me.tpBattery.Location = New System.Drawing.Point(4, 22)
         Me.tpBattery.Name = "tpBattery"
         Me.tpBattery.Padding = New System.Windows.Forms.Padding(3)
-        Me.tpBattery.Size = New System.Drawing.Size(459, 133)
+        Me.tpBattery.Size = New System.Drawing.Size(459, 134)
         Me.tpBattery.TabIndex = 0
         Me.tpBattery.Text = "Battery"
         Me.tpBattery.UseVisualStyleBackColor = True
@@ -747,15 +747,6 @@ Partial Class frmPrincipal
     "tude coordinates to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "change the position. Altitude" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and satellites are optional." & _
     ""
         '
-        'imIconos
-        '
-        Me.imIconos.ImageStream = CType(resources.GetObject("imIconos.ImageStream"), System.Windows.Forms.ImageListStreamer)
-        Me.imIconos.TransparentColor = System.Drawing.Color.Transparent
-        Me.imIconos.Images.SetKeyName(0, "bateria16.png")
-        Me.imIconos.Images.SetKeyName(1, "sensores16.png")
-        Me.imIconos.Images.SetKeyName(2, "sms16.png")
-        Me.imIconos.Images.SetKeyName(3, "gps16.png")
-        '
         'scDivisor
         '
         Me.scDivisor.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -779,6 +770,15 @@ Partial Class frmPrincipal
         Me.scDivisor.SplitterDistance = 160
         Me.scDivisor.SplitterWidth = 2
         Me.scDivisor.TabIndex = 9
+        '
+        'imIconos
+        '
+        Me.imIconos.ImageStream = CType(resources.GetObject("imIconos.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.imIconos.TransparentColor = System.Drawing.Color.Transparent
+        Me.imIconos.Images.SetKeyName(0, "bateria16.png")
+        Me.imIconos.Images.SetKeyName(1, "sensores16.png")
+        Me.imIconos.Images.SetKeyName(2, "sms16.png")
+        Me.imIconos.Images.SetKeyName(3, "gps16.png")
         '
         'frmPrincipal
         '
@@ -850,7 +850,6 @@ Partial Class frmPrincipal
     Friend WithEvents cmbBatHealth As System.Windows.Forms.ComboBox
     Friend WithEvents lblBatHealth As System.Windows.Forms.Label
     Friend WithEvents btnBatCapacity As System.Windows.Forms.Button
-    Friend WithEvents imIconos As System.Windows.Forms.ImageList
     Friend WithEvents btnBatEstado As System.Windows.Forms.Button
     Friend WithEvents scDivisor As System.Windows.Forms.SplitContainer
     Friend WithEvents imgBateria As System.Windows.Forms.PictureBox
@@ -895,5 +894,6 @@ Partial Class frmPrincipal
     Friend WithEvents nudGpsLonMin As System.Windows.Forms.NumericUpDown
     Friend WithEvents nudGpsLonGrados As System.Windows.Forms.NumericUpDown
     Friend WithEvents lblGpsLongitud As System.Windows.Forms.Label
+    Friend WithEvents imIconos As System.Windows.Forms.ImageList
 
 End Class
