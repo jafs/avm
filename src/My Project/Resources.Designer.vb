@@ -67,6 +67,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Friend ReadOnly Property gps64() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("gps64", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Friend ReadOnly Property sensores64() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("sensores64", resourceCulture)

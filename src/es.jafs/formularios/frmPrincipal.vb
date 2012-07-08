@@ -151,6 +151,8 @@ Public Class frmPrincipal
             MessageBox.Show("There is no connection")
             btnConectar.Focus()
         End If
+
+        txtComando.SelectAll()
     End Sub
 
 
@@ -414,5 +416,51 @@ Public Class frmPrincipal
                 enviarComando(Comando.SMS_SEND & sNumero & " " & txtSmsMessage.Text)
             End If
         End If
+    End Sub
+
+
+
+    ' ######################################
+    ' GPS
+    ' ######################################
+    ''' <summary>Controla el estado de envío de Altitud.</summary>
+    ''' <param name="sender">Emisor del evento.</param>
+    ''' <param name="e">Datos del evento.</param>
+    Private Sub chkGpsAltitude_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles chkGpsAltitude.CheckedChanged
+        nudGpsAltitude.Enabled = chkGpsAltitude.Checked
+        chkGpsSatelites.Enabled = chkGpsAltitude.Checked
+    End Sub
+
+
+    ''' <summary>Controla el estado de envío de satélites.</summary>
+    ''' <param name="sender">Emisor del evento.</param>
+    ''' <param name="e">Datos del evento.</param>
+    Private Sub chkGpsSatelites_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles chkGpsSatelites.CheckedChanged
+        nudGpsSatelites.Enabled = chkGpsSatelites.Checked
+    End Sub
+
+
+    ''' <summary>Envía la información de GPS al sistema.</summary>
+    ''' <param name="sender">Emisor del evento.</param>
+    ''' <param name="e">Datos del evento.</param>
+    Private Sub btnGpsSet_Click(sender As System.Object, e As System.EventArgs) Handles btnGpsSet.Click
+        Dim dLontitud As Decimal
+        Dim dLatitud As Decimal
+        Dim sSentencia As String = String.Empty
+
+        dLontitud = nudGpsLonGrados.Value + (nudGpsLonMin.Value / 60) + (nudGpsLonSec.Value / 3600)
+        dLatitud = nudGpsLatGrados.Value + (nudGpsLatMin.Value / 60) + (nudGpsLatSec.Value / 3600)
+
+        sSentencia = Utilidades.decimalToCad(dLontitud) & " " & Utilidades.decimalToCad(dLatitud)
+
+        If chkGpsAltitude.Checked Then
+            sSentencia &= " " & Utilidades.decimalToCad(nudGpsAltitude.Value)
+
+            If chkGpsSatelites.Checked Then
+                sSentencia &= " " & nudGpsSatelites.Value
+            End If
+        End If
+
+        enviarComando(Comando.GEO_FIX & sSentencia)
     End Sub
 End Class
