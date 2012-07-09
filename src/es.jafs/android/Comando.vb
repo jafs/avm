@@ -29,14 +29,26 @@ Public Class Comando
     ''' <summary>Comando de envío en un sms en modo texto.</summary>
     Public Const SMS_SEND As String = "sms send "
 
-    ''' <summary>Comando de establecimiento de señal GSM.</summary>
-    Public Const GSM_SIGNAL As String = "gsm signal "
+    ''' <summary>Comando que establece la llamada indicada como la activa.</summary>
+    Public Const GSM_ACCEPT As String = "gsm accept "
+    ''' <summary>Comando que pide que la llamada indicada finalice como si estuviera ocupada.</summary>
+    Public Const GSM_BUSY As String = "gsm busy "
+    ''' <summary>Comando de realización de llamada.</summary>
+    Public Const GSM_CALL As String = "gsm call "
+    ''' <summary>Comando que cancela la llamda especificada.</summary>
+    Public Const GSM_CANCEL As String = "gsm cancel "
     ''' <summary>Comando de cambio de estado de conexión de datos.</summary>
     Public Const GSM_DATA As String = "gsm data "
-    ''' <summary>Comando de cambio de estado de conexión de voz.</summary>
-    Public Const GSM_VOICE As String = "gsm voice "
+    ''' <summary>Comando que pone en espera la llamada especificada.</summary>
+    Public Const GSM_HOLD As String = "gsm hold "
+    ''' <summary>Comando que obtiene la lista de llamadas actual.</summary>
+    Public Const GSM_LIST As String = "gsm list"
+    ''' <summary>Comando de establecimiento de señal GSM.</summary>
+    Public Const GSM_SIGNAL As String = "gsm signal "
     ''' <summary>Comando de consulta de estado GSM.</summary>
     Public Const GSM_STATUS As String = "gsm status"
+    ''' <summary>Comando de cambio de estado de conexión de voz.</summary>
+    Public Const GSM_VOICE As String = "gsm voice "
 
 
 
