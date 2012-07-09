@@ -147,7 +147,11 @@ Public Class AndTelnet
                         iNumBytes = objSocket.Receive(arbRecibidos, arbRecibidos.Length, 0)
                         sRecibido += Encoding.ASCII.GetString(arbRecibidos, 0, iNumBytes)
                     Loop While Not sRecibido.EndsWith(RES_OK & vbCrLf) And Not sRecibido.Contains(RES_ERROR)
-                    sRecibido = sRecibido.Replace(vbLf, vbNewLine)
+
+                    If sRecibido.Length > 0 Then
+                        sRecibido = sRecibido.Replace(vbLf, vbNewLine)
+                        sRecibido = sRecibido.Replace(vbCr & "" & vbCrLf, vbNewLine)
+                    End If
                 Else
                     MessageBox.Show("El Socket se ha desconectado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                     conectar()

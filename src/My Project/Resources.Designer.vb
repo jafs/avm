@@ -74,6 +74,83 @@ Namespace My.Resources
             End Get
         End Property
         
+        Friend ReadOnly Property gsm_accept16() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("gsm_accept16", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property gsm_active16() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("gsm_active16", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property gsm_busy16() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("gsm_busy16", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property gsm_cancel16() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("gsm_cancel16", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property gsm_held16() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("gsm_held16", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property gsm_hold16() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("gsm_hold16", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property gsm_incoming_status16() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("gsm_incoming_status16", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property gsm_incoming16() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("gsm_incoming16", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property gsm64() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("gsm64", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property inbound16() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("inbound16", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property outbound16() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("outbound16", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Friend ReadOnly Property sensores64() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("sensores64", resourceCulture)
