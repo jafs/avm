@@ -22,6 +22,11 @@ values​​, etc..
 
 Version History
 ===============
+Version 0.5.2 - 09/07/2012
+- GPS in FIX mode support.
+- Control of GSM signal, data and voice status.
+- GSM calls control.
+- Corrected small bugs.
 Version 0.5.1 - 01/07/2012
 - SMS in text mode management.
 - Sensors management.
