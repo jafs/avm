@@ -118,6 +118,7 @@
   <ItemGroup>
     <Compile Include="es.jafs\android\AndTelnet.vb" />
     <Compile Include="es.jafs\android\Comando.vb" />
+    <Compile Include="es.jafs\valores\Llamada.vb" />
     <Compile Include="es.jafs\android\Utilidades.vb" />
     <Compile Include="es.jafs\formularios\frmPrincipal.vb">
       <SubType>Form</SubType>
@@ -192,7 +193,46 @@
   <ItemGroup>
     <Content Include="es.jafs\recursos\license.txt" />
     <Content Include="es.jafs\recursos\readme.txt" />
+    <None Include="Resources\gsm-incoming-status16.png" />
+    <None Include="Resources\gsm-hold16.png" />
+    <None Include="Resources\gsm-cancel16.png" />
+    <None Include="Resources\gsm-busy16.png" />
+    <None Include="Resources\gsm-accept16.png" />
+    <None Include="Resources\gsm-incoming16.png" />
+    <None Include="Resources\gsm-held16.png" />
+    <None Include="Resources\gsm-active16.png" />
+    <None Include="Resources\outbound16.png" />
+    <None Include="Resources\inbound16.png" />
+    <None Include="Resources\gsm64.png" />
     <None Include="Resources\sms64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxMicrosoft.Vbe.Interop.Forms">
+      <Guid>{0D452EE1-E08F-101A-852E-02608C4D0BB4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Vbe.Interop.Forms">
+      <Guid>{0D452EE1-E08F-101A-852E-02608C4D0BB4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
