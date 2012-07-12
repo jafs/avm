@@ -74,6 +74,26 @@ Public Class FrmPrincipal
     ''' <param name="sender">Emisor del evento</param>
     ''' <param name="e">Datos del evento</param>
     Private Sub btnEnviar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEnviar.Click
+        Dim sComando As String = txtComando.Text.Trim
+
+        If sComando.ToLower = "quit" Or sComando.ToLower = "exit" Then
+            If MessageBox.Show("Disconnect from emulator?", "Disconnect", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
+                conectar(0)
+            End If
+
+            Return
+        End If
+
+        If sComando.ToLower = "kill" Then
+            If MessageBox.Show("Kill the Android emulator instance?", "Kill emulator", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
+                enviarComando(txtComando.Text)
+                bConexion = False
+                actualizarControles()
+            End If
+
+            Return
+        End If
+
         enviarComando(txtComando.Text)
     End Sub
 
@@ -150,7 +170,9 @@ Public Class FrmPrincipal
             MessageBox.Show("There is no connection")
         End If
 
-        txtComando.SelectAll()
+        If txtComando.Text.Length > 0 Then
+            txtComando.SelectAll()
+        End If
     End Sub
 
 
@@ -197,6 +219,7 @@ Public Class FrmPrincipal
     Public Sub conectar(ByVal iPuerto As Integer)
         If bConexion Then
             objTelnet.desconectar()
+            txtRecv.Text &= vbNewLine & vbNewLine
             bConexion = False
         Else
             'objTelnet.Puerto = CType(txtPuerto.Text, Integer)
@@ -208,7 +231,12 @@ Public Class FrmPrincipal
             If sResultado Is Nothing Or sResultado.Length = 0 Then
                 bConexion = False
             Else
-                txtRecv.Text += sResultado
+                txtRecv.Text &= "-----------------------------------" & vbNewLine & _
+                                TimeOfDay.ToString & vbNewLine & _
+                                "-----------------------------------" & vbNewLine & _
+                                sResultado
+                txtRecv.Select(txtRecv.Text.Length - 1, 1)
+                txtRecv.ScrollToCaret()
 
                 bConexion = (sResultado.Contains(AndTelnet.RES_OK))
             End If
