@@ -233,7 +233,7 @@ Public Class FrmPrincipal
                 bConexion = False
             Else
                 txtRecv.Text &= "-----------------------------------" & vbNewLine & _
-                                TimeOfDay.ToString & vbNewLine & _
+                                Date.Now.ToString & vbNewLine & _
                                 "-----------------------------------" & vbNewLine & _
                                 sResultado
                 txtRecv.Select(txtRecv.Text.Length - 1, 1)
