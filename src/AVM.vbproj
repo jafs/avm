@@ -118,13 +118,61 @@
   <ItemGroup>
     <Compile Include="es.jafs\android\AndTelnet.vb" />
     <Compile Include="es.jafs\android\Comando.vb" />
+    <Compile Include="es.jafs\controles\CtrConectar.Designer.vb">
+      <DependentUpon>CtrConectar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="es.jafs\controles\CtrConectar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="es.jafs\controles\CtrGps.Designer.vb">
+      <DependentUpon>CtrGps.vb</DependentUpon>
+    </Compile>
+    <Compile Include="es.jafs\controles\CtrGps.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="es.jafs\controles\CtrGsmCalls.Designer.vb">
+      <DependentUpon>CtrGsmCalls.vb</DependentUpon>
+    </Compile>
+    <Compile Include="es.jafs\controles\CtrGsmCalls.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="es.jafs\controles\CtrGsmStatus.Designer.vb">
+      <DependentUpon>CtrGsmStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="es.jafs\controles\CtrGsmStatus.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="es.jafs\controles\CtrMenu.Designer.vb">
+      <DependentUpon>CtrMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="es.jafs\controles\CtrMenu.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="es.jafs\controles\CtrPower.Designer.vb">
+      <DependentUpon>CtrPower.vb</DependentUpon>
+    </Compile>
+    <Compile Include="es.jafs\controles\CtrPower.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="es.jafs\controles\CtrSensor.Designer.vb">
+      <DependentUpon>CtrSensor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="es.jafs\controles\CtrSensor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="es.jafs\controles\CtrSms.Designer.vb">
+      <DependentUpon>CtrSms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="es.jafs\controles\CtrSms.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="es.jafs\valores\Llamada.vb" />
     <Compile Include="es.jafs\android\Utilidades.vb" />
-    <Compile Include="es.jafs\formularios\frmPrincipal.vb">
+    <Compile Include="es.jafs\formularios\FrmPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="es.jafs\formularios\frmPrincipal.Designer.vb">
-      <DependentUpon>frmPrincipal.vb</DependentUpon>
+    <Compile Include="es.jafs\formularios\FrmPrincipal.Designer.vb">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -144,9 +192,33 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="es.jafs\formularios\frmPrincipal.resx">
+    <EmbeddedResource Include="es.jafs\controles\CtrConectar.resx">
+      <DependentUpon>CtrConectar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="es.jafs\controles\CtrGps.resx">
+      <DependentUpon>CtrGps.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="es.jafs\controles\CtrGsmCalls.resx">
+      <DependentUpon>CtrGsmCalls.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="es.jafs\controles\CtrGsmStatus.resx">
+      <DependentUpon>CtrGsmStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="es.jafs\controles\CtrMenu.resx">
+      <DependentUpon>CtrMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="es.jafs\controles\CtrPower.resx">
+      <DependentUpon>CtrPower.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="es.jafs\controles\CtrSensor.resx">
+      <DependentUpon>CtrSensor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="es.jafs\controles\CtrSms.resx">
+      <DependentUpon>CtrSms.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="es.jafs\formularios\FrmPrincipal.resx">
       <SubType>Designer</SubType>
-      <DependentUpon>frmPrincipal.vb</DependentUpon>
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -193,6 +265,8 @@
   <ItemGroup>
     <Content Include="es.jafs\recursos\license.txt" />
     <Content Include="es.jafs\recursos\readme.txt" />
+    <None Include="Resources\mn_desconectar64.png" />
+    <None Include="Resources\mn_home48.png" />
     <None Include="Resources\gsm-incoming-status16.png" />
     <None Include="Resources\gsm-hold16.png" />
     <None Include="Resources\gsm-cancel16.png" />
@@ -234,6 +308,7 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

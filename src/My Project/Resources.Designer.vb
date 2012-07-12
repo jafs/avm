@@ -144,6 +144,20 @@ Namespace My.Resources
             End Get
         End Property
         
+        Friend ReadOnly Property mn_desconectar64() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("mn_desconectar64", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property mn_home48() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("mn_home48", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Friend ReadOnly Property outbound16() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("outbound16", resourceCulture)

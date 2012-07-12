@@ -29,9 +29,7 @@ Public Class AndTelnet
     Const DEF_PUERTO As Integer = 5554
 
 
-    ''' <summary>
-    ''' Obtiene el puerto de conexión a la máquina virtual.
-    ''' </summary>
+    ''' <summary>Obtiene el puerto de conexión a la máquina virtual.</summary>
     ''' <value>Puerto de conexión.</value>
     ''' <returns>Devuelve el puerto de conexión.</returns>
     Public Property Puerto() As Integer
@@ -41,6 +39,15 @@ Public Class AndTelnet
         Set(ByVal iPuertoR As Integer)
             iPuerto = iPuertoR
         End Set
+    End Property
+
+
+    ''' <summary>Obtiene el estado de conexión del socket.</summary>
+    ''' <returns>Devuelve si hay conexión extablecida.</returns>
+    Public ReadOnly Property Conectado() As Boolean
+        Get
+            Return bConexion
+        End Get
     End Property
 
 
@@ -88,7 +95,6 @@ Public Class AndTelnet
                     Loop While Not sRecibido.EndsWith(RES_OK & vbCrLf) And Not sRecibido.EndsWith(RES_ERROR & vbCrLf)
 
                     sResultado += sRecibido
-
                     sRecibido = Nothing
                 End If
             Catch oEX As Exception
