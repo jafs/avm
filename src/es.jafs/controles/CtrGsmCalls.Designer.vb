@@ -22,6 +22,8 @@ Partial Class CtrGsmCalls
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.lblGsmLlamadas = New System.Windows.Forms.Label()
         Me.txtGsmPrefijo = New System.Windows.Forms.TextBox()
         Me.btnGsmCall = New System.Windows.Forms.Button()
@@ -38,6 +40,7 @@ Partial Class CtrGsmCalls
         Me.chkGsmTimer = New System.Windows.Forms.CheckBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.tmrGsm = New System.Windows.Forms.Timer(Me.components)
         CType(Me.dgvGsmLlamadas, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -94,6 +97,10 @@ Partial Class CtrGsmCalls
         Me.dgvGsmLlamadas.ReadOnly = True
         Me.dgvGsmLlamadas.RowHeadersVisible = False
         Me.dgvGsmLlamadas.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.dgvGsmLlamadas.RowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvGsmLlamadas.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dgvGsmLlamadas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvGsmLlamadas.Size = New System.Drawing.Size(251, 106)
@@ -194,7 +201,7 @@ Partial Class CtrGsmCalls
         Me.Label2.Size = New System.Drawing.Size(185, 85)
         Me.Label2.TabIndex = 32
         Me.Label2.Text = "This second GSM tab," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "allows you to control the" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "calls status and view the list" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & _
-            "of current calls. Firts, you" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "need to enable Call Monitor."
+    "of current calls. Firts, you" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "need to enable Call Monitor."
         '
         'PictureBox1
         '
@@ -204,6 +211,10 @@ Partial Class CtrGsmCalls
         Me.PictureBox1.Size = New System.Drawing.Size(64, 64)
         Me.PictureBox1.TabIndex = 33
         Me.PictureBox1.TabStop = False
+        '
+        'tmrGsm
+        '
+        Me.tmrGsm.Interval = 1000
         '
         'CtrGsmCalls
         '
@@ -246,5 +257,6 @@ Partial Class CtrGsmCalls
     Friend WithEvents chkGsmTimer As System.Windows.Forms.CheckBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents tmrGsm As System.Windows.Forms.Timer
 
 End Class

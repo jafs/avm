@@ -36,8 +36,6 @@ Partial Class CtrGsmStatus
         Me.lblGsmDatos = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.imgGsm = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.nudGsmBer, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nudGsmRssi, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgGsm, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,9 +54,9 @@ Partial Class CtrGsmStatus
         'btnGsmSet
         '
         Me.btnGsmSet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.btnGsmSet.Location = New System.Drawing.Point(223, 90)
+        Me.btnGsmSet.Location = New System.Drawing.Point(222, 90)
         Me.btnGsmSet.Name = "btnGsmSet"
-        Me.btnGsmSet.Size = New System.Drawing.Size(46, 58)
+        Me.btnGsmSet.Size = New System.Drawing.Size(47, 58)
         Me.btnGsmSet.TabIndex = 46
         Me.btnGsmSet.Text = "Set"
         Me.btnGsmSet.UseVisualStyleBackColor = True
@@ -113,7 +111,7 @@ Partial Class CtrGsmStatus
         'btnGsmUpdate
         '
         Me.btnGsmUpdate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.btnGsmUpdate.Location = New System.Drawing.Point(9, 167)
+        Me.btnGsmUpdate.Location = New System.Drawing.Point(9, 172)
         Me.btnGsmUpdate.Name = "btnGsmUpdate"
         Me.btnGsmUpdate.Size = New System.Drawing.Size(130, 32)
         Me.btnGsmUpdate.TabIndex = 40
@@ -127,7 +125,7 @@ Partial Class CtrGsmStatus
         Me.cmbGsmVoz.Items.AddRange(New Object() {"unregistered", "home", "roaming", "searching", "denied", "off", "on"})
         Me.cmbGsmVoz.Location = New System.Drawing.Point(61, 54)
         Me.cmbGsmVoz.Name = "cmbGsmVoz"
-        Me.cmbGsmVoz.Size = New System.Drawing.Size(155, 24)
+        Me.cmbGsmVoz.Size = New System.Drawing.Size(208, 24)
         Me.cmbGsmVoz.TabIndex = 39
         '
         'lblGsmVoz
@@ -146,7 +144,7 @@ Partial Class CtrGsmStatus
         Me.cmbGsmDatos.Items.AddRange(New Object() {"unregistered", "home", "roaming", "searching", "denied", "off", "on"})
         Me.cmbGsmDatos.Location = New System.Drawing.Point(61, 18)
         Me.cmbGsmDatos.Name = "cmbGsmDatos"
-        Me.cmbGsmDatos.Size = New System.Drawing.Size(155, 24)
+        Me.cmbGsmDatos.Size = New System.Drawing.Size(208, 24)
         Me.cmbGsmDatos.TabIndex = 37
         '
         'lblGsmDatos
@@ -166,7 +164,7 @@ Partial Class CtrGsmStatus
         Me.Label1.Size = New System.Drawing.Size(197, 68)
         Me.Label1.TabIndex = 48
         Me.Label1.Text = "The first GSM tab, allows to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "change the status of data and" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "voice, and set the s" & _
-            "ignal" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "levels."
+    "ignal" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "levels."
         '
         'imgGsm
         '
@@ -177,36 +175,12 @@ Partial Class CtrGsmStatus
         Me.imgGsm.TabIndex = 49
         Me.imgGsm.TabStop = False
         '
-        'Button1
-        '
-        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(223, 17)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(46, 26)
-        Me.Button1.TabIndex = 50
-        Me.Button1.Text = "set"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Button2.Location = New System.Drawing.Point(223, 53)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(46, 26)
-        Me.Button2.TabIndex = 51
-        Me.Button2.Text = "set"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button2.UseVisualStyleBackColor = True
-        '
         'CtrGsmStatus
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(100, Byte), Integer))
         Me.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.imgGsm)
         Me.Controls.Add(Me.btnGsmSet)
@@ -247,7 +221,5 @@ Partial Class CtrGsmStatus
     Friend WithEvents lblGsmDatos As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents imgGsm As System.Windows.Forms.PictureBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
 
 End Class

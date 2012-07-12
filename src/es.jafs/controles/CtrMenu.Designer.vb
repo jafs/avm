@@ -78,7 +78,6 @@ Partial Class CtrMenu
         'btnCalls
         '
         Me.btnCalls.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btnCalls.Enabled = False
         Me.btnCalls.FlatAppearance.BorderSize = 0
         Me.btnCalls.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCalls.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
@@ -95,7 +94,6 @@ Partial Class CtrMenu
         'btnSensors
         '
         Me.btnSensors.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btnSensors.Enabled = False
         Me.btnSensors.FlatAppearance.BorderSize = 0
         Me.btnSensors.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSensors.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
@@ -112,7 +110,6 @@ Partial Class CtrMenu
         'btnGsm
         '
         Me.btnGsm.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btnGsm.Enabled = False
         Me.btnGsm.FlatAppearance.BorderSize = 0
         Me.btnGsm.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGsm.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
