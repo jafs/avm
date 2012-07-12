@@ -22,15 +22,26 @@ values​​, etc..
 
 Version History
 ===============
+Version 0.5.3 - 12/07/2012
+ - New GUI.
+ - Fixed the Overheat bug in power management.
+ - Optimization in debug console.
+ - Small optimizations.
+ - kill, quit and exit commands control.
+Version 0.5.2 - 09/07/2012
+ - GPS in FIX mode support.
+ - Control of GSM signal, data and voice status.
+ - GSM calls control.
+ - Corrected small bugs.
 Version 0.5.1 - 01/07/2012
-- SMS in text mode management.
-- Sensors management.
-- Design changes in the GUI.
-- New commands int auto-complete.
-- Better connection control.
-- Small optimizations.
+ - SMS in text mode management.
+ - Sensors management.
+ - Design changes in the GUI.
+ - New commands int auto-complete.
+ - Better connection control.
+ - Small optimizations.
 Version 0.5 - 29/06/2012
-- Battery management for virtual machine.
+ - Battery management for virtual machine.
 
 
 Installation

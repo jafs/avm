@@ -4,6 +4,13 @@ AVM (Android Virtual Management) allows management of virtual machine for Androi
 
 Version History
 ---------------
+Version 0.5.3 - 12/07/2012
+* New GUI.
+* Fixed the Overheat bug in power management.
+* Optimization in debug console.
+* kill, quit and exit commands control.
+* Small optimizations.
+
 Version 0.5.2 - 09/07/2012
 * GPS in FIX mode support.
 * Control of GSM signal, data and voice status.
