@@ -109,6 +109,7 @@ Public Class FrmPrincipal
     ''' <param name="sender">Emisor del evento.</param>
     ''' <param name="e">Datos del evento.</param>
     Private Sub frmPrincipal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.Text = "Android Virtual Management " & My.Application.Info.Version.ToString
         updateHora()
         trmReloj.Interval = 60000 - (TimeOfDay.Second * 1000)
         lanzar(TipoApp.Connect)
