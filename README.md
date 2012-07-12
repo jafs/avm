@@ -8,6 +8,7 @@ Version 0.5.3 - 12/07/2012
 * New GUI.
 * Fixed the Overheat bug in power management.
 * Optimization in debug console.
+* kill, quit and exit commands control.
 * Small optimizations.
 
 Version 0.5.2 - 09/07/2012

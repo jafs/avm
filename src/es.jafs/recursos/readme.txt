@@ -27,6 +27,7 @@ Version 0.5.3 - 12/07/2012
  - Fixed the Overheat bug in power management.
  - Optimization in debug console.
  - Small optimizations.
+ - kill, quit and exit commands control.
 Version 0.5.2 - 09/07/2012
  - GPS in FIX mode support.
  - Control of GSM signal, data and voice status.
