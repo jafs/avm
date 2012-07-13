@@ -5,9 +5,9 @@ AVM (Android Virtual Management) allows management of virtual machine for Androi
 
 Requirements
 ------------
-Pentium III (or compatible) 500 MHz or higher.
-Windows XP or higher.
-.NET Framework or later.
+* Pentium III (or compatible) 500 MHz or higher.
+* Windows XP or higher.
+* .NET Framework or later.
 
 
 Version History
