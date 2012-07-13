@@ -32,6 +32,8 @@ Version History
 ===============
 Version 0.5.4 - 13/07/2012
  - Fixed the bug in call monitor. Also, now the calls monitor is automatic.
+ - Solved the enable of Send button in SMS.
+ - Small improvements.
 Version 0.5.3 - 12/07/2012
  - New GUI.
  - Fixed the Overheat bug in power management.

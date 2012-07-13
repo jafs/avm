@@ -211,6 +211,8 @@ Public Class FrmPrincipal
                 pnlCentral.Controls.Add(ctrSms)
             Case TipoApp.Connect
                 pnlCentral.Controls.Add(ctrConectar)
+                pnlCentral.Focus()
+                ctrConectar.iniciar()
             Case TipoApp.Menu
                 pnlCentral.Controls.Add(ctrMenu)
             Case Else
