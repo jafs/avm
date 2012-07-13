@@ -51,7 +51,7 @@ Partial Class CtrGps
         'btnGpsSet
         '
         Me.btnGpsSet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.btnGpsSet.Location = New System.Drawing.Point(196, 99)
+        Me.btnGpsSet.Location = New System.Drawing.Point(199, 99)
         Me.btnGpsSet.Name = "btnGpsSet"
         Me.btnGpsSet.Size = New System.Drawing.Size(69, 61)
         Me.btnGpsSet.TabIndex = 50
@@ -62,7 +62,7 @@ Partial Class CtrGps
         '
         Me.chkGpsSatelites.AutoSize = True
         Me.chkGpsSatelites.Enabled = False
-        Me.chkGpsSatelites.Location = New System.Drawing.Point(16, 138)
+        Me.chkGpsSatelites.Location = New System.Drawing.Point(15, 138)
         Me.chkGpsSatelites.Margin = New System.Windows.Forms.Padding(3, 0, 3, 0)
         Me.chkGpsSatelites.Name = "chkGpsSatelites"
         Me.chkGpsSatelites.Size = New System.Drawing.Size(88, 21)
@@ -73,7 +73,7 @@ Partial Class CtrGps
         'nudGpsSatelites
         '
         Me.nudGpsSatelites.Enabled = False
-        Me.nudGpsSatelites.Location = New System.Drawing.Point(110, 137)
+        Me.nudGpsSatelites.Location = New System.Drawing.Point(99, 137)
         Me.nudGpsSatelites.Maximum = New Decimal(New Integer() {12, 0, 0, 0})
         Me.nudGpsSatelites.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nudGpsSatelites.Name = "nudGpsSatelites"
@@ -83,18 +83,18 @@ Partial Class CtrGps
         '
         'nudGpsAltitude
         '
-        Me.nudGpsAltitude.DecimalPlaces = 2
+        Me.nudGpsAltitude.DecimalPlaces = 4
         Me.nudGpsAltitude.Enabled = False
-        Me.nudGpsAltitude.Location = New System.Drawing.Point(110, 99)
+        Me.nudGpsAltitude.Location = New System.Drawing.Point(99, 99)
         Me.nudGpsAltitude.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.nudGpsAltitude.Name = "nudGpsAltitude"
-        Me.nudGpsAltitude.Size = New System.Drawing.Size(65, 23)
+        Me.nudGpsAltitude.Size = New System.Drawing.Size(80, 23)
         Me.nudGpsAltitude.TabIndex = 47
         '
         'chkGpsAltitude
         '
         Me.chkGpsAltitude.AutoSize = True
-        Me.chkGpsAltitude.Location = New System.Drawing.Point(16, 100)
+        Me.chkGpsAltitude.Location = New System.Drawing.Point(15, 100)
         Me.chkGpsAltitude.Name = "chkGpsAltitude"
         Me.chkGpsAltitude.Size = New System.Drawing.Size(78, 21)
         Me.chkGpsAltitude.TabIndex = 46
@@ -103,7 +103,7 @@ Partial Class CtrGps
         '
         'nudGpsLatSec
         '
-        Me.nudGpsLatSec.Location = New System.Drawing.Point(215, 62)
+        Me.nudGpsLatSec.Location = New System.Drawing.Point(218, 62)
         Me.nudGpsLatSec.Maximum = New Decimal(New Integer() {59, 0, 0, 0})
         Me.nudGpsLatSec.Name = "nudGpsLatSec"
         Me.nudGpsLatSec.Size = New System.Drawing.Size(50, 23)
@@ -111,7 +111,7 @@ Partial Class CtrGps
         '
         'nudGpsLatMin
         '
-        Me.nudGpsLatMin.Location = New System.Drawing.Point(157, 62)
+        Me.nudGpsLatMin.Location = New System.Drawing.Point(158, 62)
         Me.nudGpsLatMin.Maximum = New Decimal(New Integer() {59, 0, 0, 0})
         Me.nudGpsLatMin.Name = "nudGpsLatMin"
         Me.nudGpsLatMin.Size = New System.Drawing.Size(50, 23)
@@ -119,7 +119,7 @@ Partial Class CtrGps
         '
         'nudGpsLatGrados
         '
-        Me.nudGpsLatGrados.Location = New System.Drawing.Point(98, 61)
+        Me.nudGpsLatGrados.Location = New System.Drawing.Point(99, 62)
         Me.nudGpsLatGrados.Maximum = New Decimal(New Integer() {90, 0, 0, 0})
         Me.nudGpsLatGrados.Minimum = New Decimal(New Integer() {90, 0, 0, -2147483648})
         Me.nudGpsLatGrados.Name = "nudGpsLatGrados"
@@ -129,7 +129,7 @@ Partial Class CtrGps
         'lblGpsLatitud
         '
         Me.lblGpsLatitud.AutoSize = True
-        Me.lblGpsLatitud.Location = New System.Drawing.Point(13, 64)
+        Me.lblGpsLatitud.Location = New System.Drawing.Point(12, 64)
         Me.lblGpsLatitud.Name = "lblGpsLatitud"
         Me.lblGpsLatitud.Size = New System.Drawing.Size(63, 17)
         Me.lblGpsLatitud.TabIndex = 42
@@ -137,7 +137,7 @@ Partial Class CtrGps
         '
         'nudGpsLonSec
         '
-        Me.nudGpsLonSec.Location = New System.Drawing.Point(215, 23)
+        Me.nudGpsLonSec.Location = New System.Drawing.Point(218, 23)
         Me.nudGpsLonSec.Maximum = New Decimal(New Integer() {59, 0, 0, 0})
         Me.nudGpsLonSec.Name = "nudGpsLonSec"
         Me.nudGpsLonSec.Size = New System.Drawing.Size(50, 23)
@@ -145,7 +145,7 @@ Partial Class CtrGps
         '
         'nudGpsLonMin
         '
-        Me.nudGpsLonMin.Location = New System.Drawing.Point(157, 23)
+        Me.nudGpsLonMin.Location = New System.Drawing.Point(158, 23)
         Me.nudGpsLonMin.Maximum = New Decimal(New Integer() {59, 0, 0, 0})
         Me.nudGpsLonMin.Name = "nudGpsLonMin"
         Me.nudGpsLonMin.Size = New System.Drawing.Size(50, 23)
@@ -153,7 +153,7 @@ Partial Class CtrGps
         '
         'nudGpsLonGrados
         '
-        Me.nudGpsLonGrados.Location = New System.Drawing.Point(98, 23)
+        Me.nudGpsLonGrados.Location = New System.Drawing.Point(99, 23)
         Me.nudGpsLonGrados.Maximum = New Decimal(New Integer() {180, 0, 0, 0})
         Me.nudGpsLonGrados.Minimum = New Decimal(New Integer() {180, 0, 0, -2147483648})
         Me.nudGpsLonGrados.Name = "nudGpsLonGrados"
@@ -163,7 +163,7 @@ Partial Class CtrGps
         'lblGpsLongitud
         '
         Me.lblGpsLongitud.AutoSize = True
-        Me.lblGpsLongitud.Location = New System.Drawing.Point(13, 25)
+        Me.lblGpsLongitud.Location = New System.Drawing.Point(12, 25)
         Me.lblGpsLongitud.Name = "lblGpsLongitud"
         Me.lblGpsLongitud.Size = New System.Drawing.Size(75, 17)
         Me.lblGpsLongitud.TabIndex = 38
@@ -198,7 +198,6 @@ Partial Class CtrGps
         Me.Controls.Add(Me.lblGpsDesc)
         Me.Controls.Add(Me.imgGps)
         Me.Controls.Add(Me.btnGpsSet)
-        Me.Controls.Add(Me.chkGpsSatelites)
         Me.Controls.Add(Me.nudGpsSatelites)
         Me.Controls.Add(Me.nudGpsAltitude)
         Me.Controls.Add(Me.chkGpsAltitude)
@@ -210,6 +209,7 @@ Partial Class CtrGps
         Me.Controls.Add(Me.nudGpsLonMin)
         Me.Controls.Add(Me.nudGpsLonGrados)
         Me.Controls.Add(Me.lblGpsLongitud)
+        Me.Controls.Add(Me.chkGpsSatelites)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Margin = New System.Windows.Forms.Padding(4)

@@ -14,23 +14,6 @@
     ' ######################################
     ' MANEJADORES
     ' ######################################
-    ''' <summary>Activa/desactiva el monitor de llamadas.</summary>
-    ''' <param name="sender">Emisor del evento</param>
-    ''' <param name="e">Datos del evento</param>
-    Private Sub chkGsmTimer_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkGsmTimer.CheckedChanged
-        tmrGsm.Enabled = chkGsmTimer.Checked
-
-        If chkGsmTimer.Checked Then
-            chkGsmTimer.Text = "Disable Monitor"
-            chkGsmTimer.BackColor = Drawing.Color.FromArgb(255, 220, 230)
-            actualizarLlamadas()
-        Else
-            chkGsmTimer.Text = "Enable Monitor"
-            chkGsmTimer.BackColor = Drawing.Color.FromArgb(220, 255, 230)
-        End If
-    End Sub
-
-
     ''' <summary>Realiza una llamada entrante con el número indicado.</summary>
     ''' <param name="sender">Emisor del evento</param>
     ''' <param name="e">Datos del evento</param>
@@ -122,27 +105,45 @@
     Private Sub actualizarLlamadas()
         Dim sResultado As String = frmPadre.consultar(Comando.GSM_LIST)
 
-        ' Si se obtuvieron resultados se procede a su análisis.
-        If sResultado.Length > 0 Then
-            Dim mActuales As New Hashtable()
-            Dim arsFilas() As String = sResultado.Split(CChar(vbNewLine))
-            Dim objLlamada As Llamada = Nothing
-
-            ' Analiza las filas una a una e intenta extraer los datos de cada llamada.
-            For Each sFila As String In arsFilas
-                objLlamada = New Llamada()
-                If objLlamada.fromString(sFila) Then
-                    mActuales.Add(objLlamada.Numero, objLlamada)
-                End If
-            Next
-
-            ' Actualiza los datos de llamadas.
-            dgvGsmLlamadas.Rows.Clear()
-            For Each objLlamada In mActuales.Values
-                dgvGsmLlamadas.Rows.Add(objLlamada.toArray())
-            Next
+        ' Si el resultado es nulo no hay conexión.
+        If sResultado Is Nothing Then
+            tmrGsm.Enabled = False
         Else
-            dgvGsmLlamadas.Rows.Clear()
+            ' Si se obtuvieron resultados se procede a su análisis.
+            If sResultado.Length > 0 Then
+                Dim mActuales As New Hashtable()
+                Dim arsFilas() As String = sResultado.Split(CChar(vbNewLine))
+                Dim objLlamada As Llamada = Nothing
+
+                ' Analiza las filas una a una e intenta extraer los datos de cada llamada.
+                For Each sFila As String In arsFilas
+                    objLlamada = New Llamada()
+                    If objLlamada.fromString(sFila) Then
+                        mActuales.Add(objLlamada.Numero, objLlamada)
+                    End If
+                Next
+
+                ' Actualiza los datos de llamadas.
+                dgvGsmLlamadas.Rows.Clear()
+                For Each objLlamada In mActuales.Values
+                    dgvGsmLlamadas.Rows.Add(objLlamada.toArray())
+                Next
+            Else
+                dgvGsmLlamadas.Rows.Clear()
+            End If
         End If
+    End Sub
+
+
+    ''' <summary>Inicia la monitorización de llamadas.</summary>
+    Public Sub iniciar()
+        tmrGsm.Enabled = True
+        actualizarLlamadas()
+    End Sub
+
+
+    ''' <summary>Detiene la monitorización de llamadas.</summary>
+    Public Sub parar()
+        tmrGsm.Enabled = False
     End Sub
 End Class

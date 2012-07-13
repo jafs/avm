@@ -49,7 +49,8 @@ Partial Class FrmPrincipal
         Me.txtRecv.ReadOnly = True
         Me.txtRecv.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.txtRecv.Size = New System.Drawing.Size(472, 397)
-        Me.txtRecv.TabIndex = 1
+        Me.txtRecv.TabIndex = 7
+        Me.txtRecv.TabStop = False
         '
         'txtComando
         '
@@ -83,7 +84,7 @@ Partial Class FrmPrincipal
         Me.pnlPrincipal.Location = New System.Drawing.Point(12, 9)
         Me.pnlPrincipal.Name = "pnlPrincipal"
         Me.pnlPrincipal.Size = New System.Drawing.Size(280, 426)
-        Me.pnlPrincipal.TabIndex = 10
+        Me.pnlPrincipal.TabIndex = 0
         '
         'pnlCentral
         '
@@ -101,7 +102,7 @@ Partial Class FrmPrincipal
         Me.pnlDock.Location = New System.Drawing.Point(0, 370)
         Me.pnlDock.Name = "pnlDock"
         Me.pnlDock.Size = New System.Drawing.Size(280, 56)
-        Me.pnlDock.TabIndex = 1
+        Me.pnlDock.TabIndex = 3
         '
         'tlpMenu
         '
@@ -131,7 +132,7 @@ Partial Class FrmPrincipal
         Me.btnHome.Location = New System.Drawing.Point(115, 3)
         Me.btnHome.Name = "btnHome"
         Me.btnHome.Size = New System.Drawing.Size(50, 50)
-        Me.btnHome.TabIndex = 0
+        Me.btnHome.TabIndex = 5
         Me.btnHome.UseVisualStyleBackColor = True
         '
         'pblEstado
@@ -142,7 +143,7 @@ Partial Class FrmPrincipal
         Me.pblEstado.Location = New System.Drawing.Point(0, 0)
         Me.pblEstado.Name = "pblEstado"
         Me.pblEstado.Size = New System.Drawing.Size(280, 32)
-        Me.pblEstado.TabIndex = 0
+        Me.pblEstado.TabIndex = 1
         '
         'lblReloj
         '

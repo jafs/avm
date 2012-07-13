@@ -118,7 +118,7 @@ Partial Class CtrSms
         Me.lblSmsDesc.Size = New System.Drawing.Size(204, 85)
         Me.lblSmsDesc.TabIndex = 34
         Me.lblSmsDesc.Text = "This function allows to send" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "sms messages to the emulator." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Enter the phone of s" & _
-            "ender," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "write the message, and press" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Send button."
+    "ender," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "write the message, and press" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Send button."
         '
         'imgSms
         '
