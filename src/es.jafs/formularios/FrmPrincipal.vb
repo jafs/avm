@@ -76,17 +76,19 @@ Public Class FrmPrincipal
     Private Sub btnEnviar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEnviar.Click
         Dim sComando As String = txtComando.Text.Trim
 
+        ' Tomamos el control para quit o exit y nos desconectamos del emulador.
         If sComando.ToLower = "quit" Or sComando.ToLower = "exit" Then
             If MessageBox.Show("Disconnect from emulator?", "Disconnect", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
                 conectar(0)
             End If
-
             Return
         End If
 
+        ' Tomamos el control en kill para confirmar si desea finalizarse la instancia.
         If sComando.ToLower = "kill" Then
             If MessageBox.Show("Kill the Android emulator instance?", "Kill emulator", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
                 enviarComando(txtComando.Text)
+                txtRecv.Text &= vbNewLine & vbNewLine
                 bConexion = False
                 actualizarControles()
             End If
@@ -101,6 +103,7 @@ Public Class FrmPrincipal
     ''' <param name="sender">Emisor del evento</param>
     ''' <param name="e">Datos del evento</param>
     Private Sub btnHome_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnHome.Click
+        ctrGsmCalls.parar()
         lanzar(TipoApp.Menu)
     End Sub
 
@@ -195,6 +198,7 @@ Public Class FrmPrincipal
                 pnlCentral.Controls.Add(ctrGps)
             Case TipoApp.GsmCall
                 pnlCentral.Controls.Add(ctrGsmCalls)
+                ctrGsmCalls.iniciar()
             Case TipoApp.GsmStatus
                 pnlCentral.Controls.Add(ctrGsmStatus)
                 ctrGsmStatus.getGsmStatus()
@@ -256,6 +260,7 @@ Public Class FrmPrincipal
         If bConexion Then
             lanzar(TipoApp.Menu)
         Else
+            ctrGsmCalls.parar()
             lanzar(TipoApp.Connect)
         End If
     End Sub

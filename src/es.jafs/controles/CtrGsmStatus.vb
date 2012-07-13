@@ -81,24 +81,27 @@
     ''' <summary>Obtiene el estado de datos y voz GSM.</summary>
     Public Sub getGsmStatus()
         Dim sResultado As String = frmPadre.consultar(Comando.GSM_STATUS)
-        sResultado = sResultado.Replace(vbCr & "" & vbCrLf, vbNewLine)
-        frmPadre.Consulta = True
 
-        Dim arsValores As String() = sResultado.Split(CChar(vbNewLine))
+        If Not sResultado Is Nothing Then
+            sResultado = sResultado.Replace(vbCr & "" & vbCrLf, vbNewLine)
+            frmPadre.Consulta = True
 
-        ' Recorre los valores y establece los parámetros leídos.
-        If arsValores.Length > 0 Then
-            For Each sValor As String In arsValores
-                If sValor.Contains("voice") Then
-                    cmbGsmVoz.SelectedItem = sValor.Substring(sValor.IndexOf(":") + 1).Trim
-                ElseIf sValor.Contains("data") Then
-                    cmbGsmDatos.SelectedItem = sValor.Substring(sValor.IndexOf(":") + 1).Trim
-                End If
-            Next
-        Else
-            MessageBox.Show("There is no values")
+            Dim arsValores As String() = sResultado.Split(CChar(vbNewLine))
+
+            ' Recorre los valores y establece los parámetros leídos.
+            If arsValores.Length > 0 Then
+                For Each sValor As String In arsValores
+                    If sValor.Contains("voice") Then
+                        cmbGsmVoz.SelectedItem = sValor.Substring(sValor.IndexOf(":") + 1).Trim
+                    ElseIf sValor.Contains("data") Then
+                        cmbGsmDatos.SelectedItem = sValor.Substring(sValor.IndexOf(":") + 1).Trim
+                    End If
+                Next
+            Else
+                MessageBox.Show("There is no values")
+            End If
+
+            frmPadre.Consulta = False
         End If
-
-        frmPadre.Consulta = False
     End Sub
 End Class

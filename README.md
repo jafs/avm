@@ -2,8 +2,19 @@ Description
 ===========
 AVM (Android Virtual Management) allows management of virtual machine for Android, allowing an easy way to change the status of the battery, the sensor values, etc..
 
+
+Requirements
+------------
+Pentium III (or compatible) 500 MHz or higher.
+Windows XP or higher.
+.NET Framework or later.
+
+
 Version History
 ---------------
+Version 0.5.4 - 13/07/2012
+* Fixed the bug in call monitor. Also, now the calls monitor is automatic.
+
 Version 0.5.3 - 12/07/2012
 * New GUI.
 * Fixed the Overheat bug in power management.

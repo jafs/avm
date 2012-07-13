@@ -81,43 +81,46 @@
     ''' <summary>Obtiene el estado de la batería.</summary>
     Public Sub getBateria()
         Dim sResultado As String = frmPadre.consultar(Comando.POWER_DISPLAY)
-        frmPadre.Consulta = True
 
-        Dim arsValores As String() = sResultado.Split(CChar(vbNewLine))
+        If Not sResultado Is Nothing Then
+            frmPadre.Consulta = True
 
-        If arsValores.Length > 0 Then
-            For Each sValor As String In arsValores
-                If sValor.Contains("AC:") Then
-                    chkCargaAc.Checked = sValor.Contains("online")
-                ElseIf sValor.Contains("status:") Then
-                    Dim arsEstado As String() = sValor.Split(CChar(" "))
-                    cmbBatStat.SelectedItem = arsEstado(1)
-                ElseIf sValor.Contains("health:") Then
-                    ' Cuando hay un fallo la cadena es distinta.
-                    If sValor.Contains("failure") Then
-                        cmbBatHealth.SelectedItem = "Failure"
-                    Else
+            Dim arsValores As String() = sResultado.Split(CChar(vbNewLine))
+
+            If arsValores.Length > 0 Then
+                For Each sValor As String In arsValores
+                    If sValor.Contains("AC:") Then
+                        chkCargaAc.Checked = sValor.Contains("online")
+                    ElseIf sValor.Contains("status:") Then
                         Dim arsEstado As String() = sValor.Split(CChar(" "))
+                        cmbBatStat.SelectedItem = arsEstado(1)
+                    ElseIf sValor.Contains("health:") Then
+                        ' Cuando hay un fallo la cadena es distinta.
+                        If sValor.Contains("failure") Then
+                            cmbBatHealth.SelectedItem = "Failure"
+                        Else
+                            Dim arsEstado As String() = sValor.Split(CChar(" "))
 
-                        ' Controla el bug de estado.
-                        If "Overhead" = arsEstado(1) Then
-                            arsEstado(1) = "Overheat"
+                            ' Controla el bug de estado.
+                            If "Overhead" = arsEstado(1) Then
+                                arsEstado(1) = "Overheat"
+                            End If
+
+                            cmbBatHealth.SelectedItem = arsEstado(1)
                         End If
-
-                        cmbBatHealth.SelectedItem = arsEstado(1)
-                    End If
-                ElseIf sValor.Contains("present:") Then
+                    ElseIf sValor.Contains("present:") Then
                         chkBatPresent.Checked = sValor.Contains("true")
-                ElseIf sValor.Contains("capacity:") Then
+                    ElseIf sValor.Contains("capacity:") Then
                         Dim arsEstado As String() = sValor.Split(CChar(" "))
                         nudBatCapacity.Value = Integer.Parse(arsEstado(1))
-                End If
-            Next
-        Else
-            MessageBox.Show("There is no values")
-        End If
+                    End If
+                Next
+            Else
+                MessageBox.Show("There is no values")
+            End If
 
-        frmPadre.Consulta = False
+            frmPadre.Consulta = False
+        End If
     End Sub
 
 End Class

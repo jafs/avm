@@ -5,12 +5,20 @@ GPLv3 2012 José Antonio Fuentes Santiago (jafs@jafs.es).
 
 Contents
 ========
+ - Requirements
  - Description
  - Version History
  - Installation
  - How to use
  - License
  - Credits
+
+
+Requirements
+============
+Pentium III (or compatible) 500 MHz or higher.
+Windows XP or higher.
+.NET Framework or later.
 
 
 Description
@@ -22,6 +30,8 @@ values​​, etc..
 
 Version History
 ===============
+Version 0.5.4 - 13/07/2012
+ - Fixed the bug in call monitor. Also, now the calls monitor is automatic.
 Version 0.5.3 - 12/07/2012
  - New GUI.
  - Fixed the Overheat bug in power management.

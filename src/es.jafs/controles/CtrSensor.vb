@@ -128,33 +128,35 @@
     Private Sub getSensor(ByRef sSensor As String)
         Dim sResultado As String = frmPadre.consultar(Comando.SENSOR_GET & sSensor)
 
-        If sResultado.Contains(AndTelnet.RES_OK) Then
-            Dim arsValores As String() = sResultado.Split(CChar(vbNewLine))
+        If Not sResultado Is Nothing Then
+            If sResultado.Contains(AndTelnet.RES_OK) Then
+                Dim arsValores As String() = sResultado.Split(CChar(vbNewLine))
 
-            If arsValores.Length > 0 Then
-                For Each sValor As String In arsValores
-                    If sValor.Contains(sSensor) Then
-                        Dim sValores As String = sValor.Substring(sValor.IndexOf("=") + 2)
-                        Dim arsDatos As String() = sValores.Split(CChar(":"))
+                If arsValores.Length > 0 Then
+                    For Each sValor As String In arsValores
+                        If sValor.Contains(sSensor) Then
+                            Dim sValores As String = sValor.Substring(sValor.IndexOf("=") + 2)
+                            Dim arsDatos As String() = sValores.Split(CChar(":"))
 
-                        Try
-                            Select Case sSensor
-                                Case Comando.SEN_ACCELERATION, Comando.SEN_MAGNETIC_FIELD, Comando.SEN_ORIENTATION
-                                    nudSenValor1.Value = Utilidades.cadToDecimal(arsDatos(0))
-                                    nudSenValor2.Value = Utilidades.cadToDecimal(arsDatos(1))
-                                    nudSenValor3.Value = Utilidades.cadToDecimal(arsDatos(2))
-                                Case Else
-                                    nudSenValor1.Value = Utilidades.cadToDecimal(arsDatos(0))
-                                    nudSenValor2.Value = 0
-                                    nudSenValor3.Value = 0
-                            End Select
-                        Catch e As ArgumentException
-                            MessageBox.Show("Error when read some value of sensor", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                        End Try
-                    End If
-                Next
-            Else
-                MessageBox.Show("There is no values")
+                            Try
+                                Select Case sSensor
+                                    Case Comando.SEN_ACCELERATION, Comando.SEN_MAGNETIC_FIELD, Comando.SEN_ORIENTATION
+                                        nudSenValor1.Value = Utilidades.cadToDecimal(arsDatos(0))
+                                        nudSenValor2.Value = Utilidades.cadToDecimal(arsDatos(1))
+                                        nudSenValor3.Value = Utilidades.cadToDecimal(arsDatos(2))
+                                    Case Else
+                                        nudSenValor1.Value = Utilidades.cadToDecimal(arsDatos(0))
+                                        nudSenValor2.Value = 0
+                                        nudSenValor3.Value = 0
+                                End Select
+                            Catch e As ArgumentException
+                                MessageBox.Show("Error when read some value of sensor", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                            End Try
+                        End If
+                    Next
+                Else
+                    MessageBox.Show("There is no values")
+                End If
             End If
         End If
     End Sub

@@ -127,7 +127,7 @@ Public Class AndTelnet
     ''' <returns>Cadena con el resultado de la consulta.</returns>
     Public Function consultar(ByVal sComando As String) As String
         ' Datos recibidos del socket.
-        Dim sRecibido As String = String.Empty
+        Dim sRecibido As String = Nothing
 
         If 0 < sComando.Length And Not objSocket Is Nothing Then
             ' Número de bytes recibidos desde el socket.
