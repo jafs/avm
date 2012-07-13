@@ -23,6 +23,14 @@
     End Sub
 
 
+    ''' <summary>Controla el cambio en el texto de número de teléfono.</summary>
+    ''' <param name="sender">Emisor del evento</param>
+    ''' <param name="e">Datos del evento</param>
+    Private Sub txtSmsNumero_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtSmsNumero.TextChanged
+        btnSmsSend.Enabled = (txtSmsNumero.Text.Length > 0 And txtSmsMessage.Text.Length > 0)
+    End Sub
+
+
     ''' <summary>Controla el cambio en el texto del número de teléfono.</summary>
     ''' <param name="sender">Emisor del evento</param>
     ''' <param name="e">Datos del evento</param>

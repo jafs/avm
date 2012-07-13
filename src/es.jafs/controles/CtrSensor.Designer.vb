@@ -44,7 +44,7 @@ Partial Class CtrSensor
         '
         Me.btnSenUpdate.Enabled = False
         Me.btnSenUpdate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.btnSenUpdate.Location = New System.Drawing.Point(178, 129)
+        Me.btnSenUpdate.Location = New System.Drawing.Point(190, 127)
         Me.btnSenUpdate.Name = "btnSenUpdate"
         Me.btnSenUpdate.Size = New System.Drawing.Size(75, 32)
         Me.btnSenUpdate.TabIndex = 29
@@ -64,7 +64,7 @@ Partial Class CtrSensor
         '
         Me.btnSenSet.Enabled = False
         Me.btnSenSet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.btnSenSet.Location = New System.Drawing.Point(178, 59)
+        Me.btnSenSet.Location = New System.Drawing.Point(190, 58)
         Me.btnSenSet.Name = "btnSenSet"
         Me.btnSenSet.Size = New System.Drawing.Size(75, 61)
         Me.btnSenSet.TabIndex = 24
@@ -73,17 +73,17 @@ Partial Class CtrSensor
         '
         'nudSenValor2
         '
-        Me.nudSenValor2.DecimalPlaces = 2
+        Me.nudSenValor2.DecimalPlaces = 4
         Me.nudSenValor2.Enabled = False
-        Me.nudSenValor2.Location = New System.Drawing.Point(95, 98)
+        Me.nudSenValor2.Location = New System.Drawing.Point(92, 97)
         Me.nudSenValor2.Name = "nudSenValor2"
-        Me.nudSenValor2.Size = New System.Drawing.Size(73, 23)
+        Me.nudSenValor2.Size = New System.Drawing.Size(90, 23)
         Me.nudSenValor2.TabIndex = 22
         '
         'lblSenValor2
         '
         Me.lblSenValor2.AutoSize = True
-        Me.lblSenValor2.Location = New System.Drawing.Point(19, 101)
+        Me.lblSenValor2.Location = New System.Drawing.Point(16, 100)
         Me.lblSenValor2.Name = "lblSenValor2"
         Me.lblSenValor2.Size = New System.Drawing.Size(69, 17)
         Me.lblSenValor2.TabIndex = 26
@@ -91,17 +91,17 @@ Partial Class CtrSensor
         '
         'nudSenValor3
         '
-        Me.nudSenValor3.DecimalPlaces = 2
+        Me.nudSenValor3.DecimalPlaces = 4
         Me.nudSenValor3.Enabled = False
-        Me.nudSenValor3.Location = New System.Drawing.Point(95, 136)
+        Me.nudSenValor3.Location = New System.Drawing.Point(92, 135)
         Me.nudSenValor3.Name = "nudSenValor3"
-        Me.nudSenValor3.Size = New System.Drawing.Size(73, 23)
+        Me.nudSenValor3.Size = New System.Drawing.Size(90, 23)
         Me.nudSenValor3.TabIndex = 23
         '
         'lblSenValor3
         '
         Me.lblSenValor3.AutoSize = True
-        Me.lblSenValor3.Location = New System.Drawing.Point(19, 139)
+        Me.lblSenValor3.Location = New System.Drawing.Point(16, 138)
         Me.lblSenValor3.Name = "lblSenValor3"
         Me.lblSenValor3.Size = New System.Drawing.Size(69, 17)
         Me.lblSenValor3.TabIndex = 25
@@ -109,17 +109,17 @@ Partial Class CtrSensor
         '
         'nudSenValor1
         '
-        Me.nudSenValor1.DecimalPlaces = 2
+        Me.nudSenValor1.DecimalPlaces = 4
         Me.nudSenValor1.Enabled = False
-        Me.nudSenValor1.Location = New System.Drawing.Point(95, 60)
+        Me.nudSenValor1.Location = New System.Drawing.Point(92, 59)
         Me.nudSenValor1.Name = "nudSenValor1"
-        Me.nudSenValor1.Size = New System.Drawing.Size(73, 23)
+        Me.nudSenValor1.Size = New System.Drawing.Size(90, 23)
         Me.nudSenValor1.TabIndex = 20
         '
         'lblSenValor1
         '
         Me.lblSenValor1.AutoSize = True
-        Me.lblSenValor1.Location = New System.Drawing.Point(19, 62)
+        Me.lblSenValor1.Location = New System.Drawing.Point(16, 61)
         Me.lblSenValor1.Name = "lblSenValor1"
         Me.lblSenValor1.Size = New System.Drawing.Size(69, 17)
         Me.lblSenValor1.TabIndex = 21
@@ -128,7 +128,7 @@ Partial Class CtrSensor
         'lblSensor
         '
         Me.lblSensor.AutoSize = True
-        Me.lblSensor.Location = New System.Drawing.Point(19, 24)
+        Me.lblSensor.Location = New System.Drawing.Point(16, 23)
         Me.lblSensor.Name = "lblSensor"
         Me.lblSensor.Size = New System.Drawing.Size(57, 17)
         Me.lblSensor.TabIndex = 19
@@ -139,9 +139,9 @@ Partial Class CtrSensor
         Me.cmbSensores.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbSensores.FormattingEnabled = True
         Me.cmbSensores.Items.AddRange(New Object() {"acceleration", "magnetic-field", "orientation", "temperature", "proximity"})
-        Me.cmbSensores.Location = New System.Drawing.Point(95, 21)
+        Me.cmbSensores.Location = New System.Drawing.Point(92, 20)
         Me.cmbSensores.Name = "cmbSensores"
-        Me.cmbSensores.Size = New System.Drawing.Size(158, 24)
+        Me.cmbSensores.Size = New System.Drawing.Size(173, 24)
         Me.cmbSensores.TabIndex = 18
         '
         'imgSensores

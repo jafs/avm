@@ -27,4 +27,12 @@ Public Class CtrConectar
             lblError.Visible = True
         End If
     End Sub
+
+
+    ''' <summary>Prepara el control para su carga inicial.</summary>
+    Public Sub iniciar()
+        lblError.Visible = False
+        txtPuerto.Focus()
+        txtPuerto.SelectAll()
+    End Sub
 End Class
