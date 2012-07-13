@@ -33,6 +33,9 @@ Version History
 Version 0.5.4 - 13/07/2012
  - Fixed the bug in call monitor. Also, now the calls monitor is automatic.
  - Solved the enable of Send button in SMS.
+ - Solved the problem with GPS values when degrees values are negative.
+ - Including control limits for GPS values.
+ - Now the values of sensors and GPS, have precision of 4 decimal.
  - Small improvements.
 Version 0.5.3 - 12/07/2012
  - New GUI.

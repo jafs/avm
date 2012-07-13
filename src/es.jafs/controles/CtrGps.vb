@@ -40,8 +40,21 @@
         Dim sSentencia As String = String.Empty
 
         ' Obtiene longitud y latitud, y compone la sentencia.
-        dLontitud = nudGpsLonGrados.Value + (nudGpsLonMin.Value / 60) + (nudGpsLonSec.Value / 3600)
-        dLatitud = nudGpsLatGrados.Value + (nudGpsLatMin.Value / 60) + (nudGpsLatSec.Value / 3600)
+        dLontitud = nudGpsLonGrados.Value
+        If dLontitud > 0 Then
+            dLontitud += (nudGpsLonMin.Value / 60) + (nudGpsLonSec.Value / 3600)
+        Else
+            dLontitud -= (nudGpsLonMin.Value / 60) + (nudGpsLonSec.Value / 3600)
+        End If
+
+        dLatitud = nudGpsLatGrados.Value
+        If dLatitud > 0 Then
+            dLatitud += (nudGpsLatMin.Value / 60) + (nudGpsLatSec.Value / 3600)
+        Else
+            dLatitud -= (nudGpsLatMin.Value / 60) + (nudGpsLatSec.Value / 3600)
+        End If
+
+
         sSentencia = Utilidades.decimalToCad(dLontitud) & " " & Utilidades.decimalToCad(dLatitud)
 
         ' Añade los datos de altitud y satélites si están activos.
@@ -54,5 +67,53 @@
         End If
 
         frmPadre.enviarComando(Comando.GEO_FIX & sSentencia)
+    End Sub
+
+
+    ''' <summary>Controla los cambios en los grados de longitud.</summary>
+    ''' <param name="sender">Emisor del evento</param>
+    ''' <param name="e">Datos del evento</param>
+    Private Sub nudGpsLonGrados_ValueChanged(sender As System.Object, e As System.EventArgs) Handles nudGpsLonGrados.ValueChanged
+        ' Si los grados han llegado a su límite se ponen los valores de minutos y segundos a 0, ya
+        ' que no se pueden superar dichos valores. Además se desactivan los controles.
+        If nudGpsLonGrados.Value = 180 Or nudGpsLonGrados.Value = -180 Then
+            nudGpsLonMin.Value = 0
+            nudGpsLonSec.Value = 0
+            nudGpsLonMin.Enabled = False
+            nudGpsLonSec.Enabled = False
+        Else
+            ' Si los valores de grados no son los límites se permite la edición de minutos y
+            ' segundos.
+            If Not nudGpsLonMin.Enabled Then
+                nudGpsLonMin.Enabled = True
+            End If
+            If Not nudGpsLonSec.Enabled Then
+                nudGpsLonSec.Enabled = True
+            End If
+        End If
+    End Sub
+
+
+    ''' <summary>Controla los cambios en los grados de latitud.</summary>
+    ''' <param name="sender">Emisor del evento</param>
+    ''' <param name="e">Datos del evento</param>
+    Private Sub nudGpsLatGrados_ValueChanged(sender As System.Object, e As System.EventArgs) Handles nudGpsLatGrados.ValueChanged
+        ' Si los grados han llegado a su límite se ponen los valores de minutos y segundos a 0, ya
+        ' que no se pueden superar dichos valores. Además se desactivan los controles.
+        If nudGpsLatGrados.Value = 90 Or nudGpsLatGrados.Value = -90 Then
+            nudGpsLatMin.Value = 0
+            nudGpsLatSec.Value = 0
+            nudGpsLatMin.Enabled = False
+            nudGpsLatSec.Enabled = False
+        Else
+            ' Si los valores de grados no son los límites se permite la edición de minutos y
+            ' segundos.
+            If Not nudGpsLatMin.Enabled Then
+                nudGpsLatMin.Enabled = True
+            End If
+            If Not nudGpsLatSec.Enabled Then
+                nudGpsLatSec.Enabled = True
+            End If
+        End If
     End Sub
 End Class
