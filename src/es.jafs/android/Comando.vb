@@ -1,5 +1,5 @@
 ﻿''' <summary>Clase que contiene todos los comandos utlizados por la máquina virtual.</summary>
-Public Class Comando
+Public NotInheritable Class Comando
     ' ######################################
     ' COMANDOS
     ' ######################################
@@ -68,4 +68,9 @@ Public Class Comando
     Public Const SEN_TEMPERATURE As String = "temperature"
     ''' <summary>Nombre del sensor de proximidad.</summary>
     Public Const SEN_PROXIMITY As String = "proximity"
+
+
+    ''' <summary>Constructor privado para evitar instancias.</summary>
+    Private Sub New()
+    End Sub
 End Class

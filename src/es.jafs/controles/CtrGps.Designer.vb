@@ -182,7 +182,7 @@ Partial Class CtrGps
         '
         'imgGps
         '
-        Me.imgGps.Image = Global.avm.My.Resources.Resources.gps64
+        Me.imgGps.Image = Global.Avm.My.Resources.Resources.gps64
         Me.imgGps.Location = New System.Drawing.Point(16, 238)
         Me.imgGps.Name = "imgGps"
         Me.imgGps.Size = New System.Drawing.Size(64, 64)

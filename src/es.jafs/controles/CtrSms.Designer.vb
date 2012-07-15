@@ -122,7 +122,7 @@ Partial Class CtrSms
         '
         'imgSms
         '
-        Me.imgSms.Image = Global.avm.My.Resources.Resources.sms64
+        Me.imgSms.Image = Global.Avm.My.Resources.Resources.sms64
         Me.imgSms.Location = New System.Drawing.Point(8, 248)
         Me.imgSms.Name = "imgSms"
         Me.imgSms.Size = New System.Drawing.Size(64, 64)
