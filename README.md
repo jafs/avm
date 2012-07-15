@@ -12,6 +12,10 @@ Requirements
 
 Version History
 ---------------
+Version 0.5.4.1 - 15/07/2012
+* Improvements.
+* About dialog.
+ 
 Version 0.5.4 - 13/07/2012
 * Fixed the bug in call monitor. Also, now the calls monitor is automatic.
 * Solved the enable of Send button in SMS.

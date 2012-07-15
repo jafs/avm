@@ -28,10 +28,11 @@ Partial Class FrmPrincipal
         Me.pnlCentral = New System.Windows.Forms.Panel()
         Me.pnlDock = New System.Windows.Forms.Panel()
         Me.tlpMenu = New System.Windows.Forms.TableLayoutPanel()
-        Me.btnHome = New System.Windows.Forms.Button()
         Me.pblEstado = New System.Windows.Forms.Panel()
         Me.lblReloj = New System.Windows.Forms.Label()
         Me.trmReloj = New System.Windows.Forms.Timer(Me.components)
+        Me.btnHome = New System.Windows.Forms.Button()
+        Me.btnAcerca = New System.Windows.Forms.Button()
         Me.pnlPrincipal.SuspendLayout()
         Me.pnlDock.SuspendLayout()
         Me.tlpMenu.SuspendLayout()
@@ -122,22 +123,10 @@ Partial Class FrmPrincipal
         Me.tlpMenu.Size = New System.Drawing.Size(280, 56)
         Me.tlpMenu.TabIndex = 0
         '
-        'btnHome
-        '
-        Me.btnHome.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btnHome.Enabled = False
-        Me.btnHome.FlatAppearance.BorderSize = 0
-        Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnHome.Image = Global.avm.My.Resources.Resources.mn_home48
-        Me.btnHome.Location = New System.Drawing.Point(115, 3)
-        Me.btnHome.Name = "btnHome"
-        Me.btnHome.Size = New System.Drawing.Size(50, 50)
-        Me.btnHome.TabIndex = 5
-        Me.btnHome.UseVisualStyleBackColor = True
-        '
         'pblEstado
         '
         Me.pblEstado.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.pblEstado.Controls.Add(Me.btnAcerca)
         Me.pblEstado.Controls.Add(Me.lblReloj)
         Me.pblEstado.Dock = System.Windows.Forms.DockStyle.Top
         Me.pblEstado.Location = New System.Drawing.Point(0, 0)
@@ -160,6 +149,30 @@ Partial Class FrmPrincipal
         '
         Me.trmReloj.Enabled = True
         Me.trmReloj.Interval = 60000
+        '
+        'btnHome
+        '
+        Me.btnHome.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnHome.Enabled = False
+        Me.btnHome.FlatAppearance.BorderSize = 0
+        Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnHome.Image = Global.Avm.My.Resources.Resources.mn_home48
+        Me.btnHome.Location = New System.Drawing.Point(115, 3)
+        Me.btnHome.Name = "btnHome"
+        Me.btnHome.Size = New System.Drawing.Size(50, 50)
+        Me.btnHome.TabIndex = 5
+        Me.btnHome.UseVisualStyleBackColor = True
+        '
+        'btnAcerca
+        '
+        Me.btnAcerca.FlatAppearance.BorderSize = 0
+        Me.btnAcerca.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAcerca.Image = Global.Avm.My.Resources.Resources.gsm_incoming_status16
+        Me.btnAcerca.Location = New System.Drawing.Point(5, 8)
+        Me.btnAcerca.Name = "btnAcerca"
+        Me.btnAcerca.Size = New System.Drawing.Size(16, 16)
+        Me.btnAcerca.TabIndex = 100
+        Me.btnAcerca.UseVisualStyleBackColor = True
         '
         'FrmPrincipal
         '
@@ -197,5 +210,6 @@ Partial Class FrmPrincipal
     Friend WithEvents btnHome As System.Windows.Forms.Button
     Friend WithEvents lblReloj As System.Windows.Forms.Label
     Friend WithEvents trmReloj As System.Windows.Forms.Timer
+    Friend WithEvents btnAcerca As System.Windows.Forms.Button
 
 End Class

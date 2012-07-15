@@ -78,7 +78,7 @@ Partial Class CtrConectar
         '
         Me.btnConectar.FlatAppearance.BorderSize = 0
         Me.btnConectar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnConectar.Image = Global.avm.My.Resources.Resources.gps64
+        Me.btnConectar.Image = Global.Avm.My.Resources.Resources.gps64
         Me.btnConectar.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.btnConectar.Location = New System.Drawing.Point(108, 198)
         Me.btnConectar.Name = "btnConectar"

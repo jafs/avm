@@ -163,7 +163,7 @@ Public Class Llamada
                     eEstado = DirectCast([Enum].Parse(GetType(EstadoLlamada), arsPartes(4)), EstadoLlamada)
                     sNumero = arsPartes(2)
                     bCorrecto = True
-                Catch ex As Exception
+                Catch ex As InvalidCastException
                     MessageBox.Show(ex.ToString)
                 End Try
             End If
