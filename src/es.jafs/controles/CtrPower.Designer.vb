@@ -156,7 +156,7 @@ Partial Class CtrPower
         '
         'imgBateria
         '
-        Me.imgBateria.Image = Global.avm.My.Resources.Resources.bateria64
+        Me.imgBateria.Image = Global.Avm.My.Resources.Resources.bateria64
         Me.imgBateria.Location = New System.Drawing.Point(10, 234)
         Me.imgBateria.Margin = New System.Windows.Forms.Padding(4)
         Me.imgBateria.Name = "imgBateria"

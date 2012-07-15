@@ -32,7 +32,7 @@ Public Class FrmPrincipal
     Private objTelnet As New AndTelnet()
     ''' <summary>Indica si actualmente se está en modo consulta.</summary>
     Private bModoConsulta As Boolean = False
-    ''' <summary>Indica si es la primera carga. Para la gestión del reloj.</summary
+    ''' <summary>Indica si es la primera carga. Para la gestión del reloj.</summary>
     Private bInicial As Boolean = True
 
     ' TODO mejorar control de formularios
@@ -163,7 +163,7 @@ Public Class FrmPrincipal
 
     ''' <summary>Envía el comando que hay en la línea de comandos.</summary>
     ''' <param name="sComando">Comando a enviar en la consulta.</param>
-    Public Sub enviarComando(ByRef sComando As String)
+    Public Sub enviarComando(ByVal sComando As String)
         If (bConexion) Then
             txtRecv.Text += sComando
             txtRecv.Text += vbNewLine
@@ -239,9 +239,9 @@ Public Class FrmPrincipal
                 bConexion = False
             Else
                 txtRecv.Text &= "-----------------------------------" & vbNewLine & _
-                                Date.Now.ToString & vbNewLine & _
-                                "-----------------------------------" & vbNewLine & _
-                                sResultado
+                                Date.Now.ToString(My.Application.Culture.DateTimeFormat) & _
+                                vbNewLine & "-----------------------------------" & _
+                                vbNewLine & sResultado
                 txtRecv.Select(txtRecv.Text.Length - 1, 1)
                 txtRecv.ScrollToCaret()
 
@@ -265,6 +265,10 @@ Public Class FrmPrincipal
             ctrGsmCalls.parar()
             lanzar(TipoApp.Connect)
         End If
+    End Sub
+
+    Private Sub btnAcerca_Click(sender As System.Object, e As System.EventArgs) Handles btnAcerca.Click
+        FrmAcerca.Show()
     End Sub
 End Class
 
