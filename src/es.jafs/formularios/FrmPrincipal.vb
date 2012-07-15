@@ -141,6 +141,14 @@ Public Class FrmPrincipal
     End Sub
 
 
+    ''' <summary>Abre el formulario Acerca de...</summary>
+    ''' <param name="sender">Emisor del evento</param>
+    ''' <param name="e">Datos del evento</param>
+    Private Sub btnAcerca_Click(sender As System.Object, e As System.EventArgs) Handles btnAcerca.Click
+        FrmAcerca.Show()
+    End Sub
+
+
     ' ######################################
     ' GENERAL
     ' ######################################
@@ -265,10 +273,6 @@ Public Class FrmPrincipal
             ctrGsmCalls.parar()
             lanzar(TipoApp.Connect)
         End If
-    End Sub
-
-    Private Sub btnAcerca_Click(sender As System.Object, e As System.EventArgs) Handles btnAcerca.Click
-        FrmAcerca.Show()
     End Sub
 End Class
 
