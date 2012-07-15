@@ -23,7 +23,7 @@ Public Class Utilidades
                         dDecimal = Decimal.Parse(sCadena)
                     End If
                 End If
-            Catch ex As Exception
+            Catch ex As InvalidCastException
             End Try
         End If
 
