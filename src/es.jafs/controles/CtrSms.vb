@@ -31,14 +31,6 @@
     End Sub
 
 
-    ''' <summary>Controla el cambio en el texto del número de teléfono.</summary>
-    ''' <param name="sender">Emisor del evento</param>
-    ''' <param name="e">Datos del evento</param>
-    Private Sub mtbSmsNumero_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        btnSmsSend.Enabled = (txtSmsNumero.Text.Length > 0 And txtSmsMessage.Text.Length > 0)
-    End Sub
-
-
     ''' <summary>Clic sobre el botón de envío de SMS.</summary>
     ''' <param name="sender">Emisor del evento</param>
     ''' <param name="e">Datos del evento</param>

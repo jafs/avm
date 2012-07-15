@@ -190,7 +190,7 @@ Partial Class CtrGsmCalls
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.avm.My.Resources.Resources.gsm64
+        Me.PictureBox1.Image = Global.Avm.My.Resources.Resources.gsm64
         Me.PictureBox1.Location = New System.Drawing.Point(14, 257)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(64, 64)
