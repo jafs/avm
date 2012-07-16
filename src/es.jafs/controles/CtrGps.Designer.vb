@@ -22,6 +22,7 @@ Partial Class CtrGps
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.btnGpsSet = New System.Windows.Forms.Button()
         Me.chkGpsSatelites = New System.Windows.Forms.CheckBox()
         Me.nudGpsSatelites = New System.Windows.Forms.NumericUpDown()
@@ -37,6 +38,7 @@ Partial Class CtrGps
         Me.lblGpsLongitud = New System.Windows.Forms.Label()
         Me.lblGpsDesc = New System.Windows.Forms.Label()
         Me.imgGps = New System.Windows.Forms.PictureBox()
+        Me.ttConsejo = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.nudGpsSatelites, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nudGpsAltitude, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nudGpsLatSec, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,6 +58,7 @@ Partial Class CtrGps
         Me.btnGpsSet.Size = New System.Drawing.Size(69, 61)
         Me.btnGpsSet.TabIndex = 50
         Me.btnGpsSet.Text = "Set" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "location"
+        Me.ttConsejo.SetToolTip(Me.btnGpsSet, "Send location to emulator")
         Me.btnGpsSet.UseVisualStyleBackColor = True
         '
         'chkGpsSatelites
@@ -68,6 +71,7 @@ Partial Class CtrGps
         Me.chkGpsSatelites.Size = New System.Drawing.Size(88, 21)
         Me.chkGpsSatelites.TabIndex = 49
         Me.chkGpsSatelites.Text = "Satellites:"
+        Me.ttConsejo.SetToolTip(Me.chkGpsSatelites, "Check to send satellites number")
         Me.chkGpsSatelites.UseVisualStyleBackColor = True
         '
         'nudGpsSatelites
@@ -99,6 +103,7 @@ Partial Class CtrGps
         Me.chkGpsAltitude.Size = New System.Drawing.Size(78, 21)
         Me.chkGpsAltitude.TabIndex = 46
         Me.chkGpsAltitude.Text = "Altitude:"
+        Me.ttConsejo.SetToolTip(Me.chkGpsAltitude, "Check to send altitude")
         Me.chkGpsAltitude.UseVisualStyleBackColor = True
         '
         'nudGpsLatSec
@@ -134,6 +139,7 @@ Partial Class CtrGps
         Me.lblGpsLatitud.Size = New System.Drawing.Size(63, 17)
         Me.lblGpsLatitud.TabIndex = 42
         Me.lblGpsLatitud.Text = "Latitude:"
+        Me.ttConsejo.SetToolTip(Me.lblGpsLatitud, "Latitude coordinates")
         '
         'nudGpsLonSec
         '
@@ -168,6 +174,7 @@ Partial Class CtrGps
         Me.lblGpsLongitud.Size = New System.Drawing.Size(75, 17)
         Me.lblGpsLongitud.TabIndex = 38
         Me.lblGpsLongitud.Text = "Longitude:"
+        Me.ttConsejo.SetToolTip(Me.lblGpsLongitud, "Longitude coordinates")
         '
         'lblGpsDesc
         '
@@ -177,12 +184,12 @@ Partial Class CtrGps
         Me.lblGpsDesc.Size = New System.Drawing.Size(187, 102)
         Me.lblGpsDesc.TabIndex = 51
         Me.lblGpsDesc.Text = "Here you will be able to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "change the GPS location." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Enter the longitude and" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "lati" & _
-    "tude coordinates to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "change the position. Altitude" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and satellites are optional." & _
-    ""
+            "tude coordinates to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "change the position. Altitude" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and satellites are optional." & _
+            ""
         '
         'imgGps
         '
-        Me.imgGps.Image = Global.Avm.My.Resources.Resources.gps64
+        Me.imgGps.Image = Global.Avm.My.Resources.Resources.icoGps64
         Me.imgGps.Location = New System.Drawing.Point(16, 238)
         Me.imgGps.Name = "imgGps"
         Me.imgGps.Size = New System.Drawing.Size(64, 64)
@@ -243,5 +250,6 @@ Partial Class CtrGps
     Friend WithEvents lblGpsLongitud As System.Windows.Forms.Label
     Friend WithEvents lblGpsDesc As System.Windows.Forms.Label
     Friend WithEvents imgGps As System.Windows.Forms.PictureBox
+    Friend WithEvents ttConsejo As System.Windows.Forms.ToolTip
 
 End Class

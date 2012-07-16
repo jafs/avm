@@ -28,14 +28,20 @@ Partial Class FrmPrincipal
         Me.pnlCentral = New System.Windows.Forms.Panel()
         Me.pnlDock = New System.Windows.Forms.Panel()
         Me.tlpMenu = New System.Windows.Forms.TableLayoutPanel()
+        Me.btnHome = New System.Windows.Forms.Button()
+        Me.btnAyuda = New System.Windows.Forms.Button()
+        Me.mnAyuda = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ttmAyuGeneral = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ttmAyuManual = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ttmAbout = New System.Windows.Forms.ToolStripMenuItem()
         Me.pblEstado = New System.Windows.Forms.Panel()
         Me.lblReloj = New System.Windows.Forms.Label()
         Me.trmReloj = New System.Windows.Forms.Timer(Me.components)
-        Me.btnHome = New System.Windows.Forms.Button()
-        Me.btnAcerca = New System.Windows.Forms.Button()
+        Me.ttConsejo = New System.Windows.Forms.ToolTip(Me.components)
         Me.pnlPrincipal.SuspendLayout()
         Me.pnlDock.SuspendLayout()
         Me.tlpMenu.SuspendLayout()
+        Me.mnAyuda.SuspendLayout()
         Me.pblEstado.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -44,7 +50,7 @@ Partial Class FrmPrincipal
         Me.txtRecv.BackColor = System.Drawing.Color.Gainsboro
         Me.txtRecv.Font = New System.Drawing.Font("Courier New", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtRecv.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtRecv.Location = New System.Drawing.Point(306, 9)
+        Me.txtRecv.Location = New System.Drawing.Point(303, 10)
         Me.txtRecv.Multiline = True
         Me.txtRecv.Name = "txtRecv"
         Me.txtRecv.ReadOnly = True
@@ -60,7 +66,7 @@ Partial Class FrmPrincipal
         Me.txtComando.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.txtComando.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
         Me.txtComando.Enabled = False
-        Me.txtComando.Location = New System.Drawing.Point(306, 414)
+        Me.txtComando.Location = New System.Drawing.Point(303, 415)
         Me.txtComando.Name = "txtComando"
         Me.txtComando.Size = New System.Drawing.Size(391, 20)
         Me.txtComando.TabIndex = 6
@@ -69,7 +75,7 @@ Partial Class FrmPrincipal
         '
         Me.btnEnviar.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.btnEnviar.Enabled = False
-        Me.btnEnviar.Location = New System.Drawing.Point(703, 412)
+        Me.btnEnviar.Location = New System.Drawing.Point(700, 413)
         Me.btnEnviar.Name = "btnEnviar"
         Me.btnEnviar.Size = New System.Drawing.Size(75, 23)
         Me.btnEnviar.TabIndex = 7
@@ -82,7 +88,7 @@ Partial Class FrmPrincipal
         Me.pnlPrincipal.Controls.Add(Me.pnlCentral)
         Me.pnlPrincipal.Controls.Add(Me.pnlDock)
         Me.pnlPrincipal.Controls.Add(Me.pblEstado)
-        Me.pnlPrincipal.Location = New System.Drawing.Point(12, 9)
+        Me.pnlPrincipal.Location = New System.Drawing.Point(9, 10)
         Me.pnlPrincipal.Name = "pnlPrincipal"
         Me.pnlPrincipal.Size = New System.Drawing.Size(280, 426)
         Me.pnlPrincipal.TabIndex = 0
@@ -107,6 +113,7 @@ Partial Class FrmPrincipal
         '
         'tlpMenu
         '
+        Me.tlpMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
         Me.tlpMenu.ColumnCount = 5
         Me.tlpMenu.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.tlpMenu.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
@@ -114,6 +121,7 @@ Partial Class FrmPrincipal
         Me.tlpMenu.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.tlpMenu.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.tlpMenu.Controls.Add(Me.btnHome, 2, 0)
+        Me.tlpMenu.Controls.Add(Me.btnAyuda, 0, 0)
         Me.tlpMenu.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tlpMenu.Location = New System.Drawing.Point(0, 0)
         Me.tlpMenu.Name = "tlpMenu"
@@ -123,10 +131,64 @@ Partial Class FrmPrincipal
         Me.tlpMenu.Size = New System.Drawing.Size(280, 56)
         Me.tlpMenu.TabIndex = 0
         '
+        'btnHome
+        '
+        Me.btnHome.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnHome.Enabled = False
+        Me.btnHome.FlatAppearance.BorderSize = 0
+        Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnHome.Image = Global.Avm.My.Resources.Resources.icoMenuHome64
+        Me.btnHome.Location = New System.Drawing.Point(115, 3)
+        Me.btnHome.Name = "btnHome"
+        Me.btnHome.Size = New System.Drawing.Size(50, 50)
+        Me.btnHome.TabIndex = 5
+        Me.ttConsejo.SetToolTip(Me.btnHome, "Main menu")
+        Me.btnHome.UseVisualStyleBackColor = True
+        '
+        'btnAyuda
+        '
+        Me.btnAyuda.ContextMenuStrip = Me.mnAyuda
+        Me.btnAyuda.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnAyuda.FlatAppearance.BorderSize = 0
+        Me.btnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAyuda.Image = Global.Avm.My.Resources.Resources.mn_ayuda48
+        Me.btnAyuda.Location = New System.Drawing.Point(3, 3)
+        Me.btnAyuda.Name = "btnAyuda"
+        Me.btnAyuda.Size = New System.Drawing.Size(50, 50)
+        Me.btnAyuda.TabIndex = 6
+        Me.ttConsejo.SetToolTip(Me.btnAyuda, "Help")
+        Me.btnAyuda.UseVisualStyleBackColor = True
+        '
+        'mnAyuda
+        '
+        Me.mnAyuda.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ttmAyuGeneral, Me.ttmAyuManual, Me.ttmAbout})
+        Me.mnAyuda.Name = "mnAyuda"
+        Me.mnAyuda.Size = New System.Drawing.Size(153, 92)
+        '
+        'ttmAyuGeneral
+        '
+        Me.ttmAyuGeneral.Image = Global.Avm.My.Resources.Resources.icoAyuda16
+        Me.ttmAyuGeneral.Name = "ttmAyuGeneral"
+        Me.ttmAyuGeneral.Size = New System.Drawing.Size(152, 22)
+        Me.ttmAyuGeneral.Text = "&General info"
+        '
+        'ttmAyuManual
+        '
+        Me.ttmAyuManual.Image = Global.Avm.My.Resources.Resources.icoManual16
+        Me.ttmAyuManual.Name = "ttmAyuManual"
+        Me.ttmAyuManual.Size = New System.Drawing.Size(152, 22)
+        Me.ttmAyuManual.Text = "&Manual"
+        '
+        'ttmAbout
+        '
+        Me.ttmAbout.Image = Global.Avm.My.Resources.Resources.icoInfo16
+        Me.ttmAbout.Name = "ttmAbout"
+        Me.ttmAbout.Size = New System.Drawing.Size(152, 22)
+        Me.ttmAbout.Text = "&About..."
+        '
         'pblEstado
         '
         Me.pblEstado.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.pblEstado.Controls.Add(Me.btnAcerca)
         Me.pblEstado.Controls.Add(Me.lblReloj)
         Me.pblEstado.Dock = System.Windows.Forms.DockStyle.Top
         Me.pblEstado.Location = New System.Drawing.Point(0, 0)
@@ -150,36 +212,17 @@ Partial Class FrmPrincipal
         Me.trmReloj.Enabled = True
         Me.trmReloj.Interval = 60000
         '
-        'btnHome
+        'ttConsejo
         '
-        Me.btnHome.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btnHome.Enabled = False
-        Me.btnHome.FlatAppearance.BorderSize = 0
-        Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnHome.Image = Global.Avm.My.Resources.Resources.mn_home48
-        Me.btnHome.Location = New System.Drawing.Point(115, 3)
-        Me.btnHome.Name = "btnHome"
-        Me.btnHome.Size = New System.Drawing.Size(50, 50)
-        Me.btnHome.TabIndex = 5
-        Me.btnHome.UseVisualStyleBackColor = True
-        '
-        'btnAcerca
-        '
-        Me.btnAcerca.FlatAppearance.BorderSize = 0
-        Me.btnAcerca.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAcerca.Image = Global.Avm.My.Resources.Resources.gsm_incoming_status16
-        Me.btnAcerca.Location = New System.Drawing.Point(5, 8)
-        Me.btnAcerca.Name = "btnAcerca"
-        Me.btnAcerca.Size = New System.Drawing.Size(16, 16)
-        Me.btnAcerca.TabIndex = 100
-        Me.btnAcerca.UseVisualStyleBackColor = True
+        Me.ttConsejo.BackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ttConsejo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(70, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(115, Byte), Integer))
         '
         'FrmPrincipal
         '
         Me.AcceptButton = Me.btnEnviar
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(790, 446)
+        Me.ClientSize = New System.Drawing.Size(784, 446)
         Me.Controls.Add(Me.btnEnviar)
         Me.Controls.Add(Me.txtComando)
         Me.Controls.Add(Me.pnlPrincipal)
@@ -194,6 +237,7 @@ Partial Class FrmPrincipal
         Me.pnlPrincipal.ResumeLayout(False)
         Me.pnlDock.ResumeLayout(False)
         Me.tlpMenu.ResumeLayout(False)
+        Me.mnAyuda.ResumeLayout(False)
         Me.pblEstado.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -210,6 +254,11 @@ Partial Class FrmPrincipal
     Friend WithEvents btnHome As System.Windows.Forms.Button
     Friend WithEvents lblReloj As System.Windows.Forms.Label
     Friend WithEvents trmReloj As System.Windows.Forms.Timer
-    Friend WithEvents btnAcerca As System.Windows.Forms.Button
+    Friend WithEvents btnAyuda As System.Windows.Forms.Button
+    Friend WithEvents ttConsejo As System.Windows.Forms.ToolTip
+    Friend WithEvents mnAyuda As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents ttmAyuGeneral As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ttmAyuManual As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ttmAbout As System.Windows.Forms.ToolStripMenuItem
 
 End Class

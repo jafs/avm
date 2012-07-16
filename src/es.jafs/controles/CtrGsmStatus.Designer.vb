@@ -168,7 +168,7 @@ Partial Class CtrGsmStatus
         '
         'imgGsm
         '
-        Me.imgGsm.Image = Global.Avm.My.Resources.Resources.gsm64
+        Me.imgGsm.Image = Global.Avm.My.Resources.Resources.icoGsm64
         Me.imgGsm.Location = New System.Drawing.Point(9, 253)
         Me.imgGsm.Name = "imgGsm"
         Me.imgGsm.Size = New System.Drawing.Size(64, 64)

@@ -144,8 +144,32 @@ Public Class FrmPrincipal
     ''' <summary>Abre el formulario Acerca de...</summary>
     ''' <param name="sender">Emisor del evento</param>
     ''' <param name="e">Datos del evento</param>
-    Private Sub btnAcerca_Click(sender As System.Object, e As System.EventArgs) Handles btnAcerca.Click
-        FrmAcerca.Show()
+    Private Sub ttmAbout_Click(sender As System.Object, e As System.EventArgs) Handles ttmAbout.Click
+        FrmAcerca.ShowDialog(Me)
+    End Sub
+
+
+    ''' <summary>Abre el menú de ayuda.</summary>
+    ''' <param name="sender">Emisor del evento</param>
+    ''' <param name="e">Datos del evento</param>
+    Private Sub btnAyuda_Click(sender As System.Object, e As System.EventArgs) Handles btnAyuda.Click
+        mnAyuda.Show(btnAyuda, 0, -80)
+    End Sub
+
+
+    ''' <summary>Abre la guía de usuario.</summary>
+    ''' <param name="sender">Emisor del evento</param>
+    ''' <param name="e">Datos del evento</param>
+    Private Sub ttmAyuManual_Click(sender As System.Object, e As System.EventArgs) Handles ttmAyuManual.Click
+        System.Diagnostics.Process.Start(My.Resources.sUrlManual)
+    End Sub
+
+
+    ''' <summary>Abre la página de la aplicación.</summary>
+    ''' <param name="sender">Emisor del evento</param>
+    ''' <param name="e">Datos del evento</param>
+    Private Sub ttmAyuGeneral_Click(sender As System.Object, e As System.EventArgs) Handles ttmAyuGeneral.Click
+        System.Diagnostics.Process.Start(My.Resources.sUrlAplicacion)
     End Sub
 
 

@@ -146,7 +146,7 @@ Partial Class CtrSensor
         '
         'imgSensores
         '
-        Me.imgSensores.Image = Global.Avm.My.Resources.Resources.sensores64
+        Me.imgSensores.Image = Global.Avm.My.Resources.Resources.icoSensores64
         Me.imgSensores.Location = New System.Drawing.Point(12, 239)
         Me.imgSensores.Name = "imgSensores"
         Me.imgSensores.Size = New System.Drawing.Size(64, 64)

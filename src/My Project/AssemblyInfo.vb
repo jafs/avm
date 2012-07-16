@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("AVM (Android Virtual Management) allows management of virtual machine for Android, allowing an easy way to change the power status, sensor values, calls management, etc.")> 
 <Assembly: AssemblyCompany("JAFS.es")> 
 <Assembly: AssemblyProduct("Android Virtual Management")> 
-<Assembly: AssemblyCopyright("Copyleft © JAFS.es 2012")> 
+<Assembly: AssemblyCopyright("JAFS.es (2012) - GNUv3")> 
 <Assembly: AssemblyTrademark("AVM")> 
 
 <Assembly: ComVisible(False)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("0.5.4.1")> 
-<Assembly: AssemblyFileVersion("0.5.4.1")> 
+<Assembly: AssemblyVersion("0.6.0.0")> 
+<Assembly: AssemblyFileVersion("0.6.0.0")> 

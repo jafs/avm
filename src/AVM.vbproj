@@ -29,8 +29,8 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
-    <ApplicationVersion>0.5.4.%2a</ApplicationVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>0.6.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -290,6 +290,11 @@
   <ItemGroup>
     <Content Include="es.jafs\recursos\license.txt" />
     <Content Include="es.jafs\recursos\readme.txt" />
+    <None Include="Resources\icoAyuda16.png" />
+    <None Include="Resources\icoManual16.png" />
+    <None Include="Resources\mn_ayuda48.png" />
+    <None Include="Resources\btnLlamar.png" />
+    <None Include="Resources\icoGsmUnknown16.png" />
     <None Include="Resources\mn_desconectar64.png" />
     <None Include="Resources\mn_home48.png" />
     <None Include="Resources\gsm-incoming-status16.png" />

@@ -60,122 +60,170 @@ Namespace My.Resources
             End Set
         End Property
         
-        Friend ReadOnly Property bateria64() As System.Drawing.Bitmap
+        Friend ReadOnly Property btnLlamar() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("bateria64", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("btnLlamar", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
         
-        Friend ReadOnly Property gps64() As System.Drawing.Bitmap
+        Friend ReadOnly Property icoAyuda16() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("gps64", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("icoAyuda16", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
         
-        Friend ReadOnly Property gsm_accept16() As System.Drawing.Bitmap
+        Friend ReadOnly Property icoBateria64() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("gsm_accept16", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("icoBateria64", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
         
-        Friend ReadOnly Property gsm_active16() As System.Drawing.Bitmap
+        Friend ReadOnly Property icoGps64() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("gsm_active16", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("icoGps64", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
         
-        Friend ReadOnly Property gsm_busy16() As System.Drawing.Bitmap
+        Friend ReadOnly Property icoGsm64() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("gsm_busy16", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("icoGsm64", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
         
-        Friend ReadOnly Property gsm_cancel16() As System.Drawing.Bitmap
+        Friend ReadOnly Property icoGsmActive16() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("gsm_cancel16", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("icoGsmActive16", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
         
-        Friend ReadOnly Property gsm_held16() As System.Drawing.Bitmap
+        Friend ReadOnly Property icoGsmBusy16() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("gsm_held16", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("icoGsmBusy16", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
         
-        Friend ReadOnly Property gsm_hold16() As System.Drawing.Bitmap
+        Friend ReadOnly Property icoGsmCancel16() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("gsm_hold16", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("icoGsmCancel16", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
         
-        Friend ReadOnly Property gsm_incoming_status16() As System.Drawing.Bitmap
+        Friend ReadOnly Property icoGsmHeld16() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("gsm_incoming_status16", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("icoGsmHeld16", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
         
-        Friend ReadOnly Property gsm_incoming16() As System.Drawing.Bitmap
+        Friend ReadOnly Property icoGsmInbound16() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("gsm_incoming16", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("icoGsmInbound16", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
         
-        Friend ReadOnly Property gsm64() As System.Drawing.Bitmap
+        Friend ReadOnly Property icoGsmIncoming16() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("gsm64", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("icoGsmIncoming16", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
         
-        Friend ReadOnly Property inbound16() As System.Drawing.Bitmap
+        Friend ReadOnly Property icoGsmOutbound16() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("inbound16", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("icoGsmOutbound16", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
         
-        Friend ReadOnly Property mn_desconectar64() As System.Drawing.Bitmap
+        Friend ReadOnly Property icoGsmUnknown16() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("mn_desconectar64", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("icoGsmUnknown16", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
         
-        Friend ReadOnly Property mn_home48() As System.Drawing.Bitmap
+        Friend ReadOnly Property icoInfo16() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("mn_home48", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("icoInfo16", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
         
-        Friend ReadOnly Property outbound16() As System.Drawing.Bitmap
+        Friend ReadOnly Property icoManual16() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("outbound16", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("icoManual16", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
         
-        Friend ReadOnly Property sensores64() As System.Drawing.Bitmap
+        Friend ReadOnly Property icoMenuDesconectar64() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("sensores64", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("icoMenuDesconectar64", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
         
-        Friend ReadOnly Property sms64() As System.Drawing.Bitmap
+        Friend ReadOnly Property icoMenuHome64() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("sms64", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("icoMenuHome64", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property icoSensores64() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icoSensores64", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property icoSms64() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icoSms64", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property mn_ayuda48() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("mn_ayuda48", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca una cadena traducida similar a http://jafs.es/aplicaciones/android-virtual-management.
+        '''</summary>
+        Friend ReadOnly Property sUrlAplicacion() As String
+            Get
+                Return ResourceManager.GetString("sUrlAplicacion", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca una cadena traducida similar a jafs@jafs.es.
+        '''</summary>
+        Friend ReadOnly Property sUrlCorreo() As String
+            Get
+                Return ResourceManager.GetString("sUrlCorreo", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca una cadena traducida similar a https://github.com/jafs/avm/wiki/Gu%C3%ADa-de-usuario.
+        '''</summary>
+        Friend ReadOnly Property sUrlManual() As String
+            Get
+                Return ResourceManager.GetString("sUrlManual", resourceCulture)
             End Get
         End Property
     End Module

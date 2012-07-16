@@ -15,9 +15,7 @@
         ' Carga los valores del resto de campos
         lblProducto.Text = My.Application.Info.ProductName
         lblVersion.Text = String.Format("Version {0}", My.Application.Info.Version.ToString)
-        lblCopyrigth.Text = My.Application.Info.Copyright
-        lblCompania.Text = My.Application.Info.CompanyName
-        txtDescripcion.Text = My.Application.Info.Description
+        lblCompania.Text = My.Application.Info.Copyright
     End Sub
 
 
@@ -28,7 +26,19 @@
         Me.Close()
     End Sub
 
+
+    ''' <summary>Abre una ventana de navegador con enlace a la información de la aplicación.</summary>
+    ''' <param name="sender">Emisor del evento</param>
+    ''' <param name="e">Datos del evento</param>
     Private Sub lblCompania_LinkClicked(sender As System.Object, e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles lblCompania.LinkClicked
-        System.Diagnostics.Process.Start("http://jafs.es/aplicaciones/android-virtual-management")
+        System.Diagnostics.Process.Start(My.Resources.sUrlAplicacion)
+    End Sub
+
+
+    ''' <summary>Permite enviar un correo de contacto.</summary>
+    ''' <param name="sender">Emisor del evento</param>
+    ''' <param name="e">Datos del evento</param>
+    Private Sub linkCorreo_LinkClicked(sender As System.Object, e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles linkCorreo.LinkClicked
+        System.Diagnostics.Process.Start("mailto:" & My.Resources.sUrlCorreo)
     End Sub
 End Class
