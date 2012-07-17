@@ -165,16 +165,23 @@ Namespace My.Resources
             End Get
         End Property
         
-        Friend ReadOnly Property icoMenuDesconectar64() As System.Drawing.Bitmap
+        Friend ReadOnly Property icoMenuHome64() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("icoMenuDesconectar64", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("icoMenuHome64", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
         
-        Friend ReadOnly Property icoMenuHome64() As System.Drawing.Bitmap
+        Friend ReadOnly Property icoMenuLogout64() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("icoMenuHome64", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("icoMenuLogout64", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property icoMenuSalir48() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icoMenuSalir48", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

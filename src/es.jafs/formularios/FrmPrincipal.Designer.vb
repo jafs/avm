@@ -28,6 +28,7 @@ Partial Class FrmPrincipal
         Me.pnlCentral = New System.Windows.Forms.Panel()
         Me.pnlDock = New System.Windows.Forms.Panel()
         Me.tlpMenu = New System.Windows.Forms.TableLayoutPanel()
+        Me.btnSalir = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
         Me.btnAyuda = New System.Windows.Forms.Button()
         Me.mnAyuda = New System.Windows.Forms.ContextMenuStrip(Me.components)
@@ -120,6 +121,7 @@ Partial Class FrmPrincipal
         Me.tlpMenu.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.tlpMenu.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.tlpMenu.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.tlpMenu.Controls.Add(Me.btnSalir, 4, 0)
         Me.tlpMenu.Controls.Add(Me.btnHome, 2, 0)
         Me.tlpMenu.Controls.Add(Me.btnAyuda, 0, 0)
         Me.tlpMenu.Dock = System.Windows.Forms.DockStyle.Fill
@@ -130,6 +132,19 @@ Partial Class FrmPrincipal
         Me.tlpMenu.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56.0!))
         Me.tlpMenu.Size = New System.Drawing.Size(280, 56)
         Me.tlpMenu.TabIndex = 0
+        '
+        'btnSalir
+        '
+        Me.btnSalir.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnSalir.FlatAppearance.BorderSize = 0
+        Me.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSalir.Image = Global.Avm.My.Resources.Resources.icoMenuSalir48
+        Me.btnSalir.Location = New System.Drawing.Point(227, 3)
+        Me.btnSalir.Name = "btnSalir"
+        Me.btnSalir.Size = New System.Drawing.Size(50, 50)
+        Me.btnSalir.TabIndex = 7
+        Me.ttConsejo.SetToolTip(Me.btnSalir, "Exit application")
+        Me.btnSalir.UseVisualStyleBackColor = True
         '
         'btnHome
         '
@@ -163,27 +178,27 @@ Partial Class FrmPrincipal
         '
         Me.mnAyuda.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ttmAyuGeneral, Me.ttmAyuManual, Me.ttmAbout})
         Me.mnAyuda.Name = "mnAyuda"
-        Me.mnAyuda.Size = New System.Drawing.Size(153, 92)
+        Me.mnAyuda.Size = New System.Drawing.Size(139, 70)
         '
         'ttmAyuGeneral
         '
         Me.ttmAyuGeneral.Image = Global.Avm.My.Resources.Resources.icoAyuda16
         Me.ttmAyuGeneral.Name = "ttmAyuGeneral"
-        Me.ttmAyuGeneral.Size = New System.Drawing.Size(152, 22)
+        Me.ttmAyuGeneral.Size = New System.Drawing.Size(138, 22)
         Me.ttmAyuGeneral.Text = "&General info"
         '
         'ttmAyuManual
         '
         Me.ttmAyuManual.Image = Global.Avm.My.Resources.Resources.icoManual16
         Me.ttmAyuManual.Name = "ttmAyuManual"
-        Me.ttmAyuManual.Size = New System.Drawing.Size(152, 22)
+        Me.ttmAyuManual.Size = New System.Drawing.Size(138, 22)
         Me.ttmAyuManual.Text = "&Manual"
         '
         'ttmAbout
         '
         Me.ttmAbout.Image = Global.Avm.My.Resources.Resources.icoInfo16
         Me.ttmAbout.Name = "ttmAbout"
-        Me.ttmAbout.Size = New System.Drawing.Size(152, 22)
+        Me.ttmAbout.Size = New System.Drawing.Size(138, 22)
         Me.ttmAbout.Text = "&About..."
         '
         'pblEstado
@@ -260,5 +275,6 @@ Partial Class FrmPrincipal
     Friend WithEvents ttmAyuGeneral As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ttmAyuManual As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ttmAbout As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents btnSalir As System.Windows.Forms.Button
 
 End Class

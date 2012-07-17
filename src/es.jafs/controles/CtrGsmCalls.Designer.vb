@@ -38,10 +38,10 @@ Partial Class CtrGsmCalls
         Me.Label2 = New System.Windows.Forms.Label()
         Me.tmrGsm = New System.Windows.Forms.Timer(Me.components)
         Me.ttConsejo = New System.Windows.Forms.ToolTip(Me.components)
+        Me.btnGsmCall = New System.Windows.Forms.Button()
         Me.lblPrefijo = New System.Windows.Forms.Label()
         Me.lblNumero = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btnGsmCall = New System.Windows.Forms.Button()
         CType(Me.dgvGsmLlamadas, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -58,6 +58,7 @@ Partial Class CtrGsmCalls
         'txtGsmPrefijo
         '
         Me.txtGsmPrefijo.Location = New System.Drawing.Point(17, 178)
+        Me.txtGsmPrefijo.MaxLength = 4
         Me.txtGsmPrefijo.Name = "txtGsmPrefijo"
         Me.txtGsmPrefijo.Size = New System.Drawing.Size(47, 23)
         Me.txtGsmPrefijo.TabIndex = 28
@@ -66,6 +67,7 @@ Partial Class CtrGsmCalls
         'txtGsmNumero
         '
         Me.txtGsmNumero.Location = New System.Drawing.Point(76, 178)
+        Me.txtGsmNumero.MaxLength = 20
         Me.txtGsmNumero.Name = "txtGsmNumero"
         Me.txtGsmNumero.Size = New System.Drawing.Size(150, 23)
         Me.txtGsmNumero.TabIndex = 29
@@ -181,33 +183,6 @@ Partial Class CtrGsmCalls
         Me.ttConsejo.BackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ttConsejo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(70, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(115, Byte), Integer))
         '
-        'lblPrefijo
-        '
-        Me.lblPrefijo.AutoSize = True
-        Me.lblPrefijo.Location = New System.Drawing.Point(14, 159)
-        Me.lblPrefijo.Name = "lblPrefijo"
-        Me.lblPrefijo.Size = New System.Drawing.Size(47, 17)
-        Me.lblPrefijo.TabIndex = 34
-        Me.lblPrefijo.Text = "Prefix:"
-        '
-        'lblNumero
-        '
-        Me.lblNumero.AutoSize = True
-        Me.lblNumero.Location = New System.Drawing.Point(73, 159)
-        Me.lblNumero.Name = "lblNumero"
-        Me.lblNumero.Size = New System.Drawing.Size(105, 17)
-        Me.lblNumero.TabIndex = 35
-        Me.lblNumero.Text = "Phone number:"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.Avm.My.Resources.Resources.icoGsm64
-        Me.PictureBox1.Location = New System.Drawing.Point(14, 257)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(64, 64)
-        Me.PictureBox1.TabIndex = 33
-        Me.PictureBox1.TabStop = False
-        '
         'btnGsmCall
         '
         Me.btnGsmCall.BackColor = System.Drawing.Color.FromArgb(CType(CType(110, Byte), Integer), CType(CType(110, Byte), Integer), CType(CType(130, Byte), Integer))
@@ -221,6 +196,35 @@ Partial Class CtrGsmCalls
         Me.btnGsmCall.TabIndex = 30
         Me.ttConsejo.SetToolTip(Me.btnGsmCall, "Make a call")
         Me.btnGsmCall.UseVisualStyleBackColor = False
+        '
+        'lblPrefijo
+        '
+        Me.lblPrefijo.AutoSize = True
+        Me.lblPrefijo.Location = New System.Drawing.Point(14, 159)
+        Me.lblPrefijo.Name = "lblPrefijo"
+        Me.lblPrefijo.Size = New System.Drawing.Size(47, 17)
+        Me.lblPrefijo.TabIndex = 34
+        Me.lblPrefijo.Text = "Prefix:"
+        Me.ttConsejo.SetToolTip(Me.lblPrefijo, "International prefix")
+        '
+        'lblNumero
+        '
+        Me.lblNumero.AutoSize = True
+        Me.lblNumero.Location = New System.Drawing.Point(73, 159)
+        Me.lblNumero.Name = "lblNumero"
+        Me.lblNumero.Size = New System.Drawing.Size(105, 17)
+        Me.lblNumero.TabIndex = 35
+        Me.lblNumero.Text = "Phone number:"
+        Me.ttConsejo.SetToolTip(Me.lblNumero, "Phone number of the caller")
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Avm.My.Resources.Resources.icoGsm64
+        Me.PictureBox1.Location = New System.Drawing.Point(14, 257)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(64, 64)
+        Me.PictureBox1.TabIndex = 33
+        Me.PictureBox1.TabStop = False
         '
         'CtrGsmCalls
         '

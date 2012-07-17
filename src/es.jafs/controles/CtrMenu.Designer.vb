@@ -65,7 +65,7 @@ Partial Class CtrMenu
         Me.btnDesconectar.FlatAppearance.BorderSize = 0
         Me.btnDesconectar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDesconectar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.btnDesconectar.Image = Global.Avm.My.Resources.Resources.icoMenuDesconectar64
+        Me.btnDesconectar.Image = Global.Avm.My.Resources.Resources.icoMenuLogout64
         Me.btnDesconectar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnDesconectar.Location = New System.Drawing.Point(141, 103)
         Me.btnDesconectar.Name = "btnDesconectar"

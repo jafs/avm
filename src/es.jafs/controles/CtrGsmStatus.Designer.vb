@@ -22,6 +22,7 @@ Partial Class CtrGsmStatus
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.chkGsmBerOn = New System.Windows.Forms.CheckBox()
         Me.btnGsmSet = New System.Windows.Forms.Button()
         Me.chkGsmNoBer = New System.Windows.Forms.CheckBox()
@@ -36,6 +37,7 @@ Partial Class CtrGsmStatus
         Me.lblGsmDatos = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.imgGsm = New System.Windows.Forms.PictureBox()
+        Me.ttConsejo = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.nudGsmBer, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nudGsmRssi, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgGsm, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -49,6 +51,7 @@ Partial Class CtrGsmStatus
         Me.chkGsmBerOn.Size = New System.Drawing.Size(59, 21)
         Me.chkGsmBerOn.TabIndex = 47
         Me.chkGsmBerOn.Text = "BER:"
+        Me.ttConsejo.SetToolTip(Me.chkGsmBerOn, "Bit error rate")
         Me.chkGsmBerOn.UseVisualStyleBackColor = True
         '
         'btnGsmSet
@@ -70,6 +73,7 @@ Partial Class CtrGsmStatus
         Me.chkGsmNoBer.Size = New System.Drawing.Size(85, 21)
         Me.chkGsmNoBer.TabIndex = 45
         Me.chkGsmNoBer.Text = "Unknown"
+        Me.ttConsejo.SetToolTip(Me.chkGsmNoBer, "Check to send 99 (unknown)")
         Me.chkGsmNoBer.UseVisualStyleBackColor = True
         '
         'nudGsmBer
@@ -80,6 +84,7 @@ Partial Class CtrGsmStatus
         Me.nudGsmBer.Name = "nudGsmBer"
         Me.nudGsmBer.Size = New System.Drawing.Size(48, 23)
         Me.nudGsmBer.TabIndex = 44
+        Me.ttConsejo.SetToolTip(Me.nudGsmBer, "Between 0 and 7")
         '
         'chkGsmNoRssi
         '
@@ -89,6 +94,7 @@ Partial Class CtrGsmStatus
         Me.chkGsmNoRssi.Size = New System.Drawing.Size(85, 21)
         Me.chkGsmNoRssi.TabIndex = 43
         Me.chkGsmNoRssi.Text = "Unknown"
+        Me.ttConsejo.SetToolTip(Me.chkGsmNoRssi, "Check to send 99 (unknown)")
         Me.chkGsmNoRssi.UseVisualStyleBackColor = True
         '
         'nudGsmRssi
@@ -98,6 +104,7 @@ Partial Class CtrGsmStatus
         Me.nudGsmRssi.Name = "nudGsmRssi"
         Me.nudGsmRssi.Size = New System.Drawing.Size(48, 23)
         Me.nudGsmRssi.TabIndex = 42
+        Me.ttConsejo.SetToolTip(Me.nudGsmRssi, "Between 0 and 31")
         '
         'lblGsmRssi
         '
@@ -107,6 +114,7 @@ Partial Class CtrGsmStatus
         Me.lblGsmRssi.Size = New System.Drawing.Size(43, 17)
         Me.lblGsmRssi.TabIndex = 41
         Me.lblGsmRssi.Text = "RSSI:"
+        Me.ttConsejo.SetToolTip(Me.lblGsmRssi, "Receive signal strength indication value")
         '
         'btnGsmUpdate
         '
@@ -136,6 +144,7 @@ Partial Class CtrGsmStatus
         Me.lblGsmVoz.Size = New System.Drawing.Size(47, 17)
         Me.lblGsmVoz.TabIndex = 38
         Me.lblGsmVoz.Text = "Voice:"
+        Me.ttConsejo.SetToolTip(Me.lblGsmVoz, "Voice connection state")
         '
         'cmbGsmDatos
         '
@@ -155,16 +164,17 @@ Partial Class CtrGsmStatus
         Me.lblGsmDatos.Size = New System.Drawing.Size(42, 17)
         Me.lblGsmDatos.TabIndex = 36
         Me.lblGsmDatos.Text = "Data:"
+        Me.ttConsejo.SetToolTip(Me.lblGsmDatos, "Data connection state")
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(77, 250)
+        Me.Label1.Location = New System.Drawing.Point(79, 260)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(197, 68)
+        Me.Label1.Size = New System.Drawing.Size(197, 51)
         Me.Label1.TabIndex = 48
-        Me.Label1.Text = "The first GSM tab, allows to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "change the status of data and" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "voice, and set the s" & _
-    "ignal" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "levels."
+        Me.Label1.Text = "This section, allows to change" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "the status of data and voice," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and set the signal" & _
+    " levels."
         '
         'imgGsm
         '
@@ -174,6 +184,11 @@ Partial Class CtrGsmStatus
         Me.imgGsm.Size = New System.Drawing.Size(64, 64)
         Me.imgGsm.TabIndex = 49
         Me.imgGsm.TabStop = False
+        '
+        'ttConsejo
+        '
+        Me.ttConsejo.BackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ttConsejo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
         '
         'CtrGsmStatus
         '
@@ -221,5 +236,6 @@ Partial Class CtrGsmStatus
     Friend WithEvents lblGsmDatos As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents imgGsm As System.Windows.Forms.PictureBox
+    Friend WithEvents ttConsejo As System.Windows.Forms.ToolTip
 
 End Class

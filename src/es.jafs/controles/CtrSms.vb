@@ -63,14 +63,24 @@
 
         ' Validación de número.
         If bValido Then
-            Dim iNumero As Integer = 0
-            bValido = Integer.TryParse(txtSmsNumero.Text, iNumero)
-            If bValido Then
-                sNumero &= iNumero
+            ' Verifica si son todo valores numéricos.
+            Dim bNumerico As Boolean = True
+            Dim i As Integer = 0
+            While bNumerico And i < txtSmsNumero.Text.Length
+                Dim iNumero As Integer
+                If Not Integer.TryParse(txtSmsNumero.Text(i), iNumero) Then
+                    bNumerico = False
+                End If
+                i += 1
+            End While
+
+            If bNumerico Then
+                sNumero &= txtSmsNumero.Text
             Else
                 MessageBox.Show("Enter a valid phone number", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 txtSmsNumero.Focus()
                 txtSmsNumero.SelectAll()
+                bValido = False
             End If
         End If
 

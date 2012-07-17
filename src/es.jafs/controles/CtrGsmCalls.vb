@@ -37,10 +37,20 @@
         End If
 
         If bValido Then
-            Dim iNumero As Integer = 0
-            If Integer.TryParse(txtGsmNumero.Text, iNumero) Then
-                ' Validación de número y realización de la llamada si todo es correcto.
-                sNumero &= iNumero
+            ' Verifica si son todo valores numéricos.
+            Dim bNumerico As Boolean = True
+            Dim i As Integer = 0
+            While bNumerico And i < txtGsmNumero.Text.Length
+                Dim iNumero As Integer
+                If Not Integer.TryParse(txtGsmNumero.Text(i), iNumero) Then
+                    bNumerico = False
+                End If
+                i += 1
+            End While
+
+            ' Validación de número y realización de la llamada si todo es correcto.
+            If bNumerico Then
+                sNumero &= txtGsmNumero.Text
                 frmPadre.enviarComando(Comando.GSM_CALL & sNumero)
                 txtGsmNumero.Text = String.Empty
                 txtGsmPrefijo.Text = String.Empty

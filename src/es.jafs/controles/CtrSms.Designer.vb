@@ -22,6 +22,7 @@ Partial Class CtrSms
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.txtSmsNumero = New System.Windows.Forms.TextBox()
         Me.txtSmsPrefijo = New System.Windows.Forms.TextBox()
         Me.btnSmsSend = New System.Windows.Forms.Button()
@@ -32,17 +33,19 @@ Partial Class CtrSms
         Me.lblSmsNumber = New System.Windows.Forms.Label()
         Me.lblSmsDesc = New System.Windows.Forms.Label()
         Me.imgSms = New System.Windows.Forms.PictureBox()
+        Me.ttConsejo = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.imgSms, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txtSmsNumero
         '
         Me.txtSmsNumero.Location = New System.Drawing.Point(124, 14)
-        Me.txtSmsNumero.MaxLength = 12
+        Me.txtSmsNumero.MaxLength = 20
         Me.txtSmsNumero.Name = "txtSmsNumero"
         Me.txtSmsNumero.Size = New System.Drawing.Size(147, 23)
         Me.txtSmsNumero.TabIndex = 27
         Me.txtSmsNumero.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.ttConsejo.SetToolTip(Me.txtSmsNumero, "Phone number of the sender")
         '
         'txtSmsPrefijo
         '
@@ -52,6 +55,7 @@ Partial Class CtrSms
         Me.txtSmsPrefijo.Size = New System.Drawing.Size(45, 23)
         Me.txtSmsPrefijo.TabIndex = 26
         Me.txtSmsPrefijo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.ttConsejo.SetToolTip(Me.txtSmsPrefijo, "International prefix")
         '
         'btnSmsSend
         '
@@ -62,6 +66,7 @@ Partial Class CtrSms
         Me.btnSmsSend.Size = New System.Drawing.Size(78, 26)
         Me.btnSmsSend.TabIndex = 29
         Me.btnSmsSend.Text = "Send"
+        Me.ttConsejo.SetToolTip(Me.btnSmsSend, "Send message to emulator")
         Me.btnSmsSend.UseVisualStyleBackColor = True
         '
         'lblSmsTotal
@@ -117,8 +122,8 @@ Partial Class CtrSms
         Me.lblSmsDesc.Name = "lblSmsDesc"
         Me.lblSmsDesc.Size = New System.Drawing.Size(204, 85)
         Me.lblSmsDesc.TabIndex = 34
-        Me.lblSmsDesc.Text = "This function allows to send" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "sms messages to the emulator." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Enter the phone of s" & _
-    "ender," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "write the message, and press" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Send button."
+        Me.lblSmsDesc.Text = "This function allows to send" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "sms messages to the emulator." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Enter the sender pho" & _
+    "ne, write" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "the message, and press Send" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "button."
         '
         'imgSms
         '
@@ -128,6 +133,11 @@ Partial Class CtrSms
         Me.imgSms.Size = New System.Drawing.Size(64, 64)
         Me.imgSms.TabIndex = 35
         Me.imgSms.TabStop = False
+        '
+        'ttConsejo
+        '
+        Me.ttConsejo.BackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ttConsejo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
         '
         'CtrSms
         '
@@ -165,5 +175,6 @@ Partial Class CtrSms
     Friend WithEvents lblSmsNumber As System.Windows.Forms.Label
     Friend WithEvents lblSmsDesc As System.Windows.Forms.Label
     Friend WithEvents imgSms As System.Windows.Forms.PictureBox
+    Friend WithEvents ttConsejo As System.Windows.Forms.ToolTip
 
 End Class

@@ -118,13 +118,24 @@ Public Class FrmPrincipal
         lanzar(TipoApp.Connect)
     End Sub
 
+    ''' <summary>Cierra la aplicación.</summary>
+    ''' <param name="sender">Emisor del evento</param>
+    ''' <param name="e">Datos del evento</param>
+    Private Sub btnSalir_Click(sender As System.Object, e As System.EventArgs) Handles btnSalir.Click
+        Me.Close()
+    End Sub
+
 
     ''' <summary>Controla el cierre de la aplicación.</summary>
     ''' <param name="sender">Emisor del evento.</param>
     ''' <param name="e">Datos del evento.</param>
     Private Sub frmPrincipal_FormClosing(sender As System.Object, e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing
         If objTelnet.Conectado Then
-            objTelnet.desconectar()
+            If MessageBox.Show("Currently connected to emulator. Do you want to exit?", "Exit confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.No Then
+                e.Cancel = True
+            Else
+                objTelnet.desconectar()
+            End If
         End If
     End Sub
 

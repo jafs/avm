@@ -83,6 +83,7 @@ Partial Class CtrGps
         Me.nudGpsSatelites.Name = "nudGpsSatelites"
         Me.nudGpsSatelites.Size = New System.Drawing.Size(44, 23)
         Me.nudGpsSatelites.TabIndex = 48
+        Me.ttConsejo.SetToolTip(Me.nudGpsSatelites, "Number of satellites")
         Me.nudGpsSatelites.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'nudGpsAltitude
@@ -94,6 +95,7 @@ Partial Class CtrGps
         Me.nudGpsAltitude.Name = "nudGpsAltitude"
         Me.nudGpsAltitude.Size = New System.Drawing.Size(80, 23)
         Me.nudGpsAltitude.TabIndex = 47
+        Me.ttConsejo.SetToolTip(Me.nudGpsAltitude, "Altitude in meters")
         '
         'chkGpsAltitude
         '
@@ -113,6 +115,7 @@ Partial Class CtrGps
         Me.nudGpsLatSec.Name = "nudGpsLatSec"
         Me.nudGpsLatSec.Size = New System.Drawing.Size(50, 23)
         Me.nudGpsLatSec.TabIndex = 45
+        Me.ttConsejo.SetToolTip(Me.nudGpsLatSec, "Seconds")
         '
         'nudGpsLatMin
         '
@@ -121,6 +124,7 @@ Partial Class CtrGps
         Me.nudGpsLatMin.Name = "nudGpsLatMin"
         Me.nudGpsLatMin.Size = New System.Drawing.Size(50, 23)
         Me.nudGpsLatMin.TabIndex = 44
+        Me.ttConsejo.SetToolTip(Me.nudGpsLatMin, "Minutes")
         '
         'nudGpsLatGrados
         '
@@ -130,6 +134,7 @@ Partial Class CtrGps
         Me.nudGpsLatGrados.Name = "nudGpsLatGrados"
         Me.nudGpsLatGrados.Size = New System.Drawing.Size(50, 23)
         Me.nudGpsLatGrados.TabIndex = 43
+        Me.ttConsejo.SetToolTip(Me.nudGpsLatGrados, "Degrees (between -90 and 90)")
         '
         'lblGpsLatitud
         '
@@ -148,6 +153,7 @@ Partial Class CtrGps
         Me.nudGpsLonSec.Name = "nudGpsLonSec"
         Me.nudGpsLonSec.Size = New System.Drawing.Size(50, 23)
         Me.nudGpsLonSec.TabIndex = 41
+        Me.ttConsejo.SetToolTip(Me.nudGpsLonSec, "Seconds")
         '
         'nudGpsLonMin
         '
@@ -156,6 +162,7 @@ Partial Class CtrGps
         Me.nudGpsLonMin.Name = "nudGpsLonMin"
         Me.nudGpsLonMin.Size = New System.Drawing.Size(50, 23)
         Me.nudGpsLonMin.TabIndex = 40
+        Me.ttConsejo.SetToolTip(Me.nudGpsLonMin, "Minutes")
         '
         'nudGpsLonGrados
         '
@@ -165,6 +172,7 @@ Partial Class CtrGps
         Me.nudGpsLonGrados.Name = "nudGpsLonGrados"
         Me.nudGpsLonGrados.Size = New System.Drawing.Size(50, 23)
         Me.nudGpsLonGrados.TabIndex = 39
+        Me.ttConsejo.SetToolTip(Me.nudGpsLonGrados, "Degrees (between -180 and 180)")
         '
         'lblGpsLongitud
         '
@@ -184,8 +192,8 @@ Partial Class CtrGps
         Me.lblGpsDesc.Size = New System.Drawing.Size(187, 102)
         Me.lblGpsDesc.TabIndex = 51
         Me.lblGpsDesc.Text = "Here you will be able to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "change the GPS location." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Enter the longitude and" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "lati" & _
-            "tude coordinates to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "change the position. Altitude" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and satellites are optional." & _
-            ""
+    "tude coordinates to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "change the position. Altitude" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and satellites are optional." & _
+    ""
         '
         'imgGps
         '
