@@ -68,50 +68,62 @@
         Select Case sSensor
             Case Comando.SEN_ACCELERATION, Comando.SEN_MAGNETIC_FIELD
                 lblSenValor1.Text = "X-Axis:"
+                ttConsejo.SetToolTip(lblSenValor1, "Value in X axis")
                 nudSenValor1.Enabled = True
                 nudSenValor1.Minimum = -100
                 nudSenValor1.Maximum = 100
                 lblSenValor2.Text = "Y-Axis:"
+                ttConsejo.SetToolTip(lblSenValor2, "Value in Y axis")
                 nudSenValor2.Enabled = True
                 nudSenValor2.Minimum = -100
                 nudSenValor2.Maximum = 100
                 lblSenValor3.Text = "Z-Axis:"
+                ttConsejo.SetToolTip(lblSenValor3, "Value in Z axis")
                 nudSenValor3.Enabled = True
                 nudSenValor3.Minimum = -100
                 nudSenValor3.Maximum = 100
             Case Comando.SEN_ORIENTATION
                 lblSenValor1.Text = "Azimuth:"
+                ttConsejo.SetToolTip(lblSenValor1, "Degrees of rotation around the z axis")
                 nudSenValor1.Enabled = True
                 nudSenValor1.Minimum = 0
                 nudSenValor1.Maximum = 359
                 lblSenValor2.Text = "Pitch:"
+                ttConsejo.SetToolTip(lblSenValor2, "Degrees of rotation around the x axis")
                 nudSenValor2.Enabled = True
                 nudSenValor2.Minimum = -180
                 nudSenValor2.Maximum = 180
                 lblSenValor3.Text = "Roll:"
+                ttConsejo.SetToolTip(lblSenValor3, "Degrees of rotation around the y axis")
                 nudSenValor3.Enabled = True
                 nudSenValor3.Minimum = -90
                 nudSenValor3.Maximum = 90
             Case Comando.SEN_TEMPERATURE
                 lblSenValor1.Text = "Temp:"
+                ttConsejo.SetToolTip(lblSenValor1, "Device temperature in Cº")
                 nudSenValor1.Enabled = True
                 nudSenValor1.Minimum = 0
                 nudSenValor1.Maximum = 359
                 lblSenValor2.Text = "Not used:"
+                ttConsejo.SetToolTip(lblSenValor2, "")
                 nudSenValor2.Enabled = False
                 nudSenValor2.Value = 0
                 lblSenValor3.Text = "Not used:"
+                ttConsejo.SetToolTip(lblSenValor3, "")
                 nudSenValor3.Enabled = False
                 nudSenValor3.Value = 0
             Case Comando.SEN_PROXIMITY
                 lblSenValor1.Text = "Distance:"
+                ttConsejo.SetToolTip(lblSenValor1, "How far away an object is from a device")
                 nudSenValor1.Enabled = True
                 nudSenValor1.Minimum = 0
-                nudSenValor1.Maximum = 359
+                nudSenValor1.Maximum = 100
                 lblSenValor2.Text = "Not used:"
+                ttConsejo.SetToolTip(lblSenValor2, "")
                 nudSenValor2.Enabled = False
                 nudSenValor2.Value = 0
                 lblSenValor3.Text = "Not used:"
+                ttConsejo.SetToolTip(lblSenValor3, "")
                 nudSenValor3.Enabled = False
                 nudSenValor3.Value = 0
         End Select
@@ -150,7 +162,7 @@
                                         nudSenValor3.Value = 0
                                 End Select
                             Catch e As ArgumentException
-                                MessageBox.Show("Error when read some value of sensor", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                                MessageBox.Show("Error when read some sensor value", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                             End Try
                         End If
                     Next

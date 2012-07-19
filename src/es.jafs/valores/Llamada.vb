@@ -1,5 +1,21 @@
 ﻿''' <summary>Clase que contiene información de una llamada.</summary>
 Public Class Llamada
+    ''' <summary>Texto que indica que se puede activar la llamada.</summary>
+    Public Const GSM_ACCEPT As String = "activate call"
+    ''' <summary>Texto que indica finalizar la llamada como ocupada.</summary>
+    Public Const GSM_BUSY As String = "finalize call as busy"
+    ''' <summary>Texto que indica finalizar llamada.</summary>
+    Public Const GSM_CANCEL As String = "finalize call"
+    ''' <summary>Texto que indica llamada en espera.</summary>
+    Public Const GSM_HOLD As String = "hold call"
+    ''' <summary>Texto que indica conexión en proceso.</summary>
+    Public Const GSM_CONNECTING As String = "connecting..."
+    ''' <summary>Texto que indica un estado desconocido.</summary>
+    Public Const GSM_UNKNOWN As String = "unknown status"
+    ''' <summary>Texto que indica operación no permitida.</summary>
+    Public Const GSM_NOT_ALLOWED As String = "not allowed"
+
+
     ''' <summary>Enumeración con los tipos de llamada.</summary>
     Public Enum TipoLlamada
         ''' <summary>Llamada entrante.</summary>
@@ -85,9 +101,9 @@ Public Class Llamada
         Dim bmpImagen As Bitmap = Nothing
 
         If eTipo = TipoLlamada.inbound Then
-            bmpImagen = My.Resources.outbound16
+            bmpImagen = My.Resources.icoGsmOutbound16
         Else
-            bmpImagen = My.Resources.inbound16
+            bmpImagen = My.Resources.icoGsmInbound16
         End If
 
         Return bmpImagen
@@ -103,11 +119,13 @@ Public Class Llamada
 
         Select Case eEstado
             Case EstadoLlamada.active
-                bmpImagen = My.Resources.gsm_active16
+                bmpImagen = My.Resources.icoGsmActive16
             Case EstadoLlamada.held
-                bmpImagen = My.Resources.gsm_held16
+                bmpImagen = My.Resources.icoGsmHeld16
+            Case EstadoLlamada.unknown
+                bmpImagen = My.Resources.icoGsmUnknown16
             Case Else
-                bmpImagen = My.Resources.gsm_incoming16
+                bmpImagen = My.Resources.icoGsmIncoming16
         End Select
 
         Return bmpImagen
@@ -119,29 +137,19 @@ Public Class Llamada
     ''' </summary>
     ''' <returns>Array de datos informativo.</returns>
     Public Function toArray() As Object()
-        Dim aroDatos(7) As Object
+        Dim aroDatos(6) As Object
 
         aroDatos(0) = getTipoBitmap()
-        aroDatos(1) = getEstadoBitmap()
-        aroDatos(2) = sNumero
-        aroDatos(3) = eTipo.ToString
-        aroDatos(4) = eEstado.ToString
-        Select Case eEstado
-            Case EstadoLlamada.active
-                aroDatos(5) = My.Resources.gsm_hold16
-            Case EstadoLlamada.held
-                aroDatos(5) = My.Resources.gsm_accept16
-            Case Else
-                aroDatos(5) = My.Resources.gsm_incoming_status16
-        End Select
-
+        aroDatos(1) = sNumero
+        aroDatos(2) = eTipo.ToString
+        aroDatos(3) = eEstado.ToString
+        aroDatos(4) = getEstadoBitmap()
         If eTipo = TipoLlamada.outbound Then
-            aroDatos(6) = My.Resources.gsm_busy16
+            aroDatos(5) = My.Resources.icoGsmBusy16
         Else
-            aroDatos(6) = My.Resources.gsm_incoming_status16
+            aroDatos(5) = My.Resources.icoGsmUnknown16
         End If
-        aroDatos(7) = My.Resources.gsm_cancel16
-
+        aroDatos(6) = My.Resources.icoGsmCancel16
 
         Return aroDatos
     End Function
@@ -182,4 +190,29 @@ Public Class Llamada
         Return sNumero & ":" & eTipo.ToString & ":" & eEstado.ToString
     End Function
 
+
+    ''' <summary>Verifica si la cadena recibida es un número de teléfono válido</summary>
+    ''' <param name="sCadena">Cadena a comprobar.</param>
+    ''' <returns>Valor boolean que indica si la cadena recibida es un número de teléfono.</returns>
+    Public Shared Function isNumber(ByRef sCadena As String) As Boolean
+        Dim bNumerico As Boolean = True
+
+        If sCadena Is Nothing Or sCadena.Length = 0 Then
+            bNumerico = False
+        Else
+            Dim i As Integer = 0
+
+            ' Comprueba que todos los valores de la cadena son números. Esto nos permite
+            ' tener números superiores a los rangos de los valores primitivos.
+            While bNumerico And i < sCadena.Length
+                Dim iNumero As Integer
+                If Not Integer.TryParse(sCadena(i), iNumero) Then
+                    bNumerico = False
+                End If
+                i += 1
+            End While
+        End If
+
+        Return bNumerico
+    End Function
 End Class

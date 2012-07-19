@@ -51,7 +51,6 @@ Public NotInheritable Class Comando
     Public Const GSM_VOICE As String = "gsm voice "
 
 
-
     ' ######################################
     ' PARÁMETROS
     ' ######################################
@@ -68,7 +67,6 @@ Public NotInheritable Class Comando
     Public Const SEN_TEMPERATURE As String = "temperature"
     ''' <summary>Nombre del sensor de proximidad.</summary>
     Public Const SEN_PROXIMITY As String = "proximity"
-
 
     ''' <summary>Constructor privado para evitar instancias.</summary>
     Private Sub New()

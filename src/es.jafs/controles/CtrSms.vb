@@ -63,14 +63,13 @@
 
         ' Validación de número.
         If bValido Then
-            Dim iNumero As Integer = 0
-            bValido = Integer.TryParse(txtSmsNumero.Text, iNumero)
-            If bValido Then
-                sNumero &= iNumero
+            If Llamada.isNumber(txtSmsNumero.Text) Then
+                sNumero &= txtSmsNumero.Text
             Else
                 MessageBox.Show("Enter a valid phone number", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 txtSmsNumero.Focus()
                 txtSmsNumero.SelectAll()
+                bValido = False
             End If
         End If
 

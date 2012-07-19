@@ -22,6 +22,7 @@ Partial Class CtrSensor
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.btnSenUpdate = New System.Windows.Forms.Button()
         Me.lblSenDesc = New System.Windows.Forms.Label()
         Me.btnSenSet = New System.Windows.Forms.Button()
@@ -34,6 +35,7 @@ Partial Class CtrSensor
         Me.lblSensor = New System.Windows.Forms.Label()
         Me.cmbSensores = New System.Windows.Forms.ComboBox()
         Me.imgSensores = New System.Windows.Forms.PictureBox()
+        Me.ttConsejo = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.nudSenValor2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nudSenValor3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nudSenValor1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -49,6 +51,7 @@ Partial Class CtrSensor
         Me.btnSenUpdate.Size = New System.Drawing.Size(75, 32)
         Me.btnSenUpdate.TabIndex = 29
         Me.btnSenUpdate.Text = "Update"
+        Me.ttConsejo.SetToolTip(Me.btnSenUpdate, "Update sensor values with last")
         Me.btnSenUpdate.UseVisualStyleBackColor = True
         '
         'lblSenDesc
@@ -69,6 +72,7 @@ Partial Class CtrSensor
         Me.btnSenSet.Size = New System.Drawing.Size(75, 61)
         Me.btnSenSet.TabIndex = 24
         Me.btnSenSet.Text = "Set" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Values"
+        Me.ttConsejo.SetToolTip(Me.btnSenSet, "Set the sensor values with entered values")
         Me.btnSenSet.UseVisualStyleBackColor = True
         '
         'nudSenValor2
@@ -133,6 +137,7 @@ Partial Class CtrSensor
         Me.lblSensor.Size = New System.Drawing.Size(57, 17)
         Me.lblSensor.TabIndex = 19
         Me.lblSensor.Text = "Sensor:"
+        Me.ttConsejo.SetToolTip(Me.lblSensor, "Select a sensor type")
         '
         'cmbSensores
         '
@@ -146,12 +151,17 @@ Partial Class CtrSensor
         '
         'imgSensores
         '
-        Me.imgSensores.Image = Global.Avm.My.Resources.Resources.sensores64
+        Me.imgSensores.Image = Global.Avm.My.Resources.Resources.icoSensores64
         Me.imgSensores.Location = New System.Drawing.Point(12, 239)
         Me.imgSensores.Name = "imgSensores"
         Me.imgSensores.Size = New System.Drawing.Size(64, 64)
         Me.imgSensores.TabIndex = 28
         Me.imgSensores.TabStop = False
+        '
+        'ttConsejo
+        '
+        Me.ttConsejo.BackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ttConsejo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
         '
         'CtrSensor
         '
@@ -196,5 +206,6 @@ Partial Class CtrSensor
     Friend WithEvents lblSensor As System.Windows.Forms.Label
     Friend WithEvents cmbSensores As System.Windows.Forms.ComboBox
     Friend WithEvents imgSensores As System.Windows.Forms.PictureBox
+    Friend WithEvents ttConsejo As System.Windows.Forms.ToolTip
 
 End Class
