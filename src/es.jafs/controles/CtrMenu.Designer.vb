@@ -65,7 +65,7 @@ Partial Class CtrMenu
         Me.btnDesconectar.FlatAppearance.BorderSize = 0
         Me.btnDesconectar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDesconectar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.btnDesconectar.Image = Global.Avm.My.Resources.Resources.mn_desconectar64
+        Me.btnDesconectar.Image = Global.Avm.My.Resources.Resources.icoMenuLogout64
         Me.btnDesconectar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnDesconectar.Location = New System.Drawing.Point(141, 103)
         Me.btnDesconectar.Name = "btnDesconectar"
@@ -81,7 +81,7 @@ Partial Class CtrMenu
         Me.btnCalls.FlatAppearance.BorderSize = 0
         Me.btnCalls.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCalls.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.btnCalls.Image = Global.Avm.My.Resources.Resources.gsm64
+        Me.btnCalls.Image = Global.Avm.My.Resources.Resources.icoGsm64
         Me.btnCalls.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnCalls.Location = New System.Drawing.Point(72, 3)
         Me.btnCalls.Name = "btnCalls"
@@ -97,7 +97,7 @@ Partial Class CtrMenu
         Me.btnSensors.FlatAppearance.BorderSize = 0
         Me.btnSensors.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSensors.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.btnSensors.Image = Global.Avm.My.Resources.Resources.sensores64
+        Me.btnSensors.Image = Global.Avm.My.Resources.Resources.icoSensores64
         Me.btnSensors.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnSensors.Location = New System.Drawing.Point(3, 3)
         Me.btnSensors.Name = "btnSensors"
@@ -113,7 +113,7 @@ Partial Class CtrMenu
         Me.btnGsm.FlatAppearance.BorderSize = 0
         Me.btnGsm.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGsm.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.btnGsm.Image = Global.Avm.My.Resources.Resources.gsm64
+        Me.btnGsm.Image = Global.Avm.My.Resources.Resources.icoGsm64
         Me.btnGsm.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnGsm.Location = New System.Drawing.Point(3, 103)
         Me.btnGsm.Name = "btnGsm"
@@ -129,7 +129,7 @@ Partial Class CtrMenu
         Me.btnSms.FlatAppearance.BorderSize = 0
         Me.btnSms.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSms.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.btnSms.Image = Global.Avm.My.Resources.Resources.sms64
+        Me.btnSms.Image = Global.Avm.My.Resources.Resources.icoSms64
         Me.btnSms.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnSms.Location = New System.Drawing.Point(72, 103)
         Me.btnSms.Name = "btnSms"
@@ -145,7 +145,7 @@ Partial Class CtrMenu
         Me.btnGps.FlatAppearance.BorderSize = 0
         Me.btnGps.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGps.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.btnGps.Image = Global.Avm.My.Resources.Resources.gps64
+        Me.btnGps.Image = Global.Avm.My.Resources.Resources.icoGps64
         Me.btnGps.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnGps.Location = New System.Drawing.Point(210, 3)
         Me.btnGps.Name = "btnGps"
@@ -161,7 +161,7 @@ Partial Class CtrMenu
         Me.btnPower.FlatAppearance.BorderSize = 0
         Me.btnPower.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPower.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.btnPower.Image = Global.Avm.My.Resources.Resources.bateria64
+        Me.btnPower.Image = Global.Avm.My.Resources.Resources.icoBateria64
         Me.btnPower.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnPower.Location = New System.Drawing.Point(141, 3)
         Me.btnPower.Name = "btnPower"

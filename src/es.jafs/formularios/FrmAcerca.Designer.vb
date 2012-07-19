@@ -16,9 +16,7 @@ Partial Class FrmAcerca
 
     Friend WithEvents lblProducto As System.Windows.Forms.Label
     Friend WithEvents lblVersion As System.Windows.Forms.Label
-    Friend WithEvents txtDescripcion As System.Windows.Forms.TextBox
     Friend WithEvents btnCerrar As System.Windows.Forms.Button
-    Friend WithEvents lblCopyrigth As System.Windows.Forms.Label
 
     'Requerido por el Diseñador de Windows Forms
     Private components As System.ComponentModel.IContainer
@@ -28,30 +26,30 @@ Partial Class FrmAcerca
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmAcerca))
         Me.lblProducto = New System.Windows.Forms.Label()
         Me.lblVersion = New System.Windows.Forms.Label()
-        Me.lblCopyrigth = New System.Windows.Forms.Label()
-        Me.txtDescripcion = New System.Windows.Forms.TextBox()
         Me.btnCerrar = New System.Windows.Forms.Button()
         Me.lblCompania = New System.Windows.Forms.LinkLabel()
         Me.pnlTitulo = New System.Windows.Forms.Panel()
         Me.lblAbout = New System.Windows.Forms.Label()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.rctBorde = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.imgLogo = New System.Windows.Forms.PictureBox()
+        Me.linkCorreo = New System.Windows.Forms.LinkLabel()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.pnlTitulo.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblProducto
         '
         Me.lblProducto.AutoSize = True
+        Me.lblProducto.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblProducto.Location = New System.Drawing.Point(7, 42)
         Me.lblProducto.Margin = New System.Windows.Forms.Padding(8, 0, 4, 0)
         Me.lblProducto.MaximumSize = New System.Drawing.Size(0, 21)
         Me.lblProducto.Name = "lblProducto"
-        Me.lblProducto.Size = New System.Drawing.Size(138, 17)
+        Me.lblProducto.Size = New System.Drawing.Size(172, 20)
         Me.lblProducto.TabIndex = 0
         Me.lblProducto.Text = "Nombre de producto"
         Me.lblProducto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -59,7 +57,7 @@ Partial Class FrmAcerca
         'lblVersion
         '
         Me.lblVersion.AutoSize = True
-        Me.lblVersion.Location = New System.Drawing.Point(7, 70)
+        Me.lblVersion.Location = New System.Drawing.Point(7, 62)
         Me.lblVersion.Margin = New System.Windows.Forms.Padding(8, 0, 4, 0)
         Me.lblVersion.MaximumSize = New System.Drawing.Size(0, 21)
         Me.lblVersion.Name = "lblVersion"
@@ -68,31 +66,6 @@ Partial Class FrmAcerca
         Me.lblVersion.Text = "Versión"
         Me.lblVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'lblCopyrigth
-        '
-        Me.lblCopyrigth.AutoSize = True
-        Me.lblCopyrigth.Location = New System.Drawing.Point(7, 98)
-        Me.lblCopyrigth.Margin = New System.Windows.Forms.Padding(8, 0, 4, 0)
-        Me.lblCopyrigth.MaximumSize = New System.Drawing.Size(0, 21)
-        Me.lblCopyrigth.Name = "lblCopyrigth"
-        Me.lblCopyrigth.Size = New System.Drawing.Size(68, 17)
-        Me.lblCopyrigth.TabIndex = 0
-        Me.lblCopyrigth.Text = "Copyright"
-        Me.lblCopyrigth.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'txtDescripcion
-        '
-        Me.txtDescripcion.Location = New System.Drawing.Point(10, 154)
-        Me.txtDescripcion.Margin = New System.Windows.Forms.Padding(8, 4, 4, 4)
-        Me.txtDescripcion.Multiline = True
-        Me.txtDescripcion.Name = "txtDescripcion"
-        Me.txtDescripcion.ReadOnly = True
-        Me.txtDescripcion.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.txtDescripcion.Size = New System.Drawing.Size(295, 79)
-        Me.txtDescripcion.TabIndex = 0
-        Me.txtDescripcion.TabStop = False
-        Me.txtDescripcion.Text = resources.GetString("txtDescripcion.Text")
-        '
         'btnCerrar
         '
         Me.btnCerrar.Anchor = System.Windows.Forms.AnchorStyles.None
@@ -100,8 +73,8 @@ Partial Class FrmAcerca
         Me.btnCerrar.FlatAppearance.BorderSize = 0
         Me.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCerrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCerrar.Location = New System.Drawing.Point(282, 2)
-        Me.btnCerrar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnCerrar.Location = New System.Drawing.Point(281, 2)
+        Me.btnCerrar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCerrar.Name = "btnCerrar"
         Me.btnCerrar.Size = New System.Drawing.Size(28, 27)
         Me.btnCerrar.TabIndex = 0
@@ -111,8 +84,8 @@ Partial Class FrmAcerca
         'lblCompania
         '
         Me.lblCompania.AutoSize = True
-        Me.lblCompania.LinkColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.lblCompania.Location = New System.Drawing.Point(7, 126)
+        Me.lblCompania.LinkColor = System.Drawing.Color.FromArgb(CType(CType(180, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.lblCompania.Location = New System.Drawing.Point(7, 92)
         Me.lblCompania.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCompania.Name = "lblCompania"
         Me.lblCompania.Size = New System.Drawing.Size(71, 17)
@@ -127,7 +100,7 @@ Partial Class FrmAcerca
         Me.pnlTitulo.Controls.Add(Me.btnCerrar)
         Me.pnlTitulo.Location = New System.Drawing.Point(1, 1)
         Me.pnlTitulo.Name = "pnlTitulo"
-        Me.pnlTitulo.Size = New System.Drawing.Size(314, 32)
+        Me.pnlTitulo.Size = New System.Drawing.Size(312, 32)
         Me.pnlTitulo.TabIndex = 2
         '
         'lblAbout
@@ -145,7 +118,7 @@ Partial Class FrmAcerca
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.rctBorde})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(316, 246)
+        Me.ShapeContainer1.Size = New System.Drawing.Size(314, 163)
         Me.ShapeContainer1.TabIndex = 3
         Me.ShapeContainer1.TabStop = False
         '
@@ -153,16 +126,37 @@ Partial Class FrmAcerca
         '
         Me.rctBorde.Location = New System.Drawing.Point(0, 0)
         Me.rctBorde.Name = "rctBorde"
-        Me.rctBorde.Size = New System.Drawing.Size(315, 245)
+        Me.rctBorde.Size = New System.Drawing.Size(313, 162)
         '
-        'PictureBox1
+        'imgLogo
         '
-        Me.PictureBox1.Image = Global.Avm.My.Resources.Resources.gsm64
-        Me.PictureBox1.Location = New System.Drawing.Point(240, 42)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(64, 64)
-        Me.PictureBox1.TabIndex = 4
-        Me.PictureBox1.TabStop = False
+        Me.imgLogo.Image = Global.Avm.My.Resources.Resources.icoGsm64
+        Me.imgLogo.Location = New System.Drawing.Point(240, 42)
+        Me.imgLogo.Name = "imgLogo"
+        Me.imgLogo.Size = New System.Drawing.Size(64, 64)
+        Me.imgLogo.TabIndex = 4
+        Me.imgLogo.TabStop = False
+        '
+        'linkCorreo
+        '
+        Me.linkCorreo.AutoSize = True
+        Me.linkCorreo.LinkColor = System.Drawing.Color.FromArgb(CType(CType(180, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.linkCorreo.Location = New System.Drawing.Point(8, 114)
+        Me.linkCorreo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.linkCorreo.Name = "linkCorreo"
+        Me.linkCorreo.Size = New System.Drawing.Size(85, 17)
+        Me.linkCorreo.TabIndex = 5
+        Me.linkCorreo.TabStop = True
+        Me.linkCorreo.Text = "jafs@jafs.es"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(8, 136)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(207, 17)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "Icons by: http://www.gnome.org/"
         '
         'FrmAcerca
         '
@@ -170,28 +164,28 @@ Partial Class FrmAcerca
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(100, Byte), Integer))
         Me.CancelButton = Me.btnCerrar
-        Me.ClientSize = New System.Drawing.Size(316, 246)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.ClientSize = New System.Drawing.Size(314, 163)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.linkCorreo)
+        Me.Controls.Add(Me.imgLogo)
         Me.Controls.Add(Me.pnlTitulo)
         Me.Controls.Add(Me.lblCompania)
-        Me.Controls.Add(Me.txtDescripcion)
-        Me.Controls.Add(Me.lblCopyrigth)
         Me.Controls.Add(Me.lblVersion)
         Me.Controls.Add(Me.lblProducto)
         Me.Controls.Add(Me.ShapeContainer1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "FrmAcerca"
         Me.ShowInTaskbar = False
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "About"
         Me.pnlTitulo.ResumeLayout(False)
         Me.pnlTitulo.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -201,6 +195,8 @@ Partial Class FrmAcerca
     Friend WithEvents lblAbout As System.Windows.Forms.Label
     Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
     Friend WithEvents rctBorde As Microsoft.VisualBasic.PowerPacks.RectangleShape
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents imgLogo As System.Windows.Forms.PictureBox
+    Friend WithEvents linkCorreo As System.Windows.Forms.LinkLabel
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 
 End Class
