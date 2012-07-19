@@ -29,8 +29,8 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
-    <ApplicationVersion>0.5.4.%2a</ApplicationVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>0.5.5.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -46,15 +46,17 @@
     <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
+    <DebugType>None</DebugType>
     <DefineDebug>false</DefineDebug>
-    <DefineTrace>true</DefineTrace>
+    <DefineTrace>false</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DocumentationFile>Avm.xml</DocumentationFile>
     <NoWarn>
     </NoWarn>
     <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
@@ -253,6 +255,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -290,13 +293,17 @@
   <ItemGroup>
     <Content Include="es.jafs\recursos\license.txt" />
     <Content Include="es.jafs\recursos\readme.txt" />
-    <None Include="Resources\mn_desconectar64.png" />
+    <None Include="Resources\icoMenuSalir48.png" />
+    <None Include="Resources\icoMenuLogout64.png" />
+    <None Include="Resources\icoAyuda16.png" />
+    <None Include="Resources\icoManual16.png" />
+    <None Include="Resources\mn_ayuda48.png" />
+    <None Include="Resources\btnLlamar.png" />
+    <None Include="Resources\icoGsmUnknown16.png" />
     <None Include="Resources\mn_home48.png" />
     <None Include="Resources\gsm-incoming-status16.png" />
-    <None Include="Resources\gsm-hold16.png" />
     <None Include="Resources\gsm-cancel16.png" />
     <None Include="Resources\gsm-busy16.png" />
-    <None Include="Resources\gsm-accept16.png" />
     <None Include="Resources\gsm-incoming16.png" />
     <None Include="Resources\gsm-held16.png" />
     <None Include="Resources\gsm-active16.png" />
