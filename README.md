@@ -12,6 +12,19 @@ Requirements
 
 Version History
 ---------------
+Version 0.5.5 - 19/07/2012
+* Solved problem with duplicated calls.
+* Tooltips in all screens.
+* Improvements in About window.
+* Deleted resources not used.
+* Image optimization with Png Optimizer.
+* New call monitor.
+* New help button in dock.
+* Number validation in Calls and SMS improved.
+* New exit confirmation dialog when connection is active.
+* New exit button in dock.
+* Improvements in code.
+
 Version 0.5.4.1 - 15/07/2012
 * Improvements.
 * About dialog.

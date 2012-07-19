@@ -190,4 +190,29 @@ Public Class Llamada
         Return sNumero & ":" & eTipo.ToString & ":" & eEstado.ToString
     End Function
 
+
+    ''' <summary>Verifica si la cadena recibida es un número de teléfono válido</summary>
+    ''' <param name="sCadena">Cadena a comprobar.</param>
+    ''' <returns>Valor boolean que indica si la cadena recibida es un número de teléfono.</returns>
+    Public Shared Function isNumber(ByRef sCadena As String) As Boolean
+        Dim bNumerico As Boolean = True
+
+        If sCadena Is Nothing Or sCadena.Length = 0 Then
+            bNumerico = False
+        Else
+            Dim i As Integer = 0
+
+            ' Comprueba que todos los valores de la cadena son números. Esto nos permite
+            ' tener números superiores a los rangos de los valores primitivos.
+            While bNumerico And i < sCadena.Length
+                Dim iNumero As Integer
+                If Not Integer.TryParse(sCadena(i), iNumero) Then
+                    bNumerico = False
+                End If
+                i += 1
+            End While
+        End If
+
+        Return bNumerico
+    End Function
 End Class

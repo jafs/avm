@@ -37,19 +37,8 @@
         End If
 
         If bValido Then
-            ' Verifica si son todo valores numéricos.
-            Dim bNumerico As Boolean = True
-            Dim i As Integer = 0
-            While bNumerico And i < txtGsmNumero.Text.Length
-                Dim iNumero As Integer
-                If Not Integer.TryParse(txtGsmNumero.Text(i), iNumero) Then
-                    bNumerico = False
-                End If
-                i += 1
-            End While
-
             ' Validación de número y realización de la llamada si todo es correcto.
-            If bNumerico Then
+            If Llamada.isNumber(txtGsmNumero.Text) Then
                 sNumero &= txtGsmNumero.Text
                 frmPadre.enviarComando(Comando.GSM_CALL & sNumero)
                 txtGsmNumero.Text = String.Empty
