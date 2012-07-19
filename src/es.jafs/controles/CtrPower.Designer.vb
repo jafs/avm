@@ -22,6 +22,7 @@ Partial Class CtrPower
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.lblBatDesc = New System.Windows.Forms.Label()
         Me.btnBatActualiza = New System.Windows.Forms.Button()
         Me.btnBatCapacity = New System.Windows.Forms.Button()
@@ -34,6 +35,7 @@ Partial Class CtrPower
         Me.lblEstado = New System.Windows.Forms.Label()
         Me.chkCargaAc = New System.Windows.Forms.CheckBox()
         Me.imgBateria = New System.Windows.Forms.PictureBox()
+        Me.ttConsejo = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.nudBatCapacity, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgBateria, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -41,7 +43,7 @@ Partial Class CtrPower
         'lblBatDesc
         '
         Me.lblBatDesc.AutoSize = True
-        Me.lblBatDesc.Location = New System.Drawing.Point(80, 225)
+        Me.lblBatDesc.Location = New System.Drawing.Point(80, 237)
         Me.lblBatDesc.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblBatDesc.Name = "lblBatDesc"
         Me.lblBatDesc.Size = New System.Drawing.Size(195, 85)
@@ -58,6 +60,7 @@ Partial Class CtrPower
         Me.btnBatActualiza.Size = New System.Drawing.Size(100, 27)
         Me.btnBatActualiza.TabIndex = 22
         Me.btnBatActualiza.Text = "Update"
+        Me.ttConsejo.SetToolTip(Me.btnBatActualiza, "Update the fields with last power values")
         Me.btnBatActualiza.UseVisualStyleBackColor = True
         '
         'btnBatCapacity
@@ -69,6 +72,7 @@ Partial Class CtrPower
         Me.btnBatCapacity.Size = New System.Drawing.Size(90, 26)
         Me.btnBatCapacity.TabIndex = 19
         Me.btnBatCapacity.Text = "Set"
+        Me.ttConsejo.SetToolTip(Me.btnBatCapacity, "Update battery charge value")
         Me.btnBatCapacity.UseVisualStyleBackColor = True
         '
         'lblBatCapacity
@@ -80,6 +84,7 @@ Partial Class CtrPower
         Me.lblBatCapacity.Size = New System.Drawing.Size(66, 17)
         Me.lblBatCapacity.TabIndex = 24
         Me.lblBatCapacity.Text = "Capacity:"
+        Me.ttConsejo.SetToolTip(Me.lblBatCapacity, "Battery level charge")
         '
         'cmbBatHealth
         '
@@ -101,6 +106,7 @@ Partial Class CtrPower
         Me.lblBatHealth.Size = New System.Drawing.Size(100, 17)
         Me.lblBatHealth.TabIndex = 23
         Me.lblBatHealth.Text = "Battery health:"
+        Me.ttConsejo.SetToolTip(Me.lblBatHealth, "Sets the state of health of the battery")
         '
         'chkBatPresent
         '
@@ -111,6 +117,7 @@ Partial Class CtrPower
         Me.chkBatPresent.Size = New System.Drawing.Size(124, 21)
         Me.chkBatPresent.TabIndex = 20
         Me.chkBatPresent.Text = "Battery present"
+        Me.ttConsejo.SetToolTip(Me.chkBatPresent, "Check to indicate that there are a battery plugged")
         Me.chkBatPresent.UseVisualStyleBackColor = True
         '
         'nudBatCapacity
@@ -120,6 +127,7 @@ Partial Class CtrPower
         Me.nudBatCapacity.Name = "nudBatCapacity"
         Me.nudBatCapacity.Size = New System.Drawing.Size(62, 23)
         Me.nudBatCapacity.TabIndex = 17
+        Me.ttConsejo.SetToolTip(Me.nudBatCapacity, "Between 0 and 100")
         Me.nudBatCapacity.Value = New Decimal(New Integer() {50, 0, 0, 0})
         '
         'cmbBatStat
@@ -142,6 +150,7 @@ Partial Class CtrPower
         Me.lblEstado.Size = New System.Drawing.Size(99, 17)
         Me.lblEstado.TabIndex = 18
         Me.lblEstado.Text = "Battery status:"
+        Me.ttConsejo.SetToolTip(Me.lblEstado, "Sets the battery status (charging, full, etc.)")
         '
         'chkCargaAc
         '
@@ -152,17 +161,23 @@ Partial Class CtrPower
         Me.chkCargaAc.Size = New System.Drawing.Size(106, 21)
         Me.chkCargaAc.TabIndex = 21
         Me.chkCargaAc.Text = "AC Charging"
+        Me.ttConsejo.SetToolTip(Me.chkCargaAc, "Check to indicate that there are an AC adaptor plugged")
         Me.chkCargaAc.UseVisualStyleBackColor = True
         '
         'imgBateria
         '
-        Me.imgBateria.Image = Global.Avm.My.Resources.Resources.bateria64
-        Me.imgBateria.Location = New System.Drawing.Point(10, 234)
+        Me.imgBateria.Image = Global.Avm.My.Resources.Resources.icoBateria64
+        Me.imgBateria.Location = New System.Drawing.Point(10, 248)
         Me.imgBateria.Margin = New System.Windows.Forms.Padding(4)
         Me.imgBateria.Name = "imgBateria"
         Me.imgBateria.Size = New System.Drawing.Size(64, 64)
         Me.imgBateria.TabIndex = 26
         Me.imgBateria.TabStop = False
+        '
+        'ttConsejo
+        '
+        Me.ttConsejo.BackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ttConsejo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
         '
         'CtrPower
         '
@@ -205,5 +220,6 @@ Partial Class CtrPower
     Friend WithEvents cmbBatStat As System.Windows.Forms.ComboBox
     Friend WithEvents lblEstado As System.Windows.Forms.Label
     Friend WithEvents chkCargaAc As System.Windows.Forms.CheckBox
+    Friend WithEvents ttConsejo As System.Windows.Forms.ToolTip
 
 End Class

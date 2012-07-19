@@ -118,13 +118,24 @@ Public Class FrmPrincipal
         lanzar(TipoApp.Connect)
     End Sub
 
+    ''' <summary>Cierra la aplicación.</summary>
+    ''' <param name="sender">Emisor del evento</param>
+    ''' <param name="e">Datos del evento</param>
+    Private Sub btnSalir_Click(sender As System.Object, e As System.EventArgs) Handles btnSalir.Click
+        Me.Close()
+    End Sub
+
 
     ''' <summary>Controla el cierre de la aplicación.</summary>
     ''' <param name="sender">Emisor del evento.</param>
     ''' <param name="e">Datos del evento.</param>
     Private Sub frmPrincipal_FormClosing(sender As System.Object, e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing
         If objTelnet.Conectado Then
-            objTelnet.desconectar()
+            If MessageBox.Show("Currently connected to emulator. Do you want to exit?", "Exit confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.No Then
+                e.Cancel = True
+            Else
+                objTelnet.desconectar()
+            End If
         End If
     End Sub
 
@@ -144,8 +155,32 @@ Public Class FrmPrincipal
     ''' <summary>Abre el formulario Acerca de...</summary>
     ''' <param name="sender">Emisor del evento</param>
     ''' <param name="e">Datos del evento</param>
-    Private Sub btnAcerca_Click(sender As System.Object, e As System.EventArgs) Handles btnAcerca.Click
-        FrmAcerca.Show()
+    Private Sub ttmAbout_Click(sender As System.Object, e As System.EventArgs) Handles ttmAbout.Click
+        FrmAcerca.ShowDialog(Me)
+    End Sub
+
+
+    ''' <summary>Abre el menú de ayuda.</summary>
+    ''' <param name="sender">Emisor del evento</param>
+    ''' <param name="e">Datos del evento</param>
+    Private Sub btnAyuda_Click(sender As System.Object, e As System.EventArgs) Handles btnAyuda.Click
+        mnAyuda.Show(btnAyuda, 0, -80)
+    End Sub
+
+
+    ''' <summary>Abre la guía de usuario.</summary>
+    ''' <param name="sender">Emisor del evento</param>
+    ''' <param name="e">Datos del evento</param>
+    Private Sub ttmAyuManual_Click(sender As System.Object, e As System.EventArgs) Handles ttmAyuManual.Click
+        System.Diagnostics.Process.Start(My.Resources.sUrlManual)
+    End Sub
+
+
+    ''' <summary>Abre la página de la aplicación.</summary>
+    ''' <param name="sender">Emisor del evento</param>
+    ''' <param name="e">Datos del evento</param>
+    Private Sub ttmAyuGeneral_Click(sender As System.Object, e As System.EventArgs) Handles ttmAyuGeneral.Click
+        System.Diagnostics.Process.Start(My.Resources.sUrlAplicacion)
     End Sub
 
 
