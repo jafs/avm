@@ -25,9 +25,6 @@ Public Class FrmPrincipal
         Connect
     End Enum
 
-
-    ''' <summary>Indica si hay conexión.</summary>
-    Private bConexion As Boolean = False
     ''' <summary>Objeto de conexión a Telnet.</summary>
     Private objTelnet As New AndTelnet()
     ''' <summary>Indica si actualmente se está en modo consulta.</summary>
@@ -89,7 +86,6 @@ Public Class FrmPrincipal
             If MessageBox.Show("Kill the Android emulator instance?", "Kill emulator", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
                 enviarComando(txtComando.Text)
                 txtRecv.Text &= vbNewLine & vbNewLine
-                bConexion = False
                 actualizarControles()
             End If
 
@@ -207,7 +203,7 @@ Public Class FrmPrincipal
     ''' <summary>Envía el comando que hay en la línea de comandos.</summary>
     ''' <param name="sComando">Comando a enviar en la consulta.</param>
     Public Sub enviarComando(ByVal sComando As String)
-        If (bConexion) Then
+        If objTelnet.Conectado Then
             txtRecv.Text += sComando
             txtRecv.Text += vbNewLine
             txtRecv.Text += objTelnet.consultar(sComando)
@@ -267,10 +263,11 @@ Public Class FrmPrincipal
     ''' <summary>Establece la conexión/desconexión con Android.</summary>
     ''' <param name="iPuerto">Puerto de conexión al emulador.</param>
     Public Sub conectar(ByVal iPuerto As Integer)
-        If bConexion Then
+        If objTelnet.Conectado Then
             objTelnet.desconectar()
             txtRecv.Text &= vbNewLine & vbNewLine
-            bConexion = False
+            txtRecv.Select(txtRecv.Text.Length - 1, 1)
+            txtRecv.ScrollToCaret()
         Else
             'objTelnet.Puerto = CType(txtPuerto.Text, Integer)
             objTelnet.Puerto = CType(iPuerto, Integer)
@@ -278,17 +275,13 @@ Public Class FrmPrincipal
 
             sResultado = objTelnet.conectar()
 
-            If sResultado Is Nothing Or sResultado.Length = 0 Then
-                bConexion = False
-            Else
+            If Not sResultado Is Nothing And sResultado.Length > 0 Then
                 txtRecv.Text &= "-----------------------------------" & vbNewLine & _
                                 Date.Now.ToString(My.Application.Culture.DateTimeFormat) & _
                                 vbNewLine & "-----------------------------------" & _
                                 vbNewLine & sResultado
                 txtRecv.Select(txtRecv.Text.Length - 1, 1)
                 txtRecv.ScrollToCaret()
-
-                bConexion = (sResultado.Contains(AndTelnet.RES_OK))
             End If
         End If
 
@@ -298,11 +291,11 @@ Public Class FrmPrincipal
 
     ''' <summary>Actualiza el estado de los controles dependiendo de la conexión.</summary>
     Private Sub actualizarControles()
-        btnEnviar.Enabled = bConexion
-        txtComando.Enabled = bConexion
-        btnHome.Enabled = bConexion
+        btnEnviar.Enabled = objTelnet.Conectado
+        txtComando.Enabled = objTelnet.Conectado
+        btnHome.Enabled = objTelnet.Conectado
 
-        If bConexion Then
+        If objTelnet.Conectado Then
             lanzar(TipoApp.Menu)
         Else
             ctrGsmCalls.parar()
