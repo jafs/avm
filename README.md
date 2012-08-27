@@ -12,7 +12,7 @@ Requirements
 
 Version History
 ---------------
-Version 0.5.5.1 - XX/XX/2012
+Version 0.5.5.1 - 27/08/2012
 * Improvement in detection of connection to the emulator. Solves the problem of not detecting link failure with emulator and problems running the kill command.
 
 Version 0.5.5 - 19/07/2012
