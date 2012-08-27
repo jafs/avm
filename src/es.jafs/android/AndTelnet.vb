@@ -102,6 +102,10 @@ Public Class AndTelnet
             End Try
         End If
 
+        If objSocket Is Nothing OrElse Not objSocket.Connected Then
+            desconectar()
+        End If
+
         Return sResultado
     End Function
 
@@ -117,6 +121,8 @@ Public Class AndTelnet
             End If
             objSocket = Nothing
         End If
+
+        bConexion = False
     End Sub
 
 
@@ -173,6 +179,10 @@ Public Class AndTelnet
             conectar()
         Else
             MessageBox.Show("Introduce un comando", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
+
+        If objSocket Is Nothing OrElse Not objSocket.Connected Then
+            desconectar()
         End If
 
         Return sRecibido
