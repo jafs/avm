@@ -12,6 +12,9 @@ Requirements
 
 Version History
 ---------------
+Version 0.5.5.1 - 27/08/2012
+* Improvement in detection of connection to the emulator. Solves the problem of not detecting link failure with emulator and problems running the kill command.
+
 Version 0.5.5 - 19/07/2012
 * Solved problem with duplicated calls.
 * Tooltips in all screens.
@@ -73,7 +76,7 @@ If you receive a .zip, unzip into any appropriate directory on your hard drive. 
 
 How to use
 ----------
-In process.
+Double clic over executable icon in file explorer, o write avm under prompt.
 
 
 License
