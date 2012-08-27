@@ -211,6 +211,7 @@ Public Class FrmPrincipal
             txtRecv.ScrollToCaret()
         Else
             MessageBox.Show("There is no connection")
+            actualizarControles()
         End If
 
         If txtComando.Text.Length > 0 Then
