@@ -92,7 +92,12 @@ Public Class AndTelnet
                     Do
                         iNumBytes = objSocket.Receive(RecvBytes, RecvBytes.Length, 0)
                         sRecibido += Encoding.ASCII.GetString(RecvBytes, 0, iNumBytes)
-                    Loop While Not sRecibido.EndsWith(RES_OK & vbCrLf) And Not sRecibido.EndsWith(RES_ERROR & vbCrLf)
+                    Loop While Not sRecibido.EndsWith(RES_OK & vbCrLf) And Not sRecibido.EndsWith(RES_ERROR & vbCrLf) And iNumBytes > 0
+
+                    If iNumBytes = 0 And sRecibido.Length = 0 Then
+                        desconectar()
+                        Throw New Exception()
+                    End If
 
                     sResultado += sRecibido
                     sRecibido = Nothing
