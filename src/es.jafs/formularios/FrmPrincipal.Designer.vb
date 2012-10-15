@@ -96,6 +96,7 @@ Partial Class FrmPrincipal
         '
         'pnlCentral
         '
+        Me.pnlCentral.BackgroundImage = Global.Avm.My.Resources.Resources.fondo
         Me.pnlCentral.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlCentral.Location = New System.Drawing.Point(0, 32)
         Me.pnlCentral.Name = "pnlCentral"
@@ -114,7 +115,7 @@ Partial Class FrmPrincipal
         '
         'tlpMenu
         '
-        Me.tlpMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.tlpMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer))
         Me.tlpMenu.ColumnCount = 5
         Me.tlpMenu.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.tlpMenu.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
@@ -203,9 +204,11 @@ Partial Class FrmPrincipal
         '
         'pblEstado
         '
-        Me.pblEstado.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.pblEstado.BackColor = System.Drawing.Color.Transparent
+        Me.pblEstado.BackgroundImage = Global.Avm.My.Resources.Resources.superior
         Me.pblEstado.Controls.Add(Me.lblReloj)
         Me.pblEstado.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pblEstado.ForeColor = System.Drawing.Color.White
         Me.pblEstado.Location = New System.Drawing.Point(0, 0)
         Me.pblEstado.Name = "pblEstado"
         Me.pblEstado.Size = New System.Drawing.Size(280, 32)
@@ -214,7 +217,6 @@ Partial Class FrmPrincipal
         'lblReloj
         '
         Me.lblReloj.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblReloj.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.lblReloj.Location = New System.Drawing.Point(217, 5)
         Me.lblReloj.Name = "lblReloj"
         Me.lblReloj.Size = New System.Drawing.Size(60, 23)

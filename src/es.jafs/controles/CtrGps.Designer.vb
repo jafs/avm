@@ -52,7 +52,7 @@ Partial Class CtrGps
         '
         'btnGpsSet
         '
-        Me.btnGpsSet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.btnGpsSet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.btnGpsSet.Location = New System.Drawing.Point(199, 99)
         Me.btnGpsSet.Name = "btnGpsSet"
         Me.btnGpsSet.Size = New System.Drawing.Size(69, 61)
@@ -192,8 +192,8 @@ Partial Class CtrGps
         Me.lblGpsDesc.Size = New System.Drawing.Size(187, 102)
         Me.lblGpsDesc.TabIndex = 51
         Me.lblGpsDesc.Text = "Here you will be able to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "change the GPS location." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Enter the longitude and" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "lati" & _
-    "tude coordinates to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "change the position. Altitude" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and satellites are optional." & _
-    ""
+            "tude coordinates to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "change the position. Altitude" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and satellites are optional." & _
+            ""
         '
         'imgGps
         '
@@ -208,7 +208,8 @@ Partial Class CtrGps
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.Transparent
+        Me.BackgroundImage = Global.Avm.My.Resources.Resources.fondo
         Me.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Controls.Add(Me.lblGpsDesc)
         Me.Controls.Add(Me.imgGps)
@@ -226,7 +227,7 @@ Partial Class CtrGps
         Me.Controls.Add(Me.lblGpsLongitud)
         Me.Controls.Add(Me.chkGpsSatelites)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "CtrGps"
         Me.Size = New System.Drawing.Size(280, 338)

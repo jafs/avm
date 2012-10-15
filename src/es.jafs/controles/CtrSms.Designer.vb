@@ -60,7 +60,7 @@ Partial Class CtrSms
         'btnSmsSend
         '
         Me.btnSmsSend.Enabled = False
-        Me.btnSmsSend.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.btnSmsSend.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.btnSmsSend.Location = New System.Drawing.Point(193, 200)
         Me.btnSmsSend.Name = "btnSmsSend"
         Me.btnSmsSend.Size = New System.Drawing.Size(78, 26)
@@ -123,7 +123,7 @@ Partial Class CtrSms
         Me.lblSmsDesc.Size = New System.Drawing.Size(204, 85)
         Me.lblSmsDesc.TabIndex = 34
         Me.lblSmsDesc.Text = "This function allows to send" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "sms messages to the emulator." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Enter the sender pho" & _
-    "ne, write" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "the message, and press Send" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "button."
+            "ne, write" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "the message, and press Send" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "button."
         '
         'imgSms
         '
@@ -143,7 +143,8 @@ Partial Class CtrSms
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.Transparent
+        Me.BackgroundImage = Global.Avm.My.Resources.Resources.fondo
         Me.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Controls.Add(Me.lblSmsDesc)
         Me.Controls.Add(Me.imgSms)
@@ -156,7 +157,7 @@ Partial Class CtrSms
         Me.Controls.Add(Me.lblSmsMessage)
         Me.Controls.Add(Me.lblSmsNumber)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "CtrSms"
         Me.Size = New System.Drawing.Size(280, 338)

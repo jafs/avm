@@ -56,7 +56,7 @@ Partial Class CtrGsmStatus
         '
         'btnGsmSet
         '
-        Me.btnGsmSet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.btnGsmSet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.btnGsmSet.Location = New System.Drawing.Point(222, 90)
         Me.btnGsmSet.Name = "btnGsmSet"
         Me.btnGsmSet.Size = New System.Drawing.Size(47, 58)
@@ -118,7 +118,7 @@ Partial Class CtrGsmStatus
         '
         'btnGsmUpdate
         '
-        Me.btnGsmUpdate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.btnGsmUpdate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.btnGsmUpdate.Location = New System.Drawing.Point(9, 172)
         Me.btnGsmUpdate.Name = "btnGsmUpdate"
         Me.btnGsmUpdate.Size = New System.Drawing.Size(130, 32)
@@ -129,6 +129,7 @@ Partial Class CtrGsmStatus
         'cmbGsmVoz
         '
         Me.cmbGsmVoz.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbGsmVoz.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.cmbGsmVoz.FormattingEnabled = True
         Me.cmbGsmVoz.Items.AddRange(New Object() {"unregistered", "home", "roaming", "searching", "denied", "off", "on"})
         Me.cmbGsmVoz.Location = New System.Drawing.Point(61, 54)
@@ -149,6 +150,7 @@ Partial Class CtrGsmStatus
         'cmbGsmDatos
         '
         Me.cmbGsmDatos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbGsmDatos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.cmbGsmDatos.FormattingEnabled = True
         Me.cmbGsmDatos.Items.AddRange(New Object() {"unregistered", "home", "roaming", "searching", "denied", "off", "on"})
         Me.cmbGsmDatos.Location = New System.Drawing.Point(61, 18)
@@ -174,7 +176,7 @@ Partial Class CtrGsmStatus
         Me.Label1.Size = New System.Drawing.Size(197, 51)
         Me.Label1.TabIndex = 48
         Me.Label1.Text = "This section, allows to change" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "the status of data and voice," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and set the signal" & _
-    " levels."
+            " levels."
         '
         'imgGsm
         '
@@ -194,7 +196,8 @@ Partial Class CtrGsmStatus
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.Transparent
+        Me.BackgroundImage = Global.Avm.My.Resources.Resources.fondo
         Me.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.imgGsm)
@@ -211,7 +214,7 @@ Partial Class CtrGsmStatus
         Me.Controls.Add(Me.lblGsmDatos)
         Me.Controls.Add(Me.chkGsmBerOn)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "CtrGsmStatus"
         Me.Size = New System.Drawing.Size(280, 338)
