@@ -8,6 +8,13 @@
     Public Sub New(ByRef frmParent As FrmPrincipal)
         InitializeComponent()
         frmPadre = frmParent
+        Utilidades.addControl(CType(btnCalls, Control))
+        Utilidades.addControl(CType(btnDesconectar, Control))
+        Utilidades.addControl(CType(btnGps, Control))
+        Utilidades.addControl(CType(btnGsm, Control))
+        Utilidades.addControl(CType(btnPower, Control))
+        Utilidades.addControl(CType(btnSensors, Control))
+        Utilidades.addControl(CType(btnSms, Control))
     End Sub
 
 

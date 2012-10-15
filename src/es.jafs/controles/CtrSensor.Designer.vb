@@ -45,7 +45,7 @@ Partial Class CtrSensor
         'btnSenUpdate
         '
         Me.btnSenUpdate.Enabled = False
-        Me.btnSenUpdate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.btnSenUpdate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.btnSenUpdate.Location = New System.Drawing.Point(190, 127)
         Me.btnSenUpdate.Name = "btnSenUpdate"
         Me.btnSenUpdate.Size = New System.Drawing.Size(75, 32)
@@ -66,7 +66,7 @@ Partial Class CtrSensor
         'btnSenSet
         '
         Me.btnSenSet.Enabled = False
-        Me.btnSenSet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.btnSenSet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.btnSenSet.Location = New System.Drawing.Point(190, 58)
         Me.btnSenSet.Name = "btnSenSet"
         Me.btnSenSet.Size = New System.Drawing.Size(75, 61)
@@ -79,6 +79,7 @@ Partial Class CtrSensor
         '
         Me.nudSenValor2.DecimalPlaces = 4
         Me.nudSenValor2.Enabled = False
+        Me.nudSenValor2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.nudSenValor2.Location = New System.Drawing.Point(92, 97)
         Me.nudSenValor2.Name = "nudSenValor2"
         Me.nudSenValor2.Size = New System.Drawing.Size(90, 23)
@@ -97,6 +98,7 @@ Partial Class CtrSensor
         '
         Me.nudSenValor3.DecimalPlaces = 4
         Me.nudSenValor3.Enabled = False
+        Me.nudSenValor3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.nudSenValor3.Location = New System.Drawing.Point(92, 135)
         Me.nudSenValor3.Name = "nudSenValor3"
         Me.nudSenValor3.Size = New System.Drawing.Size(90, 23)
@@ -115,6 +117,7 @@ Partial Class CtrSensor
         '
         Me.nudSenValor1.DecimalPlaces = 4
         Me.nudSenValor1.Enabled = False
+        Me.nudSenValor1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.nudSenValor1.Location = New System.Drawing.Point(92, 59)
         Me.nudSenValor1.Name = "nudSenValor1"
         Me.nudSenValor1.Size = New System.Drawing.Size(90, 23)
@@ -142,6 +145,7 @@ Partial Class CtrSensor
         'cmbSensores
         '
         Me.cmbSensores.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbSensores.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.cmbSensores.FormattingEnabled = True
         Me.cmbSensores.Items.AddRange(New Object() {"acceleration", "magnetic-field", "orientation", "temperature", "proximity"})
         Me.cmbSensores.Location = New System.Drawing.Point(92, 20)
@@ -167,7 +171,8 @@ Partial Class CtrSensor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.Transparent
+        Me.BackgroundImage = Global.Avm.My.Resources.Resources.fondo
         Me.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Controls.Add(Me.btnSenUpdate)
         Me.Controls.Add(Me.lblSenDesc)
@@ -182,7 +187,7 @@ Partial Class CtrSensor
         Me.Controls.Add(Me.cmbSensores)
         Me.Controls.Add(Me.imgSensores)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "CtrSensor"
         Me.Size = New System.Drawing.Size(280, 338)
