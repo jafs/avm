@@ -159,31 +159,29 @@ Public Class AndTelnet
 
                     ' Obtiene el resultado en bloques de 256 bytes.
                     Do
-                        ' RecvBytes with contain 256 bytes if data returned
-                        ' numbytes with have the count of bytes returned
+                        ' Recibe los datos en bloques de 256 bytes
                         iNumBytes = objSocket.Receive(arbRecibidos, arbRecibidos.Length, 0)
                         sRecibido += Encoding.ASCII.GetString(arbRecibidos, 0, iNumBytes)
-                    Loop While Not sRecibido.EndsWith(RES_OK & vbCrLf) And Not sRecibido.Contains(RES_ERROR)
+                    Loop While (Not sRecibido.EndsWith(RES_OK & vbCrLf) And Not sRecibido.Contains(RES_ERROR)) Or isSnapshot(sComando, sRecibido)
 
                     If sRecibido.Length > 0 Then
                         sRecibido = sRecibido.Replace(vbLf, vbNewLine)
                         sRecibido = sRecibido.Replace(vbCr & "" & vbCrLf, vbNewLine)
                     End If
                 Else
-                    MessageBox.Show("El Socket se ha desconectado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    MessageBox.Show("Socket disconnected", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                     conectar()
                 End If
             Catch oEX As Exception
-                ' Error cleanup etc needed
             End Try
 
-            ' Cleanup
+            ' Limpieza
             sComando = Nothing
         ElseIf objSocket Is Nothing Then
-            MessageBox.Show("El Socket se ha desconectado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Socket disconnected", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             conectar()
         Else
-            MessageBox.Show("Introduce un comando", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            MessageBox.Show("Enter a command", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End If
 
         If objSocket Is Nothing OrElse Not objSocket.Connected Then
@@ -191,5 +189,20 @@ Public Class AndTelnet
         End If
 
         Return sRecibido
+    End Function
+
+
+    ''' <summary>
+    ''' Obtiene un valor booleano que indica si el comando y el mensaje recibido deben seguir leyéndose
+    ''' al ser de tipo Snapshot.
+    ''' </summary>
+    ''' <param name="sComando">Comando a consultar</param>
+    ''' <param name="sMensaje">Mensaje recibido</param>
+    ''' <returns>Valor booleano que indica si es un mensaje de snapshot</returns>
+    Public Shared Function isSnapshot(ByRef sComando As String, ByRef sMensaje As String) As Boolean
+        Return (Comando.AVM_SNAPSHOT_LIST = sComando And Not sMensaje.Contains(RES_OK)) Or _
+               (sComando.Contains(Comando.AVM_SNAPSHOT_SAVE) And Not sMensaje.Contains(Comando.AVD_ERR_ARGUMENT) And Not sMensaje.Contains(RES_OK)) Or _
+               (sComando.Contains(Comando.AVM_SNAPSHOT_LOAD) And Not sMensaje.Contains(Comando.AVD_ERR_ARGUMENT) And Not sMensaje.Contains(RES_OK)) Or _
+               (sComando.Contains(Comando.AVM_SNAPSHOT_DEL) And Not sMensaje.Contains(Comando.AVD_ERR_ARGUMENT) And Not sMensaje.Contains(RES_OK))
     End Function
 End Class
