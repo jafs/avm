@@ -50,6 +50,15 @@ Public NotInheritable Class Comando
     ''' <summary>Comando de cambio de estado de conexión de voz.</summary>
     Public Const GSM_VOICE As String = "gsm voice "
 
+    ''' <summary>Comando de eliminación de captura.</summary>
+    Public Const AVM_SNAPSHOT_DEL As String = "avd snapshot del"
+    ''' <summary>Comando de obtención de lista de capturas.</summary>
+    Public Const AVM_SNAPSHOT_LIST As String = "avd snapshot list"
+    ''' <summary>Comando de carga captura.</summary>
+    Public Const AVM_SNAPSHOT_LOAD As String = "avd snapshot load"
+    ''' <summary>Comando de guardado de capturas.</summary>
+    Public Const AVM_SNAPSHOT_SAVE As String = "avd snapshot save"
+
 
     ' ######################################
     ' PARÁMETROS
@@ -67,6 +76,13 @@ Public NotInheritable Class Comando
     Public Const SEN_TEMPERATURE As String = "temperature"
     ''' <summary>Nombre del sensor de proximidad.</summary>
     Public Const SEN_PROXIMITY As String = "proximity"
+
+
+    ' ######################################
+    ' VALORES
+    ' ######################################
+    ''' <summary>Valor de error cuando falta un parámetro.</summary>
+    Public Const AVD_ERR_ARGUMENT As String = "KO: argument missing"
 
     ''' <summary>Constructor privado para evitar instancias.</summary>
     Private Sub New()

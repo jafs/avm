@@ -67,6 +67,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Friend ReadOnly Property fondo() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("fondo", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Friend ReadOnly Property icoAyuda16() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("icoAyuda16", resourceCulture)
@@ -203,6 +210,13 @@ Namespace My.Resources
         Friend ReadOnly Property mn_ayuda48() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("mn_ayuda48", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property superior() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("superior", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

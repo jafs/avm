@@ -49,11 +49,11 @@ Partial Class CtrPower
         Me.lblBatDesc.Size = New System.Drawing.Size(195, 85)
         Me.lblBatDesc.TabIndex = 25
         Me.lblBatDesc.Text = "In this section you can control" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "all the battery and energy" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "settings. The update" & _
-    " button" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "allows to refresh de battery" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "info into fields."
+            " button" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "allows to refresh de battery" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "info into fields."
         '
         'btnBatActualiza
         '
-        Me.btnBatActualiza.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.btnBatActualiza.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.btnBatActualiza.Location = New System.Drawing.Point(12, 172)
         Me.btnBatActualiza.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBatActualiza.Name = "btnBatActualiza"
@@ -65,7 +65,7 @@ Partial Class CtrPower
         '
         'btnBatCapacity
         '
-        Me.btnBatCapacity.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.btnBatCapacity.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.btnBatCapacity.Location = New System.Drawing.Point(178, 95)
         Me.btnBatCapacity.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBatCapacity.Name = "btnBatCapacity"
@@ -89,6 +89,7 @@ Partial Class CtrPower
         'cmbBatHealth
         '
         Me.cmbBatHealth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbBatHealth.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.cmbBatHealth.FormattingEnabled = True
         Me.cmbBatHealth.Items.AddRange(New Object() {"Unknown", "Good", "Overheat", "Dead", "Overvoltage", "Failure"})
         Me.cmbBatHealth.Location = New System.Drawing.Point(108, 55)
@@ -133,6 +134,7 @@ Partial Class CtrPower
         'cmbBatStat
         '
         Me.cmbBatStat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbBatStat.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.cmbBatStat.FormattingEnabled = True
         Me.cmbBatStat.Items.AddRange(New Object() {"Unknown", "Charging", "Discharging", "Not-charging", "Full"})
         Me.cmbBatStat.Location = New System.Drawing.Point(108, 14)
@@ -183,7 +185,8 @@ Partial Class CtrPower
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(90, Byte), Integer), CType(CType(90, Byte), Integer), CType(CType(110, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.Transparent
+        Me.BackgroundImage = Global.Avm.My.Resources.Resources.fondo
         Me.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Controls.Add(Me.imgBateria)
         Me.Controls.Add(Me.lblBatDesc)
@@ -198,7 +201,7 @@ Partial Class CtrPower
         Me.Controls.Add(Me.lblEstado)
         Me.Controls.Add(Me.chkCargaAc)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "CtrPower"
         Me.Size = New System.Drawing.Size(280, 338)

@@ -16,6 +16,8 @@
         lblProducto.Text = My.Application.Info.ProductName
         lblVersion.Text = String.Format("Version {0}", My.Application.Info.Version.ToString)
         lblCompania.Text = My.Application.Info.Copyright
+
+        Utilidades.addControl(CType(btnCerrar, Control))
     End Sub
 
 
