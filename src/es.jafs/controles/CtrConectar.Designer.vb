@@ -38,11 +38,13 @@ Partial Class CtrConectar
         Me.lblInfo.Size = New System.Drawing.Size(210, 80)
         Me.lblInfo.TabIndex = 2
         Me.lblInfo.Text = "Welcome to Android Virtual" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Management. To start, enter" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "a valid port for connect" & _
-    " to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "emulator and press connect."
+            " to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "emulator and press connect."
         '
         'btnConectar
         '
         Me.btnConectar.FlatAppearance.BorderSize = 0
+        Me.btnConectar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnConectar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.btnConectar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnConectar.Image = Global.Avm.My.Resources.Resources.icoGps64
         Me.btnConectar.ImeMode = System.Windows.Forms.ImeMode.NoControl
@@ -58,7 +60,7 @@ Partial Class CtrConectar
         'lblError
         '
         Me.lblError.AutoSize = True
-        Me.lblError.ForeColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(180, Byte), Integer), CType(CType(190, Byte), Integer))
+        Me.lblError.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(180, Byte), Integer), CType(CType(190, Byte), Integer))
         Me.lblError.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.lblError.Location = New System.Drawing.Point(46, 285)
         Me.lblError.Name = "lblError"
@@ -80,7 +82,7 @@ Partial Class CtrConectar
         'txtPuerto
         '
         Me.txtPuerto.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.txtPuerto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.txtPuerto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.txtPuerto.Location = New System.Drawing.Point(131, 142)
         Me.txtPuerto.MaxLength = 5
         Me.txtPuerto.Name = "txtPuerto"
@@ -92,7 +94,8 @@ Partial Class CtrConectar
         'CtrConectar
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.Transparent
+        Me.BackgroundImage = Global.Avm.My.Resources.Resources.fondo
         Me.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Controls.Add(Me.lblError)
         Me.Controls.Add(Me.btnConectar)
@@ -100,7 +103,7 @@ Partial Class CtrConectar
         Me.Controls.Add(Me.txtPuerto)
         Me.Controls.Add(Me.lblPuerto)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "CtrConectar"
         Me.Size = New System.Drawing.Size(280, 338)

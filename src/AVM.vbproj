@@ -29,7 +29,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>5</ApplicationRevision>
     <ApplicationVersion>0.5.5.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -293,6 +293,8 @@
   <ItemGroup>
     <Content Include="es.jafs\recursos\license.txt" />
     <Content Include="es.jafs\recursos\readme.txt" />
+    <None Include="Resources\superior.png" />
+    <None Include="Resources\fondo.png" />
     <None Include="Resources\icoMenuSalir48.png" />
     <None Include="Resources\icoMenuLogout64.png" />
     <None Include="Resources\icoAyuda16.png" />

@@ -63,8 +63,10 @@ Partial Class CtrMenu
         '
         Me.btnDesconectar.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnDesconectar.FlatAppearance.BorderSize = 0
+        Me.btnDesconectar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnDesconectar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.btnDesconectar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDesconectar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.btnDesconectar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.btnDesconectar.Image = Global.Avm.My.Resources.Resources.icoMenuLogout64
         Me.btnDesconectar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnDesconectar.Location = New System.Drawing.Point(141, 103)
@@ -79,8 +81,10 @@ Partial Class CtrMenu
         '
         Me.btnCalls.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnCalls.FlatAppearance.BorderSize = 0
+        Me.btnCalls.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnCalls.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.btnCalls.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCalls.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.btnCalls.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.btnCalls.Image = Global.Avm.My.Resources.Resources.icoGsm64
         Me.btnCalls.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnCalls.Location = New System.Drawing.Point(72, 3)
@@ -95,8 +99,10 @@ Partial Class CtrMenu
         '
         Me.btnSensors.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnSensors.FlatAppearance.BorderSize = 0
+        Me.btnSensors.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnSensors.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.btnSensors.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSensors.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.btnSensors.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.btnSensors.Image = Global.Avm.My.Resources.Resources.icoSensores64
         Me.btnSensors.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnSensors.Location = New System.Drawing.Point(3, 3)
@@ -111,8 +117,10 @@ Partial Class CtrMenu
         '
         Me.btnGsm.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnGsm.FlatAppearance.BorderSize = 0
+        Me.btnGsm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnGsm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.btnGsm.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnGsm.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.btnGsm.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.btnGsm.Image = Global.Avm.My.Resources.Resources.icoGsm64
         Me.btnGsm.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnGsm.Location = New System.Drawing.Point(3, 103)
@@ -127,8 +135,10 @@ Partial Class CtrMenu
         '
         Me.btnSms.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnSms.FlatAppearance.BorderSize = 0
+        Me.btnSms.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnSms.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.btnSms.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSms.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.btnSms.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.btnSms.Image = Global.Avm.My.Resources.Resources.icoSms64
         Me.btnSms.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnSms.Location = New System.Drawing.Point(72, 103)
@@ -143,8 +153,10 @@ Partial Class CtrMenu
         '
         Me.btnGps.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnGps.FlatAppearance.BorderSize = 0
+        Me.btnGps.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnGps.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.btnGps.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnGps.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.btnGps.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.btnGps.Image = Global.Avm.My.Resources.Resources.icoGps64
         Me.btnGps.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnGps.Location = New System.Drawing.Point(210, 3)
@@ -159,8 +171,10 @@ Partial Class CtrMenu
         '
         Me.btnPower.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnPower.FlatAppearance.BorderSize = 0
+        Me.btnPower.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnPower.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.btnPower.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPower.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.btnPower.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.btnPower.Image = Global.Avm.My.Resources.Resources.icoBateria64
         Me.btnPower.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnPower.Location = New System.Drawing.Point(141, 3)
@@ -175,10 +189,11 @@ Partial Class CtrMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.Transparent
+        Me.BackgroundImage = Global.Avm.My.Resources.Resources.fondo
         Me.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Controls.Add(Me.tblMenu)
-        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.MaximumSize = New System.Drawing.Size(280, 338)
         Me.MinimumSize = New System.Drawing.Size(280, 338)
         Me.Name = "CtrMenu"

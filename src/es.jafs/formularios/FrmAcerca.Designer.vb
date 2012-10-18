@@ -36,7 +36,7 @@ Partial Class FrmAcerca
         Me.rctBorde = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.imgLogo = New System.Windows.Forms.PictureBox()
         Me.linkCorreo = New System.Windows.Forms.LinkLabel()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblIconos = New System.Windows.Forms.Label()
         Me.pnlTitulo.SuspendLayout()
         CType(Me.imgLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -44,6 +44,7 @@ Partial Class FrmAcerca
         'lblProducto
         '
         Me.lblProducto.AutoSize = True
+        Me.lblProducto.BackColor = System.Drawing.Color.Transparent
         Me.lblProducto.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblProducto.Location = New System.Drawing.Point(7, 42)
         Me.lblProducto.Margin = New System.Windows.Forms.Padding(8, 0, 4, 0)
@@ -57,6 +58,7 @@ Partial Class FrmAcerca
         'lblVersion
         '
         Me.lblVersion.AutoSize = True
+        Me.lblVersion.BackColor = System.Drawing.Color.Transparent
         Me.lblVersion.Location = New System.Drawing.Point(7, 62)
         Me.lblVersion.Margin = New System.Windows.Forms.Padding(8, 0, 4, 0)
         Me.lblVersion.MaximumSize = New System.Drawing.Size(0, 21)
@@ -71,6 +73,8 @@ Partial Class FrmAcerca
         Me.btnCerrar.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.btnCerrar.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnCerrar.FlatAppearance.BorderSize = 0
+        Me.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCerrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCerrar.Location = New System.Drawing.Point(281, 2)
@@ -84,7 +88,9 @@ Partial Class FrmAcerca
         'lblCompania
         '
         Me.lblCompania.AutoSize = True
-        Me.lblCompania.LinkColor = System.Drawing.Color.FromArgb(CType(CType(180, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.lblCompania.BackColor = System.Drawing.Color.Transparent
+        Me.lblCompania.DisabledLinkColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(166, Byte), Integer))
+        Me.lblCompania.LinkColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(166, Byte), Integer))
         Me.lblCompania.Location = New System.Drawing.Point(7, 92)
         Me.lblCompania.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCompania.Name = "lblCompania"
@@ -95,9 +101,11 @@ Partial Class FrmAcerca
         '
         'pnlTitulo
         '
-        Me.pnlTitulo.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.pnlTitulo.BackColor = System.Drawing.Color.Transparent
+        Me.pnlTitulo.BackgroundImage = Global.Avm.My.Resources.Resources.superior
         Me.pnlTitulo.Controls.Add(Me.lblAbout)
         Me.pnlTitulo.Controls.Add(Me.btnCerrar)
+        Me.pnlTitulo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.pnlTitulo.Location = New System.Drawing.Point(1, 1)
         Me.pnlTitulo.Name = "pnlTitulo"
         Me.pnlTitulo.Size = New System.Drawing.Size(312, 32)
@@ -124,12 +132,15 @@ Partial Class FrmAcerca
         '
         'rctBorde
         '
+        Me.rctBorde.BackColor = System.Drawing.Color.Transparent
+        Me.rctBorde.BackgroundImage = Global.Avm.My.Resources.Resources.fondo
         Me.rctBorde.Location = New System.Drawing.Point(0, 0)
         Me.rctBorde.Name = "rctBorde"
         Me.rctBorde.Size = New System.Drawing.Size(313, 162)
         '
         'imgLogo
         '
+        Me.imgLogo.BackColor = System.Drawing.Color.Transparent
         Me.imgLogo.Image = Global.Avm.My.Resources.Resources.icoGsm64
         Me.imgLogo.Location = New System.Drawing.Point(240, 42)
         Me.imgLogo.Name = "imgLogo"
@@ -140,7 +151,8 @@ Partial Class FrmAcerca
         'linkCorreo
         '
         Me.linkCorreo.AutoSize = True
-        Me.linkCorreo.LinkColor = System.Drawing.Color.FromArgb(CType(CType(180, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.linkCorreo.BackColor = System.Drawing.Color.Transparent
+        Me.linkCorreo.LinkColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(166, Byte), Integer))
         Me.linkCorreo.Location = New System.Drawing.Point(8, 114)
         Me.linkCorreo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.linkCorreo.Name = "linkCorreo"
@@ -149,23 +161,24 @@ Partial Class FrmAcerca
         Me.linkCorreo.TabStop = True
         Me.linkCorreo.Text = "jafs@jafs.es"
         '
-        'Label1
+        'lblIconos
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(8, 136)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(207, 17)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Icons by: http://www.gnome.org/"
+        Me.lblIconos.AutoSize = True
+        Me.lblIconos.BackColor = System.Drawing.Color.Transparent
+        Me.lblIconos.Location = New System.Drawing.Point(8, 136)
+        Me.lblIconos.Name = "lblIconos"
+        Me.lblIconos.Size = New System.Drawing.Size(207, 17)
+        Me.lblIconos.TabIndex = 6
+        Me.lblIconos.Text = "Icons by: http://www.gnome.org/"
         '
         'FrmAcerca
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.BackgroundImage = Global.Avm.My.Resources.Resources.fondo
         Me.CancelButton = Me.btnCerrar
         Me.ClientSize = New System.Drawing.Size(314, 163)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblIconos)
         Me.Controls.Add(Me.linkCorreo)
         Me.Controls.Add(Me.imgLogo)
         Me.Controls.Add(Me.pnlTitulo)
@@ -174,7 +187,7 @@ Partial Class FrmAcerca
         Me.Controls.Add(Me.lblProducto)
         Me.Controls.Add(Me.ShapeContainer1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
@@ -197,6 +210,6 @@ Partial Class FrmAcerca
     Friend WithEvents rctBorde As Microsoft.VisualBasic.PowerPacks.RectangleShape
     Friend WithEvents imgLogo As System.Windows.Forms.PictureBox
     Friend WithEvents linkCorreo As System.Windows.Forms.LinkLabel
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents lblIconos As System.Windows.Forms.Label
 
 End Class

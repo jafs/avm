@@ -46,4 +46,37 @@ Public Class Utilidades
 
         Return sValor
     End Function
+
+
+    ''' <summary>Cambia el estilo de un control a activo o inactivo.</summary>
+    ''' <param name="objControl">Control a modificar</param>
+    ''' <param name="bActivo">Indica si será activado o desactivado</param>
+    Public Shared Sub cambiarEstilo(ByRef objControl As Control, ByRef bActivo As Boolean)
+        If Not objControl Is Nothing Then
+            If bActivo Then
+                objControl.ForeColor = Color.FromArgb(13, 120, 166)
+                objControl.Font = New Font(objControl.Font, FontStyle.Bold)
+            Else
+                objControl.ForeColor = Color.FromArgb(250, 250, 250)
+                objControl.Font = New Font(objControl.Font, FontStyle.Regular)
+            End If
+        End If
+    End Sub
+
+
+    Public Shared Sub addControl(ByRef objControl As Control)
+        If Not objControl Is Nothing Then
+            AddHandler objControl.MouseEnter, AddressOf activarControl
+            AddHandler objControl.MouseLeave, AddressOf desactivarControl
+        End If
+    End Sub
+
+
+    Private Shared Sub activarControl(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        Utilidades.cambiarEstilo(CType(sender, Control), True)
+    End Sub
+
+    Private Shared Sub desactivarControl(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        Utilidades.cambiarEstilo(CType(sender, Control), False)
+    End Sub
 End Class

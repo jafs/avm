@@ -23,7 +23,7 @@ Partial Class CtrGsmCalls
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.lblGsmLlamadas = New System.Windows.Forms.Label()
         Me.txtGsmPrefijo = New System.Windows.Forms.TextBox()
         Me.txtGsmNumero = New System.Windows.Forms.TextBox()
@@ -90,10 +90,10 @@ Partial Class CtrGsmCalls
         Me.dgvGsmLlamadas.ReadOnly = True
         Me.dgvGsmLlamadas.RowHeadersVisible = False
         Me.dgvGsmLlamadas.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.dgvGsmLlamadas.RowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.dgvGsmLlamadas.RowsDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvGsmLlamadas.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dgvGsmLlamadas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvGsmLlamadas.Size = New System.Drawing.Size(251, 106)
@@ -172,7 +172,7 @@ Partial Class CtrGsmCalls
         Me.Label2.Size = New System.Drawing.Size(187, 51)
         Me.Label2.TabIndex = 32
         Me.Label2.Text = "In this section you can" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "manage the current calls, as" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "well as make incoming call" & _
-    "s."
+            "s."
         '
         'tmrGsm
         '
@@ -185,10 +185,10 @@ Partial Class CtrGsmCalls
         '
         'btnGsmCall
         '
-        Me.btnGsmCall.BackColor = System.Drawing.Color.FromArgb(CType(CType(110, Byte), Integer), CType(CType(110, Byte), Integer), CType(CType(130, Byte), Integer))
+        Me.btnGsmCall.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.btnGsmCall.BackgroundImage = Global.Avm.My.Resources.Resources.btnLlamar
         Me.btnGsmCall.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btnGsmCall.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.btnGsmCall.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
         Me.btnGsmCall.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGsmCall.Location = New System.Drawing.Point(234, 172)
         Me.btnGsmCall.Name = "btnGsmCall"
@@ -229,7 +229,8 @@ Partial Class CtrGsmCalls
         'CtrGsmCalls
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.Transparent
+        Me.BackgroundImage = Global.Avm.My.Resources.Resources.fondo
         Me.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Controls.Add(Me.lblNumero)
         Me.Controls.Add(Me.lblPrefijo)
@@ -241,7 +242,7 @@ Partial Class CtrGsmCalls
         Me.Controls.Add(Me.txtGsmNumero)
         Me.Controls.Add(Me.dgvGsmLlamadas)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "CtrGsmCalls"
         Me.Size = New System.Drawing.Size(280, 338)
