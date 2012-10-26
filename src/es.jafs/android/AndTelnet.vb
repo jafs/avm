@@ -27,6 +27,8 @@ Public Class AndTelnet
     Const DEF_DIRECCION As String = "127.0.0.1"
     ''' <summary>Puerto de conexión por defecto.</summary>
     Const DEF_PUERTO As Integer = 5554
+    ''' <summary>Tiempo de espera por defecto para contactar con la máquina virtual.</summary>
+    Const DEF_TIMEOUT As Integer = 2000
 
 
     ''' <summary>Obtiene el puerto de conexión a la máquina virtual.</summary>
@@ -70,6 +72,7 @@ Public Class AndTelnet
                 ' Crea y conecta el socket
                 objSocket = New Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp)
                 objSocket.Connect(objConexion)
+                objSocket.ReceiveTimeout = DEF_TIMEOUT
             Catch ex As SocketException
                 MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Return sResultado
