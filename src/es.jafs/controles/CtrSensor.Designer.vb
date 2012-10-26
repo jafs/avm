@@ -44,15 +44,19 @@ Partial Class CtrSensor
         '
         'btnSenUpdate
         '
+        Me.btnSenUpdate.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(227, Byte), Integer))
         Me.btnSenUpdate.Enabled = False
-        Me.btnSenUpdate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.btnSenUpdate.Location = New System.Drawing.Point(190, 127)
+        Me.btnSenUpdate.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnSenUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSenUpdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSenUpdate.ForeColor = System.Drawing.Color.White
+        Me.btnSenUpdate.Location = New System.Drawing.Point(19, 174)
         Me.btnSenUpdate.Name = "btnSenUpdate"
-        Me.btnSenUpdate.Size = New System.Drawing.Size(75, 32)
+        Me.btnSenUpdate.Size = New System.Drawing.Size(112, 32)
         Me.btnSenUpdate.TabIndex = 29
         Me.btnSenUpdate.Text = "Update"
         Me.ttConsejo.SetToolTip(Me.btnSenUpdate, "Update sensor values with last")
-        Me.btnSenUpdate.UseVisualStyleBackColor = True
+        Me.btnSenUpdate.UseVisualStyleBackColor = False
         '
         'lblSenDesc
         '
@@ -65,15 +69,20 @@ Partial Class CtrSensor
         '
         'btnSenSet
         '
+        Me.btnSenSet.AutoSize = True
+        Me.btnSenSet.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(227, Byte), Integer))
         Me.btnSenSet.Enabled = False
-        Me.btnSenSet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.btnSenSet.Location = New System.Drawing.Point(190, 58)
+        Me.btnSenSet.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnSenSet.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSenSet.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSenSet.ForeColor = System.Drawing.Color.White
+        Me.btnSenSet.Location = New System.Drawing.Point(153, 174)
         Me.btnSenSet.Name = "btnSenSet"
-        Me.btnSenSet.Size = New System.Drawing.Size(75, 61)
+        Me.btnSenSet.Size = New System.Drawing.Size(112, 32)
         Me.btnSenSet.TabIndex = 24
-        Me.btnSenSet.Text = "Set" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Values"
+        Me.btnSenSet.Text = "Set Values"
         Me.ttConsejo.SetToolTip(Me.btnSenSet, "Set the sensor values with entered values")
-        Me.btnSenSet.UseVisualStyleBackColor = True
+        Me.btnSenSet.UseVisualStyleBackColor = False
         '
         'nudSenValor2
         '

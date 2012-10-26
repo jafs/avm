@@ -38,19 +38,17 @@ Partial Class CtrConectar
         Me.lblInfo.Size = New System.Drawing.Size(210, 80)
         Me.lblInfo.TabIndex = 2
         Me.lblInfo.Text = "Welcome to Android Virtual" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Management. To start, enter" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "a valid port for connect" & _
-            " to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "emulator and press connect."
+    " to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "emulator and press connect."
         '
         'btnConectar
         '
-        Me.btnConectar.FlatAppearance.BorderSize = 0
-        Me.btnConectar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.btnConectar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.btnConectar.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.btnConectar.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnConectar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnConectar.Image = Global.Avm.My.Resources.Resources.icoGps64
         Me.btnConectar.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.btnConectar.Location = New System.Drawing.Point(95, 175)
+        Me.btnConectar.Location = New System.Drawing.Point(100, 194)
         Me.btnConectar.Name = "btnConectar"
-        Me.btnConectar.Size = New System.Drawing.Size(90, 90)
+        Me.btnConectar.Size = New System.Drawing.Size(80, 30)
         Me.btnConectar.TabIndex = 2
         Me.btnConectar.Text = "Connect"
         Me.btnConectar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
@@ -73,7 +71,7 @@ Partial Class CtrConectar
         '
         Me.lblPuerto.AutoSize = True
         Me.lblPuerto.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblPuerto.Location = New System.Drawing.Point(83, 145)
+        Me.lblPuerto.Location = New System.Drawing.Point(83, 159)
         Me.lblPuerto.Name = "lblPuerto"
         Me.lblPuerto.Size = New System.Drawing.Size(42, 20)
         Me.lblPuerto.TabIndex = 0
@@ -83,7 +81,7 @@ Partial Class CtrConectar
         '
         Me.txtPuerto.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.txtPuerto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.txtPuerto.Location = New System.Drawing.Point(131, 142)
+        Me.txtPuerto.Location = New System.Drawing.Point(131, 156)
         Me.txtPuerto.MaxLength = 5
         Me.txtPuerto.Name = "txtPuerto"
         Me.txtPuerto.Size = New System.Drawing.Size(67, 26)

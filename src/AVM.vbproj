@@ -190,6 +190,7 @@
     <Compile Include="es.jafs\formularios\FrmAcerca.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="es.jafs\recursos\Plantilla.vb" />
     <Compile Include="es.jafs\valores\Llamada.vb" />
     <Compile Include="es.jafs\android\Utilidades.vb" />
     <Compile Include="es.jafs\formularios\FrmPrincipal.vb">

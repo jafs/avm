@@ -56,13 +56,17 @@ Partial Class CtrGsmStatus
         '
         'btnGsmSet
         '
-        Me.btnGsmSet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.btnGsmSet.Location = New System.Drawing.Point(222, 90)
+        Me.btnGsmSet.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.btnGsmSet.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnGsmSet.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGsmSet.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGsmSet.ForeColor = System.Drawing.Color.White
+        Me.btnGsmSet.Location = New System.Drawing.Point(164, 161)
         Me.btnGsmSet.Name = "btnGsmSet"
-        Me.btnGsmSet.Size = New System.Drawing.Size(47, 58)
+        Me.btnGsmSet.Size = New System.Drawing.Size(105, 32)
         Me.btnGsmSet.TabIndex = 46
         Me.btnGsmSet.Text = "Set"
-        Me.btnGsmSet.UseVisualStyleBackColor = True
+        Me.btnGsmSet.UseVisualStyleBackColor = False
         '
         'chkGsmNoBer
         '
@@ -118,13 +122,17 @@ Partial Class CtrGsmStatus
         '
         'btnGsmUpdate
         '
-        Me.btnGsmUpdate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.btnGsmUpdate.Location = New System.Drawing.Point(9, 172)
+        Me.btnGsmUpdate.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.btnGsmUpdate.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnGsmUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGsmUpdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGsmUpdate.ForeColor = System.Drawing.Color.White
+        Me.btnGsmUpdate.Location = New System.Drawing.Point(9, 161)
         Me.btnGsmUpdate.Name = "btnGsmUpdate"
-        Me.btnGsmUpdate.Size = New System.Drawing.Size(130, 32)
+        Me.btnGsmUpdate.Size = New System.Drawing.Size(105, 32)
         Me.btnGsmUpdate.TabIndex = 40
         Me.btnGsmUpdate.Text = "Update"
-        Me.btnGsmUpdate.UseVisualStyleBackColor = True
+        Me.btnGsmUpdate.UseVisualStyleBackColor = False
         '
         'cmbGsmVoz
         '
@@ -176,7 +184,7 @@ Partial Class CtrGsmStatus
         Me.Label1.Size = New System.Drawing.Size(197, 51)
         Me.Label1.TabIndex = 48
         Me.Label1.Text = "This section, allows to change" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "the status of data and voice," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and set the signal" & _
-            " levels."
+    " levels."
         '
         'imgGsm
         '

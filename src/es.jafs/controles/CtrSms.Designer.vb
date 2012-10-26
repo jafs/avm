@@ -59,15 +59,19 @@ Partial Class CtrSms
         '
         'btnSmsSend
         '
+        Me.btnSmsSend.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(227, Byte), Integer))
         Me.btnSmsSend.Enabled = False
-        Me.btnSmsSend.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.btnSmsSend.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnSmsSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSmsSend.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSmsSend.ForeColor = System.Drawing.Color.White
         Me.btnSmsSend.Location = New System.Drawing.Point(193, 200)
         Me.btnSmsSend.Name = "btnSmsSend"
         Me.btnSmsSend.Size = New System.Drawing.Size(78, 26)
         Me.btnSmsSend.TabIndex = 29
         Me.btnSmsSend.Text = "Send"
         Me.ttConsejo.SetToolTip(Me.btnSmsSend, "Send message to emulator")
-        Me.btnSmsSend.UseVisualStyleBackColor = True
+        Me.btnSmsSend.UseVisualStyleBackColor = False
         '
         'lblSmsTotal
         '
@@ -123,7 +127,7 @@ Partial Class CtrSms
         Me.lblSmsDesc.Size = New System.Drawing.Size(204, 85)
         Me.lblSmsDesc.TabIndex = 34
         Me.lblSmsDesc.Text = "This function allows to send" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "sms messages to the emulator." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Enter the sender pho" & _
-            "ne, write" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "the message, and press Send" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "button."
+    "ne, write" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "the message, and press Send" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "button."
         '
         'imgSms
         '

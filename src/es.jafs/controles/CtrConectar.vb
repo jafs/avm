@@ -8,7 +8,6 @@ Public Class CtrConectar
     ''' <param name="frmPadreR">Formulario padre.</param>
     Public Sub New(ByRef frmPadreR As FrmPrincipal)
         InitializeComponent()
-        Utilidades.addControl(CType(btnConectar, Control))
         frmPadre = frmPadreR
     End Sub
 

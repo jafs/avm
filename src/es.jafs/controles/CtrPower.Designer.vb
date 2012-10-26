@@ -49,11 +49,15 @@ Partial Class CtrPower
         Me.lblBatDesc.Size = New System.Drawing.Size(195, 85)
         Me.lblBatDesc.TabIndex = 25
         Me.lblBatDesc.Text = "In this section you can control" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "all the battery and energy" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "settings. The update" & _
-            " button" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "allows to refresh de battery" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "info into fields."
+    " button" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "allows to refresh de battery" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "info into fields."
         '
         'btnBatActualiza
         '
-        Me.btnBatActualiza.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.btnBatActualiza.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.btnBatActualiza.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnBatActualiza.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBatActualiza.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBatActualiza.ForeColor = System.Drawing.Color.White
         Me.btnBatActualiza.Location = New System.Drawing.Point(12, 172)
         Me.btnBatActualiza.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBatActualiza.Name = "btnBatActualiza"
@@ -61,11 +65,15 @@ Partial Class CtrPower
         Me.btnBatActualiza.TabIndex = 22
         Me.btnBatActualiza.Text = "Update"
         Me.ttConsejo.SetToolTip(Me.btnBatActualiza, "Update the fields with last power values")
-        Me.btnBatActualiza.UseVisualStyleBackColor = True
+        Me.btnBatActualiza.UseVisualStyleBackColor = False
         '
         'btnBatCapacity
         '
-        Me.btnBatCapacity.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.btnBatCapacity.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.btnBatCapacity.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnBatCapacity.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBatCapacity.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBatCapacity.ForeColor = System.Drawing.Color.White
         Me.btnBatCapacity.Location = New System.Drawing.Point(178, 95)
         Me.btnBatCapacity.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBatCapacity.Name = "btnBatCapacity"
@@ -73,7 +81,7 @@ Partial Class CtrPower
         Me.btnBatCapacity.TabIndex = 19
         Me.btnBatCapacity.Text = "Set"
         Me.ttConsejo.SetToolTip(Me.btnBatCapacity, "Update battery charge value")
-        Me.btnBatCapacity.UseVisualStyleBackColor = True
+        Me.btnBatCapacity.UseVisualStyleBackColor = False
         '
         'lblBatCapacity
         '

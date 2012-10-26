@@ -52,20 +52,24 @@ Partial Class CtrGps
         '
         'btnGpsSet
         '
-        Me.btnGpsSet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.btnGpsSet.Location = New System.Drawing.Point(199, 99)
+        Me.btnGpsSet.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.btnGpsSet.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnGpsSet.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGpsSet.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGpsSet.ForeColor = System.Drawing.Color.White
+        Me.btnGpsSet.Location = New System.Drawing.Point(15, 163)
         Me.btnGpsSet.Name = "btnGpsSet"
-        Me.btnGpsSet.Size = New System.Drawing.Size(69, 61)
+        Me.btnGpsSet.Size = New System.Drawing.Size(115, 30)
         Me.btnGpsSet.TabIndex = 50
-        Me.btnGpsSet.Text = "Set" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "location"
+        Me.btnGpsSet.Text = "Set location"
         Me.ttConsejo.SetToolTip(Me.btnGpsSet, "Send location to emulator")
-        Me.btnGpsSet.UseVisualStyleBackColor = True
+        Me.btnGpsSet.UseVisualStyleBackColor = False
         '
         'chkGpsSatelites
         '
         Me.chkGpsSatelites.AutoSize = True
         Me.chkGpsSatelites.Enabled = False
-        Me.chkGpsSatelites.Location = New System.Drawing.Point(15, 138)
+        Me.chkGpsSatelites.Location = New System.Drawing.Point(15, 131)
         Me.chkGpsSatelites.Margin = New System.Windows.Forms.Padding(3, 0, 3, 0)
         Me.chkGpsSatelites.Name = "chkGpsSatelites"
         Me.chkGpsSatelites.Size = New System.Drawing.Size(88, 21)
@@ -77,7 +81,7 @@ Partial Class CtrGps
         'nudGpsSatelites
         '
         Me.nudGpsSatelites.Enabled = False
-        Me.nudGpsSatelites.Location = New System.Drawing.Point(99, 137)
+        Me.nudGpsSatelites.Location = New System.Drawing.Point(99, 130)
         Me.nudGpsSatelites.Maximum = New Decimal(New Integer() {12, 0, 0, 0})
         Me.nudGpsSatelites.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nudGpsSatelites.Name = "nudGpsSatelites"
@@ -192,8 +196,8 @@ Partial Class CtrGps
         Me.lblGpsDesc.Size = New System.Drawing.Size(187, 102)
         Me.lblGpsDesc.TabIndex = 51
         Me.lblGpsDesc.Text = "Here you will be able to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "change the GPS location." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Enter the longitude and" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "lati" & _
-            "tude coordinates to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "change the position. Altitude" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and satellites are optional." & _
-            ""
+    "tude coordinates to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "change the position. Altitude" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and satellites are optional." & _
+    ""
         '
         'imgGps
         '
