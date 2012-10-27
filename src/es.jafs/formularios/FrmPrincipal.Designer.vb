@@ -35,15 +35,18 @@ Partial Class FrmPrincipal
         Me.ttmAyuGeneral = New System.Windows.Forms.ToolStripMenuItem()
         Me.ttmAyuManual = New System.Windows.Forms.ToolStripMenuItem()
         Me.ttmAbout = New System.Windows.Forms.ToolStripMenuItem()
+        Me.chkDebug = New System.Windows.Forms.CheckBox()
         Me.pblEstado = New System.Windows.Forms.Panel()
         Me.lblReloj = New System.Windows.Forms.Label()
         Me.trmReloj = New System.Windows.Forms.Timer(Me.components)
         Me.ttConsejo = New System.Windows.Forms.ToolTip(Me.components)
+        Me.pnlDebug = New System.Windows.Forms.Panel()
         Me.pnlPrincipal.SuspendLayout()
         Me.pnlDock.SuspendLayout()
         Me.tlpMenu.SuspendLayout()
         Me.mnAyuda.SuspendLayout()
         Me.pblEstado.SuspendLayout()
+        Me.pnlDebug.SuspendLayout()
         Me.SuspendLayout()
         '
         'txtRecv
@@ -51,14 +54,15 @@ Partial Class FrmPrincipal
         Me.txtRecv.BackColor = System.Drawing.Color.Gainsboro
         Me.txtRecv.Font = New System.Drawing.Font("Courier New", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtRecv.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtRecv.Location = New System.Drawing.Point(303, 10)
+        Me.txtRecv.Location = New System.Drawing.Point(0, 0)
         Me.txtRecv.Multiline = True
         Me.txtRecv.Name = "txtRecv"
         Me.txtRecv.ReadOnly = True
         Me.txtRecv.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtRecv.Size = New System.Drawing.Size(472, 397)
+        Me.txtRecv.Size = New System.Drawing.Size(444, 397)
         Me.txtRecv.TabIndex = 7
         Me.txtRecv.TabStop = False
+        Me.ttConsejo.SetToolTip(Me.txtRecv, "Hide debug panel")
         '
         'txtComando
         '
@@ -67,16 +71,16 @@ Partial Class FrmPrincipal
         Me.txtComando.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.txtComando.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
         Me.txtComando.Enabled = False
-        Me.txtComando.Location = New System.Drawing.Point(303, 415)
+        Me.txtComando.Location = New System.Drawing.Point(0, 405)
         Me.txtComando.Name = "txtComando"
-        Me.txtComando.Size = New System.Drawing.Size(391, 20)
+        Me.txtComando.Size = New System.Drawing.Size(363, 20)
         Me.txtComando.TabIndex = 6
         '
         'btnEnviar
         '
         Me.btnEnviar.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.btnEnviar.Enabled = False
-        Me.btnEnviar.Location = New System.Drawing.Point(700, 413)
+        Me.btnEnviar.Location = New System.Drawing.Point(369, 403)
         Me.btnEnviar.Name = "btnEnviar"
         Me.btnEnviar.Size = New System.Drawing.Size(75, 23)
         Me.btnEnviar.TabIndex = 7
@@ -125,6 +129,7 @@ Partial Class FrmPrincipal
         Me.tlpMenu.Controls.Add(Me.btnSalir, 4, 0)
         Me.tlpMenu.Controls.Add(Me.btnHome, 2, 0)
         Me.tlpMenu.Controls.Add(Me.btnAyuda, 0, 0)
+        Me.tlpMenu.Controls.Add(Me.chkDebug, 3, 0)
         Me.tlpMenu.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tlpMenu.Location = New System.Drawing.Point(0, 0)
         Me.tlpMenu.Name = "tlpMenu"
@@ -202,6 +207,21 @@ Partial Class FrmPrincipal
         Me.ttmAbout.Size = New System.Drawing.Size(138, 22)
         Me.ttmAbout.Text = "&About..."
         '
+        'chkDebug
+        '
+        Me.chkDebug.Appearance = System.Windows.Forms.Appearance.Button
+        Me.chkDebug.AutoSize = True
+        Me.chkDebug.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.chkDebug.FlatAppearance.BorderSize = 0
+        Me.chkDebug.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.chkDebug.Image = Global.Avm.My.Resources.Resources.icoMenuSiDebug48
+        Me.chkDebug.Location = New System.Drawing.Point(171, 3)
+        Me.chkDebug.Name = "chkDebug"
+        Me.chkDebug.Size = New System.Drawing.Size(50, 50)
+        Me.chkDebug.TabIndex = 8
+        Me.ttConsejo.SetToolTip(Me.chkDebug, "Show debug console")
+        Me.chkDebug.UseVisualStyleBackColor = True
+        '
         'pblEstado
         '
         Me.pblEstado.BackColor = System.Drawing.Color.Transparent
@@ -234,30 +254,43 @@ Partial Class FrmPrincipal
         Me.ttConsejo.BackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ttConsejo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(70, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(115, Byte), Integer))
         '
+        'pnlDebug
+        '
+        Me.pnlDebug.Controls.Add(Me.txtRecv)
+        Me.pnlDebug.Controls.Add(Me.txtComando)
+        Me.pnlDebug.Controls.Add(Me.btnEnviar)
+        Me.pnlDebug.Location = New System.Drawing.Point(295, 10)
+        Me.pnlDebug.Name = "pnlDebug"
+        Me.pnlDebug.Size = New System.Drawing.Size(444, 426)
+        Me.pnlDebug.TabIndex = 9
+        Me.pnlDebug.Visible = False
+        '
         'FrmPrincipal
         '
         Me.AcceptButton = Me.btnEnviar
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(784, 446)
-        Me.Controls.Add(Me.btnEnviar)
-        Me.Controls.Add(Me.txtComando)
+        Me.AutoSize = True
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.ClientSize = New System.Drawing.Size(749, 446)
+        Me.Controls.Add(Me.pnlDebug)
         Me.Controls.Add(Me.pnlPrincipal)
-        Me.Controls.Add(Me.txtRecv)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
-        Me.MinimumSize = New System.Drawing.Size(492, 457)
+        Me.MinimumSize = New System.Drawing.Size(305, 457)
         Me.Name = "FrmPrincipal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Android Virtual Management"
         Me.pnlPrincipal.ResumeLayout(False)
         Me.pnlDock.ResumeLayout(False)
         Me.tlpMenu.ResumeLayout(False)
+        Me.tlpMenu.PerformLayout()
         Me.mnAyuda.ResumeLayout(False)
         Me.pblEstado.ResumeLayout(False)
+        Me.pnlDebug.ResumeLayout(False)
+        Me.pnlDebug.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents txtRecv As System.Windows.Forms.TextBox
@@ -278,5 +311,7 @@ Partial Class FrmPrincipal
     Friend WithEvents ttmAyuManual As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ttmAbout As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents btnSalir As System.Windows.Forms.Button
+    Friend WithEvents pnlDebug As System.Windows.Forms.Panel
+    Friend WithEvents chkDebug As System.Windows.Forms.CheckBox
 
 End Class

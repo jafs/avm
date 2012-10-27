@@ -186,9 +186,23 @@ Namespace My.Resources
             End Get
         End Property
         
+        Friend ReadOnly Property icoMenuNoDebug48() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icoMenuNoDebug48", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Friend ReadOnly Property icoMenuSalir48() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("icoMenuSalir48", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property icoMenuSiDebug48() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icoMenuSiDebug48", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

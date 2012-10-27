@@ -294,6 +294,8 @@
   <ItemGroup>
     <Content Include="es.jafs\recursos\license.txt" />
     <Content Include="es.jafs\recursos\readme.txt" />
+    <None Include="Resources\icoMenuNoDebug48.png" />
+    <None Include="Resources\icoMenuSiDebug48.png" />
     <None Include="Resources\superior.png" />
     <None Include="Resources\fondo.png" />
     <None Include="Resources\icoMenuSalir48.png" />

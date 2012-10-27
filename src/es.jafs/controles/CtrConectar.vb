@@ -34,5 +34,6 @@ Public Class CtrConectar
         lblError.Visible = False
         txtPuerto.Focus()
         txtPuerto.SelectAll()
+        frmPadre.AcceptButton = btnConectar
     End Sub
 End Class
