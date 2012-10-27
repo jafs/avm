@@ -13,13 +13,14 @@ Requirements
 Version History
 ---------------
 Version 0.5.6 - In process
+* Button for hide and show debug console.
 * New buttons style.
-* Fixed problem with AVD commands [#32].
-* Fixed application hangs when connected to an open portwhich is not the Android emulator [#34].
+* Fixed problem with AVD commands.
+* Fixed application hangs when connected to an open portwhich is not the Android emulator.
  
 Version 0.5.5.5 - 15/10/2012
-* Solves the bug of hangs when connect to not telnet [#29].
-* New Jelly Bean style [#30].
+* Solves the bug of hangs when connect to not telnet.
+* New Jelly Bean style.
  
 Version 0.5.5.1 - 27/08/2012
 * Improvement in detection of connection to the emulator. Solves the problem of not detecting link failure with emulator and problems running the kill command.

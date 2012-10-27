@@ -54,11 +54,9 @@ Public Class Utilidades
     Public Shared Sub cambiarEstilo(ByRef objControl As Control, ByRef bActivo As Boolean)
         If Not objControl Is Nothing Then
             If bActivo Then
-                objControl.ForeColor = Color.FromArgb(13, 120, 166)
-                objControl.Font = New Font(objControl.Font, FontStyle.Bold)
+                objControl.ForeColor = Plantilla.ColorFondo
             Else
                 objControl.ForeColor = Color.FromArgb(250, 250, 250)
-                objControl.Font = New Font(objControl.Font, FontStyle.Regular)
             End If
         End If
     End Sub

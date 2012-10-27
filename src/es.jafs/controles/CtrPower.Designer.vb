@@ -58,10 +58,10 @@ Partial Class CtrPower
         Me.btnBatActualiza.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBatActualiza.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBatActualiza.ForeColor = System.Drawing.Color.White
-        Me.btnBatActualiza.Location = New System.Drawing.Point(12, 172)
+        Me.btnBatActualiza.Location = New System.Drawing.Point(148, 132)
         Me.btnBatActualiza.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBatActualiza.Name = "btnBatActualiza"
-        Me.btnBatActualiza.Size = New System.Drawing.Size(100, 27)
+        Me.btnBatActualiza.Size = New System.Drawing.Size(120, 32)
         Me.btnBatActualiza.TabIndex = 22
         Me.btnBatActualiza.Text = "Update"
         Me.ttConsejo.SetToolTip(Me.btnBatActualiza, "Update the fields with last power values")
@@ -74,19 +74,19 @@ Partial Class CtrPower
         Me.btnBatCapacity.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBatCapacity.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBatCapacity.ForeColor = System.Drawing.Color.White
-        Me.btnBatCapacity.Location = New System.Drawing.Point(178, 95)
+        Me.btnBatCapacity.Location = New System.Drawing.Point(148, 87)
         Me.btnBatCapacity.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBatCapacity.Name = "btnBatCapacity"
-        Me.btnBatCapacity.Size = New System.Drawing.Size(90, 26)
+        Me.btnBatCapacity.Size = New System.Drawing.Size(120, 32)
         Me.btnBatCapacity.TabIndex = 19
-        Me.btnBatCapacity.Text = "Set"
+        Me.btnBatCapacity.Text = "Set Capacity"
         Me.ttConsejo.SetToolTip(Me.btnBatCapacity, "Update battery charge value")
         Me.btnBatCapacity.UseVisualStyleBackColor = False
         '
         'lblBatCapacity
         '
         Me.lblBatCapacity.AutoSize = True
-        Me.lblBatCapacity.Location = New System.Drawing.Point(9, 99)
+        Me.lblBatCapacity.Location = New System.Drawing.Point(9, 89)
         Me.lblBatCapacity.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblBatCapacity.Name = "lblBatCapacity"
         Me.lblBatCapacity.Size = New System.Drawing.Size(66, 17)
@@ -100,27 +100,27 @@ Partial Class CtrPower
         Me.cmbBatHealth.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.cmbBatHealth.FormattingEnabled = True
         Me.cmbBatHealth.Items.AddRange(New Object() {"Unknown", "Good", "Overheat", "Dead", "Overvoltage", "Failure"})
-        Me.cmbBatHealth.Location = New System.Drawing.Point(108, 55)
+        Me.cmbBatHealth.Location = New System.Drawing.Point(118, 50)
         Me.cmbBatHealth.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbBatHealth.Name = "cmbBatHealth"
-        Me.cmbBatHealth.Size = New System.Drawing.Size(160, 24)
+        Me.cmbBatHealth.Size = New System.Drawing.Size(150, 24)
         Me.cmbBatHealth.TabIndex = 16
         '
         'lblBatHealth
         '
         Me.lblBatHealth.AutoSize = True
-        Me.lblBatHealth.Location = New System.Drawing.Point(9, 58)
+        Me.lblBatHealth.Location = New System.Drawing.Point(9, 53)
         Me.lblBatHealth.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblBatHealth.Name = "lblBatHealth"
-        Me.lblBatHealth.Size = New System.Drawing.Size(100, 17)
+        Me.lblBatHealth.Size = New System.Drawing.Size(102, 17)
         Me.lblBatHealth.TabIndex = 23
-        Me.lblBatHealth.Text = "Battery health:"
+        Me.lblBatHealth.Text = "Battery Health:"
         Me.ttConsejo.SetToolTip(Me.lblBatHealth, "Sets the state of health of the battery")
         '
         'chkBatPresent
         '
         Me.chkBatPresent.AutoSize = True
-        Me.chkBatPresent.Location = New System.Drawing.Point(12, 138)
+        Me.chkBatPresent.Location = New System.Drawing.Point(10, 145)
         Me.chkBatPresent.Margin = New System.Windows.Forms.Padding(4)
         Me.chkBatPresent.Name = "chkBatPresent"
         Me.chkBatPresent.Size = New System.Drawing.Size(124, 21)
@@ -131,7 +131,7 @@ Partial Class CtrPower
         '
         'nudBatCapacity
         '
-        Me.nudBatCapacity.Location = New System.Drawing.Point(108, 97)
+        Me.nudBatCapacity.Location = New System.Drawing.Point(75, 87)
         Me.nudBatCapacity.Margin = New System.Windows.Forms.Padding(4)
         Me.nudBatCapacity.Name = "nudBatCapacity"
         Me.nudBatCapacity.Size = New System.Drawing.Size(62, 23)
@@ -145,10 +145,10 @@ Partial Class CtrPower
         Me.cmbBatStat.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.cmbBatStat.FormattingEnabled = True
         Me.cmbBatStat.Items.AddRange(New Object() {"Unknown", "Charging", "Discharging", "Not-charging", "Full"})
-        Me.cmbBatStat.Location = New System.Drawing.Point(108, 14)
+        Me.cmbBatStat.Location = New System.Drawing.Point(118, 14)
         Me.cmbBatStat.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbBatStat.Name = "cmbBatStat"
-        Me.cmbBatStat.Size = New System.Drawing.Size(160, 24)
+        Me.cmbBatStat.Size = New System.Drawing.Size(150, 24)
         Me.cmbBatStat.TabIndex = 15
         '
         'lblEstado
@@ -157,15 +157,15 @@ Partial Class CtrPower
         Me.lblEstado.Location = New System.Drawing.Point(9, 17)
         Me.lblEstado.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblEstado.Name = "lblEstado"
-        Me.lblEstado.Size = New System.Drawing.Size(99, 17)
+        Me.lblEstado.Size = New System.Drawing.Size(101, 17)
         Me.lblEstado.TabIndex = 18
-        Me.lblEstado.Text = "Battery status:"
+        Me.lblEstado.Text = "Battery Status:"
         Me.ttConsejo.SetToolTip(Me.lblEstado, "Sets the battery status (charging, full, etc.)")
         '
         'chkCargaAc
         '
         Me.chkCargaAc.AutoSize = True
-        Me.chkCargaAc.Location = New System.Drawing.Point(162, 138)
+        Me.chkCargaAc.Location = New System.Drawing.Point(12, 118)
         Me.chkCargaAc.Margin = New System.Windows.Forms.Padding(4)
         Me.chkCargaAc.Name = "chkCargaAc"
         Me.chkCargaAc.Size = New System.Drawing.Size(106, 21)

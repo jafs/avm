@@ -59,7 +59,7 @@ Partial Class CtrGps
         Me.btnGpsSet.ForeColor = System.Drawing.Color.White
         Me.btnGpsSet.Location = New System.Drawing.Point(15, 163)
         Me.btnGpsSet.Name = "btnGpsSet"
-        Me.btnGpsSet.Size = New System.Drawing.Size(115, 30)
+        Me.btnGpsSet.Size = New System.Drawing.Size(115, 32)
         Me.btnGpsSet.TabIndex = 50
         Me.btnGpsSet.Text = "Set location"
         Me.ttConsejo.SetToolTip(Me.btnGpsSet, "Send location to emulator")

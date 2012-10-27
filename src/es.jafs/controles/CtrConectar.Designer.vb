@@ -45,13 +45,13 @@ Partial Class CtrConectar
         Me.btnConectar.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(227, Byte), Integer))
         Me.btnConectar.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnConectar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnConectar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.btnConectar.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.btnConectar.Location = New System.Drawing.Point(100, 194)
+        Me.btnConectar.Location = New System.Drawing.Point(85, 196)
         Me.btnConectar.Name = "btnConectar"
-        Me.btnConectar.Size = New System.Drawing.Size(80, 30)
+        Me.btnConectar.Size = New System.Drawing.Size(113, 32)
         Me.btnConectar.TabIndex = 2
         Me.btnConectar.Text = "Connect"
-        Me.btnConectar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnConectar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btnConectar.UseVisualStyleBackColor = False
         '
@@ -71,7 +71,7 @@ Partial Class CtrConectar
         '
         Me.lblPuerto.AutoSize = True
         Me.lblPuerto.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblPuerto.Location = New System.Drawing.Point(83, 159)
+        Me.lblPuerto.Location = New System.Drawing.Point(81, 159)
         Me.lblPuerto.Name = "lblPuerto"
         Me.lblPuerto.Size = New System.Drawing.Size(42, 20)
         Me.lblPuerto.TabIndex = 0

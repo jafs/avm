@@ -65,18 +65,18 @@ Partial Class CtrSms
         Me.btnSmsSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSmsSend.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSmsSend.ForeColor = System.Drawing.Color.White
-        Me.btnSmsSend.Location = New System.Drawing.Point(193, 200)
+        Me.btnSmsSend.Location = New System.Drawing.Point(124, 201)
         Me.btnSmsSend.Name = "btnSmsSend"
-        Me.btnSmsSend.Size = New System.Drawing.Size(78, 26)
+        Me.btnSmsSend.Size = New System.Drawing.Size(147, 32)
         Me.btnSmsSend.TabIndex = 29
-        Me.btnSmsSend.Text = "Send"
+        Me.btnSmsSend.Text = "Send message"
         Me.ttConsejo.SetToolTip(Me.btnSmsSend, "Send message to emulator")
         Me.btnSmsSend.UseVisualStyleBackColor = False
         '
         'lblSmsTotal
         '
         Me.lblSmsTotal.AutoSize = True
-        Me.lblSmsTotal.Location = New System.Drawing.Point(223, 51)
+        Me.lblSmsTotal.Location = New System.Drawing.Point(223, 48)
         Me.lblSmsTotal.Name = "lblSmsTotal"
         Me.lblSmsTotal.Size = New System.Drawing.Size(48, 17)
         Me.lblSmsTotal.TabIndex = 33
@@ -84,7 +84,7 @@ Partial Class CtrSms
         '
         'lblSmsRest
         '
-        Me.lblSmsRest.Location = New System.Drawing.Point(191, 47)
+        Me.lblSmsRest.Location = New System.Drawing.Point(191, 44)
         Me.lblSmsRest.Name = "lblSmsRest"
         Me.lblSmsRest.Size = New System.Drawing.Size(35, 24)
         Me.lblSmsRest.TabIndex = 32
@@ -94,7 +94,7 @@ Partial Class CtrSms
         'txtSmsMessage
         '
         Me.txtSmsMessage.Font = New System.Drawing.Font("Courier New", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSmsMessage.Location = New System.Drawing.Point(8, 72)
+        Me.txtSmsMessage.Location = New System.Drawing.Point(8, 69)
         Me.txtSmsMessage.MaxLength = 160
         Me.txtSmsMessage.Multiline = True
         Me.txtSmsMessage.Name = "txtSmsMessage"
@@ -104,7 +104,7 @@ Partial Class CtrSms
         'lblSmsMessage
         '
         Me.lblSmsMessage.AutoSize = True
-        Me.lblSmsMessage.Location = New System.Drawing.Point(5, 51)
+        Me.lblSmsMessage.Location = New System.Drawing.Point(5, 48)
         Me.lblSmsMessage.Name = "lblSmsMessage"
         Me.lblSmsMessage.Size = New System.Drawing.Size(69, 17)
         Me.lblSmsMessage.TabIndex = 31
@@ -122,7 +122,7 @@ Partial Class CtrSms
         'lblSmsDesc
         '
         Me.lblSmsDesc.AutoSize = True
-        Me.lblSmsDesc.Location = New System.Drawing.Point(75, 238)
+        Me.lblSmsDesc.Location = New System.Drawing.Point(75, 241)
         Me.lblSmsDesc.Name = "lblSmsDesc"
         Me.lblSmsDesc.Size = New System.Drawing.Size(204, 85)
         Me.lblSmsDesc.TabIndex = 34
@@ -132,7 +132,7 @@ Partial Class CtrSms
         'imgSms
         '
         Me.imgSms.Image = Global.Avm.My.Resources.Resources.icoSms64
-        Me.imgSms.Location = New System.Drawing.Point(8, 248)
+        Me.imgSms.Location = New System.Drawing.Point(8, 251)
         Me.imgSms.Name = "imgSms"
         Me.imgSms.Size = New System.Drawing.Size(64, 64)
         Me.imgSms.TabIndex = 35

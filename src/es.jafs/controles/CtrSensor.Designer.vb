@@ -50,7 +50,7 @@ Partial Class CtrSensor
         Me.btnSenUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSenUpdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSenUpdate.ForeColor = System.Drawing.Color.White
-        Me.btnSenUpdate.Location = New System.Drawing.Point(19, 174)
+        Me.btnSenUpdate.Location = New System.Drawing.Point(16, 174)
         Me.btnSenUpdate.Name = "btnSenUpdate"
         Me.btnSenUpdate.Size = New System.Drawing.Size(112, 32)
         Me.btnSenUpdate.TabIndex = 29
@@ -89,7 +89,7 @@ Partial Class CtrSensor
         Me.nudSenValor2.DecimalPlaces = 4
         Me.nudSenValor2.Enabled = False
         Me.nudSenValor2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.nudSenValor2.Location = New System.Drawing.Point(92, 97)
+        Me.nudSenValor2.Location = New System.Drawing.Point(85, 98)
         Me.nudSenValor2.Name = "nudSenValor2"
         Me.nudSenValor2.Size = New System.Drawing.Size(90, 23)
         Me.nudSenValor2.TabIndex = 22
@@ -97,7 +97,7 @@ Partial Class CtrSensor
         'lblSenValor2
         '
         Me.lblSenValor2.AutoSize = True
-        Me.lblSenValor2.Location = New System.Drawing.Point(16, 100)
+        Me.lblSenValor2.Location = New System.Drawing.Point(13, 100)
         Me.lblSenValor2.Name = "lblSenValor2"
         Me.lblSenValor2.Size = New System.Drawing.Size(69, 17)
         Me.lblSenValor2.TabIndex = 26
@@ -108,7 +108,7 @@ Partial Class CtrSensor
         Me.nudSenValor3.DecimalPlaces = 4
         Me.nudSenValor3.Enabled = False
         Me.nudSenValor3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.nudSenValor3.Location = New System.Drawing.Point(92, 135)
+        Me.nudSenValor3.Location = New System.Drawing.Point(85, 136)
         Me.nudSenValor3.Name = "nudSenValor3"
         Me.nudSenValor3.Size = New System.Drawing.Size(90, 23)
         Me.nudSenValor3.TabIndex = 23
@@ -116,7 +116,7 @@ Partial Class CtrSensor
         'lblSenValor3
         '
         Me.lblSenValor3.AutoSize = True
-        Me.lblSenValor3.Location = New System.Drawing.Point(16, 138)
+        Me.lblSenValor3.Location = New System.Drawing.Point(13, 138)
         Me.lblSenValor3.Name = "lblSenValor3"
         Me.lblSenValor3.Size = New System.Drawing.Size(69, 17)
         Me.lblSenValor3.TabIndex = 25
@@ -127,7 +127,7 @@ Partial Class CtrSensor
         Me.nudSenValor1.DecimalPlaces = 4
         Me.nudSenValor1.Enabled = False
         Me.nudSenValor1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.nudSenValor1.Location = New System.Drawing.Point(92, 59)
+        Me.nudSenValor1.Location = New System.Drawing.Point(85, 59)
         Me.nudSenValor1.Name = "nudSenValor1"
         Me.nudSenValor1.Size = New System.Drawing.Size(90, 23)
         Me.nudSenValor1.TabIndex = 20
@@ -135,7 +135,7 @@ Partial Class CtrSensor
         'lblSenValor1
         '
         Me.lblSenValor1.AutoSize = True
-        Me.lblSenValor1.Location = New System.Drawing.Point(16, 61)
+        Me.lblSenValor1.Location = New System.Drawing.Point(13, 61)
         Me.lblSenValor1.Name = "lblSenValor1"
         Me.lblSenValor1.Size = New System.Drawing.Size(69, 17)
         Me.lblSenValor1.TabIndex = 21
@@ -144,7 +144,7 @@ Partial Class CtrSensor
         'lblSensor
         '
         Me.lblSensor.AutoSize = True
-        Me.lblSensor.Location = New System.Drawing.Point(16, 23)
+        Me.lblSensor.Location = New System.Drawing.Point(13, 23)
         Me.lblSensor.Name = "lblSensor"
         Me.lblSensor.Size = New System.Drawing.Size(57, 17)
         Me.lblSensor.TabIndex = 19
@@ -157,9 +157,9 @@ Partial Class CtrSensor
         Me.cmbSensores.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.cmbSensores.FormattingEnabled = True
         Me.cmbSensores.Items.AddRange(New Object() {"acceleration", "magnetic-field", "orientation", "temperature", "proximity"})
-        Me.cmbSensores.Location = New System.Drawing.Point(92, 20)
+        Me.cmbSensores.Location = New System.Drawing.Point(85, 20)
         Me.cmbSensores.Name = "cmbSensores"
-        Me.cmbSensores.Size = New System.Drawing.Size(173, 24)
+        Me.cmbSensores.Size = New System.Drawing.Size(180, 24)
         Me.cmbSensores.TabIndex = 18
         '
         'imgSensores
