@@ -118,6 +118,9 @@
     <AssemblyOriginatorKeyFile>
     </AssemblyOriginatorKeyFile>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>avm.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -134,69 +137,69 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="es.jafs\android\AndTelnet.vb" />
-    <Compile Include="es.jafs\android\Comando.vb" />
-    <Compile Include="es.jafs\controles\CtrConectar.Designer.vb">
+    <Compile Include="source\android\AndTelnet.vb" />
+    <Compile Include="source\android\Comando.vb" />
+    <Compile Include="source\controles\CtrConectar.Designer.vb">
       <DependentUpon>CtrConectar.vb</DependentUpon>
     </Compile>
-    <Compile Include="es.jafs\controles\CtrConectar.vb">
+    <Compile Include="source\controles\CtrConectar.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="es.jafs\controles\CtrGps.Designer.vb">
+    <Compile Include="source\controles\CtrGps.Designer.vb">
       <DependentUpon>CtrGps.vb</DependentUpon>
     </Compile>
-    <Compile Include="es.jafs\controles\CtrGps.vb">
+    <Compile Include="source\controles\CtrGps.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="es.jafs\controles\CtrGsmCalls.Designer.vb">
+    <Compile Include="source\controles\CtrGsmCalls.Designer.vb">
       <DependentUpon>CtrGsmCalls.vb</DependentUpon>
     </Compile>
-    <Compile Include="es.jafs\controles\CtrGsmCalls.vb">
+    <Compile Include="source\controles\CtrGsmCalls.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="es.jafs\controles\CtrGsmStatus.Designer.vb">
+    <Compile Include="source\controles\CtrGsmStatus.Designer.vb">
       <DependentUpon>CtrGsmStatus.vb</DependentUpon>
     </Compile>
-    <Compile Include="es.jafs\controles\CtrGsmStatus.vb">
+    <Compile Include="source\controles\CtrGsmStatus.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="es.jafs\controles\CtrMenu.Designer.vb">
+    <Compile Include="source\controles\CtrMenu.Designer.vb">
       <DependentUpon>CtrMenu.vb</DependentUpon>
     </Compile>
-    <Compile Include="es.jafs\controles\CtrMenu.vb">
+    <Compile Include="source\controles\CtrMenu.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="es.jafs\controles\CtrPower.Designer.vb">
+    <Compile Include="source\controles\CtrPower.Designer.vb">
       <DependentUpon>CtrPower.vb</DependentUpon>
     </Compile>
-    <Compile Include="es.jafs\controles\CtrPower.vb">
+    <Compile Include="source\controles\CtrPower.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="es.jafs\controles\CtrSensor.Designer.vb">
+    <Compile Include="source\controles\CtrSensor.Designer.vb">
       <DependentUpon>CtrSensor.vb</DependentUpon>
     </Compile>
-    <Compile Include="es.jafs\controles\CtrSensor.vb">
+    <Compile Include="source\controles\CtrSensor.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="es.jafs\controles\CtrSms.Designer.vb">
+    <Compile Include="source\controles\CtrSms.Designer.vb">
       <DependentUpon>CtrSms.vb</DependentUpon>
     </Compile>
-    <Compile Include="es.jafs\controles\CtrSms.vb">
+    <Compile Include="source\controles\CtrSms.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="es.jafs\formularios\FrmAcerca.Designer.vb">
+    <Compile Include="source\formularios\FrmAcerca.Designer.vb">
       <DependentUpon>FrmAcerca.vb</DependentUpon>
     </Compile>
-    <Compile Include="es.jafs\formularios\FrmAcerca.vb">
+    <Compile Include="source\formularios\FrmAcerca.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="es.jafs\valores\Plantilla.vb" />
-    <Compile Include="es.jafs\valores\Llamada.vb" />
-    <Compile Include="es.jafs\android\Utilidades.vb" />
-    <Compile Include="es.jafs\formularios\FrmPrincipal.vb">
+    <Compile Include="source\valores\Plantilla.vb" />
+    <Compile Include="source\valores\Llamada.vb" />
+    <Compile Include="source\android\Utilidades.vb" />
+    <Compile Include="source\formularios\FrmPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="es.jafs\formularios\FrmPrincipal.Designer.vb">
+    <Compile Include="source\formularios\FrmPrincipal.Designer.vb">
       <DependentUpon>FrmPrincipal.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
@@ -217,34 +220,34 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="es.jafs\controles\CtrConectar.resx">
+    <EmbeddedResource Include="source\controles\CtrConectar.resx">
       <DependentUpon>CtrConectar.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="es.jafs\controles\CtrGps.resx">
+    <EmbeddedResource Include="source\controles\CtrGps.resx">
       <DependentUpon>CtrGps.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="es.jafs\controles\CtrGsmCalls.resx">
+    <EmbeddedResource Include="source\controles\CtrGsmCalls.resx">
       <DependentUpon>CtrGsmCalls.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="es.jafs\controles\CtrGsmStatus.resx">
+    <EmbeddedResource Include="source\controles\CtrGsmStatus.resx">
       <DependentUpon>CtrGsmStatus.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="es.jafs\controles\CtrMenu.resx">
+    <EmbeddedResource Include="source\controles\CtrMenu.resx">
       <DependentUpon>CtrMenu.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="es.jafs\controles\CtrPower.resx">
+    <EmbeddedResource Include="source\controles\CtrPower.resx">
       <DependentUpon>CtrPower.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="es.jafs\controles\CtrSensor.resx">
+    <EmbeddedResource Include="source\controles\CtrSensor.resx">
       <DependentUpon>CtrSensor.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="es.jafs\controles\CtrSms.resx">
+    <EmbeddedResource Include="source\controles\CtrSms.resx">
       <DependentUpon>CtrSms.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="es.jafs\formularios\FrmAcerca.resx">
+    <EmbeddedResource Include="source\formularios\FrmAcerca.resx">
       <DependentUpon>FrmAcerca.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="es.jafs\formularios\FrmPrincipal.resx">
+    <EmbeddedResource Include="source\formularios\FrmPrincipal.resx">
       <SubType>Designer</SubType>
       <DependentUpon>FrmPrincipal.vb</DependentUpon>
     </EmbeddedResource>
@@ -292,8 +295,10 @@
     <None Include="Resources\sensores64.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="es.jafs\recursos\license.txt" />
-    <Content Include="es.jafs\recursos\readme.txt" />
+    <Content Include="avm.ico" />
+    <Content Include="recursos\ficheros\license.txt" />
+    <Content Include="recursos\ficheros\readme.txt" />
+    <None Include="recursos\imagenes\icono_tool64.png" />
     <None Include="Resources\icoMenuNoDebug48.png" />
     <None Include="Resources\icoMenuSiDebug48.png" />
     <None Include="Resources\superior.png" />

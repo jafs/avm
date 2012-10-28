@@ -237,7 +237,7 @@ Partial Class FrmPrincipal
         'lblReloj
         '
         Me.lblReloj.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblReloj.ForeColor = Plantilla.ColorFondo
+        Me.lblReloj.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(227, Byte), Integer))
         Me.lblReloj.Location = New System.Drawing.Point(217, 5)
         Me.lblReloj.Name = "lblReloj"
         Me.lblReloj.Size = New System.Drawing.Size(60, 23)

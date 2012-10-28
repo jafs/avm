@@ -141,7 +141,7 @@ Partial Class FrmAcerca
         'imgLogo
         '
         Me.imgLogo.BackColor = System.Drawing.Color.Transparent
-        Me.imgLogo.Image = Global.Avm.My.Resources.Resources.icoGsm64
+        Me.imgLogo.Image = Global.Avm.My.Resources.Resources.icono_tool64
         Me.imgLogo.Location = New System.Drawing.Point(240, 42)
         Me.imgLogo.Name = "imgLogo"
         Me.imgLogo.Size = New System.Drawing.Size(64, 64)
