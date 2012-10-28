@@ -31,6 +31,7 @@ values​​, etc..
 Version History
 ===============
 Version 0.5.6 - In process
+ - New app icon.
  - Small enhacements.
  - Improve of menu style.
  - Button for hide and show debug console.
