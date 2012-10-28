@@ -17,7 +17,7 @@
     ''' <summary>Controla el estado de envío de Altitud.</summary>
     ''' <param name="sender">Emisor del evento.</param>
     ''' <param name="e">Datos del evento.</param>
-    Private Sub chkGpsAltitude_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles chkGpsAltitude.CheckedChanged
+    Private Sub chkGpsAltitudeCheckedChanged(sender As System.Object, e As System.EventArgs) Handles chkGpsAltitude.CheckedChanged
         nudGpsAltitude.Enabled = chkGpsAltitude.Checked
         chkGpsSatelites.Enabled = chkGpsAltitude.Checked
     End Sub
@@ -26,7 +26,7 @@
     ''' <summary>Controla el estado de envío de satélites.</summary>
     ''' <param name="sender">Emisor del evento.</param>
     ''' <param name="e">Datos del evento.</param>
-    Private Sub chkGpsSatelites_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkGpsSatelites.CheckedChanged
+    Private Sub chkGpsSatelitesCheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkGpsSatelites.CheckedChanged
         nudGpsSatelites.Enabled = chkGpsSatelites.Checked
     End Sub
 
@@ -34,7 +34,7 @@
     ''' <summary>Envía la información de GPS al sistema.</summary>
     ''' <param name="sender">Emisor del evento.</param>
     ''' <param name="e">Datos del evento.</param>
-    Private Sub btnGpsSet_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGpsSet.Click
+    Private Sub btnGpsSetClick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGpsSet.Click
         Dim dLontitud As Decimal
         Dim dLatitud As Decimal
         Dim sSentencia As String = String.Empty
@@ -73,7 +73,7 @@
     ''' <summary>Controla los cambios en los grados de longitud.</summary>
     ''' <param name="sender">Emisor del evento</param>
     ''' <param name="e">Datos del evento</param>
-    Private Sub nudGpsLonGrados_ValueChanged(sender As System.Object, e As System.EventArgs) Handles nudGpsLonGrados.ValueChanged
+    Private Sub nudGpsLonGradosValueChanged(sender As System.Object, e As System.EventArgs) Handles nudGpsLonGrados.ValueChanged
         ' Si los grados han llegado a su límite se ponen los valores de minutos y segundos a 0, ya
         ' que no se pueden superar dichos valores. Además se desactivan los controles.
         If nudGpsLonGrados.Value = 180 Or nudGpsLonGrados.Value = -180 Then
@@ -97,7 +97,7 @@
     ''' <summary>Controla los cambios en los grados de latitud.</summary>
     ''' <param name="sender">Emisor del evento</param>
     ''' <param name="e">Datos del evento</param>
-    Private Sub nudGpsLatGrados_ValueChanged(sender As System.Object, e As System.EventArgs) Handles nudGpsLatGrados.ValueChanged
+    Private Sub nudGpsLatGradosValueChanged(sender As System.Object, e As System.EventArgs) Handles nudGpsLatGrados.ValueChanged
         ' Si los grados han llegado a su límite se ponen los valores de minutos y segundos a 0, ya
         ' que no se pueden superar dichos valores. Además se desactivan los controles.
         If nudGpsLatGrados.Value = 90 Or nudGpsLatGrados.Value = -90 Then

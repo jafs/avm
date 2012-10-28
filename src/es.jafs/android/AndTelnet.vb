@@ -9,7 +9,7 @@ Imports System.Text
 ''' <summary>Clase que implementa una conexión Telnet para emuladores Android.</summary>
 Public Class AndTelnet
     ''' <summary>Dirección IP de conexión a la máquina virtual.</summary>
-    Dim objDireccionIp As IPAddress
+    Dim objDireccionIp As IPAddress = Nothing
     ''' <summary>Puerto de conexión a la máquina virtual.</summary>
     Dim iPuerto As Integer
     ''' <summary>Objeto de conexión a la máquina virtual.</summary>
@@ -86,7 +86,7 @@ Public Class AndTelnet
                 ' Verificación de que hay conexión.
                 If objSocket.Connected Then
                     ' Almacena los datos recibidos desde el socket.
-                    Dim sRecibido As String = String.Empty
+                    Dim sRecibido As New StringBuilder
                     ' Número de bytes devueltos por el socket.
                     Dim iNumBytes As Integer = 0
                     bConexion = True
@@ -94,15 +94,15 @@ Public Class AndTelnet
                     ' Bucle en el que se reciben 512 bytes en cada iteración.
                     Do
                         iNumBytes = objSocket.Receive(RecvBytes, RecvBytes.Length, 0)
-                        sRecibido += Encoding.ASCII.GetString(RecvBytes, 0, iNumBytes)
-                    Loop While Not sRecibido.EndsWith(RES_OK & vbCrLf) And Not sRecibido.EndsWith(RES_ERROR & vbCrLf) And iNumBytes > 0
+                        sRecibido.Append(Encoding.ASCII.GetString(RecvBytes, 0, iNumBytes))
+                    Loop While Not sRecibido.ToString.EndsWith(RES_OK & vbCrLf) And Not sRecibido.ToString.EndsWith(RES_ERROR & vbCrLf) And iNumBytes > 0
 
                     If iNumBytes = 0 And sRecibido.Length = 0 Then
                         desconectar()
                         Throw New Exception()
                     End If
 
-                    sResultado += sRecibido
+                    sResultado = sRecibido.ToString
                     sRecibido = Nothing
                 End If
             Catch oEX As Exception
@@ -141,7 +141,7 @@ Public Class AndTelnet
     ''' <returns>Cadena con el resultado de la consulta.</returns>
     Public Function consultar(ByVal sComando As String) As String
         ' Datos recibidos del socket.
-        Dim sRecibido As String = Nothing
+        Dim sRecibido As New StringBuilder
 
         If 0 < sComando.Length And Not objSocket Is Nothing Then
             ' Número de bytes recibidos desde el socket.
@@ -158,14 +158,12 @@ Public Class AndTelnet
                     ' Ejecuta el comando
                     objSocket.Send(arbEnviados, arbEnviados.Length, SocketFlags.None)
 
-                    sRecibido = String.Empty
-
                     ' Obtiene el resultado en bloques de 256 bytes.
                     Do
                         ' Recibe los datos en bloques de 256 bytes
                         iNumBytes = objSocket.Receive(arbRecibidos, arbRecibidos.Length, 0)
-                        sRecibido += Encoding.ASCII.GetString(arbRecibidos, 0, iNumBytes)
-                    Loop While (Not sRecibido.EndsWith(RES_OK & vbCrLf) And Not sRecibido.Contains(RES_ERROR)) Or isSnapshot(sComando, sRecibido)
+                        sRecibido.Append(Encoding.ASCII.GetString(arbRecibidos, 0, iNumBytes))
+                    Loop While (Not sRecibido.ToString.EndsWith(RES_OK & vbCrLf) And Not sRecibido.ToString.Contains(RES_ERROR)) Or isSnapshot(sComando, sRecibido.ToString)
 
                     If sRecibido.Length > 0 Then
                         sRecibido = sRecibido.Replace(vbLf, vbNewLine)
@@ -191,7 +189,7 @@ Public Class AndTelnet
             desconectar()
         End If
 
-        Return sRecibido
+        Return sRecibido.ToString
     End Function
 
 

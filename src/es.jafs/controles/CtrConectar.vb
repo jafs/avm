@@ -15,7 +15,7 @@ Public Class CtrConectar
     ''' <summary>Controla el clic sobre el botón conectar.</summary>
     ''' <param name="sender">Emisor del evento</param>
     ''' <param name="e">Datos del evento</param>
-    Private Sub btnConectar_Click(sender As System.Object, e As System.EventArgs) Handles btnConectar.Click
+    Private Sub btnConectarClick(sender As System.Object, e As System.EventArgs) Handles btnConectar.Click
         ' Puerto de conexión
         Dim iPuerto As Integer = 0
 
