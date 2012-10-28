@@ -7,12 +7,14 @@ Requirements
 ------------
 * Pentium III (or compatible) 500 MHz or higher.
 * Windows XP or higher.
-* .NET Framework or later.
+* .NET Framework 3.5 or later.
 
 
 Version History
 ---------------
 Version 0.5.6 - In process
+* Small enhacements.
+* Improve of menu style.
 * Button for hide and show debug console.
 * New buttons style.
 * Fixed problem with AVD commands.
