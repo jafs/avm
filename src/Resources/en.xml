@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<idioma desc="en">
+  <tag clave="disconnect" valor="Disconnect" />
+  <tag clave="error" valor="Error" />
+  <tag clave="logout" valor="Logout" />
+  <tag clave="version" valor="Versión" />
+  <tag clave="warning" valor="Warning" />
+
+  <tag clave="err_no_connection" valor="There is no connection" />
+  <tag clave="err_call_number" valor="Enter a valid phone number" />
+  <tag clave="err_call_prefix" valor="Enter a valid prefix" />
+  <tag clave="err_command" valor="Enter a command" />
+  <tag clave="err_connection" valor="Error with virtual machine connection" />
+  <tag clave="err_sensor_read" valor="Error when read some sensor value" />
+  <tag clave="err_sensor_select" valor="You must to select a sensor." />
+  <tag clave="err_sms_send" valor="Enter a message to send." />
+  <tag clave="err_socket" valor="Socket disconnected" />
+
+  <tag clave="frm_about" valor="About" />
+  <tag clave="frm_debug_hide" valor="Hide debug console" />
+  <tag clave="frm_debug_show" valor="Show debug console" />
+
+  <tag clave="call_activate" valor="activate call" />
+  <tag clave="call_busy" valor="finalize call as busy" />
+  <tag clave="call_connecting" valor="connecting..." />
+  <tag clave="call_finalize" valor="finalize call" />
+  <tag clave="call_hold" valor="hold call" />
+  <tag clave="call_inbound" valor="inbound" />
+  <tag clave="call_not_allowed" valor="not allowed" />
+  <tag clave="call_outbound" valor="outbound" />
+  <tag clave="call_unknown" valor="unknown status" />
+
+  <tag clave="pop_disconnect_question" valor="Disconnect from emulator?" />
+  <tag clave="pop_exit_question" valor="Currently connected to emulator. Do you want to exit?" />
+  <tag clave="pop_exit_title" valor="Exit confirmation" />
+  <tag clave="pop_kill_question" valor="Kill the Android emulator instance?" />
+  <tag clave="pop_kill_title" valor="Kill emulator" />
+  <tag clave="pop_logout_question" valor="Do you want to logout?" />
+
+  <tag clave="sen_azimuth" valor="Azimuth:" />
+  <tag clave="sen_azimuth_tt" valor="Degrees of rotation around the z axis" />
+  <tag clave="sen_distance" valor="Distance:" />
+  <tag clave="sen_distance_tt" valor="How far away an object is from a device" />
+  <tag clave="sen_not_used" valor="Not used:" />
+  <tag clave="sen_pitch" valor="Pitch:" />
+  <tag clave="sen_pitch_tt" valor="Degrees of rotation around the x axis" />
+  <tag clave="sen_roll" valor="Roll:" />
+  <tag clave="sen_roll_tt" valor="Degrees of rotation around the y axis" />
+  <tag clave="sen_temp" valor="Temp:" />
+  <tag clave="sen_temp_tt" valor="Device temperature in Cº" />
+  <tag clave="sen_x_axis" valor="X-Axis:" />
+  <tag clave="sen_x_axis_tt" valor="Value in X axis" />
+  <tag clave="sen_y_axis" valor="Y-Axis:" />
+  <tag clave="sen_y_axis_tt" valor="Value in Y axis" />
+  <tag clave="sen_z_axis" valor="Z-Axis:" />
+  <tag clave="sen_z_axis_tt" valor="Value in Z axis" />
+</idioma>

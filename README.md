@@ -12,8 +12,11 @@ Requirements
 
 Version History
 ---------------
-Version 0.5.6 - In process
+Version 0.6 - In process
+* Spanish translation.
+* Validation of commands when press enter key in debug window.
 * New app icon.
+* New Jelly Bean android icons style.
 * Small enhacements.
 * Improve of menu style.
 * Button for hide and show debug console.
@@ -105,6 +108,6 @@ For more info, read the license.txt file.
 
 Credits
 -------
-* Icons by: GNOME icon artistsAuthor http://gnome.org
+* Icons by: GNOME icon artists (http://gnome.org)
 * AVM home page: http://jafs.es/aplicaciones/android-virtual-management/
 * GPLv3 2012 José Antonio Fuentes Santiago (jafs@jafs.es).

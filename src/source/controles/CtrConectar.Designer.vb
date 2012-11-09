@@ -22,6 +22,7 @@ Partial Class CtrConectar
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CtrConectar))
         Me.lblInfo = New System.Windows.Forms.Label()
         Me.btnConectar = New System.Windows.Forms.Button()
         Me.lblError = New System.Windows.Forms.Label()
@@ -31,66 +32,37 @@ Partial Class CtrConectar
         '
         'lblInfo
         '
-        Me.lblInfo.AutoSize = True
-        Me.lblInfo.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblInfo.Location = New System.Drawing.Point(35, 22)
+        resources.ApplyResources(Me.lblInfo, "lblInfo")
         Me.lblInfo.Name = "lblInfo"
-        Me.lblInfo.Size = New System.Drawing.Size(210, 80)
-        Me.lblInfo.TabIndex = 2
-        Me.lblInfo.Text = "Welcome to Android Virtual" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Management. To start, enter" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "a valid port for connect" & _
-    " to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "emulator and press connect."
         '
         'btnConectar
         '
-        Me.btnConectar.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(227, Byte), Integer))
+        resources.ApplyResources(Me.btnConectar, "btnConectar")
+        Me.btnConectar.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.btnConectar.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnConectar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnConectar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.btnConectar.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.btnConectar.Location = New System.Drawing.Point(85, 196)
         Me.btnConectar.Name = "btnConectar"
-        Me.btnConectar.Size = New System.Drawing.Size(113, 32)
-        Me.btnConectar.TabIndex = 2
-        Me.btnConectar.Text = "Connect"
-        Me.btnConectar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btnConectar.UseVisualStyleBackColor = False
         '
         'lblError
         '
-        Me.lblError.AutoSize = True
+        resources.ApplyResources(Me.lblError, "lblError")
         Me.lblError.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(180, Byte), Integer), CType(CType(190, Byte), Integer))
-        Me.lblError.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblError.Location = New System.Drawing.Point(46, 285)
         Me.lblError.Name = "lblError"
-        Me.lblError.Size = New System.Drawing.Size(186, 40)
-        Me.lblError.TabIndex = 4
-        Me.lblError.Text = "Enter a valid port number" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(between 1 and 65535)"
-        Me.lblError.Visible = False
         '
         'lblPuerto
         '
-        Me.lblPuerto.AutoSize = True
-        Me.lblPuerto.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblPuerto.Location = New System.Drawing.Point(81, 159)
+        resources.ApplyResources(Me.lblPuerto, "lblPuerto")
         Me.lblPuerto.Name = "lblPuerto"
-        Me.lblPuerto.Size = New System.Drawing.Size(42, 20)
-        Me.lblPuerto.TabIndex = 0
-        Me.lblPuerto.Text = "Port:"
         '
         'txtPuerto
         '
-        Me.txtPuerto.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        resources.ApplyResources(Me.txtPuerto, "txtPuerto")
         Me.txtPuerto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.txtPuerto.Location = New System.Drawing.Point(131, 156)
-        Me.txtPuerto.MaxLength = 5
         Me.txtPuerto.Name = "txtPuerto"
-        Me.txtPuerto.Size = New System.Drawing.Size(67, 26)
-        Me.txtPuerto.TabIndex = 1
-        Me.txtPuerto.Text = "5554"
-        Me.txtPuerto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'CtrConectar
         '
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.Transparent
         Me.BackgroundImage = Global.Avm.My.Resources.Resources.fondo
@@ -100,11 +72,8 @@ Partial Class CtrConectar
         Me.Controls.Add(Me.lblInfo)
         Me.Controls.Add(Me.txtPuerto)
         Me.Controls.Add(Me.lblPuerto)
-        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "CtrConectar"
-        Me.Size = New System.Drawing.Size(280, 338)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

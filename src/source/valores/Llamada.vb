@@ -1,21 +1,5 @@
 ﻿''' <summary>Clase que contiene información de una llamada.</summary>
 Public Class Llamada
-    ''' <summary>Texto que indica que se puede activar la llamada.</summary>
-    Public Const GSM_ACCEPT As String = "activate call"
-    ''' <summary>Texto que indica finalizar la llamada como ocupada.</summary>
-    Public Const GSM_BUSY As String = "finalize call as busy"
-    ''' <summary>Texto que indica finalizar llamada.</summary>
-    Public Const GSM_CANCEL As String = "finalize call"
-    ''' <summary>Texto que indica llamada en espera.</summary>
-    Public Const GSM_HOLD As String = "hold call"
-    ''' <summary>Texto que indica conexión en proceso.</summary>
-    Public Const GSM_CONNECTING As String = "connecting..."
-    ''' <summary>Texto que indica un estado desconocido.</summary>
-    Public Const GSM_UNKNOWN As String = "unknown status"
-    ''' <summary>Texto que indica operación no permitida.</summary>
-    Public Const GSM_NOT_ALLOWED As String = "not allowed"
-
-
     ''' <summary>Enumeración con los tipos de llamada.</summary>
     Public Enum TipoLlamada
         ''' <summary>Llamada entrante.</summary>

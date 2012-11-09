@@ -54,7 +54,7 @@
             If bValido Then
                 sNumero = "+" & iNumero
             Else
-                MessageBox.Show("Enter a valid prefix", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                MessageBox.Show(Idioma.traducir("err_call_prefix"), Idioma.traducir("warning"), MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 txtSmsPrefijo.Focus()
                 txtSmsPrefijo.SelectAll()
                 bValido = False
@@ -66,7 +66,7 @@
             If Llamada.isNumber(txtSmsNumero.Text) Then
                 sNumero &= txtSmsNumero.Text
             Else
-                MessageBox.Show("Enter a valid phone number", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                MessageBox.Show(Idioma.traducir("err_call_number"), Idioma.traducir("warning"), MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 txtSmsNumero.Focus()
                 txtSmsNumero.SelectAll()
                 bValido = False
@@ -76,7 +76,7 @@
         ' Envío de mensaje si todo es correcto.
         If bValido Then
             If txtSmsMessage.Text.Length = 0 Then
-                MessageBox.Show("Enter a message to send.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                MessageBox.Show(Idioma.traducir("err_sms_send"), Idioma.traducir("warning"), MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 txtSmsMessage.Focus()
             Else
                 frmPadre.enviarComando(Comando.SMS_SEND & sNumero & " " & txtSmsMessage.Text)
