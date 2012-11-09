@@ -23,6 +23,7 @@ Partial Class CtrPower
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CtrPower))
         Me.lblBatDesc = New System.Windows.Forms.Label()
         Me.btnBatActualiza = New System.Windows.Forms.Button()
         Me.btnBatCapacity = New System.Windows.Forms.Button()
@@ -42,147 +43,96 @@ Partial Class CtrPower
         '
         'lblBatDesc
         '
-        Me.lblBatDesc.AutoSize = True
-        Me.lblBatDesc.Location = New System.Drawing.Point(80, 237)
-        Me.lblBatDesc.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        resources.ApplyResources(Me.lblBatDesc, "lblBatDesc")
         Me.lblBatDesc.Name = "lblBatDesc"
-        Me.lblBatDesc.Size = New System.Drawing.Size(195, 85)
-        Me.lblBatDesc.TabIndex = 25
-        Me.lblBatDesc.Text = "In this section you can control" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "all the battery and energy" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "settings. The update" & _
-    " button" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "allows to refresh de battery" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "info into fields."
+        Me.ttConsejo.SetToolTip(Me.lblBatDesc, resources.GetString("lblBatDesc.ToolTip"))
         '
         'btnBatActualiza
         '
+        resources.ApplyResources(Me.btnBatActualiza, "btnBatActualiza")
         Me.btnBatActualiza.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(227, Byte), Integer))
         Me.btnBatActualiza.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnBatActualiza.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBatActualiza.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBatActualiza.ForeColor = System.Drawing.Color.White
-        Me.btnBatActualiza.Location = New System.Drawing.Point(148, 132)
-        Me.btnBatActualiza.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBatActualiza.Name = "btnBatActualiza"
-        Me.btnBatActualiza.Size = New System.Drawing.Size(120, 32)
-        Me.btnBatActualiza.TabIndex = 22
-        Me.btnBatActualiza.Text = "Update"
-        Me.ttConsejo.SetToolTip(Me.btnBatActualiza, "Update the fields with last power values")
+        Me.ttConsejo.SetToolTip(Me.btnBatActualiza, resources.GetString("btnBatActualiza.ToolTip"))
         Me.btnBatActualiza.UseVisualStyleBackColor = False
         '
         'btnBatCapacity
         '
+        resources.ApplyResources(Me.btnBatCapacity, "btnBatCapacity")
         Me.btnBatCapacity.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(227, Byte), Integer))
         Me.btnBatCapacity.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnBatCapacity.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBatCapacity.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBatCapacity.ForeColor = System.Drawing.Color.White
-        Me.btnBatCapacity.Location = New System.Drawing.Point(148, 87)
-        Me.btnBatCapacity.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBatCapacity.Name = "btnBatCapacity"
-        Me.btnBatCapacity.Size = New System.Drawing.Size(120, 32)
-        Me.btnBatCapacity.TabIndex = 19
-        Me.btnBatCapacity.Text = "Set Capacity"
-        Me.ttConsejo.SetToolTip(Me.btnBatCapacity, "Update battery charge value")
+        Me.ttConsejo.SetToolTip(Me.btnBatCapacity, resources.GetString("btnBatCapacity.ToolTip"))
         Me.btnBatCapacity.UseVisualStyleBackColor = False
         '
         'lblBatCapacity
         '
-        Me.lblBatCapacity.AutoSize = True
-        Me.lblBatCapacity.Location = New System.Drawing.Point(9, 89)
-        Me.lblBatCapacity.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        resources.ApplyResources(Me.lblBatCapacity, "lblBatCapacity")
         Me.lblBatCapacity.Name = "lblBatCapacity"
-        Me.lblBatCapacity.Size = New System.Drawing.Size(66, 17)
-        Me.lblBatCapacity.TabIndex = 24
-        Me.lblBatCapacity.Text = "Capacity:"
-        Me.ttConsejo.SetToolTip(Me.lblBatCapacity, "Battery level charge")
+        Me.ttConsejo.SetToolTip(Me.lblBatCapacity, resources.GetString("lblBatCapacity.ToolTip"))
         '
         'cmbBatHealth
         '
+        resources.ApplyResources(Me.cmbBatHealth, "cmbBatHealth")
         Me.cmbBatHealth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbBatHealth.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.cmbBatHealth.FormattingEnabled = True
-        Me.cmbBatHealth.Items.AddRange(New Object() {"Unknown", "Good", "Overheat", "Dead", "Overvoltage", "Failure"})
-        Me.cmbBatHealth.Location = New System.Drawing.Point(118, 50)
-        Me.cmbBatHealth.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmbBatHealth.Items.AddRange(New Object() {resources.GetString("cmbBatHealth.Items"), resources.GetString("cmbBatHealth.Items1"), resources.GetString("cmbBatHealth.Items2"), resources.GetString("cmbBatHealth.Items3"), resources.GetString("cmbBatHealth.Items4"), resources.GetString("cmbBatHealth.Items5")})
         Me.cmbBatHealth.Name = "cmbBatHealth"
-        Me.cmbBatHealth.Size = New System.Drawing.Size(150, 24)
-        Me.cmbBatHealth.TabIndex = 16
+        Me.ttConsejo.SetToolTip(Me.cmbBatHealth, resources.GetString("cmbBatHealth.ToolTip"))
         '
         'lblBatHealth
         '
-        Me.lblBatHealth.AutoSize = True
-        Me.lblBatHealth.Location = New System.Drawing.Point(9, 53)
-        Me.lblBatHealth.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        resources.ApplyResources(Me.lblBatHealth, "lblBatHealth")
         Me.lblBatHealth.Name = "lblBatHealth"
-        Me.lblBatHealth.Size = New System.Drawing.Size(102, 17)
-        Me.lblBatHealth.TabIndex = 23
-        Me.lblBatHealth.Text = "Battery Health:"
-        Me.ttConsejo.SetToolTip(Me.lblBatHealth, "Sets the state of health of the battery")
+        Me.ttConsejo.SetToolTip(Me.lblBatHealth, resources.GetString("lblBatHealth.ToolTip"))
         '
         'chkBatPresent
         '
-        Me.chkBatPresent.AutoSize = True
-        Me.chkBatPresent.Location = New System.Drawing.Point(10, 145)
-        Me.chkBatPresent.Margin = New System.Windows.Forms.Padding(4)
+        resources.ApplyResources(Me.chkBatPresent, "chkBatPresent")
         Me.chkBatPresent.Name = "chkBatPresent"
-        Me.chkBatPresent.Size = New System.Drawing.Size(124, 21)
-        Me.chkBatPresent.TabIndex = 20
-        Me.chkBatPresent.Text = "Battery present"
-        Me.ttConsejo.SetToolTip(Me.chkBatPresent, "Check to indicate that there are a battery plugged")
+        Me.ttConsejo.SetToolTip(Me.chkBatPresent, resources.GetString("chkBatPresent.ToolTip"))
         Me.chkBatPresent.UseVisualStyleBackColor = True
         '
         'nudBatCapacity
         '
-        Me.nudBatCapacity.Location = New System.Drawing.Point(75, 87)
-        Me.nudBatCapacity.Margin = New System.Windows.Forms.Padding(4)
+        resources.ApplyResources(Me.nudBatCapacity, "nudBatCapacity")
         Me.nudBatCapacity.Name = "nudBatCapacity"
-        Me.nudBatCapacity.Size = New System.Drawing.Size(62, 23)
-        Me.nudBatCapacity.TabIndex = 17
-        Me.ttConsejo.SetToolTip(Me.nudBatCapacity, "Between 0 and 100")
+        Me.ttConsejo.SetToolTip(Me.nudBatCapacity, resources.GetString("nudBatCapacity.ToolTip"))
         Me.nudBatCapacity.Value = New Decimal(New Integer() {50, 0, 0, 0})
         '
         'cmbBatStat
         '
+        resources.ApplyResources(Me.cmbBatStat, "cmbBatStat")
         Me.cmbBatStat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbBatStat.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.cmbBatStat.FormattingEnabled = True
-        Me.cmbBatStat.Items.AddRange(New Object() {"Unknown", "Charging", "Discharging", "Not-charging", "Full"})
-        Me.cmbBatStat.Location = New System.Drawing.Point(118, 14)
-        Me.cmbBatStat.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmbBatStat.Items.AddRange(New Object() {resources.GetString("cmbBatStat.Items"), resources.GetString("cmbBatStat.Items1"), resources.GetString("cmbBatStat.Items2"), resources.GetString("cmbBatStat.Items3"), resources.GetString("cmbBatStat.Items4")})
         Me.cmbBatStat.Name = "cmbBatStat"
-        Me.cmbBatStat.Size = New System.Drawing.Size(150, 24)
-        Me.cmbBatStat.TabIndex = 15
+        Me.ttConsejo.SetToolTip(Me.cmbBatStat, resources.GetString("cmbBatStat.ToolTip"))
         '
         'lblEstado
         '
-        Me.lblEstado.AutoSize = True
-        Me.lblEstado.Location = New System.Drawing.Point(9, 17)
-        Me.lblEstado.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        resources.ApplyResources(Me.lblEstado, "lblEstado")
         Me.lblEstado.Name = "lblEstado"
-        Me.lblEstado.Size = New System.Drawing.Size(101, 17)
-        Me.lblEstado.TabIndex = 18
-        Me.lblEstado.Text = "Battery Status:"
-        Me.ttConsejo.SetToolTip(Me.lblEstado, "Sets the battery status (charging, full, etc.)")
+        Me.ttConsejo.SetToolTip(Me.lblEstado, resources.GetString("lblEstado.ToolTip"))
         '
         'chkCargaAc
         '
-        Me.chkCargaAc.AutoSize = True
-        Me.chkCargaAc.Location = New System.Drawing.Point(12, 118)
-        Me.chkCargaAc.Margin = New System.Windows.Forms.Padding(4)
+        resources.ApplyResources(Me.chkCargaAc, "chkCargaAc")
         Me.chkCargaAc.Name = "chkCargaAc"
-        Me.chkCargaAc.Size = New System.Drawing.Size(106, 21)
-        Me.chkCargaAc.TabIndex = 21
-        Me.chkCargaAc.Text = "AC Charging"
-        Me.ttConsejo.SetToolTip(Me.chkCargaAc, "Check to indicate that there are an AC adaptor plugged")
+        Me.ttConsejo.SetToolTip(Me.chkCargaAc, resources.GetString("chkCargaAc.ToolTip"))
         Me.chkCargaAc.UseVisualStyleBackColor = True
         '
         'imgBateria
         '
+        resources.ApplyResources(Me.imgBateria, "imgBateria")
         Me.imgBateria.Image = Global.Avm.My.Resources.Resources.icoBateria64
-        Me.imgBateria.Location = New System.Drawing.Point(10, 248)
-        Me.imgBateria.Margin = New System.Windows.Forms.Padding(4)
         Me.imgBateria.Name = "imgBateria"
-        Me.imgBateria.Size = New System.Drawing.Size(64, 64)
-        Me.imgBateria.TabIndex = 26
         Me.imgBateria.TabStop = False
+        Me.ttConsejo.SetToolTip(Me.imgBateria, resources.GetString("imgBateria.ToolTip"))
         '
         'ttConsejo
         '
@@ -191,11 +141,12 @@ Partial Class CtrPower
         '
         'CtrPower
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Transparent
         Me.BackgroundImage = Global.Avm.My.Resources.Resources.fondo
         Me.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Controls.Add(Me.nudBatCapacity)
         Me.Controls.Add(Me.imgBateria)
         Me.Controls.Add(Me.lblBatDesc)
         Me.Controls.Add(Me.btnBatActualiza)
@@ -204,15 +155,12 @@ Partial Class CtrPower
         Me.Controls.Add(Me.cmbBatHealth)
         Me.Controls.Add(Me.lblBatHealth)
         Me.Controls.Add(Me.chkBatPresent)
-        Me.Controls.Add(Me.nudBatCapacity)
         Me.Controls.Add(Me.cmbBatStat)
         Me.Controls.Add(Me.lblEstado)
         Me.Controls.Add(Me.chkCargaAc)
-        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "CtrPower"
-        Me.Size = New System.Drawing.Size(280, 338)
+        Me.ttConsejo.SetToolTip(Me, resources.GetString("$this.ToolTip"))
         CType(Me.nudBatCapacity, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgBateria, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

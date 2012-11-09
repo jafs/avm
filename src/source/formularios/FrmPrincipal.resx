@@ -127,6 +127,9 @@
   <data name="&gt;&gt;pnlPrincipal.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;chkDebug.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pblEstado.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -203,6 +206,9 @@
   <data name="&gt;&gt;chkDebug.Parent" xml:space="preserve">
     <value>tlpMenu</value>
   </data>
+  <data name="tlpMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 56</value>
+  </data>
   <data name="txtComando.AutoCompleteCustomSource48" xml:space="preserve">
     <value>power ac on</value>
   </data>
@@ -214,6 +220,10 @@
   </data>
   <data name="&gt;&gt;pblEstado.Parent" xml:space="preserve">
     <value>pnlPrincipal</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtRecv.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
   </data>
   <data name="txtComando.AutoCompleteCustomSource7" xml:space="preserve">
     <value>event text</value>
@@ -227,11 +237,11 @@
   <data name="&gt;&gt;ttmAyuManual.Name" xml:space="preserve">
     <value>ttmAyuManual</value>
   </data>
-  <data name="txtComando.AutoCompleteCustomSource6" xml:space="preserve">
-    <value>event codes</value>
-  </data>
   <data name="txtComando.AutoCompleteCustomSource8" xml:space="preserve">
     <value>geo</value>
+  </data>
+  <data name="txtComando.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="pblEstado.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -269,7 +279,6 @@
   <data name="&gt;&gt;btnConfiguracion.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnHome.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -293,9 +302,6 @@
   </data>
   <data name="pnlDebug.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
-  </data>
-  <data name="pnlCentral.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 338</value>
   </data>
   <data name="tlpMenu.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnConfiguracion" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnSalir" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="btnHome" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnAyuda" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="chkDebug" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,100,Absolute,56" /&gt;&lt;/TableLayoutSettings&gt;</value>
@@ -933,9 +939,6 @@
   <data name="txtComando.AutoCompleteCustomSource1" xml:space="preserve">
     <value>help</value>
   </data>
-  <data name="txtComando.AutoCompleteCustomSource52" xml:space="preserve">
-    <value>power status charging</value>
-  </data>
   <data name="tlpMenu.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -981,8 +984,8 @@
   <data name="&gt;&gt;pnlDebug.Name" xml:space="preserve">
     <value>pnlDebug</value>
   </data>
-  <data name="txtRecv.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
-    <value>Vertical</value>
+  <data name="ttmAbout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 26</value>
   </data>
   <data name="&gt;&gt;lblReloj.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1026,9 +1029,6 @@
   <data name="btnConfiguracion.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="txtComando.AutoCompleteCustomSource31" xml:space="preserve">
-    <value>gsm voice off</value>
-  </data>
   <data name="txtComando.AutoCompleteCustomSource98" xml:space="preserve">
     <value>sensor set magnetic-field</value>
   </data>
@@ -1050,8 +1050,8 @@
   <data name="&gt;&gt;mnAyuda.Name" xml:space="preserve">
     <value>mnAyuda</value>
   </data>
-  <data name="btnSalir.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 50</value>
+  <data name="pnlDock.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
   </data>
   <data name="btnEnviar.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -1062,20 +1062,14 @@
   <data name="pnlCentral.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="tlpMenu.ColumnCount" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource12" xml:space="preserve">
-    <value>gsm list</value>
+  <data name="ttSeparador1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 6</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>305, 457</value>
   </data>
   <data name="&gt;&gt;ttmAyuGeneral.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource75" xml:space="preserve">
-    <value>avd</value>
   </data>
   <data name="&gt;&gt;ttmAyuManual.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1101,6 +1095,9 @@
   <data name="&gt;&gt;pnlCentral.Parent" xml:space="preserve">
     <value>pnlPrincipal</value>
   </data>
+  <data name="&gt;&gt;pblEstado.Name" xml:space="preserve">
+    <value>pblEstado</value>
+  </data>
   <data name="pnlCentral.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
@@ -1125,11 +1122,11 @@
   <data name="btnEnviar.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="txtComando.AutoCompleteCustomSource88" xml:space="preserve">
+    <value>sensor</value>
+  </data>
   <data name="pnlDebug.Location" type="System.Drawing.Point, System.Drawing">
     <value>295, 10</value>
-  </data>
-  <data name="btnAyuda.ToolTip" xml:space="preserve">
-    <value>Help</value>
   </data>
   <data name="&gt;&gt;btnHome.Parent" xml:space="preserve">
     <value>tlpMenu</value>
@@ -1137,8 +1134,8 @@
   <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
-  <data name="txtComando.AutoCompleteCustomSource64" xml:space="preserve">
-    <value>power health failure</value>
+  <data name="txtComando.AutoCompleteCustomSource6" xml:space="preserve">
+    <value>event codes</value>
   </data>
   <data name="txtComando.AutoCompleteCustomSource66" xml:space="preserve">
     <value>quit</value>
@@ -1197,8 +1194,8 @@
   <data name="&gt;&gt;txtRecv.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnAyuda.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 50</value>
+  <data name="txtComando.AutoCompleteCustomSource18" xml:space="preserve">
+    <value>gsm data unregistered</value>
   </data>
   <data name="txtComando.AutoCompleteCustomSource19" xml:space="preserve">
     <value>gsm data home</value>
@@ -1248,8 +1245,8 @@
   <data name="txtRecv.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;tlpMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="pnlCentral.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="txtComando.AutoCompleteCustomSource92" xml:space="preserve">
     <value>sensor get magnetic-field</value>
@@ -1269,20 +1266,17 @@
   <data name="&gt;&gt;pnlDebug.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="txtComando.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
+  <data name="btnConfiguracion.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="&gt;&gt;btnHome.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;ttSeparador2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="tlpMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="txtComando.AutoCompleteCustomSource100" xml:space="preserve">
     <value>sensor set temperature</value>
-  </data>
-  <data name="tlpMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
   </data>
   <data name="btnSalir.ToolTip" xml:space="preserve">
     <value>Exit application</value>
@@ -1302,8 +1296,8 @@
   <data name="btnHome.ToolTip" xml:space="preserve">
     <value>Main menu</value>
   </data>
-  <data name="txtComando.ToolTip" xml:space="preserve">
-    <value />
+  <data name="txtComando.AutoCompleteCustomSource37" xml:space="preserve">
+    <value>cdma prl_version</value>
   </data>
   <data name="txtComando.AutoCompleteCustomSource30" xml:space="preserve">
     <value>gsm voice denied</value>
@@ -1317,8 +1311,8 @@
   <data name="txtComando.AutoCompleteCustomSource33" xml:space="preserve">
     <value>gsm status</value>
   </data>
-  <data name="&gt;&gt;trmReloj.Name" xml:space="preserve">
-    <value>trmReloj</value>
+  <data name="txtComando.AutoCompleteCustomSource79" xml:space="preserve">
+    <value>avd name</value>
   </data>
   <data name="&gt;&gt;btnAyuda.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1338,8 +1332,14 @@
   <data name="txtComando.AutoCompleteCustomSource101" xml:space="preserve">
     <value>sensor set proximity</value>
   </data>
+  <data name="btnAyuda.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 3</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FrmPrincipal</value>
+  </data>
+  <data name="ttmAyuManual.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 26</value>
   </data>
   <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1350,14 +1350,14 @@
   <data name="txtComando.AutoCompleteCustomSource74" xml:space="preserve">
     <value>sms pdu</value>
   </data>
-  <data name="tlpMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 56</value>
+  <data name="txtComando.AutoCompleteCustomSource75" xml:space="preserve">
+    <value>avd</value>
   </data>
   <data name="txtComando.AutoCompleteCustomSource76" xml:space="preserve">
     <value>avd stop</value>
   </data>
-  <data name="btnEnviar.Text" xml:space="preserve">
-    <value>Send</value>
+  <data name="btnAyuda.ToolTip" xml:space="preserve">
+    <value>Help</value>
   </data>
   <data name="txtComando.AutoCompleteCustomSource70" xml:space="preserve">
     <value>redit add</value>
@@ -1383,8 +1383,8 @@
   <data name="txtComando.AutoCompleteCustomSource86" xml:space="preserve">
     <value>qemu</value>
   </data>
-  <data name="txtComando.AutoCompleteCustomSource9" xml:space="preserve">
-    <value>geo nmea</value>
+  <data name="txtComando.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
   </data>
   <data name="txtComando.AutoCompleteCustomSource80" xml:space="preserve">
     <value>avd snapshot list</value>
@@ -1401,8 +1401,8 @@
   <data name="$this.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="txtComando.AutoCompleteCustomSource88" xml:space="preserve">
-    <value>sensor</value>
+  <data name="&gt;&gt;ttSeparador2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="txtComando.AutoCompleteCustomSource89" xml:space="preserve">
     <value>sensor status</value>
@@ -1431,8 +1431,8 @@
   <data name="ttmAyuGeneral.Size" type="System.Drawing.Size, System.Drawing">
     <value>129, 26</value>
   </data>
-  <data name="ttmAyuManual.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 26</value>
+  <data name="txtComando.AutoCompleteCustomSource52" xml:space="preserve">
+    <value>power status charging</value>
   </data>
   <data name="btnConfiguracion.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 50</value>
@@ -1452,11 +1452,11 @@
   <data name="pnlPrincipal.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;pblEstado.Name" xml:space="preserve">
-    <value>pblEstado</value>
+  <data name="tlpMenu.ColumnCount" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="btnConfiguracion.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="txtComando.AutoCompleteCustomSource12" xml:space="preserve">
+    <value>gsm list</value>
   </data>
   <data name="&gt;&gt;lblReloj.Name" xml:space="preserve">
     <value>lblReloj</value>
@@ -1467,20 +1467,20 @@
   <data name="txtComando.AutoCompleteCustomSource36" xml:space="preserve">
     <value>cdma ssource</value>
   </data>
-  <data name="txtComando.AutoCompleteCustomSource37" xml:space="preserve">
-    <value>cdma prl_version</value>
+  <data name="txtComando.AutoCompleteCustomSource64" xml:space="preserve">
+    <value>power health failure</value>
   </data>
   <data name="btnHome.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="txtComando.AutoCompleteCustomSource18" xml:space="preserve">
-    <value>gsm data unregistered</value>
+  <data name="txtComando.AutoCompleteCustomSource31" xml:space="preserve">
+    <value>gsm voice off</value>
   </data>
   <data name="txtComando.AutoCompleteCustomSource32" xml:space="preserve">
     <value>gsm voice on</value>
   </data>
-  <data name="btnAyuda.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 3</value>
+  <data name="&gt;&gt;btnHome.Name" xml:space="preserve">
+    <value>btnHome</value>
   </data>
   <data name="&gt;&gt;pnlDock.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1494,8 +1494,8 @@
   <data name="txtComando.AutoCompleteCustomSource87" xml:space="preserve">
     <value>qemu monitor</value>
   </data>
-  <data name="pnlCentral.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;trmReloj.Name" xml:space="preserve">
+    <value>trmReloj</value>
   </data>
   <data name="txtComando.AutoCompleteCustomSource" xml:space="preserve">
     <value>h</value>
@@ -1506,14 +1506,14 @@
   <data name="txtComando.AutoCompleteCustomSource78" xml:space="preserve">
     <value>avd status</value>
   </data>
-  <data name="txtComando.AutoCompleteCustomSource79" xml:space="preserve">
-    <value>avd name</value>
+  <data name="&gt;&gt;tlpMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pnlDock.Size" type="System.Drawing.Size, System.Drawing">
     <value>280, 56</value>
   </data>
-  <data name="&gt;&gt;chkDebug.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btnAyuda.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
   </data>
   <data name="tlpMenu.ToolTip" xml:space="preserve">
     <value />
@@ -1560,20 +1560,20 @@
   <data name="&gt;&gt;ttmAbout.Name" xml:space="preserve">
     <value>ttmAbout</value>
   </data>
-  <data name="&gt;&gt;btnHome.Name" xml:space="preserve">
-    <value>btnHome</value>
+  <data name="pnlCentral.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 338</value>
   </data>
-  <data name="pnlDock.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
+  <data name="btnEnviar.Text" xml:space="preserve">
+    <value>Send</value>
   </data>
   <data name="lblReloj.Text" xml:space="preserve">
     <value>00:00</value>
   </data>
-  <data name="ttSeparador1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 6</value>
+  <data name="txtComando.AutoCompleteCustomSource9" xml:space="preserve">
+    <value>geo nmea</value>
   </data>
-  <data name="ttmAbout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 26</value>
+  <data name="btnSalir.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
   </data>
   <data name="txtRecv.ToolTip" xml:space="preserve">
     <value>Hide debug panel</value>

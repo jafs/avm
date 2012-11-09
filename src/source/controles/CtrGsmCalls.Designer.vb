@@ -23,6 +23,7 @@ Partial Class CtrGsmCalls
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CtrGsmCalls))
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.lblGsmLlamadas = New System.Windows.Forms.Label()
         Me.txtGsmPrefijo = New System.Windows.Forms.TextBox()
@@ -48,33 +49,25 @@ Partial Class CtrGsmCalls
         '
         'lblGsmLlamadas
         '
-        Me.lblGsmLlamadas.AutoSize = True
-        Me.lblGsmLlamadas.Location = New System.Drawing.Point(15, 16)
+        resources.ApplyResources(Me.lblGsmLlamadas, "lblGsmLlamadas")
         Me.lblGsmLlamadas.Name = "lblGsmLlamadas"
-        Me.lblGsmLlamadas.Size = New System.Drawing.Size(91, 17)
-        Me.lblGsmLlamadas.TabIndex = 31
-        Me.lblGsmLlamadas.Text = "Current calls:"
+        Me.ttConsejo.SetToolTip(Me.lblGsmLlamadas, resources.GetString("lblGsmLlamadas.ToolTip"))
         '
         'txtGsmPrefijo
         '
-        Me.txtGsmPrefijo.Location = New System.Drawing.Point(17, 178)
-        Me.txtGsmPrefijo.MaxLength = 4
+        resources.ApplyResources(Me.txtGsmPrefijo, "txtGsmPrefijo")
         Me.txtGsmPrefijo.Name = "txtGsmPrefijo"
-        Me.txtGsmPrefijo.Size = New System.Drawing.Size(47, 23)
-        Me.txtGsmPrefijo.TabIndex = 28
-        Me.txtGsmPrefijo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.ttConsejo.SetToolTip(Me.txtGsmPrefijo, resources.GetString("txtGsmPrefijo.ToolTip"))
         '
         'txtGsmNumero
         '
-        Me.txtGsmNumero.Location = New System.Drawing.Point(76, 178)
-        Me.txtGsmNumero.MaxLength = 20
+        resources.ApplyResources(Me.txtGsmNumero, "txtGsmNumero")
         Me.txtGsmNumero.Name = "txtGsmNumero"
-        Me.txtGsmNumero.Size = New System.Drawing.Size(150, 23)
-        Me.txtGsmNumero.TabIndex = 29
-        Me.txtGsmNumero.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.ttConsejo.SetToolTip(Me.txtGsmNumero, resources.GetString("txtGsmNumero.ToolTip"))
         '
         'dgvGsmLlamadas
         '
+        resources.ApplyResources(Me.dgvGsmLlamadas, "dgvGsmLlamadas")
         Me.dgvGsmLlamadas.AllowUserToAddRows = False
         Me.dgvGsmLlamadas.AllowUserToDeleteRows = False
         Me.dgvGsmLlamadas.AllowUserToResizeColumns = False
@@ -84,7 +77,6 @@ Partial Class CtrGsmCalls
         Me.dgvGsmLlamadas.ColumnHeadersVisible = False
         Me.dgvGsmLlamadas.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colType, Me.colNumber, Me.colDataTipo, Me.colDataEstado, Me.colStatus, Me.colBusy, Me.colCancel})
         Me.dgvGsmLlamadas.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
-        Me.dgvGsmLlamadas.Location = New System.Drawing.Point(17, 37)
         Me.dgvGsmLlamadas.MultiSelect = False
         Me.dgvGsmLlamadas.Name = "dgvGsmLlamadas"
         Me.dgvGsmLlamadas.ReadOnly = True
@@ -94,85 +86,66 @@ Partial Class CtrGsmCalls
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(255, Byte), Integer))
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
         Me.dgvGsmLlamadas.RowsDefaultCellStyle = DataGridViewCellStyle2
-        Me.dgvGsmLlamadas.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dgvGsmLlamadas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvGsmLlamadas.Size = New System.Drawing.Size(251, 106)
-        Me.dgvGsmLlamadas.TabIndex = 27
+        Me.ttConsejo.SetToolTip(Me.dgvGsmLlamadas, resources.GetString("dgvGsmLlamadas.ToolTip"))
         '
         'colType
         '
         Me.colType.FillWeight = 20.0!
-        Me.colType.HeaderText = "Tipo"
-        Me.colType.MinimumWidth = 20
+        resources.ApplyResources(Me.colType, "colType")
         Me.colType.Name = "colType"
         Me.colType.ReadOnly = True
         Me.colType.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.colType.Width = 20
         '
         'colNumber
         '
         Me.colNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.colNumber.HeaderText = "Numero"
-        Me.colNumber.MinimumWidth = 100
+        resources.ApplyResources(Me.colNumber, "colNumber")
         Me.colNumber.Name = "colNumber"
         Me.colNumber.ReadOnly = True
         Me.colNumber.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         '
         'colDataTipo
         '
-        Me.colDataTipo.HeaderText = "DTipo"
+        resources.ApplyResources(Me.colDataTipo, "colDataTipo")
         Me.colDataTipo.Name = "colDataTipo"
         Me.colDataTipo.ReadOnly = True
-        Me.colDataTipo.Visible = False
         '
         'colDataEstado
         '
-        Me.colDataEstado.HeaderText = "DEstado"
+        resources.ApplyResources(Me.colDataEstado, "colDataEstado")
         Me.colDataEstado.Name = "colDataEstado"
         Me.colDataEstado.ReadOnly = True
-        Me.colDataEstado.Visible = False
         '
         'colStatus
         '
         Me.colStatus.FillWeight = 20.0!
-        Me.colStatus.HeaderText = "Estado"
-        Me.colStatus.MinimumWidth = 20
+        resources.ApplyResources(Me.colStatus, "colStatus")
         Me.colStatus.Name = "colStatus"
         Me.colStatus.ReadOnly = True
         Me.colStatus.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.colStatus.Width = 20
         '
         'colBusy
         '
         Me.colBusy.FillWeight = 20.0!
-        Me.colBusy.HeaderText = "Busy"
-        Me.colBusy.MinimumWidth = 20
+        resources.ApplyResources(Me.colBusy, "colBusy")
         Me.colBusy.Name = "colBusy"
         Me.colBusy.ReadOnly = True
         Me.colBusy.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.colBusy.ToolTipText = "Finalize current call as busy"
-        Me.colBusy.Width = 20
         '
         'colCancel
         '
         Me.colCancel.FillWeight = 20.0!
-        Me.colCancel.HeaderText = "Cancel"
-        Me.colCancel.MinimumWidth = 20
+        resources.ApplyResources(Me.colCancel, "colCancel")
         Me.colCancel.Name = "colCancel"
         Me.colCancel.ReadOnly = True
         Me.colCancel.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.colCancel.ToolTipText = "Cancel current call"
-        Me.colCancel.Width = 20
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(84, 263)
+        resources.ApplyResources(Me.Label2, "Label2")
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(187, 51)
-        Me.Label2.TabIndex = 32
-        Me.Label2.Text = "In this section you can" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "manage the current calls, as" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "well as make incoming call" & _
-    "s."
+        Me.ttConsejo.SetToolTip(Me.Label2, resources.GetString("Label2.ToolTip"))
         '
         'tmrGsm
         '
@@ -185,49 +158,37 @@ Partial Class CtrGsmCalls
         '
         'btnGsmCall
         '
+        resources.ApplyResources(Me.btnGsmCall, "btnGsmCall")
         Me.btnGsmCall.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.btnGsmCall.BackgroundImage = Global.Avm.My.Resources.Resources.btnLlamar
-        Me.btnGsmCall.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btnGsmCall.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(130, Byte), Integer), CType(CType(130, Byte), Integer))
-        Me.btnGsmCall.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnGsmCall.Location = New System.Drawing.Point(234, 172)
         Me.btnGsmCall.Name = "btnGsmCall"
-        Me.btnGsmCall.Size = New System.Drawing.Size(34, 34)
-        Me.btnGsmCall.TabIndex = 30
-        Me.ttConsejo.SetToolTip(Me.btnGsmCall, "Make a call")
+        Me.ttConsejo.SetToolTip(Me.btnGsmCall, resources.GetString("btnGsmCall.ToolTip"))
         Me.btnGsmCall.UseVisualStyleBackColor = False
         '
         'lblPrefijo
         '
-        Me.lblPrefijo.AutoSize = True
-        Me.lblPrefijo.Location = New System.Drawing.Point(14, 159)
+        resources.ApplyResources(Me.lblPrefijo, "lblPrefijo")
         Me.lblPrefijo.Name = "lblPrefijo"
-        Me.lblPrefijo.Size = New System.Drawing.Size(47, 17)
-        Me.lblPrefijo.TabIndex = 34
-        Me.lblPrefijo.Text = "Prefix:"
-        Me.ttConsejo.SetToolTip(Me.lblPrefijo, "International prefix")
+        Me.ttConsejo.SetToolTip(Me.lblPrefijo, resources.GetString("lblPrefijo.ToolTip"))
         '
         'lblNumero
         '
-        Me.lblNumero.AutoSize = True
-        Me.lblNumero.Location = New System.Drawing.Point(73, 159)
+        resources.ApplyResources(Me.lblNumero, "lblNumero")
         Me.lblNumero.Name = "lblNumero"
-        Me.lblNumero.Size = New System.Drawing.Size(105, 17)
-        Me.lblNumero.TabIndex = 35
-        Me.lblNumero.Text = "Phone number:"
-        Me.ttConsejo.SetToolTip(Me.lblNumero, "Phone number of the caller")
+        Me.ttConsejo.SetToolTip(Me.lblNumero, resources.GetString("lblNumero.ToolTip"))
         '
         'PictureBox1
         '
+        resources.ApplyResources(Me.PictureBox1, "PictureBox1")
         Me.PictureBox1.Image = Global.Avm.My.Resources.Resources.icoCall64
-        Me.PictureBox1.Location = New System.Drawing.Point(14, 257)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(64, 64)
-        Me.PictureBox1.TabIndex = 33
         Me.PictureBox1.TabStop = False
+        Me.ttConsejo.SetToolTip(Me.PictureBox1, resources.GetString("PictureBox1.ToolTip"))
         '
         'CtrGsmCalls
         '
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.Transparent
         Me.BackgroundImage = Global.Avm.My.Resources.Resources.fondo
@@ -241,11 +202,9 @@ Partial Class CtrGsmCalls
         Me.Controls.Add(Me.btnGsmCall)
         Me.Controls.Add(Me.txtGsmNumero)
         Me.Controls.Add(Me.dgvGsmLlamadas)
-        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "CtrGsmCalls"
-        Me.Size = New System.Drawing.Size(280, 338)
+        Me.ttConsejo.SetToolTip(Me, resources.GetString("$this.ToolTip"))
         CType(Me.dgvGsmLlamadas, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

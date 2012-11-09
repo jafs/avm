@@ -9,7 +9,7 @@ Contents
  - Description
  - Version History
  - Installation
- - How to use
+ - How to run
  - License
  - Credits
 
@@ -31,14 +31,15 @@ values​​, etc..
 Version History
 ===============
 Version 0.6 - In process
+ - Spanish translation.
+ - Validation of commands when press enter key in debug window.
  - New app icon.
  - New Jelly Bean android icons style.
  - Small enhacements.
  - Improve of menu style.
  - Button for hide and show debug console.
- - New buttons style.
  - Fixed problem with AVD commands.
- - Fixed application hangs when connected to an open portwhich is not the
+ - Fixed application hangs when connected to an open port which is not the
    Android emulator.
 
 Version 0.5.5.5 - 15/10/2012
@@ -110,7 +111,7 @@ This will create three files:
  - this README file.
 
 
-How to use
+How to run
 ==========
 Double clic over executable icon in file explorer, o write avm under prompt.
 

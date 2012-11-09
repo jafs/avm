@@ -23,6 +23,7 @@ Partial Class CtrSms
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CtrSms))
         Me.txtSmsNumero = New System.Windows.Forms.TextBox()
         Me.txtSmsPrefijo = New System.Windows.Forms.TextBox()
         Me.btnSmsSend = New System.Windows.Forms.Button()
@@ -39,104 +40,69 @@ Partial Class CtrSms
         '
         'txtSmsNumero
         '
-        Me.txtSmsNumero.Location = New System.Drawing.Point(124, 14)
-        Me.txtSmsNumero.MaxLength = 20
+        resources.ApplyResources(Me.txtSmsNumero, "txtSmsNumero")
         Me.txtSmsNumero.Name = "txtSmsNumero"
-        Me.txtSmsNumero.Size = New System.Drawing.Size(147, 23)
-        Me.txtSmsNumero.TabIndex = 27
-        Me.txtSmsNumero.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        Me.ttConsejo.SetToolTip(Me.txtSmsNumero, "Phone number of the sender")
+        Me.ttConsejo.SetToolTip(Me.txtSmsNumero, resources.GetString("txtSmsNumero.ToolTip"))
         '
         'txtSmsPrefijo
         '
-        Me.txtSmsPrefijo.Location = New System.Drawing.Point(73, 14)
-        Me.txtSmsPrefijo.MaxLength = 4
+        resources.ApplyResources(Me.txtSmsPrefijo, "txtSmsPrefijo")
         Me.txtSmsPrefijo.Name = "txtSmsPrefijo"
-        Me.txtSmsPrefijo.Size = New System.Drawing.Size(45, 23)
-        Me.txtSmsPrefijo.TabIndex = 26
-        Me.txtSmsPrefijo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ttConsejo.SetToolTip(Me.txtSmsPrefijo, "International prefix")
+        Me.ttConsejo.SetToolTip(Me.txtSmsPrefijo, resources.GetString("txtSmsPrefijo.ToolTip"))
         '
         'btnSmsSend
         '
+        resources.ApplyResources(Me.btnSmsSend, "btnSmsSend")
         Me.btnSmsSend.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(227, Byte), Integer))
-        Me.btnSmsSend.Enabled = False
         Me.btnSmsSend.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnSmsSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSmsSend.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSmsSend.ForeColor = System.Drawing.Color.White
-        Me.btnSmsSend.Location = New System.Drawing.Point(124, 201)
         Me.btnSmsSend.Name = "btnSmsSend"
-        Me.btnSmsSend.Size = New System.Drawing.Size(147, 32)
-        Me.btnSmsSend.TabIndex = 29
-        Me.btnSmsSend.Text = "Send message"
-        Me.ttConsejo.SetToolTip(Me.btnSmsSend, "Send message to emulator")
+        Me.ttConsejo.SetToolTip(Me.btnSmsSend, resources.GetString("btnSmsSend.ToolTip"))
         Me.btnSmsSend.UseVisualStyleBackColor = False
         '
         'lblSmsTotal
         '
-        Me.lblSmsTotal.AutoSize = True
-        Me.lblSmsTotal.Location = New System.Drawing.Point(223, 48)
+        resources.ApplyResources(Me.lblSmsTotal, "lblSmsTotal")
         Me.lblSmsTotal.Name = "lblSmsTotal"
-        Me.lblSmsTotal.Size = New System.Drawing.Size(48, 17)
-        Me.lblSmsTotal.TabIndex = 33
-        Me.lblSmsTotal.Text = "of 160"
+        Me.ttConsejo.SetToolTip(Me.lblSmsTotal, resources.GetString("lblSmsTotal.ToolTip"))
         '
         'lblSmsRest
         '
-        Me.lblSmsRest.Location = New System.Drawing.Point(191, 44)
+        resources.ApplyResources(Me.lblSmsRest, "lblSmsRest")
         Me.lblSmsRest.Name = "lblSmsRest"
-        Me.lblSmsRest.Size = New System.Drawing.Size(35, 24)
-        Me.lblSmsRest.TabIndex = 32
-        Me.lblSmsRest.Text = "0"
-        Me.lblSmsRest.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.ttConsejo.SetToolTip(Me.lblSmsRest, resources.GetString("lblSmsRest.ToolTip"))
         '
         'txtSmsMessage
         '
-        Me.txtSmsMessage.Font = New System.Drawing.Font("Courier New", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSmsMessage.Location = New System.Drawing.Point(8, 69)
-        Me.txtSmsMessage.MaxLength = 160
-        Me.txtSmsMessage.Multiline = True
+        resources.ApplyResources(Me.txtSmsMessage, "txtSmsMessage")
         Me.txtSmsMessage.Name = "txtSmsMessage"
-        Me.txtSmsMessage.Size = New System.Drawing.Size(263, 122)
-        Me.txtSmsMessage.TabIndex = 28
+        Me.ttConsejo.SetToolTip(Me.txtSmsMessage, resources.GetString("txtSmsMessage.ToolTip"))
         '
         'lblSmsMessage
         '
-        Me.lblSmsMessage.AutoSize = True
-        Me.lblSmsMessage.Location = New System.Drawing.Point(5, 48)
+        resources.ApplyResources(Me.lblSmsMessage, "lblSmsMessage")
         Me.lblSmsMessage.Name = "lblSmsMessage"
-        Me.lblSmsMessage.Size = New System.Drawing.Size(69, 17)
-        Me.lblSmsMessage.TabIndex = 31
-        Me.lblSmsMessage.Text = "Message:"
+        Me.ttConsejo.SetToolTip(Me.lblSmsMessage, resources.GetString("lblSmsMessage.ToolTip"))
         '
         'lblSmsNumber
         '
-        Me.lblSmsNumber.AutoSize = True
-        Me.lblSmsNumber.Location = New System.Drawing.Point(5, 17)
+        resources.ApplyResources(Me.lblSmsNumber, "lblSmsNumber")
         Me.lblSmsNumber.Name = "lblSmsNumber"
-        Me.lblSmsNumber.Size = New System.Drawing.Size(62, 17)
-        Me.lblSmsNumber.TabIndex = 30
-        Me.lblSmsNumber.Text = "Number:"
+        Me.ttConsejo.SetToolTip(Me.lblSmsNumber, resources.GetString("lblSmsNumber.ToolTip"))
         '
         'lblSmsDesc
         '
-        Me.lblSmsDesc.AutoSize = True
-        Me.lblSmsDesc.Location = New System.Drawing.Point(75, 241)
+        resources.ApplyResources(Me.lblSmsDesc, "lblSmsDesc")
         Me.lblSmsDesc.Name = "lblSmsDesc"
-        Me.lblSmsDesc.Size = New System.Drawing.Size(204, 85)
-        Me.lblSmsDesc.TabIndex = 34
-        Me.lblSmsDesc.Text = "This function allows to send" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "sms messages to the emulator." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Enter the sender pho" & _
-    "ne, write" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "the message, and press Send" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "button."
+        Me.ttConsejo.SetToolTip(Me.lblSmsDesc, resources.GetString("lblSmsDesc.ToolTip"))
         '
         'imgSms
         '
+        resources.ApplyResources(Me.imgSms, "imgSms")
         Me.imgSms.Image = Global.Avm.My.Resources.Resources.icoSms64
-        Me.imgSms.Location = New System.Drawing.Point(8, 251)
         Me.imgSms.Name = "imgSms"
-        Me.imgSms.Size = New System.Drawing.Size(64, 64)
-        Me.imgSms.TabIndex = 35
         Me.imgSms.TabStop = False
+        Me.ttConsejo.SetToolTip(Me.imgSms, resources.GetString("imgSms.ToolTip"))
         '
         'ttConsejo
         '
@@ -145,7 +111,7 @@ Partial Class CtrSms
         '
         'CtrSms
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Transparent
         Me.BackgroundImage = Global.Avm.My.Resources.Resources.fondo
@@ -160,11 +126,9 @@ Partial Class CtrSms
         Me.Controls.Add(Me.txtSmsMessage)
         Me.Controls.Add(Me.lblSmsMessage)
         Me.Controls.Add(Me.lblSmsNumber)
-        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "CtrSms"
-        Me.Size = New System.Drawing.Size(280, 338)
+        Me.ttConsejo.SetToolTip(Me, resources.GetString("$this.ToolTip"))
         CType(Me.imgSms, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

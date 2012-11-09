@@ -224,29 +224,56 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="source\controles\CtrConectar.es.resx">
+      <DependentUpon>CtrConectar.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="source\controles\CtrConectar.resx">
       <DependentUpon>CtrConectar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\controles\CtrGps.es.resx">
+      <DependentUpon>CtrGps.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="source\controles\CtrGps.resx">
       <DependentUpon>CtrGps.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="source\controles\CtrGsmCalls.es.resx">
+      <DependentUpon>CtrGsmCalls.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="source\controles\CtrGsmCalls.resx">
       <DependentUpon>CtrGsmCalls.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\controles\CtrGsmStatus.es.resx">
+      <DependentUpon>CtrGsmStatus.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="source\controles\CtrGsmStatus.resx">
       <DependentUpon>CtrGsmStatus.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="source\controles\CtrMenu.es.resx">
+      <DependentUpon>CtrMenu.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="source\controles\CtrMenu.resx">
       <DependentUpon>CtrMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\controles\CtrPower.es.resx">
+      <DependentUpon>CtrPower.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="source\controles\CtrPower.resx">
       <DependentUpon>CtrPower.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="source\controles\CtrSensor.es.resx">
+      <DependentUpon>CtrSensor.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="source\controles\CtrSensor.resx">
       <DependentUpon>CtrSensor.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="source\controles\CtrSms.es.resx">
+      <DependentUpon>CtrSms.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="source\controles\CtrSms.resx">
       <DependentUpon>CtrSms.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\formularios\FrmAcerca.es.resx">
+      <DependentUpon>FrmAcerca.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="source\formularios\FrmAcerca.resx">
       <DependentUpon>FrmAcerca.vb</DependentUpon>
@@ -312,7 +339,9 @@
     <Content Include="recursos\ficheros\readme_es.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="Resources\en.xml" />
+    <None Include="Resources\en.xml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Resources\es.xml" />
     <None Include="Resources\icoConfig48.png" />
     <None Include="Resources\icoCall64.png" />

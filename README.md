@@ -13,6 +13,8 @@ Requirements
 Version History
 ---------------
 Version 0.6 - In process
+* Spanish translation.
+* Validation of commands when press enter key in debug window.
 * New app icon.
 * New Jelly Bean android icons style.
 * Small enhacements.

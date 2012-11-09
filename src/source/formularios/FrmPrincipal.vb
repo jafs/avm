@@ -68,14 +68,12 @@ Public Class FrmPrincipal
     ' MANEJADORES
     ' ######################################
     ''' <summary>Controla el clic sobre el botón de envío de comandos.</summary>
-    ''' <param name="sender">Emisor del evento</param>
-    ''' <param name="e">Datos del evento</param>
-    Private Sub btnEnviar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEnviar.Click
+    Private Sub btnEnviar_Click() Handles btnEnviar.Click
         Dim sComando As String = txtComando.Text.Trim
 
         ' Tomamos el control para quit o exit y nos desconectamos del emulador.
         If sComando.ToLower = Comando.CQUIT Or sComando.ToLower = Comando.CEXIT Then
-            If MessageBox.Show("Disconnect from emulator?", "Disconnect", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
+            If MessageBox.Show(Idioma.traducir("pop_disconnect_question"), Idioma.traducir("disconnect"), MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
                 conectar(0)
             End If
             Return
@@ -83,7 +81,7 @@ Public Class FrmPrincipal
 
         ' Tomamos el control en kill para confirmar si desea finalizarse la instancia.
         If sComando.ToLower = Comando.CKILL Then
-            If MessageBox.Show("Kill the Android emulator instance?", "Kill emulator", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
+            If MessageBox.Show(Idioma.traducir("pop_kill_question"), Idioma.traducir("pop_kill_title"), MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
                 enviarComando(txtComando.Text)
                 txtRecv.Text &= vbNewLine & vbNewLine
                 actualizarControles()
@@ -95,29 +93,43 @@ Public Class FrmPrincipal
         enviarComando(txtComando.Text)
     End Sub
 
-    ''' <summary>Controla el clic sobre el botón de menú Inicio.</summary>
+
+    ''' <summary>Al pulsar intro en el control de comando ejecuta la consulta.</summary>
     ''' <param name="sender">Emisor del evento</param>
-    ''' <param name="e">Datos del evento</param>
-    Private Sub btnHome_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnHome.Click
+    ''' <param name="e">Datos del evento con la tecla</param>
+    ''' <remarks></remarks>
+    Private Sub txtComando_KeyDown(sender As System.Object, e As System.Windows.Forms.KeyEventArgs) Handles txtComando.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            btnEnviar_Click()
+        End If
+    End Sub
+
+
+    ''' <summary>Activa o desactiva el botón de envío de comando dependiendo de si hay
+    ''' valores introducidos en la cadena de comandos.</summary>
+    Private Sub txtComando_TextChanged() Handles txtComando.TextChanged
+        btnEnviar.Enabled = (txtComando.Text.Length > 0)
+    End Sub
+
+
+    ''' <summary>Controla el clic sobre el botón de menú Inicio.</summary>
+    Private Sub btnHome_Click() Handles btnHome.Click
         ctrGsmCalls.parar()
         lanzar(TipoApp.Menu)
     End Sub
 
     
     ''' <summary>Carga inicial del formulario.</summary>
-    ''' <param name="sender">Emisor del evento.</param>
-    ''' <param name="e">Datos del evento.</param>
-    Private Sub frmPrincipal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Private Sub frmPrincipal_Load() Handles MyBase.Load
         Me.Text = My.Application.Info.ProductName & " " & My.Application.Info.Version.ToString
         updateHora()
         trmReloj.Interval = 60000 - (TimeOfDay.Second * 1000)
         lanzar(TipoApp.Connect)
     End Sub
 
+
     ''' <summary>Cierra la aplicación.</summary>
-    ''' <param name="sender">Emisor del evento</param>
-    ''' <param name="e">Datos del evento</param>
-    Private Sub btnSalir_Click(sender As System.Object, e As System.EventArgs) Handles btnSalir.Click
+    Private Sub btnSalir_Click() Handles btnSalir.Click
         Me.Close()
     End Sub
 
@@ -127,7 +139,7 @@ Public Class FrmPrincipal
     ''' <param name="e">Datos del evento.</param>
     Private Sub frmPrincipal_FormClosing(sender As System.Object, e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing
         If objTelnet.Conectado Then
-            If MessageBox.Show("Currently connected to emulator. Do you want to exit?", "Exit confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.No Then
+            If MessageBox.Show(Idioma.traducir("pop_exit_question"), Idioma.traducir("pop_exit_title"), MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.No Then
                 e.Cancel = True
             Else
                 objTelnet.desconectar()
@@ -137,9 +149,7 @@ Public Class FrmPrincipal
 
 
     ''' <summary>Controla el tick del temporizador de reloj.</summary>
-    ''' <param name="sender">Emisor del evento</param>
-    ''' <param name="e">Datos del evento</param>
-    Private Sub trmReloj_Tick(sender As System.Object, e As System.EventArgs) Handles trmReloj.Tick
+    Private Sub trmReloj_Tick() Handles trmReloj.Tick
         If bInicial Then
             trmReloj.Interval = 60000
             bInicial = False
@@ -149,34 +159,38 @@ Public Class FrmPrincipal
 
 
     ''' <summary>Abre el formulario Acerca de...</summary>
-    ''' <param name="sender">Emisor del evento</param>
-    ''' <param name="e">Datos del evento</param>
-    Private Sub ttmAbout_Click(sender As System.Object, e As System.EventArgs) Handles ttmAbout.Click
+    Private Sub ttmAbout_Click() Handles ttmAbout.Click
         FrmAcerca.ShowDialog(Me)
     End Sub
 
 
     ''' <summary>Abre el menú de ayuda.</summary>
-    ''' <param name="sender">Emisor del evento</param>
-    ''' <param name="e">Datos del evento</param>
-    Private Sub btnAyuda_Click(sender As System.Object, e As System.EventArgs) Handles btnAyuda.Click
+    Private Sub btnAyuda_Click() Handles btnAyuda.Click
         mnAyuda.Show(btnAyuda, 0, -80)
     End Sub
 
 
     ''' <summary>Abre la guía de usuario.</summary>
-    ''' <param name="sender">Emisor del evento</param>
-    ''' <param name="e">Datos del evento</param>
-    Private Sub ttmAyuManual_Click(sender As System.Object, e As System.EventArgs) Handles ttmAyuManual.Click
+    Private Sub ttmAyuManual_Click() Handles ttmAyuManual.Click
         System.Diagnostics.Process.Start(My.Resources.sUrlManual)
     End Sub
 
 
     ''' <summary>Abre la página de la aplicación.</summary>
-    ''' <param name="sender">Emisor del evento</param>
-    ''' <param name="e">Datos del evento</param>
-    Private Sub ttmAyuGeneral_Click(sender As System.Object, e As System.EventArgs) Handles ttmAyuGeneral.Click
+    Private Sub ttmAyuGeneral_Click() Handles ttmAyuGeneral.Click
         System.Diagnostics.Process.Start(My.Resources.sUrlAplicacion)
+    End Sub
+
+
+    ''' <summary>Controla el estado del panel de depuración dependiendo del estado del checkbox.</summary>
+    Private Sub chkDebug_CheckedChanged() Handles chkDebug.CheckedChanged
+        If chkDebug.Checked Then
+            Me.pnlDebug.Visible = True
+            ttConsejo.SetToolTip(chkDebug, Idioma.traducir("frm_debug_hide"))
+        Else
+            Me.pnlDebug.Visible = False
+            ttConsejo.SetToolTip(chkDebug, Idioma.traducir("frm_debug_show"))
+        End If
     End Sub
 
 
@@ -210,7 +224,7 @@ Public Class FrmPrincipal
             txtRecv.Select(txtRecv.Text.Length - 1, 1)
             txtRecv.ScrollToCaret()
         Else
-            MessageBox.Show("There is no connection")
+            MessageBox.Show(Idioma.traducir("err_no_connection"))
             actualizarControles()
         End If
 
@@ -291,7 +305,7 @@ Public Class FrmPrincipal
 
     ''' <summary>Actualiza el estado de los controles dependiendo de la conexión.</summary>
     Private Sub actualizarControles()
-        btnEnviar.Enabled = objTelnet.Conectado
+        btnEnviar.Enabled = (objTelnet.Conectado And txtComando.Text.Length > 0)
         txtComando.Enabled = objTelnet.Conectado
         btnHome.Enabled = objTelnet.Conectado
 
@@ -300,21 +314,6 @@ Public Class FrmPrincipal
         Else
             ctrGsmCalls.parar()
             lanzar(TipoApp.Connect)
-        End If
-    End Sub
-
-
-    ''' <summary>Controla el estado del panel de depuración dependiendo del estado del
-    ''' checkbox.</summary>
-    ''' <param name="sender">Emisor del evento</param>
-    ''' <param name="e">Datos del evento</param>
-    Private Sub chkDebug_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles chkDebug.CheckedChanged
-        If chkDebug.Checked Then
-            Me.pnlDebug.Visible = True
-            ttConsejo.SetToolTip(chkDebug, "Hide debug console")
-        Else
-            Me.pnlDebug.Visible = False
-            ttConsejo.SetToolTip(chkDebug, "Show debug console")
         End If
     End Sub
 End Class

@@ -29,7 +29,7 @@
             If Integer.TryParse(txtGsmPrefijo.Text, iNumero) Then
                 sNumero = "+" & iNumero
             Else
-                MessageBox.Show("Enter a valid prefix", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                MessageBox.Show(Idioma.traducir("err_call_prefix"), Idioma.traducir("warning"), MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 txtGsmPrefijo.Focus()
                 txtGsmPrefijo.SelectAll()
                 bValido = False
@@ -44,7 +44,7 @@
                 txtGsmNumero.Text = String.Empty
                 txtGsmPrefijo.Text = String.Empty
             Else
-                MessageBox.Show("Enter a valid phone number", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                MessageBox.Show(Idioma.traducir("err_call_number"), Idioma.traducir("warning"), MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 txtGsmNumero.SelectAll()
             End If
         End If
@@ -130,29 +130,34 @@
                     iActual = dgvGsmLlamadas.Rows.Add(objLlamada.toArray())
 
                     ' Tooltip para columna de tipo
-                    dgvGsmLlamadas.Rows(iActual).Cells(0).ToolTipText = objLlamada.Tipo.ToString
+                    Select Case objLlamada.Tipo
+                        Case Llamada.TipoLlamada.inbound
+                            dgvGsmLlamadas.Rows(iActual).Cells(0).ToolTipText = Idioma.traducir("call_inbound")
+                        Case Llamada.TipoLlamada.outbound
+                            dgvGsmLlamadas.Rows(iActual).Cells(0).ToolTipText = Idioma.traducir("call_outbound")
+                    End Select
 
                     ' Tooltip para columna de estado
                     Select Case objLlamada.Estado
                         Case Llamada.EstadoLlamada.active
-                            dgvGsmLlamadas.Rows(iActual).Cells(4).ToolTipText = Llamada.GSM_HOLD
+                            dgvGsmLlamadas.Rows(iActual).Cells(4).ToolTipText = Idioma.traducir("call_hold")
                         Case Llamada.EstadoLlamada.held
-                            dgvGsmLlamadas.Rows(iActual).Cells(4).ToolTipText = Llamada.GSM_ACCEPT
+                            dgvGsmLlamadas.Rows(iActual).Cells(4).ToolTipText = Idioma.traducir("call_activate")
                         Case Llamada.EstadoLlamada.unknown
-                            dgvGsmLlamadas.Rows(iActual).Cells(4).ToolTipText = Llamada.GSM_UNKNOWN
+                            dgvGsmLlamadas.Rows(iActual).Cells(4).ToolTipText = Idioma.traducir("call_unknown")
                         Case Else
-                            dgvGsmLlamadas.Rows(iActual).Cells(4).ToolTipText = Llamada.GSM_CONNECTING
+                            dgvGsmLlamadas.Rows(iActual).Cells(4).ToolTipText = Idioma.traducir("call_connecting")
                     End Select
 
                     ' Tooltip para columna de ocupado
                     If objLlamada.Tipo = Llamada.TipoLlamada.outbound Then
-                        dgvGsmLlamadas.Rows(iActual).Cells(5).ToolTipText = Llamada.GSM_BUSY
+                        dgvGsmLlamadas.Rows(iActual).Cells(5).ToolTipText = Idioma.traducir("call_busy")
                     Else
-                        dgvGsmLlamadas.Rows(iActual).Cells(5).ToolTipText = Llamada.GSM_NOT_ALLOWED
+                        dgvGsmLlamadas.Rows(iActual).Cells(5).ToolTipText = Idioma.traducir("call_not_allowed")
                     End If
 
                     ' Tooltip para columna de finalización de llamada
-                    dgvGsmLlamadas.Rows(iActual).Cells(6).ToolTipText = Llamada.GSM_CANCEL
+                    dgvGsmLlamadas.Rows(iActual).Cells(6).ToolTipText = Idioma.traducir("call_finalize")
                 Next
             Else
                 dgvGsmLlamadas.Rows.Clear()
