@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<idioma desc="es">
+  <tag clave="disconnect" valor="Desconectar" />
+  <tag clave="error" valor="Error" />
+  <tag clave="logout" valor="Cerrar" />
+  <tag clave="version" valor="Versión" />
+  <tag clave="warning" valor="Atención" />
+
+  <tag clave="err_no_connection" valor="No hay conexión" />
+  <tag clave="err_call_number" valor="Introduce un número de teléfono válido" />
+  <tag clave="err_call_prefix" valor="Introduce un prefijo válido" />
+  <tag clave="err_command" valor="Introduce un comando" />
+  <tag clave="err_connection" valor="Error de conexión con la máquina virtual" />
+  <tag clave="err_sensor_read" valor="Error when read some sensor value" />
+  <tag clave="err_sensor_select" valor="Debes seleccionar un sensor." />
+  <tag clave="err_sms_send" valor="Introduce un mensaje a enviar." />
+  <tag clave="err_socket" valor="Socket desconectado" />
+
+  <tag clave="frm_about" valor="Acerca de" />
+  <tag clave="frm_debug_hide" valor="Ocultar consola" />
+  <tag clave="frm_debug_show" valor="Mostrar consola" />
+
+  <tag clave="call_activate" valor="activar llamada" />
+  <tag clave="call_busy" valor="finalizar llamada como ocupada" />
+  <tag clave="call_connecting" valor="conectando..." />
+  <tag clave="call_finalize" valor="finalizar llamada" />
+  <tag clave="call_hold" valor="retener llamada" />
+  <tag clave="call_inbound" valor="entrante" />
+  <tag clave="call_not_allowed" valor="no permitido" />
+  <tag clave="call_outbound" valor="saliente" />
+  <tag clave="call_unknown" valor="estado desconocido" />
+
+  <tag clave="pop_disconnect_question" valor="¿Desconectar del emulador?" />
+  <tag clave="pop_exit_question" valor="AVM está conectado al emulador. ¿Quieres salir?" />
+  <tag clave="pop_exit_title" valor="Confirmación de salida" />
+  <tag clave="pop_kill_question" valor="¿Matar la instancia del emulador de Android?" />
+  <tag clave="pop_kill_title" valor="Matar emulador" />
+  <tag clave="pop_logout_question" valor="¿Quieres desconectarte de la máquina?" />
+
+  <tag clave="sen_azimuth" valor="Azimut:" />
+  <tag clave="sen_azimuth_tt" valor="Grados de rotación sobre el eje Z" />
+  <tag clave="sen_distance" valor="Distancia:" />
+  <tag clave="sen_distance_tt" valor="Distancia de in objeto al dispositivo" />
+  <tag clave="sen_not_used" valor="No usado:" />
+  <tag clave="sen_pitch" valor="Inclinación:" />
+  <tag clave="sen_pitch_tt" valor="Grados de rotación sobre el eje X" />
+  <tag clave="sen_roll" valor="Rotación:" />
+  <tag clave="sen_roll_tt" valor="Grados de rotación sobre el eje Y" />
+  <tag clave="sen_temp" valor="Temp:" />
+  <tag clave="sen_temp_tt" valor="Temperatura del dispositivo en ºC" />
+  <tag clave="sen_x_axis" valor="Eje X:" />
+  <tag clave="sen_x_axis_tt" valor="Valor en el eje X" />
+  <tag clave="sen_y_axis" valor="Eje Y:" />
+  <tag clave="sen_y_axis_tt" valor="Valor en el eje Y" />
+  <tag clave="sen_z_axis" valor="Eje Z:" />
+  <tag clave="sen_z_axis_tt" valor="Valor en el eje Z" />
+</idioma>
