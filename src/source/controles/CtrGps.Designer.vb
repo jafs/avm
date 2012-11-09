@@ -23,6 +23,7 @@ Partial Class CtrGps
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CtrGps))
         Me.btnGpsSet = New System.Windows.Forms.Button()
         Me.chkGpsSatelites = New System.Windows.Forms.CheckBox()
         Me.nudGpsSatelites = New System.Windows.Forms.NumericUpDown()
@@ -52,165 +53,118 @@ Partial Class CtrGps
         '
         'btnGpsSet
         '
+        resources.ApplyResources(Me.btnGpsSet, "btnGpsSet")
         Me.btnGpsSet.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(227, Byte), Integer))
         Me.btnGpsSet.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnGpsSet.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnGpsSet.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGpsSet.ForeColor = System.Drawing.Color.White
-        Me.btnGpsSet.Location = New System.Drawing.Point(15, 163)
         Me.btnGpsSet.Name = "btnGpsSet"
-        Me.btnGpsSet.Size = New System.Drawing.Size(115, 32)
-        Me.btnGpsSet.TabIndex = 50
-        Me.btnGpsSet.Text = "Set location"
-        Me.ttConsejo.SetToolTip(Me.btnGpsSet, "Send location to emulator")
+        Me.ttConsejo.SetToolTip(Me.btnGpsSet, resources.GetString("btnGpsSet.ToolTip"))
         Me.btnGpsSet.UseVisualStyleBackColor = False
         '
         'chkGpsSatelites
         '
-        Me.chkGpsSatelites.AutoSize = True
-        Me.chkGpsSatelites.Enabled = False
-        Me.chkGpsSatelites.Location = New System.Drawing.Point(15, 131)
-        Me.chkGpsSatelites.Margin = New System.Windows.Forms.Padding(3, 0, 3, 0)
+        resources.ApplyResources(Me.chkGpsSatelites, "chkGpsSatelites")
         Me.chkGpsSatelites.Name = "chkGpsSatelites"
-        Me.chkGpsSatelites.Size = New System.Drawing.Size(88, 21)
-        Me.chkGpsSatelites.TabIndex = 49
-        Me.chkGpsSatelites.Text = "Satellites:"
-        Me.ttConsejo.SetToolTip(Me.chkGpsSatelites, "Check to send satellites number")
+        Me.ttConsejo.SetToolTip(Me.chkGpsSatelites, resources.GetString("chkGpsSatelites.ToolTip"))
         Me.chkGpsSatelites.UseVisualStyleBackColor = True
         '
         'nudGpsSatelites
         '
-        Me.nudGpsSatelites.Enabled = False
-        Me.nudGpsSatelites.Location = New System.Drawing.Point(99, 130)
+        resources.ApplyResources(Me.nudGpsSatelites, "nudGpsSatelites")
         Me.nudGpsSatelites.Maximum = New Decimal(New Integer() {12, 0, 0, 0})
         Me.nudGpsSatelites.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nudGpsSatelites.Name = "nudGpsSatelites"
-        Me.nudGpsSatelites.Size = New System.Drawing.Size(44, 23)
-        Me.nudGpsSatelites.TabIndex = 48
-        Me.ttConsejo.SetToolTip(Me.nudGpsSatelites, "Number of satellites")
+        Me.ttConsejo.SetToolTip(Me.nudGpsSatelites, resources.GetString("nudGpsSatelites.ToolTip"))
         Me.nudGpsSatelites.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'nudGpsAltitude
         '
+        resources.ApplyResources(Me.nudGpsAltitude, "nudGpsAltitude")
         Me.nudGpsAltitude.DecimalPlaces = 4
-        Me.nudGpsAltitude.Enabled = False
-        Me.nudGpsAltitude.Location = New System.Drawing.Point(99, 99)
         Me.nudGpsAltitude.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.nudGpsAltitude.Name = "nudGpsAltitude"
-        Me.nudGpsAltitude.Size = New System.Drawing.Size(80, 23)
-        Me.nudGpsAltitude.TabIndex = 47
-        Me.ttConsejo.SetToolTip(Me.nudGpsAltitude, "Altitude in meters")
+        Me.ttConsejo.SetToolTip(Me.nudGpsAltitude, resources.GetString("nudGpsAltitude.ToolTip"))
         '
         'chkGpsAltitude
         '
-        Me.chkGpsAltitude.AutoSize = True
-        Me.chkGpsAltitude.Location = New System.Drawing.Point(15, 100)
+        resources.ApplyResources(Me.chkGpsAltitude, "chkGpsAltitude")
         Me.chkGpsAltitude.Name = "chkGpsAltitude"
-        Me.chkGpsAltitude.Size = New System.Drawing.Size(78, 21)
-        Me.chkGpsAltitude.TabIndex = 46
-        Me.chkGpsAltitude.Text = "Altitude:"
-        Me.ttConsejo.SetToolTip(Me.chkGpsAltitude, "Check to send altitude")
+        Me.ttConsejo.SetToolTip(Me.chkGpsAltitude, resources.GetString("chkGpsAltitude.ToolTip"))
         Me.chkGpsAltitude.UseVisualStyleBackColor = True
         '
         'nudGpsLatSec
         '
-        Me.nudGpsLatSec.Location = New System.Drawing.Point(218, 62)
+        resources.ApplyResources(Me.nudGpsLatSec, "nudGpsLatSec")
         Me.nudGpsLatSec.Maximum = New Decimal(New Integer() {59, 0, 0, 0})
         Me.nudGpsLatSec.Name = "nudGpsLatSec"
-        Me.nudGpsLatSec.Size = New System.Drawing.Size(50, 23)
-        Me.nudGpsLatSec.TabIndex = 45
-        Me.ttConsejo.SetToolTip(Me.nudGpsLatSec, "Seconds")
+        Me.ttConsejo.SetToolTip(Me.nudGpsLatSec, resources.GetString("nudGpsLatSec.ToolTip"))
         '
         'nudGpsLatMin
         '
-        Me.nudGpsLatMin.Location = New System.Drawing.Point(158, 62)
+        resources.ApplyResources(Me.nudGpsLatMin, "nudGpsLatMin")
         Me.nudGpsLatMin.Maximum = New Decimal(New Integer() {59, 0, 0, 0})
         Me.nudGpsLatMin.Name = "nudGpsLatMin"
-        Me.nudGpsLatMin.Size = New System.Drawing.Size(50, 23)
-        Me.nudGpsLatMin.TabIndex = 44
-        Me.ttConsejo.SetToolTip(Me.nudGpsLatMin, "Minutes")
+        Me.ttConsejo.SetToolTip(Me.nudGpsLatMin, resources.GetString("nudGpsLatMin.ToolTip"))
         '
         'nudGpsLatGrados
         '
-        Me.nudGpsLatGrados.Location = New System.Drawing.Point(99, 62)
+        resources.ApplyResources(Me.nudGpsLatGrados, "nudGpsLatGrados")
         Me.nudGpsLatGrados.Maximum = New Decimal(New Integer() {90, 0, 0, 0})
         Me.nudGpsLatGrados.Minimum = New Decimal(New Integer() {90, 0, 0, -2147483648})
         Me.nudGpsLatGrados.Name = "nudGpsLatGrados"
-        Me.nudGpsLatGrados.Size = New System.Drawing.Size(50, 23)
-        Me.nudGpsLatGrados.TabIndex = 43
-        Me.ttConsejo.SetToolTip(Me.nudGpsLatGrados, "Degrees (between -90 and 90)")
+        Me.ttConsejo.SetToolTip(Me.nudGpsLatGrados, resources.GetString("nudGpsLatGrados.ToolTip"))
         '
         'lblGpsLatitud
         '
-        Me.lblGpsLatitud.AutoSize = True
-        Me.lblGpsLatitud.Location = New System.Drawing.Point(12, 64)
+        resources.ApplyResources(Me.lblGpsLatitud, "lblGpsLatitud")
         Me.lblGpsLatitud.Name = "lblGpsLatitud"
-        Me.lblGpsLatitud.Size = New System.Drawing.Size(63, 17)
-        Me.lblGpsLatitud.TabIndex = 42
-        Me.lblGpsLatitud.Text = "Latitude:"
-        Me.ttConsejo.SetToolTip(Me.lblGpsLatitud, "Latitude coordinates")
+        Me.ttConsejo.SetToolTip(Me.lblGpsLatitud, resources.GetString("lblGpsLatitud.ToolTip"))
         '
         'nudGpsLonSec
         '
-        Me.nudGpsLonSec.Location = New System.Drawing.Point(218, 23)
+        resources.ApplyResources(Me.nudGpsLonSec, "nudGpsLonSec")
         Me.nudGpsLonSec.Maximum = New Decimal(New Integer() {59, 0, 0, 0})
         Me.nudGpsLonSec.Name = "nudGpsLonSec"
-        Me.nudGpsLonSec.Size = New System.Drawing.Size(50, 23)
-        Me.nudGpsLonSec.TabIndex = 41
-        Me.ttConsejo.SetToolTip(Me.nudGpsLonSec, "Seconds")
+        Me.ttConsejo.SetToolTip(Me.nudGpsLonSec, resources.GetString("nudGpsLonSec.ToolTip"))
         '
         'nudGpsLonMin
         '
-        Me.nudGpsLonMin.Location = New System.Drawing.Point(158, 23)
+        resources.ApplyResources(Me.nudGpsLonMin, "nudGpsLonMin")
         Me.nudGpsLonMin.Maximum = New Decimal(New Integer() {59, 0, 0, 0})
         Me.nudGpsLonMin.Name = "nudGpsLonMin"
-        Me.nudGpsLonMin.Size = New System.Drawing.Size(50, 23)
-        Me.nudGpsLonMin.TabIndex = 40
-        Me.ttConsejo.SetToolTip(Me.nudGpsLonMin, "Minutes")
+        Me.ttConsejo.SetToolTip(Me.nudGpsLonMin, resources.GetString("nudGpsLonMin.ToolTip"))
         '
         'nudGpsLonGrados
         '
-        Me.nudGpsLonGrados.Location = New System.Drawing.Point(99, 23)
+        resources.ApplyResources(Me.nudGpsLonGrados, "nudGpsLonGrados")
         Me.nudGpsLonGrados.Maximum = New Decimal(New Integer() {180, 0, 0, 0})
         Me.nudGpsLonGrados.Minimum = New Decimal(New Integer() {180, 0, 0, -2147483648})
         Me.nudGpsLonGrados.Name = "nudGpsLonGrados"
-        Me.nudGpsLonGrados.Size = New System.Drawing.Size(50, 23)
-        Me.nudGpsLonGrados.TabIndex = 39
-        Me.ttConsejo.SetToolTip(Me.nudGpsLonGrados, "Degrees (between -180 and 180)")
+        Me.ttConsejo.SetToolTip(Me.nudGpsLonGrados, resources.GetString("nudGpsLonGrados.ToolTip"))
         '
         'lblGpsLongitud
         '
-        Me.lblGpsLongitud.AutoSize = True
-        Me.lblGpsLongitud.Location = New System.Drawing.Point(12, 25)
+        resources.ApplyResources(Me.lblGpsLongitud, "lblGpsLongitud")
         Me.lblGpsLongitud.Name = "lblGpsLongitud"
-        Me.lblGpsLongitud.Size = New System.Drawing.Size(75, 17)
-        Me.lblGpsLongitud.TabIndex = 38
-        Me.lblGpsLongitud.Text = "Longitude:"
-        Me.ttConsejo.SetToolTip(Me.lblGpsLongitud, "Longitude coordinates")
+        Me.ttConsejo.SetToolTip(Me.lblGpsLongitud, resources.GetString("lblGpsLongitud.ToolTip"))
         '
         'lblGpsDesc
         '
-        Me.lblGpsDesc.AutoSize = True
-        Me.lblGpsDesc.Location = New System.Drawing.Point(86, 216)
+        resources.ApplyResources(Me.lblGpsDesc, "lblGpsDesc")
         Me.lblGpsDesc.Name = "lblGpsDesc"
-        Me.lblGpsDesc.Size = New System.Drawing.Size(187, 102)
-        Me.lblGpsDesc.TabIndex = 51
-        Me.lblGpsDesc.Text = "Here you will be able to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "change the GPS location." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Enter the longitude and" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "lati" & _
-    "tude coordinates to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "change the position. Altitude" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and satellites are optional." & _
-    ""
+        Me.ttConsejo.SetToolTip(Me.lblGpsDesc, resources.GetString("lblGpsDesc.ToolTip"))
         '
         'imgGps
         '
+        resources.ApplyResources(Me.imgGps, "imgGps")
         Me.imgGps.Image = Global.Avm.My.Resources.Resources.icoGps64
-        Me.imgGps.Location = New System.Drawing.Point(16, 238)
         Me.imgGps.Name = "imgGps"
-        Me.imgGps.Size = New System.Drawing.Size(64, 64)
-        Me.imgGps.TabIndex = 52
         Me.imgGps.TabStop = False
+        Me.ttConsejo.SetToolTip(Me.imgGps, resources.GetString("imgGps.ToolTip"))
         '
         'CtrGps
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Transparent
         Me.BackgroundImage = Global.Avm.My.Resources.Resources.fondo
@@ -230,11 +184,9 @@ Partial Class CtrGps
         Me.Controls.Add(Me.nudGpsLonGrados)
         Me.Controls.Add(Me.lblGpsLongitud)
         Me.Controls.Add(Me.chkGpsSatelites)
-        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "CtrGps"
-        Me.Size = New System.Drawing.Size(280, 338)
+        Me.ttConsejo.SetToolTip(Me, resources.GetString("$this.ToolTip"))
         CType(Me.nudGpsSatelites, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nudGpsAltitude, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nudGpsLatSec, System.ComponentModel.ISupportInitialize).EndInit()

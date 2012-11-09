@@ -117,10 +117,459 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="ttConsejo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblGpsLatitud.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;btnGpsSet.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnGpsSet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblGpsLongitud.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 25</value>
+  </data>
+  <data name="btnGpsSet.ToolTip" xml:space="preserve">
+    <value>Send location to emulator</value>
+  </data>
+  <data name="chkGpsSatelites.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 131</value>
+  </data>
+  <data name="btnGpsSet.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="chkGpsAltitude.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;nudGpsLatMin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblGpsDesc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>86, 216</value>
+  </data>
+  <data name="chkGpsAltitude.Text" xml:space="preserve">
+    <value>Altitude:</value>
+  </data>
+  <data name="chkGpsSatelites.ToolTip" xml:space="preserve">
+    <value>Check to send satellites number</value>
+  </data>
+  <data name="&gt;&gt;nudGpsLonSec.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="imgGps.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 64</value>
+  </data>
+  <data name="&gt;&gt;nudGpsLonGrados.Name" xml:space="preserve">
+    <value>nudGpsLonGrados</value>
+  </data>
+  <data name="nudGpsLonSec.Location" type="System.Drawing.Point, System.Drawing">
+    <value>218, 23</value>
+  </data>
+  <data name="nudGpsSatelites.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;nudGpsLatGrados.Name" xml:space="preserve">
+    <value>nudGpsLatGrados</value>
+  </data>
+  <data name="nudGpsLatGrados.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 23</value>
+  </data>
+  <data name="nudGpsAltitude.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 99</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="&gt;&gt;nudGpsAltitude.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblGpsLatitud.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chkGpsAltitude.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 21</value>
+  </data>
+  <data name="nudGpsLatMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 23</value>
+  </data>
+  <data name="nudGpsSatelites.ToolTip" xml:space="preserve">
+    <value>Number of satellites</value>
+  </data>
+  <data name="lblGpsLongitud.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 17</value>
+  </data>
+  <data name="&gt;&gt;lblGpsLatitud.Name" xml:space="preserve">
+    <value>lblGpsLatitud</value>
+  </data>
+  <data name="&gt;&gt;chkGpsSatelites.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblGpsDesc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 102</value>
+  </data>
+  <data name="nudGpsLonSec.ToolTip" xml:space="preserve">
+    <value>Seconds</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="btnGpsSet.Text" xml:space="preserve">
+    <value>Set location</value>
+  </data>
+  <data name="&gt;&gt;lblGpsDesc.Name" xml:space="preserve">
+    <value>lblGpsDesc</value>
+  </data>
+  <data name="nudGpsLonGrados.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 23</value>
+  </data>
+  <data name="&gt;&gt;nudGpsLonMin.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;nudGpsLatSec.Name" xml:space="preserve">
+    <value>nudGpsLatSec</value>
+  </data>
+  <data name="lblGpsLatitud.ToolTip" xml:space="preserve">
+    <value>Latitude coordinates</value>
+  </data>
+  <data name="nudGpsLatGrados.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 62</value>
+  </data>
+  <data name="&gt;&gt;btnGpsSet.Name" xml:space="preserve">
+    <value>btnGpsSet</value>
+  </data>
+  <data name="nudGpsLonSec.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="lblGpsLongitud.ToolTip" xml:space="preserve">
+    <value>Longitude coordinates</value>
+  </data>
+  <data name="&gt;&gt;ttConsejo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkGpsSatelites.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="chkGpsAltitude.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;imgGps.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudGpsLonGrados.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblGpsLatitud.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 64</value>
+  </data>
+  <data name="nudGpsLatGrados.ToolTip" xml:space="preserve">
+    <value>Degrees (between -90 and 90)</value>
+  </data>
+  <data name="&gt;&gt;btnGpsSet.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="chkGpsSatelites.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="lblGpsDesc.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="chkGpsSatelites.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;chkGpsAltitude.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lblGpsDesc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblGpsLatitud.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblGpsDesc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkGpsSatelites.Name" xml:space="preserve">
+    <value>chkGpsSatelites</value>
+  </data>
+  <data name="nudGpsSatelites.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 23</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CtrGps</value>
+  </data>
+  <data name="&gt;&gt;lblGpsLongitud.Name" xml:space="preserve">
+    <value>lblGpsLongitud</value>
+  </data>
+  <data name="nudGpsAltitude.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;nudGpsLonMin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="imgGps.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="&gt;&gt;nudGpsLonMin.Name" xml:space="preserve">
+    <value>nudGpsLonMin</value>
+  </data>
+  <data name="nudGpsLatMin.ToolTip" xml:space="preserve">
+    <value>Minutes</value>
+  </data>
+  <data name="&gt;&gt;nudGpsLonGrados.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblGpsDesc.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblGpsLatitud.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 17</value>
+  </data>
+  <data name="lblGpsLongitud.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="btnGpsSet.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="nudGpsLonMin.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="btnGpsSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 32</value>
+  </data>
+  <data name="nudGpsLatSec.ToolTip" xml:space="preserve">
+    <value>Seconds</value>
+  </data>
+  <data name="nudGpsLatMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>158, 62</value>
+  </data>
+  <data name="&gt;&gt;nudGpsLatMin.Name" xml:space="preserve">
+    <value>nudGpsLatMin</value>
+  </data>
+  <data name="&gt;&gt;lblGpsLongitud.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="lblGpsLongitud.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;nudGpsSatelites.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chkGpsSatelites.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 21</value>
+  </data>
+  <data name="&gt;&gt;imgGps.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="nudGpsLonGrados.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;lblGpsLongitud.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudGpsLonSec.Name" xml:space="preserve">
+    <value>nudGpsLonSec</value>
+  </data>
+  <data name="&gt;&gt;lblGpsLatitud.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;lblGpsLongitud.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="nudGpsSatelites.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="nudGpsAltitude.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 23</value>
+  </data>
+  <data name="&gt;&gt;chkGpsAltitude.Name" xml:space="preserve">
+    <value>chkGpsAltitude</value>
+  </data>
+  <data name="imgGps.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ttConsejo.Name" xml:space="preserve">
+    <value>ttConsejo</value>
+  </data>
+  <data name="chkGpsAltitude.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 100</value>
+  </data>
+  <data name="nudGpsLatSec.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="chkGpsSatelites.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 3, 0</value>
+  </data>
+  <data name="nudGpsAltitude.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 338</value>
+  </data>
+  <data name="&gt;&gt;nudGpsLatMin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblGpsLongitud.Text" xml:space="preserve">
+    <value>Longitude:</value>
+  </data>
+  <data name="nudGpsLonGrados.ToolTip" xml:space="preserve">
+    <value>Degrees (between -180 and 180)</value>
+  </data>
+  <data name="chkGpsSatelites.Text" xml:space="preserve">
+    <value>Satellites:</value>
+  </data>
+  <data name="nudGpsLatSec.Location" type="System.Drawing.Point, System.Drawing">
+    <value>218, 62</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkGpsAltitude.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudGpsAltitude.Name" xml:space="preserve">
+    <value>nudGpsAltitude</value>
+  </data>
+  <data name="&gt;&gt;nudGpsLatGrados.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="chkGpsAltitude.ToolTip" xml:space="preserve">
+    <value>Check to send altitude</value>
+  </data>
+  <data name="lblGpsDesc.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="nudGpsLonSec.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 23</value>
+  </data>
+  <data name="&gt;&gt;nudGpsLatSec.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblGpsLatitud.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="nudGpsLonGrados.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 23</value>
+  </data>
+  <data name="nudGpsLonMin.ToolTip" xml:space="preserve">
+    <value>Minutes</value>
+  </data>
+  <data name="nudGpsAltitude.ToolTip" xml:space="preserve">
+    <value>Altitude in meters</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnGpsSet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 163</value>
+  </data>
+  <data name="&gt;&gt;nudGpsLatGrados.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnGpsSet.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="lblGpsDesc.Text" xml:space="preserve">
+    <value>Here you will be able to
+change the GPS location.
+Enter the longitude and
+latitude coordinates to
+change the position. Altitude
+and satellites are optional.</value>
+  </data>
+  <data name="&gt;&gt;nudGpsLatSec.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="nudGpsLonMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>158, 23</value>
+  </data>
+  <data name="chkGpsSatelites.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;nudGpsSatelites.Name" xml:space="preserve">
+    <value>nudGpsSatelites</value>
+  </data>
+  <data name="&gt;&gt;nudGpsSatelites.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;nudGpsSatelites.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="imgGps.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 238</value>
+  </data>
+  <data name="&gt;&gt;nudGpsLatSec.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;nudGpsLonSec.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;nudGpsLonSec.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="nudGpsLatGrados.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="lblGpsLatitud.Text" xml:space="preserve">
+    <value>Latitude:</value>
+  </data>
+  <data name="&gt;&gt;nudGpsLatMin.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;imgGps.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="nudGpsLonMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 23</value>
+  </data>
+  <data name="&gt;&gt;nudGpsAltitude.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkGpsSatelites.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudGpsLonMin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblGpsDesc.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="nudGpsLatSec.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 23</value>
+  </data>
+  <data name="&gt;&gt;nudGpsLonGrados.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;imgGps.Name" xml:space="preserve">
+    <value>imgGps</value>
+  </data>
+  <data name="&gt;&gt;nudGpsLatGrados.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="nudGpsLatMin.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;nudGpsAltitude.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="nudGpsSatelites.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 130</value>
+  </data>
+  <data name="&gt;&gt;chkGpsAltitude.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
   <metadata name="ttConsejo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>es</value>
   </metadata>
 </root>

@@ -23,6 +23,7 @@ Partial Class CtrSensor
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CtrSensor))
         Me.btnSenUpdate = New System.Windows.Forms.Button()
         Me.lblSenDesc = New System.Windows.Forms.Label()
         Me.btnSenSet = New System.Windows.Forms.Button()
@@ -44,132 +45,95 @@ Partial Class CtrSensor
         '
         'btnSenUpdate
         '
+        resources.ApplyResources(Me.btnSenUpdate, "btnSenUpdate")
         Me.btnSenUpdate.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(227, Byte), Integer))
-        Me.btnSenUpdate.Enabled = False
         Me.btnSenUpdate.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnSenUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSenUpdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSenUpdate.ForeColor = System.Drawing.Color.White
-        Me.btnSenUpdate.Location = New System.Drawing.Point(16, 174)
         Me.btnSenUpdate.Name = "btnSenUpdate"
-        Me.btnSenUpdate.Size = New System.Drawing.Size(112, 32)
-        Me.btnSenUpdate.TabIndex = 29
-        Me.btnSenUpdate.Text = "Update"
-        Me.ttConsejo.SetToolTip(Me.btnSenUpdate, "Update sensor values with last")
+        Me.ttConsejo.SetToolTip(Me.btnSenUpdate, resources.GetString("btnSenUpdate.ToolTip"))
         Me.btnSenUpdate.UseVisualStyleBackColor = False
         '
         'lblSenDesc
         '
-        Me.lblSenDesc.AutoSize = True
-        Me.lblSenDesc.Location = New System.Drawing.Point(82, 235)
+        resources.ApplyResources(Me.lblSenDesc, "lblSenDesc")
         Me.lblSenDesc.Name = "lblSenDesc"
-        Me.lblSenDesc.Size = New System.Drawing.Size(187, 68)
-        Me.lblSenDesc.TabIndex = 27
-        Me.lblSenDesc.Text = "In this tab you can set the" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "sensor values. Select a" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "sensor, set the values and" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "press the Set Values button."
+        Me.ttConsejo.SetToolTip(Me.lblSenDesc, resources.GetString("lblSenDesc.ToolTip"))
         '
         'btnSenSet
         '
-        Me.btnSenSet.AutoSize = True
+        resources.ApplyResources(Me.btnSenSet, "btnSenSet")
         Me.btnSenSet.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(227, Byte), Integer))
-        Me.btnSenSet.Enabled = False
         Me.btnSenSet.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnSenSet.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSenSet.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSenSet.ForeColor = System.Drawing.Color.White
-        Me.btnSenSet.Location = New System.Drawing.Point(153, 174)
         Me.btnSenSet.Name = "btnSenSet"
-        Me.btnSenSet.Size = New System.Drawing.Size(112, 32)
-        Me.btnSenSet.TabIndex = 24
-        Me.btnSenSet.Text = "Set Values"
-        Me.ttConsejo.SetToolTip(Me.btnSenSet, "Set the sensor values with entered values")
+        Me.ttConsejo.SetToolTip(Me.btnSenSet, resources.GetString("btnSenSet.ToolTip"))
         Me.btnSenSet.UseVisualStyleBackColor = False
         '
         'nudSenValor2
         '
+        resources.ApplyResources(Me.nudSenValor2, "nudSenValor2")
         Me.nudSenValor2.DecimalPlaces = 4
-        Me.nudSenValor2.Enabled = False
         Me.nudSenValor2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.nudSenValor2.Location = New System.Drawing.Point(85, 98)
         Me.nudSenValor2.Name = "nudSenValor2"
-        Me.nudSenValor2.Size = New System.Drawing.Size(90, 23)
-        Me.nudSenValor2.TabIndex = 22
+        Me.ttConsejo.SetToolTip(Me.nudSenValor2, resources.GetString("nudSenValor2.ToolTip"))
         '
         'lblSenValor2
         '
-        Me.lblSenValor2.AutoSize = True
-        Me.lblSenValor2.Location = New System.Drawing.Point(13, 100)
+        resources.ApplyResources(Me.lblSenValor2, "lblSenValor2")
         Me.lblSenValor2.Name = "lblSenValor2"
-        Me.lblSenValor2.Size = New System.Drawing.Size(69, 17)
-        Me.lblSenValor2.TabIndex = 26
-        Me.lblSenValor2.Text = "Not used:"
+        Me.ttConsejo.SetToolTip(Me.lblSenValor2, resources.GetString("lblSenValor2.ToolTip"))
         '
         'nudSenValor3
         '
+        resources.ApplyResources(Me.nudSenValor3, "nudSenValor3")
         Me.nudSenValor3.DecimalPlaces = 4
-        Me.nudSenValor3.Enabled = False
         Me.nudSenValor3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.nudSenValor3.Location = New System.Drawing.Point(85, 136)
         Me.nudSenValor3.Name = "nudSenValor3"
-        Me.nudSenValor3.Size = New System.Drawing.Size(90, 23)
-        Me.nudSenValor3.TabIndex = 23
+        Me.ttConsejo.SetToolTip(Me.nudSenValor3, resources.GetString("nudSenValor3.ToolTip"))
         '
         'lblSenValor3
         '
-        Me.lblSenValor3.AutoSize = True
-        Me.lblSenValor3.Location = New System.Drawing.Point(13, 138)
+        resources.ApplyResources(Me.lblSenValor3, "lblSenValor3")
         Me.lblSenValor3.Name = "lblSenValor3"
-        Me.lblSenValor3.Size = New System.Drawing.Size(69, 17)
-        Me.lblSenValor3.TabIndex = 25
-        Me.lblSenValor3.Text = "Not used:"
+        Me.ttConsejo.SetToolTip(Me.lblSenValor3, resources.GetString("lblSenValor3.ToolTip"))
         '
         'nudSenValor1
         '
+        resources.ApplyResources(Me.nudSenValor1, "nudSenValor1")
         Me.nudSenValor1.DecimalPlaces = 4
-        Me.nudSenValor1.Enabled = False
         Me.nudSenValor1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.nudSenValor1.Location = New System.Drawing.Point(85, 59)
         Me.nudSenValor1.Name = "nudSenValor1"
-        Me.nudSenValor1.Size = New System.Drawing.Size(90, 23)
-        Me.nudSenValor1.TabIndex = 20
+        Me.ttConsejo.SetToolTip(Me.nudSenValor1, resources.GetString("nudSenValor1.ToolTip"))
         '
         'lblSenValor1
         '
-        Me.lblSenValor1.AutoSize = True
-        Me.lblSenValor1.Location = New System.Drawing.Point(13, 61)
+        resources.ApplyResources(Me.lblSenValor1, "lblSenValor1")
         Me.lblSenValor1.Name = "lblSenValor1"
-        Me.lblSenValor1.Size = New System.Drawing.Size(69, 17)
-        Me.lblSenValor1.TabIndex = 21
-        Me.lblSenValor1.Text = "Not used:"
+        Me.ttConsejo.SetToolTip(Me.lblSenValor1, resources.GetString("lblSenValor1.ToolTip"))
         '
         'lblSensor
         '
-        Me.lblSensor.AutoSize = True
-        Me.lblSensor.Location = New System.Drawing.Point(13, 23)
+        resources.ApplyResources(Me.lblSensor, "lblSensor")
         Me.lblSensor.Name = "lblSensor"
-        Me.lblSensor.Size = New System.Drawing.Size(57, 17)
-        Me.lblSensor.TabIndex = 19
-        Me.lblSensor.Text = "Sensor:"
-        Me.ttConsejo.SetToolTip(Me.lblSensor, "Select a sensor type")
+        Me.ttConsejo.SetToolTip(Me.lblSensor, resources.GetString("lblSensor.ToolTip"))
         '
         'cmbSensores
         '
+        resources.ApplyResources(Me.cmbSensores, "cmbSensores")
         Me.cmbSensores.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbSensores.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.cmbSensores.FormattingEnabled = True
-        Me.cmbSensores.Items.AddRange(New Object() {"acceleration", "magnetic-field", "orientation", "temperature", "proximity"})
-        Me.cmbSensores.Location = New System.Drawing.Point(85, 20)
+        Me.cmbSensores.Items.AddRange(New Object() {resources.GetString("cmbSensores.Items"), resources.GetString("cmbSensores.Items1"), resources.GetString("cmbSensores.Items2"), resources.GetString("cmbSensores.Items3"), resources.GetString("cmbSensores.Items4")})
         Me.cmbSensores.Name = "cmbSensores"
-        Me.cmbSensores.Size = New System.Drawing.Size(180, 24)
-        Me.cmbSensores.TabIndex = 18
+        Me.ttConsejo.SetToolTip(Me.cmbSensores, resources.GetString("cmbSensores.ToolTip"))
         '
         'imgSensores
         '
+        resources.ApplyResources(Me.imgSensores, "imgSensores")
         Me.imgSensores.Image = Global.Avm.My.Resources.Resources.icoSensores64
-        Me.imgSensores.Location = New System.Drawing.Point(12, 239)
         Me.imgSensores.Name = "imgSensores"
-        Me.imgSensores.Size = New System.Drawing.Size(64, 64)
-        Me.imgSensores.TabIndex = 28
         Me.imgSensores.TabStop = False
+        Me.ttConsejo.SetToolTip(Me.imgSensores, resources.GetString("imgSensores.ToolTip"))
         '
         'ttConsejo
         '
@@ -178,7 +142,7 @@ Partial Class CtrSensor
         '
         'CtrSensor
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Transparent
         Me.BackgroundImage = Global.Avm.My.Resources.Resources.fondo
@@ -195,11 +159,9 @@ Partial Class CtrSensor
         Me.Controls.Add(Me.lblSensor)
         Me.Controls.Add(Me.cmbSensores)
         Me.Controls.Add(Me.imgSensores)
-        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "CtrSensor"
-        Me.Size = New System.Drawing.Size(280, 338)
+        Me.ttConsejo.SetToolTip(Me, resources.GetString("$this.ToolTip"))
         CType(Me.nudSenValor2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nudSenValor3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nudSenValor1, System.ComponentModel.ISupportInitialize).EndInit()

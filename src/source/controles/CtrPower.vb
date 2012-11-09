@@ -115,8 +115,6 @@
                         nudBatCapacity.Value = Integer.Parse(arsEstado(1))
                     End If
                 Next
-            Else
-                MessageBox.Show("There is no values")
             End If
 
             frmPadre.Consulta = False

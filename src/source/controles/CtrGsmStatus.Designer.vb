@@ -23,6 +23,7 @@ Partial Class CtrGsmStatus
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CtrGsmStatus))
         Me.chkGsmBerOn = New System.Windows.Forms.CheckBox()
         Me.btnGsmSet = New System.Windows.Forms.Button()
         Me.chkGsmNoBer = New System.Windows.Forms.CheckBox()
@@ -45,155 +46,110 @@ Partial Class CtrGsmStatus
         '
         'chkGsmBerOn
         '
-        Me.chkGsmBerOn.AutoSize = True
-        Me.chkGsmBerOn.Location = New System.Drawing.Point(9, 125)
+        resources.ApplyResources(Me.chkGsmBerOn, "chkGsmBerOn")
         Me.chkGsmBerOn.Name = "chkGsmBerOn"
-        Me.chkGsmBerOn.Size = New System.Drawing.Size(59, 21)
-        Me.chkGsmBerOn.TabIndex = 47
-        Me.chkGsmBerOn.Text = "BER:"
-        Me.ttConsejo.SetToolTip(Me.chkGsmBerOn, "Bit error rate")
+        Me.ttConsejo.SetToolTip(Me.chkGsmBerOn, resources.GetString("chkGsmBerOn.ToolTip"))
         Me.chkGsmBerOn.UseVisualStyleBackColor = True
         '
         'btnGsmSet
         '
+        resources.ApplyResources(Me.btnGsmSet, "btnGsmSet")
         Me.btnGsmSet.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(227, Byte), Integer))
         Me.btnGsmSet.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnGsmSet.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnGsmSet.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGsmSet.ForeColor = System.Drawing.Color.White
-        Me.btnGsmSet.Location = New System.Drawing.Point(164, 161)
         Me.btnGsmSet.Name = "btnGsmSet"
-        Me.btnGsmSet.Size = New System.Drawing.Size(105, 32)
-        Me.btnGsmSet.TabIndex = 46
-        Me.btnGsmSet.Text = "Set"
+        Me.ttConsejo.SetToolTip(Me.btnGsmSet, resources.GetString("btnGsmSet.ToolTip"))
         Me.btnGsmSet.UseVisualStyleBackColor = False
         '
         'chkGsmNoBer
         '
-        Me.chkGsmNoBer.AutoSize = True
-        Me.chkGsmNoBer.Enabled = False
-        Me.chkGsmNoBer.Location = New System.Drawing.Point(131, 125)
+        resources.ApplyResources(Me.chkGsmNoBer, "chkGsmNoBer")
         Me.chkGsmNoBer.Name = "chkGsmNoBer"
-        Me.chkGsmNoBer.Size = New System.Drawing.Size(85, 21)
-        Me.chkGsmNoBer.TabIndex = 45
-        Me.chkGsmNoBer.Text = "Unknown"
-        Me.ttConsejo.SetToolTip(Me.chkGsmNoBer, "Check to send 99 (unknown)")
+        Me.ttConsejo.SetToolTip(Me.chkGsmNoBer, resources.GetString("chkGsmNoBer.ToolTip"))
         Me.chkGsmNoBer.UseVisualStyleBackColor = True
         '
         'nudGsmBer
         '
-        Me.nudGsmBer.Enabled = False
-        Me.nudGsmBer.Location = New System.Drawing.Point(74, 125)
+        resources.ApplyResources(Me.nudGsmBer, "nudGsmBer")
         Me.nudGsmBer.Maximum = New Decimal(New Integer() {7, 0, 0, 0})
         Me.nudGsmBer.Name = "nudGsmBer"
-        Me.nudGsmBer.Size = New System.Drawing.Size(48, 23)
-        Me.nudGsmBer.TabIndex = 44
-        Me.ttConsejo.SetToolTip(Me.nudGsmBer, "Between 0 and 7")
+        Me.ttConsejo.SetToolTip(Me.nudGsmBer, resources.GetString("nudGsmBer.ToolTip"))
         '
         'chkGsmNoRssi
         '
-        Me.chkGsmNoRssi.AutoSize = True
-        Me.chkGsmNoRssi.Location = New System.Drawing.Point(131, 91)
+        resources.ApplyResources(Me.chkGsmNoRssi, "chkGsmNoRssi")
         Me.chkGsmNoRssi.Name = "chkGsmNoRssi"
-        Me.chkGsmNoRssi.Size = New System.Drawing.Size(85, 21)
-        Me.chkGsmNoRssi.TabIndex = 43
-        Me.chkGsmNoRssi.Text = "Unknown"
-        Me.ttConsejo.SetToolTip(Me.chkGsmNoRssi, "Check to send 99 (unknown)")
+        Me.ttConsejo.SetToolTip(Me.chkGsmNoRssi, resources.GetString("chkGsmNoRssi.ToolTip"))
         Me.chkGsmNoRssi.UseVisualStyleBackColor = True
         '
         'nudGsmRssi
         '
-        Me.nudGsmRssi.Location = New System.Drawing.Point(74, 90)
+        resources.ApplyResources(Me.nudGsmRssi, "nudGsmRssi")
         Me.nudGsmRssi.Maximum = New Decimal(New Integer() {31, 0, 0, 0})
         Me.nudGsmRssi.Name = "nudGsmRssi"
-        Me.nudGsmRssi.Size = New System.Drawing.Size(48, 23)
-        Me.nudGsmRssi.TabIndex = 42
-        Me.ttConsejo.SetToolTip(Me.nudGsmRssi, "Between 0 and 31")
+        Me.ttConsejo.SetToolTip(Me.nudGsmRssi, resources.GetString("nudGsmRssi.ToolTip"))
         '
         'lblGsmRssi
         '
-        Me.lblGsmRssi.AutoSize = True
-        Me.lblGsmRssi.Location = New System.Drawing.Point(6, 92)
+        resources.ApplyResources(Me.lblGsmRssi, "lblGsmRssi")
         Me.lblGsmRssi.Name = "lblGsmRssi"
-        Me.lblGsmRssi.Size = New System.Drawing.Size(43, 17)
-        Me.lblGsmRssi.TabIndex = 41
-        Me.lblGsmRssi.Text = "RSSI:"
-        Me.ttConsejo.SetToolTip(Me.lblGsmRssi, "Receive signal strength indication value")
+        Me.ttConsejo.SetToolTip(Me.lblGsmRssi, resources.GetString("lblGsmRssi.ToolTip"))
         '
         'btnGsmUpdate
         '
+        resources.ApplyResources(Me.btnGsmUpdate, "btnGsmUpdate")
         Me.btnGsmUpdate.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(227, Byte), Integer))
         Me.btnGsmUpdate.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnGsmUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnGsmUpdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGsmUpdate.ForeColor = System.Drawing.Color.White
-        Me.btnGsmUpdate.Location = New System.Drawing.Point(9, 161)
         Me.btnGsmUpdate.Name = "btnGsmUpdate"
-        Me.btnGsmUpdate.Size = New System.Drawing.Size(105, 32)
-        Me.btnGsmUpdate.TabIndex = 40
-        Me.btnGsmUpdate.Text = "Update"
+        Me.ttConsejo.SetToolTip(Me.btnGsmUpdate, resources.GetString("btnGsmUpdate.ToolTip"))
         Me.btnGsmUpdate.UseVisualStyleBackColor = False
         '
         'cmbGsmVoz
         '
+        resources.ApplyResources(Me.cmbGsmVoz, "cmbGsmVoz")
         Me.cmbGsmVoz.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbGsmVoz.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.cmbGsmVoz.FormattingEnabled = True
-        Me.cmbGsmVoz.Items.AddRange(New Object() {"unregistered", "home", "roaming", "searching", "denied", "off", "on"})
-        Me.cmbGsmVoz.Location = New System.Drawing.Point(61, 54)
+        Me.cmbGsmVoz.Items.AddRange(New Object() {resources.GetString("cmbGsmVoz.Items"), resources.GetString("cmbGsmVoz.Items1"), resources.GetString("cmbGsmVoz.Items2"), resources.GetString("cmbGsmVoz.Items3"), resources.GetString("cmbGsmVoz.Items4"), resources.GetString("cmbGsmVoz.Items5"), resources.GetString("cmbGsmVoz.Items6")})
         Me.cmbGsmVoz.Name = "cmbGsmVoz"
-        Me.cmbGsmVoz.Size = New System.Drawing.Size(208, 24)
-        Me.cmbGsmVoz.TabIndex = 39
+        Me.ttConsejo.SetToolTip(Me.cmbGsmVoz, resources.GetString("cmbGsmVoz.ToolTip"))
         '
         'lblGsmVoz
         '
-        Me.lblGsmVoz.AutoSize = True
-        Me.lblGsmVoz.Location = New System.Drawing.Point(6, 55)
+        resources.ApplyResources(Me.lblGsmVoz, "lblGsmVoz")
         Me.lblGsmVoz.Name = "lblGsmVoz"
-        Me.lblGsmVoz.Size = New System.Drawing.Size(47, 17)
-        Me.lblGsmVoz.TabIndex = 38
-        Me.lblGsmVoz.Text = "Voice:"
-        Me.ttConsejo.SetToolTip(Me.lblGsmVoz, "Voice connection state")
+        Me.ttConsejo.SetToolTip(Me.lblGsmVoz, resources.GetString("lblGsmVoz.ToolTip"))
         '
         'cmbGsmDatos
         '
+        resources.ApplyResources(Me.cmbGsmDatos, "cmbGsmDatos")
         Me.cmbGsmDatos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbGsmDatos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.cmbGsmDatos.FormattingEnabled = True
-        Me.cmbGsmDatos.Items.AddRange(New Object() {"unregistered", "home", "roaming", "searching", "denied", "off", "on"})
-        Me.cmbGsmDatos.Location = New System.Drawing.Point(61, 18)
+        Me.cmbGsmDatos.Items.AddRange(New Object() {resources.GetString("cmbGsmDatos.Items"), resources.GetString("cmbGsmDatos.Items1"), resources.GetString("cmbGsmDatos.Items2"), resources.GetString("cmbGsmDatos.Items3"), resources.GetString("cmbGsmDatos.Items4"), resources.GetString("cmbGsmDatos.Items5"), resources.GetString("cmbGsmDatos.Items6")})
         Me.cmbGsmDatos.Name = "cmbGsmDatos"
-        Me.cmbGsmDatos.Size = New System.Drawing.Size(208, 24)
-        Me.cmbGsmDatos.TabIndex = 37
+        Me.ttConsejo.SetToolTip(Me.cmbGsmDatos, resources.GetString("cmbGsmDatos.ToolTip"))
         '
         'lblGsmDatos
         '
-        Me.lblGsmDatos.AutoSize = True
-        Me.lblGsmDatos.Location = New System.Drawing.Point(6, 21)
+        resources.ApplyResources(Me.lblGsmDatos, "lblGsmDatos")
         Me.lblGsmDatos.Name = "lblGsmDatos"
-        Me.lblGsmDatos.Size = New System.Drawing.Size(42, 17)
-        Me.lblGsmDatos.TabIndex = 36
-        Me.lblGsmDatos.Text = "Data:"
-        Me.ttConsejo.SetToolTip(Me.lblGsmDatos, "Data connection state")
+        Me.ttConsejo.SetToolTip(Me.lblGsmDatos, resources.GetString("lblGsmDatos.ToolTip"))
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(79, 260)
+        resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(197, 51)
-        Me.Label1.TabIndex = 48
-        Me.Label1.Text = "This section, allows to change" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "the status of data and voice," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and set the signal" & _
-    " levels."
+        Me.ttConsejo.SetToolTip(Me.Label1, resources.GetString("Label1.ToolTip"))
         '
         'imgGsm
         '
+        resources.ApplyResources(Me.imgGsm, "imgGsm")
         Me.imgGsm.Image = Global.Avm.My.Resources.Resources.icoGsm64
-        Me.imgGsm.Location = New System.Drawing.Point(9, 253)
         Me.imgGsm.Name = "imgGsm"
-        Me.imgGsm.Size = New System.Drawing.Size(64, 64)
-        Me.imgGsm.TabIndex = 49
         Me.imgGsm.TabStop = False
+        Me.ttConsejo.SetToolTip(Me.imgGsm, resources.GetString("imgGsm.ToolTip"))
         '
         'ttConsejo
         '
@@ -202,7 +158,7 @@ Partial Class CtrGsmStatus
         '
         'CtrGsmStatus
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Transparent
         Me.BackgroundImage = Global.Avm.My.Resources.Resources.fondo
@@ -221,11 +177,9 @@ Partial Class CtrGsmStatus
         Me.Controls.Add(Me.cmbGsmDatos)
         Me.Controls.Add(Me.lblGsmDatos)
         Me.Controls.Add(Me.chkGsmBerOn)
-        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "CtrGsmStatus"
-        Me.Size = New System.Drawing.Size(280, 338)
+        Me.ttConsejo.SetToolTip(Me, resources.GetString("$this.ToolTip"))
         CType(Me.nudGsmBer, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nudGsmRssi, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgGsm, System.ComponentModel.ISupportInitialize).EndInit()

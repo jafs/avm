@@ -106,7 +106,7 @@ Public Class AndTelnet
                     sRecibido = Nothing
                 End If
             Catch oEX As Exception
-                MessageBox.Show("Error with virtual machine connection", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show(Idioma.traducir("err_connection"), Idioma.traducir("error"), MessageBoxButtons.OK, MessageBoxIcon.Error)
             End Try
         End If
 
@@ -170,7 +170,7 @@ Public Class AndTelnet
                         sRecibido = sRecibido.Replace(vbCr & "" & vbCrLf, vbNewLine)
                     End If
                 Else
-                    MessageBox.Show("Socket disconnected", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    MessageBox.Show(Idioma.traducir("err_socket"), Idioma.traducir("error"), MessageBoxButtons.OK, MessageBoxIcon.Error)
                     conectar()
                 End If
             Catch oEX As Exception
@@ -179,10 +179,10 @@ Public Class AndTelnet
             ' Limpieza
             sComando = Nothing
         ElseIf objSocket Is Nothing Then
-            MessageBox.Show("Socket disconnected", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show(Idioma.traducir("err_socket"), Idioma.traducir("error"), MessageBoxButtons.OK, MessageBoxIcon.Error)
             conectar()
         Else
-            MessageBox.Show("Enter a command", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            MessageBox.Show(Idioma.traducir("err_command"), Idioma.traducir("warning"), MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End If
 
         If objSocket Is Nothing OrElse Not objSocket.Connected Then

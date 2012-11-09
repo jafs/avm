@@ -1,6 +1,6 @@
 ﻿Public Class Plantilla
     ''' <summary>Color de fondo para los componentes.</summary>
-    Private Shared objClrFondo As Color = Color.FromArgb(58, 181, 227)
+    Private Shared objClrFondo As Color = Color.FromArgb(0, 153, 204)
     ''' <summary>Color del texto.</summary>
     Private Shared objClrTexto As Color = Color.FromArgb(250, 250, 250)
 
