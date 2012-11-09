@@ -54,235 +54,172 @@ Partial Class FrmPrincipal
         '
         'txtRecv
         '
+        resources.ApplyResources(Me.txtRecv, "txtRecv")
         Me.txtRecv.BackColor = System.Drawing.Color.Gainsboro
-        Me.txtRecv.Font = New System.Drawing.Font("Courier New", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtRecv.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtRecv.Location = New System.Drawing.Point(0, 0)
-        Me.txtRecv.Multiline = True
         Me.txtRecv.Name = "txtRecv"
         Me.txtRecv.ReadOnly = True
-        Me.txtRecv.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtRecv.Size = New System.Drawing.Size(444, 397)
-        Me.txtRecv.TabIndex = 7
         Me.txtRecv.TabStop = False
-        Me.ttConsejo.SetToolTip(Me.txtRecv, "Hide debug panel")
+        Me.ttConsejo.SetToolTip(Me.txtRecv, resources.GetString("txtRecv.ToolTip"))
         '
         'txtComando
         '
-        Me.txtComando.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtComando.AutoCompleteCustomSource.AddRange(New String() {"h", "help", "?", "event", "event send", "event types", "event codes", "event text", "geo", "geo nmea", "geo fix", "gsm", "gsm list", "gsm call", "gsm busy", "gsm hold", "gsm accept", "gsm cancel", "gsm data unregistered", "gsm data home", "gsm data roaming", "gsm data searching", "gsm data denied", "gsm data off", "gsm data on", "gsm voice", "gsm voice unregistered", "gsm voice home", "gsm voice roaming", "gsm voice searching", "gsm voice denied", "gsm voice off", "gsm voice on", "gsm status", "gsm signal", "cdma", "cdma ssource", "cdma prl_version", "kill", "network", "network status", "network speed", "network delay", "network capture", "network capture start", "network capture stop", "power display", "power ac", "power ac on", "power ac off", "power status", "power status unknown", "power status charging", "power status discharging", "power status not-charging", "power present", "power present true", "power present false", "power health", "power health unknown", "power health good", "power health overheat", "power health dead", "power health overvoltage", "power health failure", "power capacity", "quit", "exit", "redir", "redir list", "redit add", "redir del", "sms", "sms send", "sms pdu", "avd", "avd stop", "avd start", "avd status", "avd name", "avd snapshot list", "avd snapshot save", "avd snapshot load", "avd snapshot del", "window", "window scale", "qemu", "qemu monitor", "sensor", "sensor status", "sensor get", "sensor get acceleration", "sensor get magnetic-field", "sensor get orientation", "sensor get temperature", "sensor get proximity", "sensor set", "sensor set acceleration", "sensor set magnetic-field", "sensor set orientation", "sensor set temperature", "sensor set proximity"})
+        resources.ApplyResources(Me.txtComando, "txtComando")
+        Me.txtComando.AutoCompleteCustomSource.AddRange(New String() {resources.GetString("txtComando.AutoCompleteCustomSource"), resources.GetString("txtComando.AutoCompleteCustomSource1"), resources.GetString("txtComando.AutoCompleteCustomSource2"), resources.GetString("txtComando.AutoCompleteCustomSource3"), resources.GetString("txtComando.AutoCompleteCustomSource4"), resources.GetString("txtComando.AutoCompleteCustomSource5"), resources.GetString("txtComando.AutoCompleteCustomSource6"), resources.GetString("txtComando.AutoCompleteCustomSource7"), resources.GetString("txtComando.AutoCompleteCustomSource8"), resources.GetString("txtComando.AutoCompleteCustomSource9"), resources.GetString("txtComando.AutoCompleteCustomSource10"), resources.GetString("txtComando.AutoCompleteCustomSource11"), resources.GetString("txtComando.AutoCompleteCustomSource12"), resources.GetString("txtComando.AutoCompleteCustomSource13"), resources.GetString("txtComando.AutoCompleteCustomSource14"), resources.GetString("txtComando.AutoCompleteCustomSource15"), resources.GetString("txtComando.AutoCompleteCustomSource16"), resources.GetString("txtComando.AutoCompleteCustomSource17"), resources.GetString("txtComando.AutoCompleteCustomSource18"), resources.GetString("txtComando.AutoCompleteCustomSource19"), resources.GetString("txtComando.AutoCompleteCustomSource20"), resources.GetString("txtComando.AutoCompleteCustomSource21"), resources.GetString("txtComando.AutoCompleteCustomSource22"), resources.GetString("txtComando.AutoCompleteCustomSource23"), resources.GetString("txtComando.AutoCompleteCustomSource24"), resources.GetString("txtComando.AutoCompleteCustomSource25"), resources.GetString("txtComando.AutoCompleteCustomSource26"), resources.GetString("txtComando.AutoCompleteCustomSource27"), resources.GetString("txtComando.AutoCompleteCustomSource28"), resources.GetString("txtComando.AutoCompleteCustomSource29"), resources.GetString("txtComando.AutoCompleteCustomSource30"), resources.GetString("txtComando.AutoCompleteCustomSource31"), resources.GetString("txtComando.AutoCompleteCustomSource32"), resources.GetString("txtComando.AutoCompleteCustomSource33"), resources.GetString("txtComando.AutoCompleteCustomSource34"), resources.GetString("txtComando.AutoCompleteCustomSource35"), resources.GetString("txtComando.AutoCompleteCustomSource36"), resources.GetString("txtComando.AutoCompleteCustomSource37"), resources.GetString("txtComando.AutoCompleteCustomSource38"), resources.GetString("txtComando.AutoCompleteCustomSource39"), resources.GetString("txtComando.AutoCompleteCustomSource40"), resources.GetString("txtComando.AutoCompleteCustomSource41"), resources.GetString("txtComando.AutoCompleteCustomSource42"), resources.GetString("txtComando.AutoCompleteCustomSource43"), resources.GetString("txtComando.AutoCompleteCustomSource44"), resources.GetString("txtComando.AutoCompleteCustomSource45"), resources.GetString("txtComando.AutoCompleteCustomSource46"), resources.GetString("txtComando.AutoCompleteCustomSource47"), resources.GetString("txtComando.AutoCompleteCustomSource48"), resources.GetString("txtComando.AutoCompleteCustomSource49"), resources.GetString("txtComando.AutoCompleteCustomSource50"), resources.GetString("txtComando.AutoCompleteCustomSource51"), resources.GetString("txtComando.AutoCompleteCustomSource52"), resources.GetString("txtComando.AutoCompleteCustomSource53"), resources.GetString("txtComando.AutoCompleteCustomSource54"), resources.GetString("txtComando.AutoCompleteCustomSource55"), resources.GetString("txtComando.AutoCompleteCustomSource56"), resources.GetString("txtComando.AutoCompleteCustomSource57"), resources.GetString("txtComando.AutoCompleteCustomSource58"), resources.GetString("txtComando.AutoCompleteCustomSource59"), resources.GetString("txtComando.AutoCompleteCustomSource60"), resources.GetString("txtComando.AutoCompleteCustomSource61"), resources.GetString("txtComando.AutoCompleteCustomSource62"), resources.GetString("txtComando.AutoCompleteCustomSource63"), resources.GetString("txtComando.AutoCompleteCustomSource64"), resources.GetString("txtComando.AutoCompleteCustomSource65"), resources.GetString("txtComando.AutoCompleteCustomSource66"), resources.GetString("txtComando.AutoCompleteCustomSource67"), resources.GetString("txtComando.AutoCompleteCustomSource68"), resources.GetString("txtComando.AutoCompleteCustomSource69"), resources.GetString("txtComando.AutoCompleteCustomSource70"), resources.GetString("txtComando.AutoCompleteCustomSource71"), resources.GetString("txtComando.AutoCompleteCustomSource72"), resources.GetString("txtComando.AutoCompleteCustomSource73"), resources.GetString("txtComando.AutoCompleteCustomSource74"), resources.GetString("txtComando.AutoCompleteCustomSource75"), resources.GetString("txtComando.AutoCompleteCustomSource76"), resources.GetString("txtComando.AutoCompleteCustomSource77"), resources.GetString("txtComando.AutoCompleteCustomSource78"), resources.GetString("txtComando.AutoCompleteCustomSource79"), resources.GetString("txtComando.AutoCompleteCustomSource80"), resources.GetString("txtComando.AutoCompleteCustomSource81"), resources.GetString("txtComando.AutoCompleteCustomSource82"), resources.GetString("txtComando.AutoCompleteCustomSource83"), resources.GetString("txtComando.AutoCompleteCustomSource84"), resources.GetString("txtComando.AutoCompleteCustomSource85"), resources.GetString("txtComando.AutoCompleteCustomSource86"), resources.GetString("txtComando.AutoCompleteCustomSource87"), resources.GetString("txtComando.AutoCompleteCustomSource88"), resources.GetString("txtComando.AutoCompleteCustomSource89"), resources.GetString("txtComando.AutoCompleteCustomSource90"), resources.GetString("txtComando.AutoCompleteCustomSource91"), resources.GetString("txtComando.AutoCompleteCustomSource92"), resources.GetString("txtComando.AutoCompleteCustomSource93"), resources.GetString("txtComando.AutoCompleteCustomSource94"), resources.GetString("txtComando.AutoCompleteCustomSource95"), resources.GetString("txtComando.AutoCompleteCustomSource96"), resources.GetString("txtComando.AutoCompleteCustomSource97"), resources.GetString("txtComando.AutoCompleteCustomSource98"), resources.GetString("txtComando.AutoCompleteCustomSource99"), resources.GetString("txtComando.AutoCompleteCustomSource100"), resources.GetString("txtComando.AutoCompleteCustomSource101")})
         Me.txtComando.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.txtComando.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
-        Me.txtComando.Enabled = False
-        Me.txtComando.Location = New System.Drawing.Point(0, 405)
         Me.txtComando.Name = "txtComando"
-        Me.txtComando.Size = New System.Drawing.Size(363, 20)
-        Me.txtComando.TabIndex = 6
+        Me.ttConsejo.SetToolTip(Me.txtComando, resources.GetString("txtComando.ToolTip"))
         '
         'btnEnviar
         '
-        Me.btnEnviar.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnEnviar.Enabled = False
-        Me.btnEnviar.Location = New System.Drawing.Point(369, 403)
+        resources.ApplyResources(Me.btnEnviar, "btnEnviar")
         Me.btnEnviar.Name = "btnEnviar"
-        Me.btnEnviar.Size = New System.Drawing.Size(75, 23)
-        Me.btnEnviar.TabIndex = 7
-        Me.btnEnviar.Text = "Send"
+        Me.ttConsejo.SetToolTip(Me.btnEnviar, resources.GetString("btnEnviar.ToolTip"))
         Me.btnEnviar.UseVisualStyleBackColor = True
         '
         'pnlPrincipal
         '
+        resources.ApplyResources(Me.pnlPrincipal, "pnlPrincipal")
         Me.pnlPrincipal.BackColor = System.Drawing.Color.White
         Me.pnlPrincipal.Controls.Add(Me.pnlCentral)
         Me.pnlPrincipal.Controls.Add(Me.pnlDock)
         Me.pnlPrincipal.Controls.Add(Me.pblEstado)
-        Me.pnlPrincipal.Location = New System.Drawing.Point(9, 10)
         Me.pnlPrincipal.Name = "pnlPrincipal"
-        Me.pnlPrincipal.Size = New System.Drawing.Size(280, 426)
-        Me.pnlPrincipal.TabIndex = 0
+        Me.ttConsejo.SetToolTip(Me.pnlPrincipal, resources.GetString("pnlPrincipal.ToolTip"))
         '
         'pnlCentral
         '
+        resources.ApplyResources(Me.pnlCentral, "pnlCentral")
         Me.pnlCentral.BackgroundImage = Global.Avm.My.Resources.Resources.fondo
-        Me.pnlCentral.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlCentral.Location = New System.Drawing.Point(0, 32)
         Me.pnlCentral.Name = "pnlCentral"
-        Me.pnlCentral.Size = New System.Drawing.Size(280, 338)
-        Me.pnlCentral.TabIndex = 2
+        Me.ttConsejo.SetToolTip(Me.pnlCentral, resources.GetString("pnlCentral.ToolTip"))
         '
         'pnlDock
         '
+        resources.ApplyResources(Me.pnlDock, "pnlDock")
         Me.pnlDock.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
         Me.pnlDock.Controls.Add(Me.tlpMenu)
-        Me.pnlDock.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.pnlDock.Location = New System.Drawing.Point(0, 370)
         Me.pnlDock.Name = "pnlDock"
-        Me.pnlDock.Size = New System.Drawing.Size(280, 56)
-        Me.pnlDock.TabIndex = 3
+        Me.ttConsejo.SetToolTip(Me.pnlDock, resources.GetString("pnlDock.ToolTip"))
         '
         'tlpMenu
         '
+        resources.ApplyResources(Me.tlpMenu, "tlpMenu")
         Me.tlpMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer))
-        Me.tlpMenu.ColumnCount = 5
-        Me.tlpMenu.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.tlpMenu.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.tlpMenu.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.tlpMenu.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.tlpMenu.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.tlpMenu.Controls.Add(Me.btnConfiguracion, 0, 0)
         Me.tlpMenu.Controls.Add(Me.btnSalir, 4, 0)
         Me.tlpMenu.Controls.Add(Me.btnHome, 2, 0)
         Me.tlpMenu.Controls.Add(Me.btnAyuda, 1, 0)
         Me.tlpMenu.Controls.Add(Me.chkDebug, 3, 0)
-        Me.tlpMenu.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tlpMenu.Location = New System.Drawing.Point(0, 0)
         Me.tlpMenu.Name = "tlpMenu"
-        Me.tlpMenu.RowCount = 1
-        Me.tlpMenu.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.tlpMenu.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56.0!))
-        Me.tlpMenu.Size = New System.Drawing.Size(280, 56)
-        Me.tlpMenu.TabIndex = 0
+        Me.ttConsejo.SetToolTip(Me.tlpMenu, resources.GetString("tlpMenu.ToolTip"))
         '
         'btnConfiguracion
         '
+        resources.ApplyResources(Me.btnConfiguracion, "btnConfiguracion")
         Me.btnConfiguracion.ContextMenuStrip = Me.mnAyuda
-        Me.btnConfiguracion.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btnConfiguracion.Enabled = False
         Me.btnConfiguracion.FlatAppearance.BorderSize = 0
-        Me.btnConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnConfiguracion.Image = Global.Avm.My.Resources.Resources.icoConfig48
-        Me.btnConfiguracion.Location = New System.Drawing.Point(3, 3)
         Me.btnConfiguracion.Name = "btnConfiguracion"
-        Me.btnConfiguracion.Size = New System.Drawing.Size(50, 50)
-        Me.btnConfiguracion.TabIndex = 9
-        Me.ttConsejo.SetToolTip(Me.btnConfiguracion, "Config")
+        Me.ttConsejo.SetToolTip(Me.btnConfiguracion, resources.GetString("btnConfiguracion.ToolTip"))
         Me.btnConfiguracion.UseVisualStyleBackColor = True
         '
         'mnAyuda
         '
+        resources.ApplyResources(Me.mnAyuda, "mnAyuda")
         Me.mnAyuda.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.mnAyuda.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ttmAyuGeneral, Me.ttSeparador2, Me.ttmAyuManual, Me.ttSeparador1, Me.ttmAbout})
         Me.mnAyuda.Name = "mnAyuda"
         Me.mnAyuda.ShowImageMargin = False
-        Me.mnAyuda.Size = New System.Drawing.Size(126, 94)
+        Me.ttConsejo.SetToolTip(Me.mnAyuda, resources.GetString("mnAyuda.ToolTip"))
         '
         'ttmAyuGeneral
         '
-        Me.ttmAyuGeneral.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        resources.ApplyResources(Me.ttmAyuGeneral, "ttmAyuGeneral")
         Me.ttmAyuGeneral.ForeColor = System.Drawing.Color.White
         Me.ttmAyuGeneral.Name = "ttmAyuGeneral"
         Me.ttmAyuGeneral.Padding = New System.Windows.Forms.Padding(2)
-        Me.ttmAyuGeneral.Size = New System.Drawing.Size(129, 26)
-        Me.ttmAyuGeneral.Text = "&General info"
         '
         'ttSeparador2
         '
+        resources.ApplyResources(Me.ttSeparador2, "ttSeparador2")
         Me.ttSeparador2.Name = "ttSeparador2"
-        Me.ttSeparador2.Size = New System.Drawing.Size(122, 6)
         '
         'ttmAyuManual
         '
-        Me.ttmAyuManual.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        resources.ApplyResources(Me.ttmAyuManual, "ttmAyuManual")
         Me.ttmAyuManual.ForeColor = System.Drawing.Color.White
         Me.ttmAyuManual.Name = "ttmAyuManual"
         Me.ttmAyuManual.Padding = New System.Windows.Forms.Padding(2)
-        Me.ttmAyuManual.Size = New System.Drawing.Size(129, 26)
-        Me.ttmAyuManual.Text = "&Manual"
         '
         'ttSeparador1
         '
+        resources.ApplyResources(Me.ttSeparador1, "ttSeparador1")
         Me.ttSeparador1.Name = "ttSeparador1"
-        Me.ttSeparador1.Size = New System.Drawing.Size(122, 6)
         '
         'ttmAbout
         '
+        resources.ApplyResources(Me.ttmAbout, "ttmAbout")
         Me.ttmAbout.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.ttmAbout.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.ttmAbout.ForeColor = System.Drawing.Color.White
         Me.ttmAbout.Name = "ttmAbout"
         Me.ttmAbout.Padding = New System.Windows.Forms.Padding(2)
-        Me.ttmAbout.Size = New System.Drawing.Size(129, 26)
-        Me.ttmAbout.Text = "&About..."
         '
         'btnSalir
         '
-        Me.btnSalir.Dock = System.Windows.Forms.DockStyle.Fill
+        resources.ApplyResources(Me.btnSalir, "btnSalir")
         Me.btnSalir.FlatAppearance.BorderSize = 0
-        Me.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSalir.Image = Global.Avm.My.Resources.Resources.icoMenuSalir48
-        Me.btnSalir.Location = New System.Drawing.Point(227, 3)
         Me.btnSalir.Name = "btnSalir"
-        Me.btnSalir.Size = New System.Drawing.Size(50, 50)
-        Me.btnSalir.TabIndex = 7
-        Me.ttConsejo.SetToolTip(Me.btnSalir, "Exit application")
+        Me.ttConsejo.SetToolTip(Me.btnSalir, resources.GetString("btnSalir.ToolTip"))
         Me.btnSalir.UseVisualStyleBackColor = True
         '
         'btnHome
         '
-        Me.btnHome.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btnHome.Enabled = False
+        resources.ApplyResources(Me.btnHome, "btnHome")
         Me.btnHome.FlatAppearance.BorderSize = 0
-        Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnHome.Image = Global.Avm.My.Resources.Resources.icoMenuHome64
-        Me.btnHome.Location = New System.Drawing.Point(115, 3)
         Me.btnHome.Name = "btnHome"
-        Me.btnHome.Size = New System.Drawing.Size(50, 50)
-        Me.btnHome.TabIndex = 5
-        Me.ttConsejo.SetToolTip(Me.btnHome, "Main menu")
+        Me.ttConsejo.SetToolTip(Me.btnHome, resources.GetString("btnHome.ToolTip"))
         Me.btnHome.UseVisualStyleBackColor = True
         '
         'btnAyuda
         '
+        resources.ApplyResources(Me.btnAyuda, "btnAyuda")
         Me.btnAyuda.ContextMenuStrip = Me.mnAyuda
-        Me.btnAyuda.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnAyuda.FlatAppearance.BorderSize = 0
-        Me.btnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAyuda.Image = Global.Avm.My.Resources.Resources.mn_ayuda48
-        Me.btnAyuda.Location = New System.Drawing.Point(59, 3)
         Me.btnAyuda.Name = "btnAyuda"
-        Me.btnAyuda.Size = New System.Drawing.Size(50, 50)
-        Me.btnAyuda.TabIndex = 6
-        Me.ttConsejo.SetToolTip(Me.btnAyuda, "Help")
+        Me.ttConsejo.SetToolTip(Me.btnAyuda, resources.GetString("btnAyuda.ToolTip"))
         Me.btnAyuda.UseVisualStyleBackColor = True
         '
         'chkDebug
         '
-        Me.chkDebug.Appearance = System.Windows.Forms.Appearance.Button
-        Me.chkDebug.AutoSize = True
-        Me.chkDebug.Dock = System.Windows.Forms.DockStyle.Fill
+        resources.ApplyResources(Me.chkDebug, "chkDebug")
         Me.chkDebug.FlatAppearance.BorderSize = 0
         Me.chkDebug.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.chkDebug.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.chkDebug.Image = Global.Avm.My.Resources.Resources.icoMenuDebug48
-        Me.chkDebug.Location = New System.Drawing.Point(171, 3)
         Me.chkDebug.Name = "chkDebug"
-        Me.chkDebug.Size = New System.Drawing.Size(50, 50)
-        Me.chkDebug.TabIndex = 8
-        Me.ttConsejo.SetToolTip(Me.chkDebug, "Show debug console")
+        Me.ttConsejo.SetToolTip(Me.chkDebug, resources.GetString("chkDebug.ToolTip"))
         Me.chkDebug.UseVisualStyleBackColor = True
         '
         'pblEstado
         '
+        resources.ApplyResources(Me.pblEstado, "pblEstado")
         Me.pblEstado.BackColor = System.Drawing.Color.Transparent
         Me.pblEstado.BackgroundImage = Global.Avm.My.Resources.Resources.superior
         Me.pblEstado.Controls.Add(Me.lblReloj)
-        Me.pblEstado.Dock = System.Windows.Forms.DockStyle.Top
         Me.pblEstado.ForeColor = System.Drawing.Color.White
-        Me.pblEstado.Location = New System.Drawing.Point(0, 0)
         Me.pblEstado.Name = "pblEstado"
-        Me.pblEstado.Size = New System.Drawing.Size(280, 32)
-        Me.pblEstado.TabIndex = 1
+        Me.ttConsejo.SetToolTip(Me.pblEstado, resources.GetString("pblEstado.ToolTip"))
         '
         'lblReloj
         '
-        Me.lblReloj.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        resources.ApplyResources(Me.lblReloj, "lblReloj")
         Me.lblReloj.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.lblReloj.Location = New System.Drawing.Point(217, 5)
         Me.lblReloj.Name = "lblReloj"
-        Me.lblReloj.Size = New System.Drawing.Size(60, 23)
-        Me.lblReloj.TabIndex = 0
-        Me.lblReloj.Text = "00:00"
-        Me.lblReloj.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.ttConsejo.SetToolTip(Me.lblReloj, resources.GetString("lblReloj.ToolTip"))
         '
         'trmReloj
         '
@@ -296,32 +233,24 @@ Partial Class FrmPrincipal
         '
         'pnlDebug
         '
+        resources.ApplyResources(Me.pnlDebug, "pnlDebug")
         Me.pnlDebug.Controls.Add(Me.txtRecv)
         Me.pnlDebug.Controls.Add(Me.txtComando)
         Me.pnlDebug.Controls.Add(Me.btnEnviar)
-        Me.pnlDebug.Location = New System.Drawing.Point(295, 10)
         Me.pnlDebug.Name = "pnlDebug"
-        Me.pnlDebug.Size = New System.Drawing.Size(444, 426)
-        Me.pnlDebug.TabIndex = 9
-        Me.pnlDebug.Visible = False
+        Me.ttConsejo.SetToolTip(Me.pnlDebug, resources.GetString("pnlDebug.ToolTip"))
         '
         'FrmPrincipal
         '
         Me.AcceptButton = Me.btnEnviar
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.AutoSize = True
-        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(749, 446)
         Me.Controls.Add(Me.pnlDebug)
         Me.Controls.Add(Me.pnlPrincipal)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
-        Me.MinimumSize = New System.Drawing.Size(305, 457)
         Me.Name = "FrmPrincipal"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Android Virtual Management"
+        Me.ttConsejo.SetToolTip(Me, resources.GetString("$this.ToolTip"))
         Me.pnlPrincipal.ResumeLayout(False)
         Me.pnlDock.ResumeLayout(False)
         Me.tlpMenu.ResumeLayout(False)

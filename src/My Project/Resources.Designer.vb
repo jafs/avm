@@ -67,6 +67,44 @@ Namespace My.Resources
             End Get
         End Property
         
+        '''<summary>
+        '''  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+        '''&lt;idioma desc=&quot;en&quot;&gt;
+        '''  &lt;tag clave=&quot;disconnect&quot; valor=&quot;Desconectar&quot; /&gt;
+        '''  
+        '''  &lt;tag clave=&quot;pop_disconnect_question&quot; valor=&quot;¿Desconectar del emulador?&quot; /&gt;
+        '''  &lt;tag clave=&quot;pop_exit_question&quot; valor=&quot;AVM está conectado al emulador. ¿Quieres salir?&quot; /&gt;
+        '''  &lt;tag clave=&quot;pop_exit_title&quot; valor=&quot;Confirmación de salida&quot; /&gt;
+        '''  &lt;tag clave=&quot;pop_kill_question&quot; valor=&quot;¿Matar la instancia del emulador de Android?&quot; /&gt;
+        '''  &lt;tag clave=&quot;pop_kill_title&quot; valor=&quot;Matar emulador&quot; /&gt;
+        '''
+        '''  &lt;tag clave [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property en() As String
+            Get
+                Return ResourceManager.GetString("en", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+        '''&lt;idioma desc=&quot;es&quot;&gt;
+        '''  &lt;tag clave=&quot;disconnect&quot; valor=&quot;Desconectar&quot; /&gt;
+        '''  
+        '''  &lt;tag clave=&quot;pop_disconnect_question&quot; valor=&quot;¿Desconectar del emulador?&quot; /&gt;
+        '''  &lt;tag clave=&quot;pop_exit_question&quot; valor=&quot;AVM está conectado al emulador. ¿Quieres salir?&quot; /&gt;
+        '''  &lt;tag clave=&quot;pop_exit_title&quot; valor=&quot;Confirmación de salida&quot; /&gt;
+        '''  &lt;tag clave=&quot;pop_kill_question&quot; valor=&quot;¿Matar la instancia del emulador de Android?&quot; /&gt;
+        '''  &lt;tag clave=&quot;pop_kill_title&quot; valor=&quot;Matar emulador&quot; /&gt;
+        '''
+        '''  &lt;tag clave [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property es() As String
+            Get
+                Return ResourceManager.GetString("es", resourceCulture)
+            End Get
+        End Property
+        
         Friend ReadOnly Property fondo() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("fondo", resourceCulture)
@@ -239,6 +277,15 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("mn_ayuda48", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to es.
+        '''</summary>
+        Friend ReadOnly Property sIdiomas() As String
+            Get
+                Return ResourceManager.GetString("sIdiomas", resourceCulture)
             End Get
         End Property
         

@@ -30,7 +30,7 @@ values​​, etc..
 
 Version History
 ===============
-Version 6 - In process
+Version 0.6 - In process
  - New app icon.
  - New Jelly Bean android icons style.
  - Small enhacements.

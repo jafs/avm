@@ -74,7 +74,7 @@ Public Class FrmPrincipal
         Dim sComando As String = txtComando.Text.Trim
 
         ' Tomamos el control para quit o exit y nos desconectamos del emulador.
-        If sComando.ToLower = "quit" Or sComando.ToLower = "exit" Then
+        If sComando.ToLower = Comando.CQUIT Or sComando.ToLower = Comando.CEXIT Then
             If MessageBox.Show("Disconnect from emulator?", "Disconnect", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
                 conectar(0)
             End If
@@ -82,7 +82,7 @@ Public Class FrmPrincipal
         End If
 
         ' Tomamos el control en kill para confirmar si desea finalizarse la instancia.
-        If sComando.ToLower = "kill" Then
+        If sComando.ToLower = Comando.CKILL Then
             If MessageBox.Show("Kill the Android emulator instance?", "Kill emulator", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
                 enviarComando(txtComando.Text)
                 txtRecv.Text &= vbNewLine & vbNewLine
@@ -108,7 +108,7 @@ Public Class FrmPrincipal
     ''' <param name="sender">Emisor del evento.</param>
     ''' <param name="e">Datos del evento.</param>
     Private Sub frmPrincipal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Me.Text = "Android Virtual Management " & My.Application.Info.Version.ToString
+        Me.Text = My.Application.Info.ProductName & " " & My.Application.Info.Version.ToString
         updateHora()
         trmReloj.Interval = 60000 - (TimeOfDay.Second * 1000)
         lanzar(TipoApp.Connect)
@@ -256,8 +256,6 @@ Public Class FrmPrincipal
                 ctrConectar.iniciar()
             Case TipoApp.Menu
                 pnlCentral.Controls.Add(ctrMenu)
-            Case Else
-                MessageBox.Show("Tipo no controlado: " & eTipo) ' TODO DELETE
         End Select
     End Sub
 

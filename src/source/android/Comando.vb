@@ -59,6 +59,13 @@ Public NotInheritable Class Comando
     ''' <summary>Comando de guardado de capturas.</summary>
     Public Const AVM_SNAPSHOT_SAVE As String = "avd snapshot save"
 
+    ''' <summary>Comando de finalización de conexión.</summary>
+    Public Const CQUIT As String = "quit"
+    ''' <summary>Comando de salida de sesión Telnet.</summary>
+    Public Const CEXIT As String = "exit"
+    ''' <summary>Cierra la máquina virtual.</summary>
+    Public Const CKILL As String = "kill"
+
 
     ' ######################################
     ' PARÁMETROS
