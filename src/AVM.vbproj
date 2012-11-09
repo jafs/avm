@@ -29,8 +29,8 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>5</ApplicationRevision>
-    <ApplicationVersion>0.5.5.%2a</ApplicationVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>0.6.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -298,6 +298,8 @@
     <Content Include="avm.ico" />
     <Content Include="recursos\ficheros\license.txt" />
     <Content Include="recursos\ficheros\readme.txt" />
+    <None Include="Resources\icoConfig48.png" />
+    <None Include="Resources\icoCall64.png" />
     <None Include="recursos\imagenes\icono_tool64.png" />
     <None Include="Resources\icoMenuNoDebug48.png" />
     <None Include="Resources\icoMenuSiDebug48.png" />

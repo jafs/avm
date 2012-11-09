@@ -172,7 +172,7 @@ Partial Class CtrGsmCalls
         Me.Label2.Size = New System.Drawing.Size(187, 51)
         Me.Label2.TabIndex = 32
         Me.Label2.Text = "In this section you can" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "manage the current calls, as" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "well as make incoming call" & _
-            "s."
+    "s."
         '
         'tmrGsm
         '
@@ -185,10 +185,10 @@ Partial Class CtrGsmCalls
         '
         'btnGsmCall
         '
-        Me.btnGsmCall.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btnGsmCall.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.btnGsmCall.BackgroundImage = Global.Avm.My.Resources.Resources.btnLlamar
         Me.btnGsmCall.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btnGsmCall.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.btnGsmCall.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(130, Byte), Integer), CType(CType(130, Byte), Integer))
         Me.btnGsmCall.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGsmCall.Location = New System.Drawing.Point(234, 172)
         Me.btnGsmCall.Name = "btnGsmCall"
@@ -219,7 +219,7 @@ Partial Class CtrGsmCalls
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.Avm.My.Resources.Resources.icoGsm64
+        Me.PictureBox1.Image = Global.Avm.My.Resources.Resources.icoCall64
         Me.PictureBox1.Location = New System.Drawing.Point(14, 257)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(64, 64)

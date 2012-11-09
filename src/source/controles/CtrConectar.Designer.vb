@@ -42,8 +42,8 @@ Partial Class CtrConectar
         '
         'btnConectar
         '
-        Me.btnConectar.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(227, Byte), Integer))
-        Me.btnConectar.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnConectar.BackColor = Plantilla.ColorFondo
+        Me.btnConectar.FlatAppearance.BorderColor = Color.White
         Me.btnConectar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnConectar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.btnConectar.ImeMode = System.Windows.Forms.ImeMode.NoControl

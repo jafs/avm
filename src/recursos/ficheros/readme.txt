@@ -30,8 +30,9 @@ values​​, etc..
 
 Version History
 ===============
-Version 0.5.6 - In process
+Version 6 - In process
  - New app icon.
+ - New Jelly Bean android icons style.
  - Small enhacements.
  - Improve of menu style.
  - Button for hide and show debug console.
@@ -39,13 +40,16 @@ Version 0.5.6 - In process
  - Fixed problem with AVD commands.
  - Fixed application hangs when connected to an open portwhich is not the
    Android emulator.
+
 Version 0.5.5.5 - 15/10/2012
  - Solves the bug of hangs when connect to not telnet.
  - New Jelly Bean style.
+
 Version 0.5.5.1 - 27/08/2012
  - Improvement in detection of connection to the emulator. Solves the problem of
    not detecting link failure with emulator and problems running the kill
    command.
+
 Version 0.5.5- 19/07/2012
  - Solved problem with duplicated calls.
  - Tooltips in all screens.
@@ -58,9 +62,11 @@ Version 0.5.5- 19/07/2012
  - New exit confirmation dialog when connection is active.
  - New exit button in dock.
  - Improvements in code.
+
 Version 0.5.4.1 - 15/07/2012
  - Improvements.
  - About dialog.
+
 Version 0.5.4 - 13/07/2012
  - Fixed the bug in call monitor. Also, now the calls monitor is automatic.
  - Solved the enable of Send button in SMS.
@@ -68,17 +74,20 @@ Version 0.5.4 - 13/07/2012
  - Including control limits for GPS values.
  - Now the values of sensors and GPS, have precision of 4 decimal.
  - Small improvements.
+
 Version 0.5.3 - 12/07/2012
  - New GUI.
  - Fixed the Overheat bug in power management.
  - Optimization in debug console.
  - Small optimizations.
  - kill, quit and exit commands control.
+
 Version 0.5.2 - 09/07/2012
  - GPS in FIX mode support.
  - Control of GSM signal, data and voice status.
  - GSM calls control.
  - Corrected small bugs.
+
 Version 0.5.1 - 01/07/2012
  - SMS in text mode management.
  - Sensors management.
@@ -86,6 +95,7 @@ Version 0.5.1 - 01/07/2012
  - New commands int auto-complete.
  - Better connection control.
  - Small optimizations.
+
 Version 0.5 - 29/06/2012
  - Battery management for virtual machine.
 
@@ -123,4 +133,5 @@ For more info, read the license.txt file.
 
 Credits
 =======
-Icons by: GNOME icon artistsAuthor http://gnome.org
+Icons by: GNOME icon artists
+Author http://gnome.org

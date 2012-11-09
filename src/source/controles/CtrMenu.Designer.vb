@@ -85,9 +85,9 @@ Partial Class CtrMenu
         Me.btnCalls.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.btnCalls.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCalls.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.btnCalls.Image = Global.Avm.My.Resources.Resources.icoGsm64
+        Me.btnCalls.Image = Global.Avm.My.Resources.Resources.icoCall64
         Me.btnCalls.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnCalls.Location = New System.Drawing.Point(3, 3)
+        Me.btnCalls.Location = New System.Drawing.Point(72, 3)
         Me.btnCalls.Name = "btnCalls"
         Me.btnCalls.Size = New System.Drawing.Size(63, 94)
         Me.btnCalls.TabIndex = 12
@@ -105,7 +105,7 @@ Partial Class CtrMenu
         Me.btnSensors.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
         Me.btnSensors.Image = Global.Avm.My.Resources.Resources.icoSensores64
         Me.btnSensors.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnSensors.Location = New System.Drawing.Point(72, 3)
+        Me.btnSensors.Location = New System.Drawing.Point(3, 3)
         Me.btnSensors.Name = "btnSensors"
         Me.btnSensors.Size = New System.Drawing.Size(63, 94)
         Me.btnSensors.TabIndex = 11

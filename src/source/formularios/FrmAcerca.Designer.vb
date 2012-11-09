@@ -89,8 +89,8 @@ Partial Class FrmAcerca
         '
         Me.lblCompania.AutoSize = True
         Me.lblCompania.BackColor = System.Drawing.Color.Transparent
-        Me.lblCompania.DisabledLinkColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(166, Byte), Integer))
-        Me.lblCompania.LinkColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(166, Byte), Integer))
+        Me.lblCompania.DisabledLinkColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.lblCompania.LinkColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.lblCompania.Location = New System.Drawing.Point(7, 92)
         Me.lblCompania.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCompania.Name = "lblCompania"
@@ -152,7 +152,7 @@ Partial Class FrmAcerca
         '
         Me.linkCorreo.AutoSize = True
         Me.linkCorreo.BackColor = System.Drawing.Color.Transparent
-        Me.linkCorreo.LinkColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(166, Byte), Integer))
+        Me.linkCorreo.LinkColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.linkCorreo.Location = New System.Drawing.Point(8, 114)
         Me.linkCorreo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.linkCorreo.Name = "linkCorreo"

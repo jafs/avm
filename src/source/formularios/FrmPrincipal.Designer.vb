@@ -28,13 +28,16 @@ Partial Class FrmPrincipal
         Me.pnlCentral = New System.Windows.Forms.Panel()
         Me.pnlDock = New System.Windows.Forms.Panel()
         Me.tlpMenu = New System.Windows.Forms.TableLayoutPanel()
+        Me.btnConfiguracion = New System.Windows.Forms.Button()
+        Me.mnAyuda = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ttmAyuGeneral = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ttSeparador2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ttmAyuManual = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ttSeparador1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ttmAbout = New System.Windows.Forms.ToolStripMenuItem()
         Me.btnSalir = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
         Me.btnAyuda = New System.Windows.Forms.Button()
-        Me.mnAyuda = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.ttmAyuGeneral = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ttmAyuManual = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ttmAbout = New System.Windows.Forms.ToolStripMenuItem()
         Me.chkDebug = New System.Windows.Forms.CheckBox()
         Me.pblEstado = New System.Windows.Forms.Panel()
         Me.lblReloj = New System.Windows.Forms.Label()
@@ -126,9 +129,10 @@ Partial Class FrmPrincipal
         Me.tlpMenu.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.tlpMenu.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.tlpMenu.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.tlpMenu.Controls.Add(Me.btnConfiguracion, 0, 0)
         Me.tlpMenu.Controls.Add(Me.btnSalir, 4, 0)
         Me.tlpMenu.Controls.Add(Me.btnHome, 2, 0)
-        Me.tlpMenu.Controls.Add(Me.btnAyuda, 0, 0)
+        Me.tlpMenu.Controls.Add(Me.btnAyuda, 1, 0)
         Me.tlpMenu.Controls.Add(Me.chkDebug, 3, 0)
         Me.tlpMenu.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tlpMenu.Location = New System.Drawing.Point(0, 0)
@@ -138,6 +142,67 @@ Partial Class FrmPrincipal
         Me.tlpMenu.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56.0!))
         Me.tlpMenu.Size = New System.Drawing.Size(280, 56)
         Me.tlpMenu.TabIndex = 0
+        '
+        'btnConfiguracion
+        '
+        Me.btnConfiguracion.ContextMenuStrip = Me.mnAyuda
+        Me.btnConfiguracion.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnConfiguracion.Enabled = False
+        Me.btnConfiguracion.FlatAppearance.BorderSize = 0
+        Me.btnConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnConfiguracion.Image = Global.Avm.My.Resources.Resources.icoConfig48
+        Me.btnConfiguracion.Location = New System.Drawing.Point(3, 3)
+        Me.btnConfiguracion.Name = "btnConfiguracion"
+        Me.btnConfiguracion.Size = New System.Drawing.Size(50, 50)
+        Me.btnConfiguracion.TabIndex = 9
+        Me.ttConsejo.SetToolTip(Me.btnConfiguracion, "Config")
+        Me.btnConfiguracion.UseVisualStyleBackColor = True
+        '
+        'mnAyuda
+        '
+        Me.mnAyuda.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.mnAyuda.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ttmAyuGeneral, Me.ttSeparador2, Me.ttmAyuManual, Me.ttSeparador1, Me.ttmAbout})
+        Me.mnAyuda.Name = "mnAyuda"
+        Me.mnAyuda.ShowImageMargin = False
+        Me.mnAyuda.Size = New System.Drawing.Size(126, 94)
+        '
+        'ttmAyuGeneral
+        '
+        Me.ttmAyuGeneral.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.ttmAyuGeneral.ForeColor = System.Drawing.Color.White
+        Me.ttmAyuGeneral.Name = "ttmAyuGeneral"
+        Me.ttmAyuGeneral.Padding = New System.Windows.Forms.Padding(2)
+        Me.ttmAyuGeneral.Size = New System.Drawing.Size(129, 26)
+        Me.ttmAyuGeneral.Text = "&General info"
+        '
+        'ttSeparador2
+        '
+        Me.ttSeparador2.Name = "ttSeparador2"
+        Me.ttSeparador2.Size = New System.Drawing.Size(122, 6)
+        '
+        'ttmAyuManual
+        '
+        Me.ttmAyuManual.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.ttmAyuManual.ForeColor = System.Drawing.Color.White
+        Me.ttmAyuManual.Name = "ttmAyuManual"
+        Me.ttmAyuManual.Padding = New System.Windows.Forms.Padding(2)
+        Me.ttmAyuManual.Size = New System.Drawing.Size(129, 26)
+        Me.ttmAyuManual.Text = "&Manual"
+        '
+        'ttSeparador1
+        '
+        Me.ttSeparador1.Name = "ttSeparador1"
+        Me.ttSeparador1.Size = New System.Drawing.Size(122, 6)
+        '
+        'ttmAbout
+        '
+        Me.ttmAbout.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.ttmAbout.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.ttmAbout.ForeColor = System.Drawing.Color.White
+        Me.ttmAbout.Name = "ttmAbout"
+        Me.ttmAbout.Padding = New System.Windows.Forms.Padding(2)
+        Me.ttmAbout.Size = New System.Drawing.Size(129, 26)
+        Me.ttmAbout.Text = "&About..."
         '
         'btnSalir
         '
@@ -173,39 +238,12 @@ Partial Class FrmPrincipal
         Me.btnAyuda.FlatAppearance.BorderSize = 0
         Me.btnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAyuda.Image = Global.Avm.My.Resources.Resources.mn_ayuda48
-        Me.btnAyuda.Location = New System.Drawing.Point(3, 3)
+        Me.btnAyuda.Location = New System.Drawing.Point(59, 3)
         Me.btnAyuda.Name = "btnAyuda"
         Me.btnAyuda.Size = New System.Drawing.Size(50, 50)
         Me.btnAyuda.TabIndex = 6
         Me.ttConsejo.SetToolTip(Me.btnAyuda, "Help")
         Me.btnAyuda.UseVisualStyleBackColor = True
-        '
-        'mnAyuda
-        '
-        Me.mnAyuda.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ttmAyuGeneral, Me.ttmAyuManual, Me.ttmAbout})
-        Me.mnAyuda.Name = "mnAyuda"
-        Me.mnAyuda.Size = New System.Drawing.Size(139, 70)
-        '
-        'ttmAyuGeneral
-        '
-        Me.ttmAyuGeneral.Image = Global.Avm.My.Resources.Resources.icoAyuda16
-        Me.ttmAyuGeneral.Name = "ttmAyuGeneral"
-        Me.ttmAyuGeneral.Size = New System.Drawing.Size(138, 22)
-        Me.ttmAyuGeneral.Text = "&General info"
-        '
-        'ttmAyuManual
-        '
-        Me.ttmAyuManual.Image = Global.Avm.My.Resources.Resources.icoManual16
-        Me.ttmAyuManual.Name = "ttmAyuManual"
-        Me.ttmAyuManual.Size = New System.Drawing.Size(138, 22)
-        Me.ttmAyuManual.Text = "&Manual"
-        '
-        'ttmAbout
-        '
-        Me.ttmAbout.Image = Global.Avm.My.Resources.Resources.icoInfo16
-        Me.ttmAbout.Name = "ttmAbout"
-        Me.ttmAbout.Size = New System.Drawing.Size(138, 22)
-        Me.ttmAbout.Text = "&About..."
         '
         'chkDebug
         '
@@ -213,8 +251,9 @@ Partial Class FrmPrincipal
         Me.chkDebug.AutoSize = True
         Me.chkDebug.Dock = System.Windows.Forms.DockStyle.Fill
         Me.chkDebug.FlatAppearance.BorderSize = 0
+        Me.chkDebug.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.chkDebug.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.chkDebug.Image = Global.Avm.My.Resources.Resources.icoMenuSiDebug48
+        Me.chkDebug.Image = Global.Avm.My.Resources.Resources.icoMenuDebug48
         Me.chkDebug.Location = New System.Drawing.Point(171, 3)
         Me.chkDebug.Name = "chkDebug"
         Me.chkDebug.Size = New System.Drawing.Size(50, 50)
@@ -237,7 +276,7 @@ Partial Class FrmPrincipal
         'lblReloj
         '
         Me.lblReloj.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblReloj.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.lblReloj.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.lblReloj.Location = New System.Drawing.Point(217, 5)
         Me.lblReloj.Name = "lblReloj"
         Me.lblReloj.Size = New System.Drawing.Size(60, 23)
@@ -314,5 +353,8 @@ Partial Class FrmPrincipal
     Friend WithEvents btnSalir As System.Windows.Forms.Button
     Friend WithEvents pnlDebug As System.Windows.Forms.Panel
     Friend WithEvents chkDebug As System.Windows.Forms.CheckBox
+    Friend WithEvents btnConfiguracion As System.Windows.Forms.Button
+    Friend WithEvents ttSeparador2 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents ttSeparador1 As System.Windows.Forms.ToolStripSeparator
 
 End Class

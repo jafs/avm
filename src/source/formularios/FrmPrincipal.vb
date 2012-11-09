@@ -311,13 +311,11 @@ Public Class FrmPrincipal
     ''' <param name="sender">Emisor del evento</param>
     ''' <param name="e">Datos del evento</param>
     Private Sub chkDebug_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles chkDebug.CheckedChanged
-        Me.pnlDebug.Visible = chkDebug.Checked
-
         If chkDebug.Checked Then
-            chkDebug.Image = My.Resources.icoMenuNoDebug48
+            Me.pnlDebug.Visible = True
             ttConsejo.SetToolTip(chkDebug, "Hide debug console")
         Else
-            chkDebug.Image = My.Resources.icoMenuSiDebug48
+            Me.pnlDebug.Visible = False
             ttConsejo.SetToolTip(chkDebug, "Show debug console")
         End If
     End Sub
