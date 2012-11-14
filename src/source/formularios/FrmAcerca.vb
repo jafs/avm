@@ -3,18 +3,9 @@
     ''' <param name="sender">Emisor del evento</param>
     ''' <param name="e">Datos del evento</param>
     Private Sub FrmAcerca_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        ' Obtiene el título del formulario.
-        Dim sTitulo As String
-        If My.Application.Info.Title <> "" Then
-            sTitulo = My.Application.Info.Title
-        Else
-            sTitulo = System.IO.Path.GetFileNameWithoutExtension(My.Application.Info.AssemblyName)
-        End If
-        lblAbout.Text = String.Format("About {0}", sTitulo)
-
-        ' Carga los valores del resto de campos
+        lblAbout.Text = Idioma.traducir("frm_about") & " " & My.Application.Info.ProductName
         lblProducto.Text = My.Application.Info.ProductName
-        lblVersion.Text = String.Format("Version {0}", My.Application.Info.Version.ToString)
+        lblVersion.Text = Idioma.traducir("version") & " " & My.Application.Info.Version.ToString
         lblCompania.Text = My.Application.Info.Copyright
 
         Utilidades.addControl(CType(btnCerrar, Control))

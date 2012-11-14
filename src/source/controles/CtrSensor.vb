@@ -38,7 +38,7 @@
     ''' <param name="e">Datos del evento</param>
     Private Sub btnSenUpdate_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSenUpdate.Click
         If cmbSensores.SelectedItem Is Nothing Then
-            MessageBox.Show("You must to select a sensor.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            MessageBox.Show(Idioma.traducir("err_sensor_select"), Idioma.traducir("warning"), MessageBoxButtons.OK, MessageBoxIcon.Warning)
             cmbSensores.Focus()
         Else
             getSensor(cmbSensores.SelectedItem.ToString)
@@ -51,7 +51,7 @@
     ''' <param name="e">Datos del evento</param>
     Private Sub btnSenSet_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSenSet.Click
         If cmbSensores.SelectedItem Is Nothing Then
-            MessageBox.Show("You must to select a sensor.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            MessageBox.Show(Idioma.traducir("err_sensor_select"), Idioma.traducir("warning"), MessageBoxButtons.OK, MessageBoxIcon.Warning)
             cmbSensores.Focus()
         Else
             frmPadre.enviarComando(Comando.SENSOR_SET & cmbSensores.SelectedItem.ToString & " " & _
@@ -67,62 +67,62 @@
     Private Sub cambiarSensor(ByRef sSensor As String)
         Select Case sSensor
             Case Comando.SEN_ACCELERATION, Comando.SEN_MAGNETIC_FIELD
-                lblSenValor1.Text = "X-Axis:"
-                ttConsejo.SetToolTip(lblSenValor1, "Value in X axis")
+                lblSenValor1.Text = Idioma.traducir("sen_x_axis")
+                ttConsejo.SetToolTip(lblSenValor1, Idioma.traducir("sen_x_axis_tt"))
                 nudSenValor1.Enabled = True
                 nudSenValor1.Minimum = -100
                 nudSenValor1.Maximum = 100
-                lblSenValor2.Text = "Y-Axis:"
-                ttConsejo.SetToolTip(lblSenValor2, "Value in Y axis")
+                lblSenValor2.Text = Idioma.traducir("sen_y_axis")
+                ttConsejo.SetToolTip(lblSenValor2, Idioma.traducir("sen_y_axis_tt"))
                 nudSenValor2.Enabled = True
                 nudSenValor2.Minimum = -100
                 nudSenValor2.Maximum = 100
-                lblSenValor3.Text = "Z-Axis:"
-                ttConsejo.SetToolTip(lblSenValor3, "Value in Z axis")
+                lblSenValor3.Text = Idioma.traducir("sen_z_axis")
+                ttConsejo.SetToolTip(lblSenValor3, Idioma.traducir("sen_z_axis_tt"))
                 nudSenValor3.Enabled = True
                 nudSenValor3.Minimum = -100
                 nudSenValor3.Maximum = 100
             Case Comando.SEN_ORIENTATION
-                lblSenValor1.Text = "Azimuth:"
-                ttConsejo.SetToolTip(lblSenValor1, "Degrees of rotation around the z axis")
+                lblSenValor1.Text = Idioma.traducir("sen_azimuth")
+                ttConsejo.SetToolTip(lblSenValor1, Idioma.traducir("sen_azimuth_tt"))
                 nudSenValor1.Enabled = True
                 nudSenValor1.Minimum = 0
                 nudSenValor1.Maximum = 359
-                lblSenValor2.Text = "Pitch:"
-                ttConsejo.SetToolTip(lblSenValor2, "Degrees of rotation around the x axis")
+                lblSenValor2.Text = Idioma.traducir("sen_pitch")
+                ttConsejo.SetToolTip(lblSenValor2, Idioma.traducir("sen_pitch_tt"))
                 nudSenValor2.Enabled = True
                 nudSenValor2.Minimum = -180
                 nudSenValor2.Maximum = 180
-                lblSenValor3.Text = "Roll:"
-                ttConsejo.SetToolTip(lblSenValor3, "Degrees of rotation around the y axis")
+                lblSenValor3.Text = Idioma.traducir("sen_roll")
+                ttConsejo.SetToolTip(lblSenValor3, Idioma.traducir("sen_roll_tt"))
                 nudSenValor3.Enabled = True
                 nudSenValor3.Minimum = -90
                 nudSenValor3.Maximum = 90
             Case Comando.SEN_TEMPERATURE
-                lblSenValor1.Text = "Temp:"
-                ttConsejo.SetToolTip(lblSenValor1, "Device temperature in Cº")
+                lblSenValor1.Text = Idioma.traducir("sen_temp")
+                ttConsejo.SetToolTip(lblSenValor1, Idioma.traducir("sen_temp_tt"))
                 nudSenValor1.Enabled = True
                 nudSenValor1.Minimum = 0
                 nudSenValor1.Maximum = 359
-                lblSenValor2.Text = "Not used:"
+                lblSenValor2.Text = Idioma.traducir("sen_not_used")
                 ttConsejo.SetToolTip(lblSenValor2, "")
                 nudSenValor2.Enabled = False
                 nudSenValor2.Value = 0
-                lblSenValor3.Text = "Not used:"
+                lblSenValor3.Text = Idioma.traducir("sen_not_used")
                 ttConsejo.SetToolTip(lblSenValor3, "")
                 nudSenValor3.Enabled = False
                 nudSenValor3.Value = 0
             Case Comando.SEN_PROXIMITY
-                lblSenValor1.Text = "Distance:"
-                ttConsejo.SetToolTip(lblSenValor1, "How far away an object is from a device")
+                lblSenValor1.Text = Idioma.traducir("sen_distance")
+                ttConsejo.SetToolTip(lblSenValor1, Idioma.traducir("sen_distance_tt"))
                 nudSenValor1.Enabled = True
                 nudSenValor1.Minimum = 0
                 nudSenValor1.Maximum = 100
-                lblSenValor2.Text = "Not used:"
+                lblSenValor2.Text = Idioma.traducir("sen_not_used")
                 ttConsejo.SetToolTip(lblSenValor2, "")
                 nudSenValor2.Enabled = False
                 nudSenValor2.Value = 0
-                lblSenValor3.Text = "Not used:"
+                lblSenValor3.Text = Idioma.traducir("sen_not_used")
                 ttConsejo.SetToolTip(lblSenValor3, "")
                 nudSenValor3.Enabled = False
                 nudSenValor3.Value = 0
@@ -162,12 +162,10 @@
                                         nudSenValor3.Value = 0
                                 End Select
                             Catch e As ArgumentException
-                                MessageBox.Show("Error when read some sensor value", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                                MessageBox.Show(Idioma.traducir("err_sensor_read"), Idioma.traducir("error"), MessageBoxButtons.OK, MessageBoxIcon.Error)
                             End Try
                         End If
                     Next
-                Else
-                    MessageBox.Show("There is no values")
                 End If
             End If
         End If

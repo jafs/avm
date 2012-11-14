@@ -56,7 +56,7 @@ Public Class Utilidades
             If bActivo Then
                 objControl.ForeColor = Plantilla.ColorFondo
             Else
-                objControl.ForeColor = Color.FromArgb(250, 250, 250)
+                objControl.ForeColor = Plantilla.ColorTexto
             End If
         End If
     End Sub

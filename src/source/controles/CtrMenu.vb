@@ -70,7 +70,7 @@
     ''' <param name="sender">Emisor del evento</param>
     ''' <param name="e">Datos del evento</param>
     Private Sub btnDesconectar_Click(sender As System.Object, e As System.EventArgs) Handles btnDesconectar.Click
-        If MessageBox.Show("Do you want to logout?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) = DialogResult.Yes Then
+        If MessageBox.Show(Idioma.traducir("pop_logout_question"), Idioma.traducir("logout"), MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) = DialogResult.Yes Then
             frmPadre.conectar(0)
         End If
     End Sub
