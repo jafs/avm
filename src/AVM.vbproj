@@ -12,7 +12,7 @@
     <AssemblyName>Avm</AssemblyName>
     <MyType>WindowsForms</MyType>
     <OptionStrict>On</OptionStrict>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -29,10 +29,11 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>5</ApplicationRevision>
-    <ApplicationVersion>0.5.5.%2a</ApplicationVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>0.6.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -126,6 +127,7 @@
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -193,6 +195,8 @@
     <Compile Include="source\formularios\FrmAcerca.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="source\idioma\Idioma.vb" />
+    <Compile Include="source\idioma\XmlParser.vb" />
     <Compile Include="source\valores\Plantilla.vb" />
     <Compile Include="source\valores\Llamada.vb" />
     <Compile Include="source\android\Utilidades.vb" />
@@ -220,32 +224,62 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="source\controles\CtrConectar.es.resx">
+      <DependentUpon>CtrConectar.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="source\controles\CtrConectar.resx">
       <DependentUpon>CtrConectar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\controles\CtrGps.es.resx">
+      <DependentUpon>CtrGps.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="source\controles\CtrGps.resx">
       <DependentUpon>CtrGps.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="source\controles\CtrGsmCalls.es.resx">
+      <DependentUpon>CtrGsmCalls.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="source\controles\CtrGsmCalls.resx">
       <DependentUpon>CtrGsmCalls.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\controles\CtrGsmStatus.es.resx">
+      <DependentUpon>CtrGsmStatus.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="source\controles\CtrGsmStatus.resx">
       <DependentUpon>CtrGsmStatus.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="source\controles\CtrMenu.es.resx">
+      <DependentUpon>CtrMenu.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="source\controles\CtrMenu.resx">
       <DependentUpon>CtrMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\controles\CtrPower.es.resx">
+      <DependentUpon>CtrPower.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="source\controles\CtrPower.resx">
       <DependentUpon>CtrPower.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="source\controles\CtrSensor.es.resx">
+      <DependentUpon>CtrSensor.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="source\controles\CtrSensor.resx">
       <DependentUpon>CtrSensor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\controles\CtrSms.es.resx">
+      <DependentUpon>CtrSms.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="source\controles\CtrSms.resx">
       <DependentUpon>CtrSms.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="source\formularios\FrmAcerca.es.resx">
+      <DependentUpon>FrmAcerca.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="source\formularios\FrmAcerca.resx">
       <DependentUpon>FrmAcerca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\formularios\FrmPrincipal.es.resx">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="source\formularios\FrmPrincipal.resx">
       <SubType>Designer</SubType>
@@ -296,10 +330,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="avm.ico" />
-    <Content Include="recursos\ficheros\license.txt" />
-    <Content Include="recursos\ficheros\readme.txt" />
+    <Content Include="recursos\ficheros\license.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="recursos\ficheros\readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="recursos\ficheros\readme_es.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\en.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\es.xml" />
+    <None Include="Resources\icoConfig48.png" />
+    <None Include="Resources\icoCall64.png" />
     <None Include="recursos\imagenes\icono_tool64.png" />
-    <None Include="Resources\icoMenuNoDebug48.png" />
     <None Include="Resources\icoMenuSiDebug48.png" />
     <None Include="Resources\superior.png" />
     <None Include="Resources\fondo.png" />

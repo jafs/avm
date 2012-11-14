@@ -97,8 +97,6 @@
                         cmbGsmDatos.SelectedItem = sValor.Substring(sValor.IndexOf(":") + 1).Trim
                     End If
                 Next
-            Else
-                MessageBox.Show("There is no values")
             End If
 
             frmPadre.Consulta = False

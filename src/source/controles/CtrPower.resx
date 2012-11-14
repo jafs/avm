@@ -117,8 +117,456 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="ttConsejo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+  <data name="&gt;&gt;chkBatPresent.Name" xml:space="preserve">
+    <value>chkBatPresent</value>
+  </data>
+  <data name="&gt;&gt;lblBatDesc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblBatDesc.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="lblBatCapacity.Text" xml:space="preserve">
+    <value>Capacity:</value>
+  </data>
+  <data name="cmbBatStat.Items" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="cmbBatStat.Items4" xml:space="preserve">
+    <value>Full</value>
+  </data>
+  <data name="&gt;&gt;lblEstado.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblBatCapacity.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cmbBatHealth.Items" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="cmbBatStat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 14</value>
+  </data>
+  <data name="lblBatHealth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 17</value>
+  </data>
+  <data name="&gt;&gt;lblBatHealth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cmbBatStat.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblBatDesc.Text" xml:space="preserve">
+    <value>In this section you can control
+all the battery and energy
+settings. The update button
+allows to refresh de battery
+info into fields.</value>
+  </data>
+  <data name="lblEstado.Text" xml:space="preserve">
+    <value>Battery Status:</value>
+  </data>
+  <data name="nudBatCapacity.ToolTip" xml:space="preserve">
+    <value>Between 0 and 100</value>
+  </data>
+  <data name="lblBatCapacity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 17</value>
+  </data>
+  <data name="&gt;&gt;chkCargaAc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblEstado.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblBatCapacity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbBatStat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnBatCapacity.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="nudBatCapacity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 23</value>
+  </data>
+  <data name="&gt;&gt;chkCargaAc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbBatStat.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnBatCapacity.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="&gt;&gt;lblEstado.Name" xml:space="preserve">
+    <value>lblEstado</value>
+  </data>
+  <data name="btnBatActualiza.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;btnBatCapacity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblBatDesc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;lblBatCapacity.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="imgBateria.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="chkBatPresent.ToolTip" xml:space="preserve">
+    <value>Check to indicate that there are a battery plugged</value>
+  </data>
+  <data name="btnBatActualiza.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="lblBatHealth.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkCargaAc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 118</value>
+  </data>
+  <data name="btnBatActualiza.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 132</value>
+  </data>
+  <data name="&gt;&gt;btnBatCapacity.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblEstado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 17</value>
+  </data>
+  <data name="btnBatActualiza.ToolTip" xml:space="preserve">
+    <value>Update the fields with last power values</value>
+  </data>
+  <data name="cmbBatHealth.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="chkCargaAc.Text" xml:space="preserve">
+    <value>AC Charging</value>
+  </data>
+  <data name="btnBatCapacity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 87</value>
+  </data>
+  <data name="btnBatActualiza.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="nudBatCapacity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 87</value>
+  </data>
+  <data name="&gt;&gt;chkBatPresent.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="nudBatCapacity.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cmbBatStat.Items3" xml:space="preserve">
+    <value>Not-charging</value>
+  </data>
+  <data name="lblBatCapacity.ToolTip" xml:space="preserve">
+    <value>Battery level charge</value>
+  </data>
+  <data name="chkCargaAc.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="imgBateria.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 248</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CtrPower</value>
+  </data>
+  <data name="cmbBatHealth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 50</value>
+  </data>
+  <data name="&gt;&gt;imgBateria.Name" xml:space="preserve">
+    <value>imgBateria</value>
+  </data>
+  <data name="&gt;&gt;lblBatCapacity.Name" xml:space="preserve">
+    <value>lblBatCapacity</value>
+  </data>
+  <data name="&gt;&gt;cmbBatHealth.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cmbBatHealth.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;imgBateria.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblBatDesc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblEstado.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkCargaAc.Name" xml:space="preserve">
+    <value>chkCargaAc</value>
+  </data>
+  <data name="btnBatCapacity.Text" xml:space="preserve">
+    <value>Set Capacity</value>
+  </data>
+  <data name="lblBatHealth.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="lblBatCapacity.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="btnBatActualiza.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;cmbBatStat.Name" xml:space="preserve">
+    <value>cmbBatStat</value>
+  </data>
+  <data name="chkBatPresent.Text" xml:space="preserve">
+    <value>Battery present</value>
+  </data>
+  <data name="cmbBatHealth.Items2" xml:space="preserve">
+    <value>Overheat</value>
+  </data>
+  <data name="btnBatCapacity.ToolTip" xml:space="preserve">
+    <value>Update battery charge value</value>
+  </data>
+  <data name="lblBatHealth.Text" xml:space="preserve">
+    <value>Battery Health:</value>
+  </data>
+  <data name="chkCargaAc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="lblBatCapacity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 89</value>
+  </data>
+  <data name="&gt;&gt;chkBatPresent.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="imgBateria.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 64</value>
+  </data>
+  <data name="lblEstado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 17</value>
+  </data>
+  <data name="lblBatHealth.ToolTip" xml:space="preserve">
+    <value>Sets the state of health of the battery</value>
+  </data>
+  <data name="lblBatDesc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 85</value>
+  </data>
+  <data name="&gt;&gt;btnBatCapacity.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;chkCargaAc.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;ttConsejo.Name" xml:space="preserve">
+    <value>ttConsejo</value>
+  </data>
+  <data name="imgBateria.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="chkBatPresent.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="chkBatPresent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 21</value>
+  </data>
+  <data name="&gt;&gt;lblBatDesc.Name" xml:space="preserve">
+    <value>lblBatDesc</value>
+  </data>
+  <data name="cmbBatStat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 24</value>
+  </data>
+  <data name="cmbBatHealth.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cmbBatStat.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 338</value>
+  </data>
+  <data name="&gt;&gt;cmbBatHealth.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnBatActualiza.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnBatActualiza.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 32</value>
+  </data>
+  <data name="nudBatCapacity.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;lblBatCapacity.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cmbBatHealth.Items4" xml:space="preserve">
+    <value>Overvoltage</value>
+  </data>
+  <data name="btnBatCapacity.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;ttConsejo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chkCargaAc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 21</value>
+  </data>
+  <data name="cmbBatStat.Items2" xml:space="preserve">
+    <value>Discharging</value>
+  </data>
+  <data name="&gt;&gt;lblBatDesc.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cmbBatStat.Items1" xml:space="preserve">
+    <value>Charging</value>
+  </data>
+  <data name="&gt;&gt;nudBatCapacity.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;nudBatCapacity.Name" xml:space="preserve">
+    <value>nudBatCapacity</value>
+  </data>
+  <data name="&gt;&gt;nudBatCapacity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnBatActualiza.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblEstado.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="cmbBatHealth.Items3" xml:space="preserve">
+    <value>Dead</value>
+  </data>
+  <data name="chkCargaAc.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;btnBatActualiza.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lblBatHealth.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblBatHealth.Name" xml:space="preserve">
+    <value>lblBatHealth</value>
+  </data>
+  <data name="&gt;&gt;cmbBatHealth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblBatCapacity.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="imgBateria.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblEstado.ToolTip" xml:space="preserve">
+    <value>Sets the battery status (charging, full, etc.)</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;imgBateria.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="chkBatPresent.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;cmbBatStat.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="chkCargaAc.ToolTip" xml:space="preserve">
+    <value>Check to indicate that there are an AC adaptor plugged</value>
+  </data>
+  <data name="lblBatDesc.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkBatPresent.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblEstado.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lblBatHealth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 53</value>
+  </data>
+  <data name="btnBatCapacity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 32</value>
+  </data>
+  <data name="lblBatHealth.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;lblBatHealth.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btnBatCapacity.Name" xml:space="preserve">
+    <value>btnBatCapacity</value>
+  </data>
+  <data name="&gt;&gt;chkBatPresent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cmbBatStat.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="cmbBatHealth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 24</value>
+  </data>
+  <data name="lblEstado.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="lblBatDesc.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblBatDesc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 237</value>
+  </data>
+  <data name="btnBatCapacity.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;btnBatActualiza.Name" xml:space="preserve">
+    <value>btnBatActualiza</value>
+  </data>
+  <data name="cmbBatHealth.Items1" xml:space="preserve">
+    <value>Good</value>
+  </data>
+  <data name="cmbBatHealth.Items5" xml:space="preserve">
+    <value>Failure</value>
+  </data>
+  <data name="&gt;&gt;nudBatCapacity.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cmbBatHealth.Name" xml:space="preserve">
+    <value>cmbBatHealth</value>
+  </data>
+  <data name="btnBatActualiza.Text" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="&gt;&gt;imgBateria.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chkBatPresent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 145</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>es</value>
   </metadata>
   <metadata name="ttConsejo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
