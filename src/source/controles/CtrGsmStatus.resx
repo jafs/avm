@@ -117,68 +117,338 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;nudGsmRssi.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="chkGsmNoBer.Text" xml:space="preserve">
-    <value>Unknown</value>
-  </data>
-  <data name="&gt;&gt;cmbGsmVoz.Name" xml:space="preserve">
-    <value>cmbGsmVoz</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="chkGsmBerOn.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lblGsmDatos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 21</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lblGsmDatos.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="lblGsmVoz.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 17</value>
-  </data>
-  <data name="&gt;&gt;imgGsm.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="cmbGsmDatos.Items1" xml:space="preserve">
-    <value>home</value>
-  </data>
-  <data name="&gt;&gt;chkGsmBerOn.Name" xml:space="preserve">
-    <value>chkGsmBerOn</value>
-  </data>
-  <data name="nudGsmRssi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 23</value>
+  <data name="chkGsmBerOn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 125</value>
   </data>
   <data name="chkGsmBerOn.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 21</value>
   </data>
-  <data name="lblGsmRssi.ToolTip" xml:space="preserve">
-    <value>Receive signal strength indication value</value>
+  <data name="chkGsmBerOn.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="chkGsmBerOn.Text" xml:space="preserve">
+    <value>BER:</value>
   </data>
-  <data name="btnGsmSet.ToolTip" xml:space="preserve">
-    <value />
+  <metadata name="ttConsejo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="chkGsmBerOn.ToolTip" xml:space="preserve">
+    <value>Bit error rate</value>
   </data>
-  <data name="&gt;&gt;btnGsmSet.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;chkGsmBerOn.Name" xml:space="preserve">
+    <value>chkGsmBerOn</value>
+  </data>
+  <data name="&gt;&gt;chkGsmBerOn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;chkGsmBerOn.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;chkGsmBerOn.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnGsmSet.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnGsmSet.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="btnGsmSet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>164, 161</value>
+  </data>
+  <data name="btnGsmSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 32</value>
+  </data>
+  <data name="btnGsmSet.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="btnGsmSet.Text" xml:space="preserve">
+    <value>Set</value>
+  </data>
+  <data name="&gt;&gt;btnGsmSet.Name" xml:space="preserve">
+    <value>btnGsmSet</value>
+  </data>
+  <data name="&gt;&gt;btnGsmSet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnGsmSet.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnGsmSet.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="chkGsmNoBer.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkGsmNoBer.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="chkGsmNoBer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 125</value>
+  </data>
+  <data name="chkGsmNoBer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 21</value>
+  </data>
+  <data name="chkGsmNoBer.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="chkGsmNoBer.Text" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="chkGsmNoBer.ToolTip" xml:space="preserve">
+    <value>Check to send 99 (unknown)</value>
+  </data>
+  <data name="&gt;&gt;chkGsmNoBer.Name" xml:space="preserve">
+    <value>chkGsmNoBer</value>
+  </data>
+  <data name="&gt;&gt;chkGsmNoBer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkGsmNoBer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chkGsmNoBer.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="nudGsmBer.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="nudGsmBer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 125</value>
+  </data>
+  <data name="nudGsmBer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 23</value>
+  </data>
+  <data name="nudGsmBer.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="nudGsmBer.ToolTip" xml:space="preserve">
+    <value>Between 0 and 7</value>
+  </data>
+  <data name="&gt;&gt;nudGsmBer.Name" xml:space="preserve">
+    <value>nudGsmBer</value>
+  </data>
+  <data name="&gt;&gt;nudGsmBer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudGsmBer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;nudGsmBer.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="chkGsmNoRssi.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkGsmNoRssi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 91</value>
+  </data>
+  <data name="chkGsmNoRssi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 21</value>
+  </data>
+  <data name="chkGsmNoRssi.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="chkGsmNoRssi.Text" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="chkGsmNoRssi.ToolTip" xml:space="preserve">
+    <value>Check to send 99 (unknown)</value>
+  </data>
+  <data name="&gt;&gt;chkGsmNoRssi.Name" xml:space="preserve">
+    <value>chkGsmNoRssi</value>
+  </data>
+  <data name="&gt;&gt;chkGsmNoRssi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkGsmNoRssi.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chkGsmNoRssi.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="nudGsmRssi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 90</value>
+  </data>
+  <data name="nudGsmRssi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 23</value>
+  </data>
+  <data name="nudGsmRssi.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="nudGsmRssi.ToolTip" xml:space="preserve">
+    <value>Between 0 and 31</value>
+  </data>
+  <data name="&gt;&gt;nudGsmRssi.Name" xml:space="preserve">
+    <value>nudGsmRssi</value>
+  </data>
+  <data name="&gt;&gt;nudGsmRssi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudGsmRssi.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;nudGsmRssi.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblGsmRssi.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblGsmRssi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 92</value>
+  </data>
+  <data name="lblGsmRssi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 17</value>
+  </data>
+  <data name="lblGsmRssi.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="lblGsmRssi.Text" xml:space="preserve">
+    <value>RSSI:</value>
+  </data>
+  <data name="lblGsmRssi.ToolTip" xml:space="preserve">
+    <value>Receive signal strength indication value</value>
+  </data>
   <data name="&gt;&gt;lblGsmRssi.Name" xml:space="preserve">
     <value>lblGsmRssi</value>
   </data>
-  <data name="cmbGsmVoz.Items4" xml:space="preserve">
-    <value>denied</value>
+  <data name="&gt;&gt;lblGsmRssi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblGsmRssi.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblGsmRssi.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btnGsmUpdate.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="btnGsmUpdate.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;lblGsmDatos.Name" xml:space="preserve">
-    <value>lblGsmDatos</value>
+  <data name="btnGsmUpdate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 161</value>
+  </data>
+  <data name="btnGsmUpdate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 32</value>
+  </data>
+  <data name="btnGsmUpdate.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="btnGsmUpdate.Text" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="&gt;&gt;btnGsmUpdate.Name" xml:space="preserve">
+    <value>btnGsmUpdate</value>
+  </data>
+  <data name="&gt;&gt;btnGsmUpdate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnGsmUpdate.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnGsmUpdate.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="cmbGsmVoz.Items" xml:space="preserve">
+    <value>unregistered</value>
+  </data>
+  <data name="cmbGsmVoz.Items1" xml:space="preserve">
+    <value>home</value>
+  </data>
+  <data name="cmbGsmVoz.Items2" xml:space="preserve">
+    <value>roaming</value>
+  </data>
+  <data name="cmbGsmVoz.Items3" xml:space="preserve">
+    <value>searching</value>
+  </data>
+  <data name="cmbGsmVoz.Items4" xml:space="preserve">
+    <value>denied</value>
+  </data>
+  <data name="cmbGsmVoz.Items5" xml:space="preserve">
+    <value>off</value>
+  </data>
+  <data name="cmbGsmVoz.Items6" xml:space="preserve">
+    <value>on</value>
+  </data>
+  <data name="cmbGsmVoz.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 54</value>
+  </data>
+  <data name="cmbGsmVoz.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 24</value>
+  </data>
+  <data name="cmbGsmVoz.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;cmbGsmVoz.Name" xml:space="preserve">
+    <value>cmbGsmVoz</value>
+  </data>
+  <data name="&gt;&gt;cmbGsmVoz.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbGsmVoz.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmbGsmVoz.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lblGsmVoz.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblGsmVoz.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 55</value>
+  </data>
+  <data name="lblGsmVoz.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 17</value>
+  </data>
+  <data name="lblGsmVoz.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="lblGsmVoz.Text" xml:space="preserve">
+    <value>Voice:</value>
+  </data>
+  <data name="lblGsmVoz.ToolTip" xml:space="preserve">
+    <value>Voice connection state</value>
+  </data>
+  <data name="&gt;&gt;lblGsmVoz.Name" xml:space="preserve">
+    <value>lblGsmVoz</value>
+  </data>
+  <data name="&gt;&gt;lblGsmVoz.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblGsmVoz.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblGsmVoz.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="cmbGsmDatos.Items" xml:space="preserve">
+    <value>unregistered</value>
+  </data>
+  <data name="cmbGsmDatos.Items1" xml:space="preserve">
+    <value>home</value>
+  </data>
+  <data name="cmbGsmDatos.Items2" xml:space="preserve">
+    <value>roaming</value>
+  </data>
+  <data name="cmbGsmDatos.Items3" xml:space="preserve">
+    <value>searching</value>
+  </data>
+  <data name="cmbGsmDatos.Items4" xml:space="preserve">
+    <value>denied</value>
+  </data>
+  <data name="cmbGsmDatos.Items5" xml:space="preserve">
+    <value>off</value>
+  </data>
+  <data name="cmbGsmDatos.Items6" xml:space="preserve">
+    <value>on</value>
   </data>
   <data name="cmbGsmDatos.Location" type="System.Drawing.Point, System.Drawing">
     <value>61, 18</value>
@@ -186,420 +456,126 @@
   <data name="cmbGsmDatos.Size" type="System.Drawing.Size, System.Drawing">
     <value>208, 24</value>
   </data>
-  <data name="&gt;&gt;cmbGsmVoz.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnGsmSet.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblGsmDatos.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkGsmNoBer.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cmbGsmDatos.Items3" xml:space="preserve">
-    <value>searching</value>
-  </data>
-  <data name="chkGsmNoRssi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>131, 91</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
-  </data>
-  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>79, 260</value>
-  </data>
-  <data name="chkGsmNoBer.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
-    <value>Label1</value>
-  </data>
-  <data name="&gt;&gt;cmbGsmVoz.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="cmbGsmDatos.Items2" xml:space="preserve">
-    <value>roaming</value>
-  </data>
-  <data name="lblGsmRssi.Text" xml:space="preserve">
-    <value>RSSI:</value>
-  </data>
-  <data name="chkGsmNoRssi.TabIndex" type="System.Int32, mscorlib">
-    <value>43</value>
-  </data>
-  <data name="&gt;&gt;btnGsmSet.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="cmbGsmVoz.Items6" xml:space="preserve">
-    <value>on</value>
-  </data>
-  <data name="&gt;&gt;chkGsmNoRssi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="cmbGsmDatos.Items" xml:space="preserve">
-    <value>unregistered</value>
-  </data>
-  <data name="&gt;&gt;chkGsmNoBer.Name" xml:space="preserve">
-    <value>chkGsmNoBer</value>
-  </data>
-  <data name="&gt;&gt;lblGsmRssi.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="nudGsmBer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>74, 125</value>
-  </data>
-  <data name="&gt;&gt;imgGsm.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;nudGsmRssi.Name" xml:space="preserve">
-    <value>nudGsmRssi</value>
-  </data>
-  <data name="chkGsmBerOn.Text" xml:space="preserve">
-    <value>BER:</value>
-  </data>
-  <data name="&gt;&gt;lblGsmVoz.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;lblGsmVoz.Name" xml:space="preserve">
-    <value>lblGsmVoz</value>
-  </data>
-  <data name="chkGsmNoBer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>131, 125</value>
-  </data>
-  <data name="chkGsmNoRssi.Text" xml:space="preserve">
-    <value>Unknown</value>
-  </data>
-  <data name="&gt;&gt;lblGsmVoz.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblGsmVoz.ToolTip" xml:space="preserve">
-    <value>Voice connection state</value>
-  </data>
-  <data name="btnGsmUpdate.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="cmbGsmVoz.Items" xml:space="preserve">
-    <value>unregistered</value>
-  </data>
-  <data name="&gt;&gt;imgGsm.Name" xml:space="preserve">
-    <value>imgGsm</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>CtrGsmStatus</value>
-  </data>
-  <data name="Label1.TabIndex" type="System.Int32, mscorlib">
-    <value>48</value>
-  </data>
-  <data name="&gt;&gt;lblGsmVoz.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="nudGsmBer.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="nudGsmRssi.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
-  </data>
-  <data name="&gt;&gt;cmbGsmDatos.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;chkGsmNoRssi.Name" xml:space="preserve">
-    <value>chkGsmNoRssi</value>
-  </data>
-  <data name="btnGsmSet.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
-  </data>
-  <data name="Label1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="chkGsmNoRssi.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btnGsmSet.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
-  </data>
-  <data name="&gt;&gt;lblGsmDatos.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="imgGsm.TabIndex" type="System.Int32, mscorlib">
-    <value>49</value>
-  </data>
-  <data name="&gt;&gt;btnGsmUpdate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmbGsmDatos.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnGsmSet.Text" xml:space="preserve">
-    <value>Set</value>
-  </data>
-  <data name="&gt;&gt;btnGsmUpdate.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="chkGsmNoBer.ToolTip" xml:space="preserve">
-    <value>Check to send 99 (unknown)</value>
-  </data>
-  <data name="cmbGsmVoz.Items3" xml:space="preserve">
-    <value>searching</value>
-  </data>
-  <data name="&gt;&gt;cmbGsmDatos.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;lblGsmDatos.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="chkGsmBerOn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 125</value>
-  </data>
-  <data name="&gt;&gt;chkGsmBerOn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblGsmDatos.Text" xml:space="preserve">
-    <value>Data:</value>
-  </data>
-  <data name="chkGsmBerOn.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="cmbGsmDatos.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
   </data>
   <data name="&gt;&gt;cmbGsmDatos.Name" xml:space="preserve">
     <value>cmbGsmDatos</value>
   </data>
-  <data name="&gt;&gt;nudGsmBer.Name" xml:space="preserve">
-    <value>nudGsmBer</value>
+  <data name="&gt;&gt;cmbGsmDatos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbGsmDatos.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmbGsmDatos.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="lblGsmDatos.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblGsmDatos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 21</value>
+  </data>
+  <data name="lblGsmDatos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 17</value>
+  </data>
+  <data name="lblGsmDatos.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="lblGsmDatos.Text" xml:space="preserve">
+    <value>Data:</value>
+  </data>
+  <data name="lblGsmDatos.ToolTip" xml:space="preserve">
+    <value>Data connection state</value>
+  </data>
+  <data name="&gt;&gt;lblGsmDatos.Name" xml:space="preserve">
+    <value>lblGsmDatos</value>
   </data>
   <data name="&gt;&gt;lblGsmDatos.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="imgGsm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 64</value>
-  </data>
-  <data name="lblGsmRssi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 17</value>
-  </data>
-  <data name="&gt;&gt;btnGsmSet.Name" xml:space="preserve">
-    <value>btnGsmSet</value>
-  </data>
-  <data name="btnGsmUpdate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 161</value>
-  </data>
-  <data name="&gt;&gt;chkGsmNoBer.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblGsmDatos.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;ttConsejo.Name" xml:space="preserve">
-    <value>ttConsejo</value>
+  <data name="&gt;&gt;lblGsmDatos.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
-  <data name="&gt;&gt;btnGsmUpdate.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnGsmUpdate.Text" xml:space="preserve">
-    <value>Update</value>
-  </data>
-  <data name="cmbGsmVoz.Items1" xml:space="preserve">
-    <value>home</value>
-  </data>
-  <data name="imgGsm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 253</value>
-  </data>
-  <data name="&gt;&gt;chkGsmBerOn.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="nudGsmRssi.ToolTip" xml:space="preserve">
-    <value>Between 0 and 31</value>
-  </data>
-  <data name="lblGsmRssi.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
-  </data>
-  <data name="cmbGsmVoz.Items5" xml:space="preserve">
-    <value>off</value>
-  </data>
-  <data name="&gt;&gt;chkGsmNoRssi.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 338</value>
+  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 260</value>
   </data>
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>197, 51</value>
   </data>
-  <data name="lblGsmVoz.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;nudGsmBer.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="btnGsmUpdate.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
+  <data name="Label1.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
   </data>
   <data name="Label1.Text" xml:space="preserve">
     <value>This section, allows to change
 the status of data and voice,
 and set the signal levels.</value>
   </data>
-  <data name="cmbGsmDatos.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="cmbGsmVoz.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
-  </data>
-  <data name="&gt;&gt;ttConsejo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblGsmVoz.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
-  <data name="nudGsmBer.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
-  </data>
-  <data name="&gt;&gt;nudGsmRssi.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;lblGsmRssi.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="chkGsmNoBer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 21</value>
-  </data>
-  <data name="btnGsmUpdate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 32</value>
-  </data>
-  <data name="lblGsmDatos.ToolTip" xml:space="preserve">
-    <value>Data connection state</value>
-  </data>
-  <data name="chkGsmNoRssi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 21</value>
+  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
+    <value>Label1</value>
   </data>
   <data name="&gt;&gt;Label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="nudGsmRssi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>74, 90</value>
-  </data>
-  <data name="&gt;&gt;nudGsmRssi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblGsmRssi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 92</value>
-  </data>
-  <data name="btnGsmSet.Location" type="System.Drawing.Point, System.Drawing">
-    <value>164, 161</value>
-  </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;nudGsmBer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblGsmRssi.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cmbGsmDatos.Items5" xml:space="preserve">
-    <value>off</value>
-  </data>
-  <data name="chkGsmNoBer.TabIndex" type="System.Int32, mscorlib">
-    <value>45</value>
-  </data>
-  <data name="&gt;&gt;chkGsmNoBer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="cmbGsmVoz.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="cmbGsmVoz.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 24</value>
-  </data>
-  <data name="&gt;&gt;btnGsmUpdate.Name" xml:space="preserve">
-    <value>btnGsmUpdate</value>
-  </data>
-  <data name="chkGsmBerOn.TabIndex" type="System.Int32, mscorlib">
-    <value>47</value>
-  </data>
-  <data name="&gt;&gt;chkGsmNoRssi.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="btnGsmSet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 32</value>
+  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="lblGsmVoz.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 55</value>
+  <data name="imgGsm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 253</value>
   </data>
-  <data name="&gt;&gt;cmbGsmVoz.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="imgGsm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 64</value>
   </data>
-  <data name="cmbGsmDatos.Items4" xml:space="preserve">
-    <value>denied</value>
+  <data name="imgGsm.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
   </data>
-  <data name="cmbGsmDatos.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
-  </data>
-  <data name="lblGsmDatos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 17</value>
-  </data>
-  <data name="cmbGsmVoz.Location" type="System.Drawing.Point, System.Drawing">
-    <value>61, 54</value>
-  </data>
-  <data name="&gt;&gt;chkGsmNoBer.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="nudGsmBer.ToolTip" xml:space="preserve">
-    <value>Between 0 and 7</value>
-  </data>
-  <data name="nudGsmBer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 23</value>
-  </data>
-  <data name="btnGsmUpdate.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cmbGsmVoz.Items2" xml:space="preserve">
-    <value>roaming</value>
-  </data>
-  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblGsmVoz.Text" xml:space="preserve">
-    <value>Voice:</value>
-  </data>
-  <data name="btnGsmSet.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="chkGsmNoRssi.ToolTip" xml:space="preserve">
-    <value>Check to send 99 (unknown)</value>
+  <data name="&gt;&gt;imgGsm.Name" xml:space="preserve">
+    <value>imgGsm</value>
   </data>
   <data name="&gt;&gt;imgGsm.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="cmbGsmDatos.Items6" xml:space="preserve">
-    <value>on</value>
-  </data>
-  <data name="&gt;&gt;nudGsmBer.Parent" xml:space="preserve">
+  <data name="&gt;&gt;imgGsm.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="imgGsm.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="chkGsmBerOn.ToolTip" xml:space="preserve">
-    <value>Bit error rate</value>
-  </data>
-  <data name="&gt;&gt;lblGsmRssi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;imgGsm.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="ttConsejo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>es</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 338</value>
+  </data>
+  <data name="&gt;&gt;ttConsejo.Name" xml:space="preserve">
+    <value>ttConsejo</value>
+  </data>
+  <data name="&gt;&gt;ttConsejo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CtrGsmStatus</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

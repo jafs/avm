@@ -53,12 +53,11 @@ Partial Class CtrGsmStatus
         '
         'btnGsmSet
         '
-        resources.ApplyResources(Me.btnGsmSet, "btnGsmSet")
         Me.btnGsmSet.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(227, Byte), Integer))
         Me.btnGsmSet.FlatAppearance.BorderColor = System.Drawing.Color.White
+        resources.ApplyResources(Me.btnGsmSet, "btnGsmSet")
         Me.btnGsmSet.ForeColor = System.Drawing.Color.White
         Me.btnGsmSet.Name = "btnGsmSet"
-        Me.ttConsejo.SetToolTip(Me.btnGsmSet, resources.GetString("btnGsmSet.ToolTip"))
         Me.btnGsmSet.UseVisualStyleBackColor = False
         '
         'chkGsmNoBer
@@ -97,23 +96,21 @@ Partial Class CtrGsmStatus
         '
         'btnGsmUpdate
         '
-        resources.ApplyResources(Me.btnGsmUpdate, "btnGsmUpdate")
         Me.btnGsmUpdate.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(227, Byte), Integer))
         Me.btnGsmUpdate.FlatAppearance.BorderColor = System.Drawing.Color.White
+        resources.ApplyResources(Me.btnGsmUpdate, "btnGsmUpdate")
         Me.btnGsmUpdate.ForeColor = System.Drawing.Color.White
         Me.btnGsmUpdate.Name = "btnGsmUpdate"
-        Me.ttConsejo.SetToolTip(Me.btnGsmUpdate, resources.GetString("btnGsmUpdate.ToolTip"))
         Me.btnGsmUpdate.UseVisualStyleBackColor = False
         '
         'cmbGsmVoz
         '
-        resources.ApplyResources(Me.cmbGsmVoz, "cmbGsmVoz")
         Me.cmbGsmVoz.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbGsmVoz.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.cmbGsmVoz.FormattingEnabled = True
         Me.cmbGsmVoz.Items.AddRange(New Object() {resources.GetString("cmbGsmVoz.Items"), resources.GetString("cmbGsmVoz.Items1"), resources.GetString("cmbGsmVoz.Items2"), resources.GetString("cmbGsmVoz.Items3"), resources.GetString("cmbGsmVoz.Items4"), resources.GetString("cmbGsmVoz.Items5"), resources.GetString("cmbGsmVoz.Items6")})
+        resources.ApplyResources(Me.cmbGsmVoz, "cmbGsmVoz")
         Me.cmbGsmVoz.Name = "cmbGsmVoz"
-        Me.ttConsejo.SetToolTip(Me.cmbGsmVoz, resources.GetString("cmbGsmVoz.ToolTip"))
         '
         'lblGsmVoz
         '
@@ -123,13 +120,12 @@ Partial Class CtrGsmStatus
         '
         'cmbGsmDatos
         '
-        resources.ApplyResources(Me.cmbGsmDatos, "cmbGsmDatos")
         Me.cmbGsmDatos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbGsmDatos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.cmbGsmDatos.FormattingEnabled = True
         Me.cmbGsmDatos.Items.AddRange(New Object() {resources.GetString("cmbGsmDatos.Items"), resources.GetString("cmbGsmDatos.Items1"), resources.GetString("cmbGsmDatos.Items2"), resources.GetString("cmbGsmDatos.Items3"), resources.GetString("cmbGsmDatos.Items4"), resources.GetString("cmbGsmDatos.Items5"), resources.GetString("cmbGsmDatos.Items6")})
+        resources.ApplyResources(Me.cmbGsmDatos, "cmbGsmDatos")
         Me.cmbGsmDatos.Name = "cmbGsmDatos"
-        Me.ttConsejo.SetToolTip(Me.cmbGsmDatos, resources.GetString("cmbGsmDatos.ToolTip"))
         '
         'lblGsmDatos
         '
@@ -141,15 +137,13 @@ Partial Class CtrGsmStatus
         '
         resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.Name = "Label1"
-        Me.ttConsejo.SetToolTip(Me.Label1, resources.GetString("Label1.ToolTip"))
         '
         'imgGsm
         '
-        resources.ApplyResources(Me.imgGsm, "imgGsm")
         Me.imgGsm.Image = Global.Avm.My.Resources.Resources.icoGsm64
+        resources.ApplyResources(Me.imgGsm, "imgGsm")
         Me.imgGsm.Name = "imgGsm"
         Me.imgGsm.TabStop = False
-        Me.ttConsejo.SetToolTip(Me.imgGsm, resources.GetString("imgGsm.ToolTip"))
         '
         'ttConsejo
         '
@@ -179,7 +173,6 @@ Partial Class CtrGsmStatus
         Me.Controls.Add(Me.chkGsmBerOn)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.Name = "CtrGsmStatus"
-        Me.ttConsejo.SetToolTip(Me, resources.GetString("$this.ToolTip"))
         CType(Me.nudGsmBer, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nudGsmRssi, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgGsm, System.ComponentModel.ISupportInitialize).EndInit()

@@ -47,6 +47,24 @@
     End Sub
 
 
+    ''' <summary>Controla si está marcado el checkbox desconocido de RSSI, para evitar que se modifiquen los valores.</summary>
+    ''' <param name="sender">Emisor del evento.</param>
+    ''' <param name="e">Datos del evento.</param>
+    Private Sub chkGsmNoRssi_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkGsmNoRssi.CheckedChanged
+        nudGsmRssi.Enabled = Not chkGsmNoRssi.Checked
+    End Sub
+
+
+    ''' <summary>Controla si está marcado el checkbox desconocido de BER, para evitar que se modifiquen los valores.</summary>
+    ''' <param name="sender">Emisor del evento.</param>
+    ''' <param name="e">Datos del evento.</param>
+    Private Sub chkGsmNoBer_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkGsmNoBer.CheckedChanged
+        If chkGsmBerOn.Checked Then
+            nudGsmBer.Enabled = Not chkGsmNoBer.Checked
+        End If
+    End Sub
+
+
     ''' <summary>Establece el estado de datos GSM.</summary>
     ''' <param name="sender">Emisor del evento.</param>
     ''' <param name="e">Datos del evento.</param>
