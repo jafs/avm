@@ -44,6 +44,7 @@ Partial Class FrmPrincipal
         Me.trmReloj = New System.Windows.Forms.Timer(Me.components)
         Me.ttConsejo = New System.Windows.Forms.ToolTip(Me.components)
         Me.pnlDebug = New System.Windows.Forms.Panel()
+        Me.lblDebugTitulo = New System.Windows.Forms.Label()
         Me.pnlPrincipal.SuspendLayout()
         Me.pnlDock.SuspendLayout()
         Me.tlpMenu.SuspendLayout()
@@ -74,9 +75,13 @@ Partial Class FrmPrincipal
         'btnEnviar
         '
         resources.ApplyResources(Me.btnEnviar, "btnEnviar")
+        Me.btnEnviar.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.btnEnviar.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnEnviar.FlatAppearance.BorderSize = 0
+        Me.btnEnviar.ForeColor = System.Drawing.Color.White
         Me.btnEnviar.Name = "btnEnviar"
         Me.ttConsejo.SetToolTip(Me.btnEnviar, resources.GetString("btnEnviar.ToolTip"))
-        Me.btnEnviar.UseVisualStyleBackColor = True
+        Me.btnEnviar.UseVisualStyleBackColor = False
         '
         'pnlPrincipal
         '
@@ -236,18 +241,28 @@ Partial Class FrmPrincipal
         'pnlDebug
         '
         resources.ApplyResources(Me.pnlDebug, "pnlDebug")
+        Me.pnlDebug.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlDebug.Controls.Add(Me.lblDebugTitulo)
         Me.pnlDebug.Controls.Add(Me.txtRecv)
         Me.pnlDebug.Controls.Add(Me.txtComando)
         Me.pnlDebug.Controls.Add(Me.btnEnviar)
         Me.pnlDebug.Name = "pnlDebug"
         Me.ttConsejo.SetToolTip(Me.pnlDebug, resources.GetString("pnlDebug.ToolTip"))
         '
+        'lblDebugTitulo
+        '
+        resources.ApplyResources(Me.lblDebugTitulo, "lblDebugTitulo")
+        Me.lblDebugTitulo.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.lblDebugTitulo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.lblDebugTitulo.Name = "lblDebugTitulo"
+        Me.ttConsejo.SetToolTip(Me.lblDebugTitulo, resources.GetString("lblDebugTitulo.ToolTip"))
+        '
         'FrmPrincipal
         '
         Me.AcceptButton = Me.btnEnviar
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.BackColor = System.Drawing.Color.White
         Me.Controls.Add(Me.pnlDebug)
         Me.Controls.Add(Me.pnlPrincipal)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -288,5 +303,6 @@ Partial Class FrmPrincipal
     Friend WithEvents btnConfiguracion As System.Windows.Forms.Button
     Friend WithEvents ttSeparador2 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents ttSeparador1 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents lblDebugTitulo As System.Windows.Forms.Label
 
 End Class

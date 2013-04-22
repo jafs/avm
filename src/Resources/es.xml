@@ -17,6 +17,7 @@
   <tag clave="err_socket" valor="Socket desconectado" />
 
   <tag clave="frm_about" valor="Acerca de" />
+  <tag clave="frm_debug" valor="Consola de depuración:" />
   <tag clave="frm_debug_hide" valor="Ocultar consola" />
   <tag clave="frm_debug_show" valor="Mostrar consola" />
 

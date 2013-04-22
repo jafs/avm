@@ -17,6 +17,7 @@
   <tag clave="err_socket" valor="Socket disconnected" />
 
   <tag clave="frm_about" valor="About" />
+  <tag clave="frm_debug" valor="debug console:" />
   <tag clave="frm_debug_hide" valor="Hide debug console" />
   <tag clave="frm_debug_show" valor="Show debug console" />
 
