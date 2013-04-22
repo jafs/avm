@@ -2,6 +2,11 @@ Description
 ===========
 AVM (Android Virtual Management) allows management of virtual machine for Android, allowing an easy way to change the status of the battery, the sensor values, etc..
 
+<table><tr>
+<td><img src="http://jafs.es/wp-content/uploads/2012/06/ventana.2.jpg"  width=200 alt="Main Menu" /><br />Main Menu</td>
+<td><img src="http://jafs.es/wp-content/uploads/2012/06/ventana.7.jpg" width=200 alt="Calls management" /><br />Calls management</td>
+<td><img src="http://jafs.es/wp-content/uploads/2012/06/ventana.4.jpg" width=200 alt="GPS Management" /><br />GPS Management</td>
+</tr></table>
 
 Requirements
 ------------
@@ -12,7 +17,7 @@ Requirements
 
 Version History
 ---------------
-Version 0.6 - In process
+Version 0.6 - 2012/11/09
 * Spanish translation.
 * Validation of commands when press enter key in debug window.
 * New app icon.
@@ -24,14 +29,14 @@ Version 0.6 - In process
 * Fixed problem with AVD commands.
 * Fixed application hangs when connected to an open portwhich is not the Android emulator.
  
-Version 0.5.5.5 - 15/10/2012
+Version 0.5.5.5 - 2012/10/15
 * Solves the bug of hangs when connect to not telnet.
 * New Jelly Bean style.
  
-Version 0.5.5.1 - 27/08/2012
+Version 0.5.5.1 - 2012/08/27
 * Improvement in detection of connection to the emulator. Solves the problem of not detecting link failure with emulator and problems running the kill command.
 
-Version 0.5.5 - 19/07/2012
+Version 0.5.5 - 2012/07/19
 * Solved problem with duplicated calls.
 * Tooltips in all screens.
 * Improvements in About window.
@@ -44,11 +49,11 @@ Version 0.5.5 - 19/07/2012
 * New exit button in dock.
 * Improvements in code.
 
-Version 0.5.4.1 - 15/07/2012
+Version 0.5.4.1 - 2012/07/15
 * Improvements.
 * About dialog.
  
-Version 0.5.4 - 13/07/2012
+Version 0.5.4 - 2012/07/13
 * Fixed the bug in call monitor. Also, now the calls monitor is automatic.
 * Solved the enable of Send button in SMS.
 * Solved the problem with GPS values when degrees values are negative.
@@ -56,20 +61,20 @@ Version 0.5.4 - 13/07/2012
 * Now the values of sensors and GPS, have precision of 4 decimal.
 * Small improvements.
 
-Version 0.5.3 - 12/07/2012
+Version 0.5.3 - 2012/07/12
 * New GUI.
 * Fixed the Overheat bug in power management.
 * Optimization in debug console.
 * kill, quit and exit commands control.
 * Small optimizations.
 
-Version 0.5.2 - 09/07/2012
+Version 0.5.2 - 2012/07/09
 * GPS in FIX mode support.
 * Control of GSM signal, data and voice status.
 * GSM calls control.
 * Corrected small bugs.
 
-Version 0.5.1 - 01/07/2012
+Version 0.5.1 - 2012/07/01
 * SMS in text mode management.
 * Sensors management.
 * Design changes in the GUI.
@@ -77,7 +82,7 @@ Version 0.5.1 - 01/07/2012
 * Better connection control.
 * Small optimizations.
 
-Version 0.5 - 29/06/2012
+Version 0.5 - 2012/06/29
 * Battery management for virtual machine.
 
 
@@ -110,4 +115,4 @@ Credits
 -------
 * Icons by: GNOME icon artists (http://gnome.org)
 * AVM home page: http://jafs.es/aplicaciones/android-virtual-management/
-* GPLv3 2012 José Antonio Fuentes Santiago (jafs@jafs.es).
+* GPLv3 2012 JosÃ© Antonio Fuentes Santiago (jafs@jafs.es).
