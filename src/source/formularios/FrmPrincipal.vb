@@ -49,6 +49,12 @@ Public Class FrmPrincipal
     Private ctrSensor As New CtrSensor(Me)
     ''' <summary>Formulario de mensajería.</summary>
     Private ctrSms As New CtrSms(Me)
+    ''' <summary>Indica si la ventana está siendo arrastrada.</summary>
+    Private bMoviendo As Boolean = False
+    ''' <summary>Posición X de inicio de clic.</summary>
+    Private iInicioX As Integer
+    ''' <summary>Posición Y de inicio de clic.</summary>
+    Private iInicioY As Integer
 
 
     ''' <summary>Propiedad que obtiene o establece el modo consulta en la aplicación.</summary>
@@ -98,7 +104,7 @@ Public Class FrmPrincipal
     ''' <param name="sender">Emisor del evento</param>
     ''' <param name="e">Datos del evento con la tecla</param>
     ''' <remarks></remarks>
-    Private Sub txtComando_KeyDown(sender As System.Object, e As System.Windows.Forms.KeyEventArgs) Handles txtComando.KeyDown
+    Private Sub txtComando_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtComando.KeyDown
         If e.KeyCode = Keys.Enter Then
             btnEnviar_Click()
         End If
@@ -118,7 +124,7 @@ Public Class FrmPrincipal
         lanzar(TipoApp.Menu)
     End Sub
 
-    
+
     ''' <summary>Carga inicial del formulario.</summary>
     Private Sub frmPrincipal_Load() Handles MyBase.Load
         Me.Text = My.Application.Info.ProductName & " " & My.Application.Info.Version.ToString
@@ -137,7 +143,7 @@ Public Class FrmPrincipal
     ''' <summary>Controla el cierre de la aplicación.</summary>
     ''' <param name="sender">Emisor del evento.</param>
     ''' <param name="e">Datos del evento.</param>
-    Private Sub frmPrincipal_FormClosing(sender As System.Object, e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing
+    Private Sub frmPrincipal_FormClosing(ByVal sender As System.Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing
         If objTelnet.Conectado Then
             If MessageBox.Show(Idioma.traducir("pop_exit_question"), Idioma.traducir("pop_exit_title"), MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.No Then
                 e.Cancel = True
@@ -314,6 +320,42 @@ Public Class FrmPrincipal
         Else
             ctrGsmCalls.parar()
             lanzar(TipoApp.Connect)
+        End If
+    End Sub
+
+
+    ''' <summary>Controla el clic sobre la cabecera de la aplicación.</summary>
+    ''' <param name="sender">Emisor del evento.</param>
+    ''' <param name="e">Datos del evento.</param>
+    Private Sub pblEstado_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs) Handles pblEstado.MouseDown
+        If e.Button = MouseButtons.Left Then
+            bMoviendo = True
+            iInicioX = e.X
+            iInicioY = e.Y
+        End If
+    End Sub
+
+
+    ''' <summary>Controla el fin de clic del ratón sobre la cabecera.</summary>
+    ''' <param name="sender">Emisor del evento.</param>
+    ''' <param name="e">Datos del evento.</param>
+    Private Sub pblEstado_MouseUp(ByVal sender As Object, ByVal e As MouseEventArgs) Handles pblEstado.MouseUp
+        If e.Button = MouseButtons.Left Then
+            bMoviendo = False
+        End If
+    End Sub
+
+
+    ''' <summary>Controla el movimiento del ratón.</summary>
+    ''' <param name="sender">Emisor del evento.</param>
+    ''' <param name="e">Datos del evento.</param>
+    Private Sub pblEstado_MouseMove(ByVal sender As Object, ByVal e As MouseEventArgs) Handles pblEstado.MouseMove
+        If bMoviendo Then
+            Dim objPunto As Point = New Point()
+            objPunto.X = Me.Location.X + (e.X - iInicioX)
+            objPunto.Y = Me.Location.Y + (e.Y - iInicioY)
+            Me.Location = objPunto
+            objPunto = Nothing
         End If
     End Sub
 End Class

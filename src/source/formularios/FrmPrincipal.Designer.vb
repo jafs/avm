@@ -210,6 +210,7 @@ Partial Class FrmPrincipal
         Me.pblEstado.BackColor = System.Drawing.Color.Transparent
         Me.pblEstado.BackgroundImage = Global.Avm.My.Resources.Resources.superior
         Me.pblEstado.Controls.Add(Me.lblReloj)
+        Me.pblEstado.Cursor = System.Windows.Forms.Cursors.NoMove2D
         Me.pblEstado.ForeColor = System.Drawing.Color.White
         Me.pblEstado.Name = "pblEstado"
         Me.ttConsejo.SetToolTip(Me.pblEstado, resources.GetString("pblEstado.ToolTip"))
@@ -217,6 +218,7 @@ Partial Class FrmPrincipal
         'lblReloj
         '
         resources.ApplyResources(Me.lblReloj, "lblReloj")
+        Me.lblReloj.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.lblReloj.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.lblReloj.Name = "lblReloj"
         Me.ttConsejo.SetToolTip(Me.lblReloj, resources.GetString("lblReloj.ToolTip"))
@@ -245,9 +247,10 @@ Partial Class FrmPrincipal
         Me.AcceptButton = Me.btnEnviar
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Controls.Add(Me.pnlDebug)
         Me.Controls.Add(Me.pnlPrincipal)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MaximizeBox = False
         Me.Name = "FrmPrincipal"
         Me.ttConsejo.SetToolTip(Me, resources.GetString("$this.ToolTip"))
