@@ -31,10 +31,6 @@ Public Class FrmPrincipal
     Private bModoConsulta As Boolean = False
     ''' <summary>Indica si es la primera carga. Para la gestión del reloj.</summary>
     Private bInicial As Boolean = True
-    ''' <summary>Controla la posición del ratón para el desplazamiento de la ventana.</summary>
-    Private objPosCursor As Point
-    ''' <summary>Indica si el botón izquierdo del ratón está pulsado.</summary>
-    Private bMouseDown As Boolean = False
 
     ' TODO mejorar control de formularios
     ''' <summary>Formulario de conexión.</summary>
@@ -194,44 +190,6 @@ Public Class FrmPrincipal
         Else
             Me.pnlDebug.Visible = False
             ttConsejo.SetToolTip(chkDebug, Idioma.traducir("frm_debug_show"))
-        End If
-    End Sub
-
-
-    ''' <summary>Controla la pulsación del botón izquierdo sobre la barra de título.</summary>
-    ''' <param name="sender">Emisor del evento.</param>
-    ''' <param name="e">Datos del evento.</param>
-    Private Sub pblEstado_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs) Handles pblEstado.MouseDown, lblReloj.MouseDown, lblTitulo.MouseDown
-        If e.Button = MouseButtons.Left Then
-            Dim objControl As Control = CType(sender, Control)
-            If objControl.Name = lblReloj.Name Or objControl.Name = lblTitulo.Name Then
-                objPosCursor = New Point(-e.X - objControl.Location.X, -e.Y - objControl.Location.Y)
-            Else
-                objPosCursor = New Point(-e.X, -e.Y)
-            End If
-            bMouseDown = True
-        End If
-    End Sub
-
-
-    ''' <summary>Controla el movimiento del ratón sobre la barra de título.</summary>
-    ''' <param name="sender">Emisor del evento.</param>
-    ''' <param name="e">Datos del evento.</param>
-    Private Sub pblEstado_MouseMove(ByVal sender As Object, ByVal e As MouseEventArgs) Handles pblEstado.MouseMove, lblReloj.MouseMove, lblTitulo.MouseMove
-        If bMouseDown Then
-            Dim objPosicion As Point = Control.MousePosition
-            objPosicion.Offset(objPosCursor.X, objPosCursor.Y)
-            Location = objPosicion
-        End If
-    End Sub
-
-
-    ''' <summary>Controla el fin del evento de arrastre del ratón en la barra de título.</summary>
-    ''' <param name="sender">Emisor del evento.</param>
-    ''' <param name="e">Datos del evento.</param>
-    Private Sub pblEstado_MouseUp(ByVal sender As Object, ByVal e As MouseEventArgs) Handles pblEstado.MouseUp, lblReloj.MouseUp, lblTitulo.MouseUp
-        If e.Button = MouseButtons.Left Then
-            bMouseDown = False
         End If
     End Sub
 
