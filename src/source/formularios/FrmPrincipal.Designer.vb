@@ -40,9 +40,9 @@ Partial Class FrmPrincipal
         Me.btnAyuda = New System.Windows.Forms.Button()
         Me.chkDebug = New System.Windows.Forms.CheckBox()
         Me.pblEstado = New System.Windows.Forms.Panel()
+        Me.btnCerrar = New System.Windows.Forms.Button()
+        Me.btnMinimizar = New System.Windows.Forms.Button()
         Me.lblTitulo = New System.Windows.Forms.Label()
-        Me.lblReloj = New System.Windows.Forms.Label()
-        Me.trmReloj = New System.Windows.Forms.Timer(Me.components)
         Me.ttConsejo = New System.Windows.Forms.ToolTip(Me.components)
         Me.pnlDebug = New System.Windows.Forms.Panel()
         Me.lblDebugTitulo = New System.Windows.Forms.Label()
@@ -207,29 +207,37 @@ Partial Class FrmPrincipal
         '
         Me.pblEstado.BackColor = System.Drawing.Color.Transparent
         Me.pblEstado.BackgroundImage = Global.Avm.My.Resources.Resources.superior
+        Me.pblEstado.Controls.Add(Me.btnCerrar)
+        Me.pblEstado.Controls.Add(Me.btnMinimizar)
         Me.pblEstado.Controls.Add(Me.lblTitulo)
-        Me.pblEstado.Controls.Add(Me.lblReloj)
         Me.pblEstado.Cursor = System.Windows.Forms.Cursors.SizeAll
         resources.ApplyResources(Me.pblEstado, "pblEstado")
         Me.pblEstado.ForeColor = System.Drawing.Color.White
         Me.pblEstado.Name = "pblEstado"
+        '
+        'btnCerrar
+        '
+        Me.btnCerrar.FlatAppearance.BorderSize = 0
+        resources.ApplyResources(Me.btnCerrar, "btnCerrar")
+        Me.btnCerrar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.btnCerrar.Name = "btnCerrar"
+        Me.ttConsejo.SetToolTip(Me.btnCerrar, resources.GetString("btnCerrar.ToolTip"))
+        Me.btnCerrar.UseVisualStyleBackColor = True
+        '
+        'btnMinimizar
+        '
+        Me.btnMinimizar.FlatAppearance.BorderSize = 0
+        resources.ApplyResources(Me.btnMinimizar, "btnMinimizar")
+        Me.btnMinimizar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.btnMinimizar.Name = "btnMinimizar"
+        Me.ttConsejo.SetToolTip(Me.btnMinimizar, resources.GetString("btnMinimizar.ToolTip"))
+        Me.btnMinimizar.UseVisualStyleBackColor = True
         '
         'lblTitulo
         '
         resources.ApplyResources(Me.lblTitulo, "lblTitulo")
         Me.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.lblTitulo.Name = "lblTitulo"
-        '
-        'lblReloj
-        '
-        resources.ApplyResources(Me.lblReloj, "lblReloj")
-        Me.lblReloj.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.lblReloj.Name = "lblReloj"
-        '
-        'trmReloj
-        '
-        Me.trmReloj.Enabled = True
-        Me.trmReloj.Interval = 60000
         '
         'ttConsejo
         '
@@ -285,8 +293,6 @@ Partial Class FrmPrincipal
     Friend WithEvents pnlCentral As System.Windows.Forms.Panel
     Friend WithEvents tlpMenu As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents btnHome As System.Windows.Forms.Button
-    Friend WithEvents lblReloj As System.Windows.Forms.Label
-    Friend WithEvents trmReloj As System.Windows.Forms.Timer
     Friend WithEvents btnAyuda As System.Windows.Forms.Button
     Friend WithEvents ttConsejo As System.Windows.Forms.ToolTip
     Friend WithEvents mnAyuda As System.Windows.Forms.ContextMenuStrip
@@ -301,5 +307,7 @@ Partial Class FrmPrincipal
     Friend WithEvents ttSeparador1 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents lblDebugTitulo As System.Windows.Forms.Label
     Friend WithEvents lblTitulo As System.Windows.Forms.Label
+    Friend WithEvents btnMinimizar As System.Windows.Forms.Button
+    Friend WithEvents btnCerrar As System.Windows.Forms.Button
 
 End Class

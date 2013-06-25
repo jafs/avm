@@ -525,66 +525,6 @@
   <data name="&gt;&gt;btnEnviar.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;pnlCentral.Name" xml:space="preserve">
-    <value>pnlCentral</value>
-  </data>
-  <data name="&gt;&gt;pnlCentral.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlCentral.Parent" xml:space="preserve">
-    <value>pnlPrincipal</value>
-  </data>
-  <data name="&gt;&gt;pnlCentral.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pnlDock.Name" xml:space="preserve">
-    <value>pnlDock</value>
-  </data>
-  <data name="&gt;&gt;pnlDock.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlDock.Parent" xml:space="preserve">
-    <value>pnlPrincipal</value>
-  </data>
-  <data name="&gt;&gt;pnlDock.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;pblEstado.Name" xml:space="preserve">
-    <value>pblEstado</value>
-  </data>
-  <data name="&gt;&gt;pblEstado.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pblEstado.Parent" xml:space="preserve">
-    <value>pnlPrincipal</value>
-  </data>
-  <data name="&gt;&gt;pblEstado.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="pnlPrincipal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="pnlPrincipal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="pnlPrincipal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 426</value>
-  </data>
-  <data name="pnlPrincipal.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pnlPrincipal.Name" xml:space="preserve">
-    <value>pnlPrincipal</value>
-  </data>
-  <data name="&gt;&gt;pnlPrincipal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlPrincipal.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pnlPrincipal.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="pnlCentral.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -609,143 +549,56 @@
   <data name="&gt;&gt;pnlCentral.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;tlpMenu.Name" xml:space="preserve">
-    <value>tlpMenu</value>
-  </data>
-  <data name="&gt;&gt;tlpMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tlpMenu.Parent" xml:space="preserve">
-    <value>pnlDock</value>
-  </data>
-  <data name="&gt;&gt;tlpMenu.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tlpMenu.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnConfiguracion" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnSalir" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="btnHome" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnAyuda" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="chkDebug" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,100,Absolute,56" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="pnlDock.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="pnlDock.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 370</value>
-  </data>
-  <data name="pnlDock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 56</value>
-  </data>
-  <data name="pnlDock.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;pnlDock.Name" xml:space="preserve">
-    <value>pnlDock</value>
-  </data>
-  <data name="&gt;&gt;pnlDock.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlDock.Parent" xml:space="preserve">
-    <value>pnlPrincipal</value>
-  </data>
-  <data name="&gt;&gt;pnlDock.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="tlpMenu.ColumnCount" type="System.Int32, mscorlib">
     <value>5</value>
-  </data>
-  <data name="&gt;&gt;btnConfiguracion.Name" xml:space="preserve">
-    <value>btnConfiguracion</value>
-  </data>
-  <data name="&gt;&gt;btnConfiguracion.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnConfiguracion.Parent" xml:space="preserve">
-    <value>tlpMenu</value>
-  </data>
-  <data name="&gt;&gt;btnConfiguracion.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnSalir.Name" xml:space="preserve">
-    <value>btnSalir</value>
-  </data>
-  <data name="&gt;&gt;btnSalir.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSalir.Parent" xml:space="preserve">
-    <value>tlpMenu</value>
-  </data>
-  <data name="&gt;&gt;btnSalir.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btnHome.Name" xml:space="preserve">
-    <value>btnHome</value>
-  </data>
-  <data name="&gt;&gt;btnHome.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnHome.Parent" xml:space="preserve">
-    <value>tlpMenu</value>
-  </data>
-  <data name="&gt;&gt;btnHome.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btnAyuda.Name" xml:space="preserve">
-    <value>btnAyuda</value>
-  </data>
-  <data name="&gt;&gt;btnAyuda.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnAyuda.Parent" xml:space="preserve">
-    <value>tlpMenu</value>
-  </data>
-  <data name="&gt;&gt;btnAyuda.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;chkDebug.Name" xml:space="preserve">
-    <value>chkDebug</value>
-  </data>
-  <data name="&gt;&gt;chkDebug.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkDebug.Parent" xml:space="preserve">
-    <value>tlpMenu</value>
-  </data>
-  <data name="&gt;&gt;chkDebug.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="tlpMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tlpMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tlpMenu.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tlpMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 56</value>
-  </data>
-  <data name="tlpMenu.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tlpMenu.Name" xml:space="preserve">
-    <value>tlpMenu</value>
-  </data>
-  <data name="&gt;&gt;tlpMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tlpMenu.Parent" xml:space="preserve">
-    <value>pnlDock</value>
-  </data>
-  <data name="&gt;&gt;tlpMenu.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tlpMenu.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnConfiguracion" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnSalir" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="btnHome" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnAyuda" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="chkDebug" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,100,Absolute,56" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <metadata name="mnAyuda.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>219, 17</value>
   </metadata>
+  <data name="ttmAyuGeneral.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="ttmAyuGeneral.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Alt+F1</value>
+  </data>
+  <data name="ttmAyuGeneral.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="ttmAyuGeneral.Text" xml:space="preserve">
+    <value>&amp;General info</value>
+  </data>
+  <data name="ttSeparador2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 6</value>
+  </data>
+  <data name="ttmAyuManual.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="ttmAyuManual.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+F1</value>
+  </data>
+  <data name="ttmAyuManual.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="ttmAyuManual.Text" xml:space="preserve">
+    <value>&amp;Manual</value>
+  </data>
+  <data name="ttSeparador1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 6</value>
+  </data>
+  <data name="ttmAbout.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="ttmAbout.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>F1</value>
+  </data>
+  <data name="ttmAbout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="ttmAbout.Text" xml:space="preserve">
+    <value>&amp;About...</value>
+  </data>
   <data name="mnAyuda.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 94</value>
+    <value>177, 116</value>
   </data>
   <data name="&gt;&gt;mnAyuda.Name" xml:space="preserve">
     <value>mnAyuda</value>
@@ -785,39 +638,6 @@
   </data>
   <data name="&gt;&gt;btnConfiguracion.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="ttmAyuGeneral.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
-  </data>
-  <data name="ttmAyuGeneral.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 26</value>
-  </data>
-  <data name="ttmAyuGeneral.Text" xml:space="preserve">
-    <value>&amp;General info</value>
-  </data>
-  <data name="ttSeparador2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 6</value>
-  </data>
-  <data name="ttmAyuManual.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
-  </data>
-  <data name="ttmAyuManual.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 26</value>
-  </data>
-  <data name="ttmAyuManual.Text" xml:space="preserve">
-    <value>&amp;Manual</value>
-  </data>
-  <data name="ttSeparador1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 6</value>
-  </data>
-  <data name="ttmAbout.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
-  </data>
-  <data name="ttmAbout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 26</value>
-  </data>
-  <data name="ttmAbout.Text" xml:space="preserve">
-    <value>&amp;About...</value>
   </data>
   <data name="btnSalir.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -948,53 +768,131 @@
   <data name="&gt;&gt;chkDebug.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;lblTitulo.Name" xml:space="preserve">
-    <value>lblTitulo</value>
+  <data name="tlpMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="&gt;&gt;lblTitulo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTitulo.Parent" xml:space="preserve">
-    <value>pblEstado</value>
-  </data>
-  <data name="&gt;&gt;lblTitulo.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lblReloj.Name" xml:space="preserve">
-    <value>lblReloj</value>
-  </data>
-  <data name="&gt;&gt;lblReloj.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblReloj.Parent" xml:space="preserve">
-    <value>pblEstado</value>
-  </data>
-  <data name="&gt;&gt;lblReloj.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pblEstado.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="pblEstado.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tlpMenu.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="pblEstado.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 32</value>
-  </data>
-  <data name="pblEstado.TabIndex" type="System.Int32, mscorlib">
+  <data name="tlpMenu.RowCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;pblEstado.Name" xml:space="preserve">
-    <value>pblEstado</value>
+  <data name="tlpMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 56</value>
   </data>
-  <data name="&gt;&gt;pblEstado.Type" xml:space="preserve">
+  <data name="tlpMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tlpMenu.Name" xml:space="preserve">
+    <value>tlpMenu</value>
+  </data>
+  <data name="&gt;&gt;tlpMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlpMenu.Parent" xml:space="preserve">
+    <value>pnlDock</value>
+  </data>
+  <data name="&gt;&gt;tlpMenu.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tlpMenu.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnConfiguracion" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnSalir" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="btnHome" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnAyuda" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="chkDebug" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,100,Absolute,56" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="pnlDock.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="pnlDock.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 370</value>
+  </data>
+  <data name="pnlDock.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 56</value>
+  </data>
+  <data name="pnlDock.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pnlDock.Name" xml:space="preserve">
+    <value>pnlDock</value>
+  </data>
+  <data name="&gt;&gt;pnlDock.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pblEstado.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pnlDock.Parent" xml:space="preserve">
     <value>pnlPrincipal</value>
   </data>
-  <data name="&gt;&gt;pblEstado.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pnlDock.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnCerrar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnCerrar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btnCerrar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnCerrar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 5</value>
+  </data>
+  <data name="btnCerrar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 2, 0, 0</value>
+  </data>
+  <data name="btnCerrar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 22</value>
+  </data>
+  <data name="btnCerrar.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnCerrar.Text" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="btnCerrar.ToolTip" xml:space="preserve">
+    <value>Exit application</value>
+  </data>
+  <data name="&gt;&gt;btnCerrar.Name" xml:space="preserve">
+    <value>btnCerrar</value>
+  </data>
+  <data name="&gt;&gt;btnCerrar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCerrar.Parent" xml:space="preserve">
+    <value>pblEstado</value>
+  </data>
+  <data name="&gt;&gt;btnCerrar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnMinimizar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnMinimizar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btnMinimizar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 5</value>
+  </data>
+  <data name="btnMinimizar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 22</value>
+  </data>
+  <data name="btnMinimizar.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="btnMinimizar.Text" xml:space="preserve">
+    <value>___</value>
+  </data>
+  <data name="btnMinimizar.ToolTip" xml:space="preserve">
+    <value>Minimize window</value>
+  </data>
+  <data name="&gt;&gt;btnMinimizar.Name" xml:space="preserve">
+    <value>btnMinimizar</value>
+  </data>
+  <data name="&gt;&gt;btnMinimizar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnMinimizar.Parent" xml:space="preserve">
+    <value>pblEstado</value>
+  </data>
+  <data name="&gt;&gt;btnMinimizar.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="lblTitulo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1027,76 +925,55 @@
     <value>pblEstado</value>
   </data>
   <data name="&gt;&gt;lblTitulo.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
-  <data name="lblReloj.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  <data name="pblEstado.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
   </data>
-  <data name="lblReloj.Location" type="System.Drawing.Point, System.Drawing">
-    <value>217, 5</value>
+  <data name="pblEstado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="lblReloj.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 23</value>
+  <data name="pblEstado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 32</value>
   </data>
-  <data name="lblReloj.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="pblEstado.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="lblReloj.Text" xml:space="preserve">
-    <value>00:00</value>
-  </data>
-  <data name="lblReloj.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;lblReloj.Name" xml:space="preserve">
-    <value>lblReloj</value>
-  </data>
-  <data name="&gt;&gt;lblReloj.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblReloj.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pblEstado.Name" xml:space="preserve">
     <value>pblEstado</value>
   </data>
-  <data name="&gt;&gt;lblReloj.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="trmReloj.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="&gt;&gt;lblDebugTitulo.Name" xml:space="preserve">
-    <value>lblDebugTitulo</value>
-  </data>
-  <data name="&gt;&gt;lblDebugTitulo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblDebugTitulo.Parent" xml:space="preserve">
-    <value>pnlDebug</value>
-  </data>
-  <data name="&gt;&gt;lblDebugTitulo.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="pnlDebug.Location" type="System.Drawing.Point, System.Drawing">
-    <value>280, 0</value>
-  </data>
-  <data name="pnlDebug.Size" type="System.Drawing.Size, System.Drawing">
-    <value>460, 426</value>
-  </data>
-  <data name="pnlDebug.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="pnlDebug.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;pnlDebug.Name" xml:space="preserve">
-    <value>pnlDebug</value>
-  </data>
-  <data name="&gt;&gt;pnlDebug.Type" xml:space="preserve">
+  <data name="&gt;&gt;pblEstado.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pnlDebug.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pblEstado.Parent" xml:space="preserve">
+    <value>pnlPrincipal</value>
+  </data>
+  <data name="&gt;&gt;pblEstado.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pnlPrincipal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pnlPrincipal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="pnlPrincipal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 426</value>
+  </data>
+  <data name="pnlPrincipal.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pnlPrincipal.Name" xml:space="preserve">
+    <value>pnlPrincipal</value>
+  </data>
+  <data name="&gt;&gt;pnlPrincipal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlPrincipal.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;pnlDebug.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;pnlPrincipal.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="lblDebugTitulo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1133,6 +1010,30 @@
   </data>
   <data name="&gt;&gt;lblDebugTitulo.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="pnlDebug.Location" type="System.Drawing.Point, System.Drawing">
+    <value>280, 0</value>
+  </data>
+  <data name="pnlDebug.Size" type="System.Drawing.Size, System.Drawing">
+    <value>460, 426</value>
+  </data>
+  <data name="pnlDebug.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="pnlDebug.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pnlDebug.Name" xml:space="preserve">
+    <value>pnlDebug</value>
+  </data>
+  <data name="&gt;&gt;pnlDebug.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlDebug.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlDebug.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1769,12 +1670,6 @@
   </data>
   <data name="&gt;&gt;ttmAbout.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;trmReloj.Name" xml:space="preserve">
-    <value>trmReloj</value>
-  </data>
-  <data name="&gt;&gt;trmReloj.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ttConsejo.Name" xml:space="preserve">
     <value>ttConsejo</value>

@@ -29,8 +29,6 @@ Public Class FrmPrincipal
     Private objTelnet As New AndTelnet()
     ''' <summary>Indica si actualmente se está en modo consulta.</summary>
     Private bModoConsulta As Boolean = False
-    ''' <summary>Indica si es la primera carga. Para la gestión del reloj.</summary>
-    Private bInicial As Boolean = True
     ''' <summary>Controla la posici?n del ratón para el desplazamiento de la ventana.</summary>
     Private objPosCursor As Point
     ''' <summary>Indica si el botón izquierdo del ratón está pulsado.</summary>
@@ -127,15 +125,17 @@ Public Class FrmPrincipal
     Private Sub frmPrincipal_Load() Handles MyBase.Load
         Me.Text = My.Application.Info.ProductName & " " & My.Application.Info.Version.ToString
         lblTitulo.Text = My.Application.Info.AssemblyName.ToUpper & " " & My.Application.Info.Version.ToString
-        updateHora()
-        trmReloj.Interval = 60000 - (TimeOfDay.Second * 1000)
         lanzar(TipoApp.Connect)
     End Sub
 
 
     ''' <summary>Cierra la aplicación.</summary>
-    Private Sub btnSalir_Click() Handles btnSalir.Click
+    Private Sub btnSalir_Click() Handles btnSalir.Click, btnCerrar.Click
         Me.Close()
+    End Sub
+
+    Private Sub btnMinimizar_Click() Handles btnMinimizar.Click
+        Me.WindowState = FormWindowState.Minimized
     End Sub
 
 
@@ -150,16 +150,6 @@ Public Class FrmPrincipal
                 objTelnet.desconectar()
             End If
         End If
-    End Sub
-
-
-    ''' <summary>Controla el tick del temporizador de reloj.</summary>
-    Private Sub trmReloj_Tick() Handles trmReloj.Tick
-        If bInicial Then
-            trmReloj.Interval = 60000
-            bInicial = False
-        End If
-        updateHora()
     End Sub
 
 
@@ -202,10 +192,10 @@ Public Class FrmPrincipal
     ''' <summary>Controla la pulsación del botón izquierdo sobre la barra de título.</summary>
     ''' <param name="sender">Emisor del evento.</param>
     ''' <param name="e">Datos del evento.</param>
-    Private Sub pblEstado_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs) Handles pblEstado.MouseDown, lblReloj.MouseDown, lblTitulo.MouseDown
+    Private Sub pblEstado_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs) Handles pblEstado.MouseDown, lblTitulo.MouseDown
         If e.Button = MouseButtons.Left Then
             Dim objControl As Control = CType(sender, Control)
-            If objControl.Name = lblReloj.Name Or objControl.Name = lblTitulo.Name Then
+            If objControl.Name = lblTitulo.Name Then
                 objPosCursor = New Point(-e.X - objControl.Location.X, -e.Y - objControl.Location.Y)
             Else
                 objPosCursor = New Point(-e.X, -e.Y)
@@ -218,7 +208,7 @@ Public Class FrmPrincipal
     ''' <summary>Controla el movimiento del ratón sobre la barra de título.</summary>
     ''' <param name="sender">Emisor del evento.</param>
     ''' <param name="e">Datos del evento.</param>
-    Private Sub pblEstado_MouseMove(ByVal sender As Object, ByVal e As MouseEventArgs) Handles pblEstado.MouseMove, lblReloj.MouseMove, lblTitulo.MouseMove
+    Private Sub pblEstado_MouseMove(ByVal sender As Object, ByVal e As MouseEventArgs) Handles pblEstado.MouseMove, lblTitulo.MouseMove
         If bMouseDown Then
             Dim objPosicion As Point = Control.MousePosition
             objPosicion.Offset(objPosCursor.X, objPosCursor.Y)
@@ -230,7 +220,7 @@ Public Class FrmPrincipal
     ''' <summary>Controla el fin del evento de arrastre del ratón en la barra de título.</summary>
     ''' <param name="sender">Emisor del evento.</param>
     ''' <param name="e">Datos del evento.</param>
-    Private Sub pblEstado_MouseUp(ByVal sender As Object, ByVal e As MouseEventArgs) Handles pblEstado.MouseUp, lblReloj.MouseUp, lblTitulo.MouseUp
+    Private Sub pblEstado_MouseUp(ByVal sender As Object, ByVal e As MouseEventArgs) Handles pblEstado.MouseUp, lblTitulo.MouseUp
         If e.Button = MouseButtons.Left Then
             bMouseDown = False
         End If
@@ -240,23 +230,6 @@ Public Class FrmPrincipal
     ' ######################################
     ' GENERAL
     ' ######################################
-    Private Sub updateHora()
-        Dim sHora As String = String.Empty
-
-        If TimeOfDay.Hour < 10 Then
-            sHora &= "0"
-        End If
-        sHora &= TimeOfDay.Hour & ":"
-
-        If TimeOfDay.Minute < 10 Then
-            sHora &= "0"
-        End If
-        sHora &= TimeOfDay.Minute
-
-        lblReloj.Text = sHora
-    End Sub
-
-
     ''' <summary>Envía el comando que hay en la línea de comandos.</summary>
     ''' <param name="sComando">Comando a enviar en la consulta.</param>
     Public Sub enviarComando(ByVal sComando As String)
