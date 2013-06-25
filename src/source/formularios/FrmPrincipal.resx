@@ -117,350 +117,167 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="txtComando.AutoCompleteCustomSource16" xml:space="preserve">
-    <value>gsm accept</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource13" xml:space="preserve">
-    <value>gsm call</value>
-  </data>
-  <data name="&gt;&gt;pnlDebug.Name" xml:space="preserve">
-    <value>pnlDebug</value>
-  </data>
-  <data name="&gt;&gt;pblEstado.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pnlDock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 56</value>
-  </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;btnConfiguracion.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkDebug.Name" xml:space="preserve">
-    <value>chkDebug</value>
-  </data>
-  <data name="pnlPrincipal.ToolTip" xml:space="preserve">
-    <value />
+  <data name="txtRecv.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Courier New, 8.25pt</value>
   </data>
   <data name="txtRecv.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 31</value>
   </data>
-  <data name="txtRecv.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Courier New, 8.25pt</value>
-  </data>
-  <data name="&gt;&gt;lblDebugTitulo.Name" xml:space="preserve">
-    <value>lblDebugTitulo</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pnlCentral.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tlpMenu.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="chkDebug.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="txtRecv.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="txtRecv.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pnlPrincipal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="&gt;&gt;btnConfiguracion.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lblReloj.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblDebugTitulo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtRecv.ToolTip" xml:space="preserve">
-    <value>Hide debug panel</value>
-  </data>
-  <data name="tlpMenu.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="pblEstado.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="btnConfiguracion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="btnHome.ToolTip" xml:space="preserve">
-    <value>Main menu</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Android Virtual Management</value>
-  </data>
-  <data name="&gt;&gt;btnHome.Parent" xml:space="preserve">
-    <value>tlpMenu</value>
-  </data>
-  <data name="chkDebug.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="&gt;&gt;pnlCentral.Parent" xml:space="preserve">
-    <value>pnlPrincipal</value>
-  </data>
-  <data name="pnlPrincipal.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnConfiguracion.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="pnlDebug.Location" type="System.Drawing.Point, System.Drawing">
-    <value>280, 0</value>
+  <data name="txtRecv.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
   </data>
   <data name="txtRecv.Size" type="System.Drawing.Size, System.Drawing">
     <value>444, 349</value>
   </data>
-  <data name="txtComando.AutoCompleteCustomSource64" xml:space="preserve">
-    <value>power health failure</value>
-  </data>
-  <data name="btnSalir.Location" type="System.Drawing.Point, System.Drawing">
-    <value>227, 3</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource67" xml:space="preserve">
-    <value>exit</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource2" xml:space="preserve">
-    <value>?</value>
-  </data>
-  <data name="pnlCentral.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 32</value>
-  </data>
-  <data name="ttSeparador2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 6</value>
-  </data>
-  <data name="btnEnviar.Text" xml:space="preserve">
-    <value>Send</value>
-  </data>
-  <data name="btnEnviar.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource101" xml:space="preserve">
-    <value>sensor set proximity</value>
-  </data>
-  <data name="ttmAyuGeneral.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource3" xml:space="preserve">
-    <value>event</value>
-  </data>
-  <data name="&gt;&gt;pnlPrincipal.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;chkDebug.Parent" xml:space="preserve">
-    <value>tlpMenu</value>
-  </data>
-  <data name="btnHome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 3</value>
-  </data>
-  <data name="&gt;&gt;ttmAbout.Name" xml:space="preserve">
-    <value>ttmAbout</value>
-  </data>
-  <data name="btnAyuda.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 50</value>
-  </data>
-  <data name="&gt;&gt;ttSeparador1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource90" xml:space="preserve">
-    <value>sensor get</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="tlpMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="btnHome.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btnEnviar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>374, 386</value>
-  </data>
-  <data name="btnAyuda.ToolTip" xml:space="preserve">
-    <value>Help</value>
-  </data>
-  <data name="&gt;&gt;tlpMenu.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnEnviar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="&gt;&gt;pnlCentral.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource84" xml:space="preserve">
-    <value>window</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource85" xml:space="preserve">
-    <value>window scale</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource86" xml:space="preserve">
-    <value>qemu</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource87" xml:space="preserve">
-    <value>qemu monitor</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource80" xml:space="preserve">
-    <value>avd snapshot list</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource81" xml:space="preserve">
-    <value>avd snapshot save</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource82" xml:space="preserve">
-    <value>avd snapshot load</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource83" xml:space="preserve">
-    <value>avd snapshot del</value>
-  </data>
-  <data name="btnAyuda.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 3</value>
-  </data>
-  <data name="pnlCentral.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 338</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource88" xml:space="preserve">
-    <value>sensor</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource89" xml:space="preserve">
-    <value>sensor status</value>
-  </data>
-  <data name="lblDebugTitulo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 17</value>
-  </data>
-  <data name="tlpMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 56</value>
-  </data>
-  <data name="ttmAyuManual.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 26</value>
-  </data>
-  <data name="&gt;&gt;lblReloj.Name" xml:space="preserve">
-    <value>lblReloj</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource94" xml:space="preserve">
-    <value>sensor get temperature</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource95" xml:space="preserve">
-    <value>sensor get proximity</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource96" xml:space="preserve">
-    <value>sensor set</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource97" xml:space="preserve">
-    <value>sensor set acceleration</value>
-  </data>
-  <data name="btnSalir.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 50</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource91" xml:space="preserve">
-    <value>sensor get acceleration</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource92" xml:space="preserve">
-    <value>sensor get magnetic-field</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource93" xml:space="preserve">
-    <value>sensor get orientation</value>
-  </data>
-  <data name="pnlCentral.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource98" xml:space="preserve">
-    <value>sensor set magnetic-field</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource99" xml:space="preserve">
-    <value>sensor set orientation</value>
-  </data>
-  <data name="lblReloj.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtComando.Size" type="System.Drawing.Size, System.Drawing">
-    <value>363, 20</value>
-  </data>
-  <data name="btnConfiguracion.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="&gt;&gt;pnlDebug.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;txtComando.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlDock.Name" xml:space="preserve">
-    <value>pnlDock</value>
-  </data>
-  <data name="&gt;&gt;tlpMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="chkDebug.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="&gt;&gt;ttmAyuGeneral.Name" xml:space="preserve">
-    <value>ttmAyuGeneral</value>
-  </data>
-  <data name="&gt;&gt;btnSalir.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;txtComando.Parent" xml:space="preserve">
-    <value>pnlDebug</value>
-  </data>
-  <data name="pblEstado.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;pblEstado.Name" xml:space="preserve">
-    <value>pblEstado</value>
-  </data>
-  <data name="&gt;&gt;ttmAyuManual.Name" xml:space="preserve">
-    <value>ttmAyuManual</value>
-  </data>
-  <data name="btnSalir.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtRecv.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;ttSeparador1.Name" xml:space="preserve">
-    <value>ttSeparador1</value>
+  <metadata name="ttConsejo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>115, 17</value>
+  </metadata>
+  <data name="txtRecv.ToolTip" xml:space="preserve">
+    <value>Hide debug panel</value>
   </data>
-  <data name="txtComando.AutoCompleteCustomSource24" xml:space="preserve">
-    <value>gsm data on</value>
+  <data name="&gt;&gt;txtRecv.Name" xml:space="preserve">
+    <value>txtRecv</value>
   </data>
-  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="btnHome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 50</value>
-  </data>
-  <data name="&gt;&gt;pnlPrincipal.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="ttmAyuManual.Text" xml:space="preserve">
-    <value>&amp;Manual</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource22" xml:space="preserve">
-    <value>gsm data denied</value>
-  </data>
-  <data name="btnAyuda.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="&gt;&gt;txtRecv.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;txtRecv.Parent" xml:space="preserve">
     <value>pnlDebug</value>
   </data>
-  <data name="txtComando.AutoCompleteCustomSource44" xml:space="preserve">
-    <value>network capture start</value>
+  <data name="&gt;&gt;txtRecv.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="txtComando.AutoCompleteCustomSource45" xml:space="preserve">
-    <value>network capture stop</value>
+  <data name="txtComando.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
   </data>
-  <data name="txtComando.AutoCompleteCustomSource46" xml:space="preserve">
-    <value>power display</value>
+  <data name="txtComando.AutoCompleteCustomSource" xml:space="preserve">
+    <value>h</value>
   </data>
-  <data name="txtComando.AutoCompleteCustomSource47" xml:space="preserve">
-    <value>power ac</value>
+  <data name="txtComando.AutoCompleteCustomSource1" xml:space="preserve">
+    <value>help</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource2" xml:space="preserve">
+    <value>?</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource3" xml:space="preserve">
+    <value>event</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource4" xml:space="preserve">
+    <value>event send</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource5" xml:space="preserve">
+    <value>event types</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource6" xml:space="preserve">
+    <value>event codes</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource7" xml:space="preserve">
+    <value>event text</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource8" xml:space="preserve">
+    <value>geo</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource9" xml:space="preserve">
+    <value>geo nmea</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource10" xml:space="preserve">
+    <value>geo fix</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource11" xml:space="preserve">
+    <value>gsm</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource12" xml:space="preserve">
+    <value>gsm list</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource13" xml:space="preserve">
+    <value>gsm call</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource14" xml:space="preserve">
+    <value>gsm busy</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource15" xml:space="preserve">
+    <value>gsm hold</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource16" xml:space="preserve">
+    <value>gsm accept</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource17" xml:space="preserve">
+    <value>gsm cancel</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource18" xml:space="preserve">
+    <value>gsm data unregistered</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource19" xml:space="preserve">
+    <value>gsm data home</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource20" xml:space="preserve">
+    <value>gsm data roaming</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource21" xml:space="preserve">
+    <value>gsm data searching</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource22" xml:space="preserve">
+    <value>gsm data denied</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource23" xml:space="preserve">
+    <value>gsm data off</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource24" xml:space="preserve">
+    <value>gsm data on</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource25" xml:space="preserve">
+    <value>gsm voice</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource26" xml:space="preserve">
+    <value>gsm voice unregistered</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource27" xml:space="preserve">
+    <value>gsm voice home</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource28" xml:space="preserve">
+    <value>gsm voice roaming</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource29" xml:space="preserve">
+    <value>gsm voice searching</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource30" xml:space="preserve">
+    <value>gsm voice denied</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource31" xml:space="preserve">
+    <value>gsm voice off</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource32" xml:space="preserve">
+    <value>gsm voice on</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource33" xml:space="preserve">
+    <value>gsm status</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource34" xml:space="preserve">
+    <value>gsm signal</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource35" xml:space="preserve">
+    <value>cdma</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource36" xml:space="preserve">
+    <value>cdma ssource</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource37" xml:space="preserve">
+    <value>cdma prl_version</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource38" xml:space="preserve">
+    <value>kill</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource39" xml:space="preserve">
+    <value>network</value>
   </data>
   <data name="txtComando.AutoCompleteCustomSource40" xml:space="preserve">
     <value>network status</value>
@@ -474,26 +291,35 @@
   <data name="txtComando.AutoCompleteCustomSource43" xml:space="preserve">
     <value>network capture</value>
   </data>
+  <data name="txtComando.AutoCompleteCustomSource44" xml:space="preserve">
+    <value>network capture start</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource45" xml:space="preserve">
+    <value>network capture stop</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource46" xml:space="preserve">
+    <value>power display</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource47" xml:space="preserve">
+    <value>power ac</value>
+  </data>
   <data name="txtComando.AutoCompleteCustomSource48" xml:space="preserve">
     <value>power ac on</value>
   </data>
   <data name="txtComando.AutoCompleteCustomSource49" xml:space="preserve">
     <value>power ac off</value>
   </data>
-  <data name="txtComando.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
+  <data name="txtComando.AutoCompleteCustomSource50" xml:space="preserve">
+    <value>power status</value>
   </data>
-  <data name="lblDebugTitulo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
+  <data name="txtComando.AutoCompleteCustomSource51" xml:space="preserve">
+    <value>power status unknown</value>
   </data>
-  <data name="tlpMenu.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnConfiguracion" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnSalir" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="btnHome" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnAyuda" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="chkDebug" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,100,Absolute,56" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  <data name="txtComando.AutoCompleteCustomSource52" xml:space="preserve">
+    <value>power status charging</value>
   </data>
-  <data name="&gt;&gt;lblDebugTitulo.Parent" xml:space="preserve">
-    <value>pnlDebug</value>
-  </data>
-  <data name="&gt;&gt;btnAyuda.Name" xml:space="preserve">
-    <value>btnAyuda</value>
+  <data name="txtComando.AutoCompleteCustomSource53" xml:space="preserve">
+    <value>power status discharging</value>
   </data>
   <data name="txtComando.AutoCompleteCustomSource54" xml:space="preserve">
     <value>power status not-charging</value>
@@ -507,53 +333,11 @@
   <data name="txtComando.AutoCompleteCustomSource57" xml:space="preserve">
     <value>power present false</value>
   </data>
-  <data name="txtComando.AutoCompleteCustomSource50" xml:space="preserve">
-    <value>power status</value>
-  </data>
-  <data name="btnConfiguracion.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource52" xml:space="preserve">
-    <value>power status charging</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource53" xml:space="preserve">
-    <value>power status discharging</value>
-  </data>
-  <data name="pblEstado.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
   <data name="txtComando.AutoCompleteCustomSource58" xml:space="preserve">
     <value>power health</value>
   </data>
   <data name="txtComando.AutoCompleteCustomSource59" xml:space="preserve">
     <value>power health unknown</value>
-  </data>
-  <data name="btnSalir.ToolTip" xml:space="preserve">
-    <value>Exit application</value>
-  </data>
-  <data name="chkDebug.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource1" xml:space="preserve">
-    <value>help</value>
-  </data>
-  <data name="&gt;&gt;chkDebug.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnAyuda.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="&gt;&gt;btnAyuda.Parent" xml:space="preserve">
-    <value>tlpMenu</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource65" xml:space="preserve">
-    <value>power capacity</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource66" xml:space="preserve">
-    <value>quit</value>
-  </data>
-  <data name="pblEstado.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="txtComando.AutoCompleteCustomSource60" xml:space="preserve">
     <value>power health good</value>
@@ -564,38 +348,26 @@
   <data name="txtComando.AutoCompleteCustomSource62" xml:space="preserve">
     <value>power health dead</value>
   </data>
-  <data name="pnlDock.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="txtComando.AutoCompleteCustomSource63" xml:space="preserve">
+    <value>power health overvoltage</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource64" xml:space="preserve">
+    <value>power health failure</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource65" xml:space="preserve">
+    <value>power capacity</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource66" xml:space="preserve">
+    <value>quit</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource67" xml:space="preserve">
+    <value>exit</value>
   </data>
   <data name="txtComando.AutoCompleteCustomSource68" xml:space="preserve">
     <value>redir</value>
   </data>
   <data name="txtComando.AutoCompleteCustomSource69" xml:space="preserve">
     <value>redir list</value>
-  </data>
-  <data name="txtRecv.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
-    <value>Vertical</value>
-  </data>
-  <data name="&gt;&gt;btnSalir.Name" xml:space="preserve">
-    <value>btnSalir</value>
-  </data>
-  <data name="pnlPrincipal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;txtRecv.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource74" xml:space="preserve">
-    <value>sms pdu</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource75" xml:space="preserve">
-    <value>avd</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource76" xml:space="preserve">
-    <value>avd stop</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource77" xml:space="preserve">
-    <value>avd start</value>
   </data>
   <data name="txtComando.AutoCompleteCustomSource70" xml:space="preserve">
     <value>redit add</value>
@@ -609,20 +381,776 @@
   <data name="txtComando.AutoCompleteCustomSource73" xml:space="preserve">
     <value>sms send</value>
   </data>
+  <data name="txtComando.AutoCompleteCustomSource74" xml:space="preserve">
+    <value>sms pdu</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource75" xml:space="preserve">
+    <value>avd</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource76" xml:space="preserve">
+    <value>avd stop</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource77" xml:space="preserve">
+    <value>avd start</value>
+  </data>
   <data name="txtComando.AutoCompleteCustomSource78" xml:space="preserve">
     <value>avd status</value>
   </data>
   <data name="txtComando.AutoCompleteCustomSource79" xml:space="preserve">
     <value>avd name</value>
   </data>
-  <data name="&gt;&gt;lblReloj.Parent" xml:space="preserve">
+  <data name="txtComando.AutoCompleteCustomSource80" xml:space="preserve">
+    <value>avd snapshot list</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource81" xml:space="preserve">
+    <value>avd snapshot save</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource82" xml:space="preserve">
+    <value>avd snapshot load</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource83" xml:space="preserve">
+    <value>avd snapshot del</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource84" xml:space="preserve">
+    <value>window</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource85" xml:space="preserve">
+    <value>window scale</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource86" xml:space="preserve">
+    <value>qemu</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource87" xml:space="preserve">
+    <value>qemu monitor</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource88" xml:space="preserve">
+    <value>sensor</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource89" xml:space="preserve">
+    <value>sensor status</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource90" xml:space="preserve">
+    <value>sensor get</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource91" xml:space="preserve">
+    <value>sensor get acceleration</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource92" xml:space="preserve">
+    <value>sensor get magnetic-field</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource93" xml:space="preserve">
+    <value>sensor get orientation</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource94" xml:space="preserve">
+    <value>sensor get temperature</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource95" xml:space="preserve">
+    <value>sensor get proximity</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource96" xml:space="preserve">
+    <value>sensor set</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource97" xml:space="preserve">
+    <value>sensor set acceleration</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource98" xml:space="preserve">
+    <value>sensor set magnetic-field</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource99" xml:space="preserve">
+    <value>sensor set orientation</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource100" xml:space="preserve">
+    <value>sensor set temperature</value>
+  </data>
+  <data name="txtComando.AutoCompleteCustomSource101" xml:space="preserve">
+    <value>sensor set proximity</value>
+  </data>
+  <data name="txtComando.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtComando.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 388</value>
+  </data>
+  <data name="txtComando.Size" type="System.Drawing.Size, System.Drawing">
+    <value>363, 20</value>
+  </data>
+  <data name="txtComando.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtComando.Name" xml:space="preserve">
+    <value>txtComando</value>
+  </data>
+  <data name="&gt;&gt;txtComando.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtComando.Parent" xml:space="preserve">
+    <value>pnlDebug</value>
+  </data>
+  <data name="&gt;&gt;txtComando.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnEnviar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btnEnviar.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnEnviar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnEnviar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btnEnviar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>374, 386</value>
+  </data>
+  <data name="btnEnviar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnEnviar.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btnEnviar.Text" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="&gt;&gt;btnEnviar.Name" xml:space="preserve">
+    <value>btnEnviar</value>
+  </data>
+  <data name="&gt;&gt;btnEnviar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnEnviar.Parent" xml:space="preserve">
+    <value>pnlDebug</value>
+  </data>
+  <data name="&gt;&gt;btnEnviar.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pnlCentral.Name" xml:space="preserve">
+    <value>pnlCentral</value>
+  </data>
+  <data name="&gt;&gt;pnlCentral.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlCentral.Parent" xml:space="preserve">
+    <value>pnlPrincipal</value>
+  </data>
+  <data name="&gt;&gt;pnlCentral.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pnlDock.Name" xml:space="preserve">
+    <value>pnlDock</value>
+  </data>
+  <data name="&gt;&gt;pnlDock.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlDock.Parent" xml:space="preserve">
+    <value>pnlPrincipal</value>
+  </data>
+  <data name="&gt;&gt;pnlDock.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pblEstado.Name" xml:space="preserve">
     <value>pblEstado</value>
+  </data>
+  <data name="&gt;&gt;pblEstado.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pblEstado.Parent" xml:space="preserve">
+    <value>pnlPrincipal</value>
+  </data>
+  <data name="&gt;&gt;pblEstado.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pnlPrincipal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pnlPrincipal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="pnlPrincipal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 426</value>
+  </data>
+  <data name="pnlPrincipal.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pnlPrincipal.Name" xml:space="preserve">
+    <value>pnlPrincipal</value>
+  </data>
+  <data name="&gt;&gt;pnlPrincipal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlPrincipal.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlPrincipal.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pnlCentral.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pnlCentral.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 32</value>
+  </data>
+  <data name="pnlCentral.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 338</value>
+  </data>
+  <data name="pnlCentral.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pnlCentral.Name" xml:space="preserve">
+    <value>pnlCentral</value>
+  </data>
+  <data name="&gt;&gt;pnlCentral.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlCentral.Parent" xml:space="preserve">
+    <value>pnlPrincipal</value>
+  </data>
+  <data name="&gt;&gt;pnlCentral.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;tlpMenu.Name" xml:space="preserve">
     <value>tlpMenu</value>
   </data>
-  <data name="pnlDebug.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;tlpMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlpMenu.Parent" xml:space="preserve">
+    <value>pnlDock</value>
+  </data>
+  <data name="&gt;&gt;tlpMenu.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tlpMenu.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnConfiguracion" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnSalir" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="btnHome" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnAyuda" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="chkDebug" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,100,Absolute,56" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="pnlDock.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="pnlDock.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 370</value>
+  </data>
+  <data name="pnlDock.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 56</value>
+  </data>
+  <data name="pnlDock.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pnlDock.Name" xml:space="preserve">
+    <value>pnlDock</value>
+  </data>
+  <data name="&gt;&gt;pnlDock.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlDock.Parent" xml:space="preserve">
+    <value>pnlPrincipal</value>
+  </data>
+  <data name="&gt;&gt;pnlDock.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tlpMenu.ColumnCount" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btnConfiguracion.Name" xml:space="preserve">
+    <value>btnConfiguracion</value>
+  </data>
+  <data name="&gt;&gt;btnConfiguracion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnConfiguracion.Parent" xml:space="preserve">
+    <value>tlpMenu</value>
+  </data>
+  <data name="&gt;&gt;btnConfiguracion.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnSalir.Name" xml:space="preserve">
+    <value>btnSalir</value>
+  </data>
+  <data name="&gt;&gt;btnSalir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSalir.Parent" xml:space="preserve">
+    <value>tlpMenu</value>
+  </data>
+  <data name="&gt;&gt;btnSalir.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnHome.Name" xml:space="preserve">
+    <value>btnHome</value>
+  </data>
+  <data name="&gt;&gt;btnHome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnHome.Parent" xml:space="preserve">
+    <value>tlpMenu</value>
+  </data>
+  <data name="&gt;&gt;btnHome.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnAyuda.Name" xml:space="preserve">
+    <value>btnAyuda</value>
+  </data>
+  <data name="&gt;&gt;btnAyuda.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAyuda.Parent" xml:space="preserve">
+    <value>tlpMenu</value>
+  </data>
+  <data name="&gt;&gt;btnAyuda.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;chkDebug.Name" xml:space="preserve">
+    <value>chkDebug</value>
+  </data>
+  <data name="&gt;&gt;chkDebug.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkDebug.Parent" xml:space="preserve">
+    <value>tlpMenu</value>
+  </data>
+  <data name="&gt;&gt;chkDebug.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tlpMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tlpMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tlpMenu.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tlpMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 56</value>
+  </data>
+  <data name="tlpMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tlpMenu.Name" xml:space="preserve">
+    <value>tlpMenu</value>
+  </data>
+  <data name="&gt;&gt;tlpMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlpMenu.Parent" xml:space="preserve">
+    <value>pnlDock</value>
+  </data>
+  <data name="&gt;&gt;tlpMenu.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tlpMenu.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnConfiguracion" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnSalir" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="btnHome" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnAyuda" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="chkDebug" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,100,Absolute,56" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <metadata name="mnAyuda.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>219, 17</value>
+  </metadata>
+  <data name="mnAyuda.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 94</value>
+  </data>
+  <data name="&gt;&gt;mnAyuda.Name" xml:space="preserve">
+    <value>mnAyuda</value>
+  </data>
+  <data name="&gt;&gt;mnAyuda.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnConfiguracion.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="btnConfiguracion.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnConfiguracion.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnConfiguracion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="btnConfiguracion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="btnConfiguracion.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="btnConfiguracion.ToolTip" xml:space="preserve">
+    <value>Config</value>
+  </data>
+  <data name="&gt;&gt;btnConfiguracion.Name" xml:space="preserve">
+    <value>btnConfiguracion</value>
+  </data>
+  <data name="&gt;&gt;btnConfiguracion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnConfiguracion.Parent" xml:space="preserve">
+    <value>tlpMenu</value>
+  </data>
+  <data name="&gt;&gt;btnConfiguracion.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ttmAyuGeneral.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="ttmAyuGeneral.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 26</value>
+  </data>
+  <data name="ttmAyuGeneral.Text" xml:space="preserve">
+    <value>&amp;General info</value>
+  </data>
+  <data name="ttSeparador2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 6</value>
+  </data>
+  <data name="ttmAyuManual.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="ttmAyuManual.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 26</value>
+  </data>
+  <data name="ttmAyuManual.Text" xml:space="preserve">
+    <value>&amp;Manual</value>
+  </data>
+  <data name="ttSeparador1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 6</value>
+  </data>
+  <data name="ttmAbout.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="ttmAbout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 26</value>
+  </data>
+  <data name="ttmAbout.Text" xml:space="preserve">
+    <value>&amp;About...</value>
+  </data>
+  <data name="btnSalir.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="btnSalir.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnSalir.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 3</value>
+  </data>
+  <data name="btnSalir.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="btnSalir.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btnSalir.ToolTip" xml:space="preserve">
+    <value>Exit application</value>
+  </data>
+  <data name="&gt;&gt;btnSalir.Name" xml:space="preserve">
+    <value>btnSalir</value>
+  </data>
+  <data name="&gt;&gt;btnSalir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSalir.Parent" xml:space="preserve">
+    <value>tlpMenu</value>
+  </data>
+  <data name="&gt;&gt;btnSalir.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnHome.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="btnHome.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnHome.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnHome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>115, 3</value>
+  </data>
+  <data name="btnHome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="btnHome.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnHome.ToolTip" xml:space="preserve">
+    <value>Main menu</value>
+  </data>
+  <data name="&gt;&gt;btnHome.Name" xml:space="preserve">
+    <value>btnHome</value>
+  </data>
+  <data name="&gt;&gt;btnHome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnHome.Parent" xml:space="preserve">
+    <value>tlpMenu</value>
+  </data>
+  <data name="&gt;&gt;btnHome.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnAyuda.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="btnAyuda.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnAyuda.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 3</value>
+  </data>
+  <data name="btnAyuda.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="btnAyuda.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnAyuda.ToolTip" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="&gt;&gt;btnAyuda.Name" xml:space="preserve">
+    <value>btnAyuda</value>
+  </data>
+  <data name="&gt;&gt;btnAyuda.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAyuda.Parent" xml:space="preserve">
+    <value>tlpMenu</value>
+  </data>
+  <data name="&gt;&gt;btnAyuda.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="chkDebug.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="chkDebug.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkDebug.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="chkDebug.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="chkDebug.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 3</value>
+  </data>
+  <data name="chkDebug.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="chkDebug.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="chkDebug.ToolTip" xml:space="preserve">
+    <value>Show debug console</value>
+  </data>
+  <data name="&gt;&gt;chkDebug.Name" xml:space="preserve">
+    <value>chkDebug</value>
+  </data>
+  <data name="&gt;&gt;chkDebug.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkDebug.Parent" xml:space="preserve">
+    <value>tlpMenu</value>
+  </data>
+  <data name="&gt;&gt;chkDebug.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblTitulo.Name" xml:space="preserve">
+    <value>lblTitulo</value>
+  </data>
+  <data name="&gt;&gt;lblTitulo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTitulo.Parent" xml:space="preserve">
+    <value>pblEstado</value>
+  </data>
+  <data name="&gt;&gt;lblTitulo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblReloj.Name" xml:space="preserve">
+    <value>lblReloj</value>
+  </data>
+  <data name="&gt;&gt;lblReloj.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblReloj.Parent" xml:space="preserve">
+    <value>pblEstado</value>
+  </data>
+  <data name="&gt;&gt;lblReloj.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pblEstado.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="pblEstado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pblEstado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 32</value>
+  </data>
+  <data name="pblEstado.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pblEstado.Name" xml:space="preserve">
+    <value>pblEstado</value>
+  </data>
+  <data name="&gt;&gt;pblEstado.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pblEstado.Parent" xml:space="preserve">
+    <value>pnlPrincipal</value>
+  </data>
+  <data name="&gt;&gt;pblEstado.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblTitulo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblTitulo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="lblTitulo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTitulo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 8</value>
+  </data>
+  <data name="lblTitulo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 17</value>
+  </data>
+  <data name="lblTitulo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblTitulo.Text" xml:space="preserve">
+    <value>AVM</value>
+  </data>
+  <data name="&gt;&gt;lblTitulo.Name" xml:space="preserve">
+    <value>lblTitulo</value>
+  </data>
+  <data name="&gt;&gt;lblTitulo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTitulo.Parent" xml:space="preserve">
+    <value>pblEstado</value>
+  </data>
+  <data name="&gt;&gt;lblTitulo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblReloj.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="lblReloj.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 5</value>
+  </data>
+  <data name="lblReloj.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 23</value>
+  </data>
+  <data name="lblReloj.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblReloj.Text" xml:space="preserve">
+    <value>00:00</value>
+  </data>
+  <data name="lblReloj.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblReloj.Name" xml:space="preserve">
+    <value>lblReloj</value>
+  </data>
+  <data name="&gt;&gt;lblReloj.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblReloj.Parent" xml:space="preserve">
+    <value>pblEstado</value>
+  </data>
+  <data name="&gt;&gt;lblReloj.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="trmReloj.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="&gt;&gt;lblDebugTitulo.Name" xml:space="preserve">
+    <value>lblDebugTitulo</value>
+  </data>
+  <data name="&gt;&gt;lblDebugTitulo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDebugTitulo.Parent" xml:space="preserve">
+    <value>pnlDebug</value>
+  </data>
+  <data name="&gt;&gt;lblDebugTitulo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlDebug.Location" type="System.Drawing.Point, System.Drawing">
+    <value>280, 0</value>
+  </data>
+  <data name="pnlDebug.Size" type="System.Drawing.Size, System.Drawing">
+    <value>460, 426</value>
+  </data>
+  <data name="pnlDebug.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="pnlDebug.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pnlDebug.Name" xml:space="preserve">
+    <value>pnlDebug</value>
+  </data>
+  <data name="&gt;&gt;pnlDebug.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlDebug.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlDebug.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblDebugTitulo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblDebugTitulo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="lblDebugTitulo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblDebugTitulo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 7</value>
+  </data>
+  <data name="lblDebugTitulo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 17</value>
+  </data>
+  <data name="lblDebugTitulo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblDebugTitulo.Text" xml:space="preserve">
+    <value>Debug console:</value>
+  </data>
+  <data name="lblDebugTitulo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblDebugTitulo.Name" xml:space="preserve">
+    <value>lblDebugTitulo</value>
+  </data>
+  <data name="&gt;&gt;lblDebugTitulo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDebugTitulo.Parent" xml:space="preserve">
+    <value>pnlDebug</value>
+  </data>
+  <data name="&gt;&gt;lblDebugTitulo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>70</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>740, 426</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1203,445 +1731,61 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 </value>
   </data>
-  <data name="&gt;&gt;btnAyuda.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource8" xml:space="preserve">
-    <value>geo</value>
-  </data>
-  <data name="&gt;&gt;txtRecv.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pnlDock.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 370</value>
-  </data>
-  <data name="&gt;&gt;pblEstado.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btnHome.Name" xml:space="preserve">
-    <value>btnHome</value>
-  </data>
-  <data name="&gt;&gt;pnlDebug.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource9" xml:space="preserve">
-    <value>geo nmea</value>
-  </data>
-  <data name="chkDebug.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 50</value>
-  </data>
-  <data name="&gt;&gt;pnlCentral.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlPrincipal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pnlDebug.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="lblDebugTitulo.Text" xml:space="preserve">
-    <value>Debug console:</value>
-  </data>
-  <data name="&gt;&gt;pnlDock.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;ttConsejo.Name" xml:space="preserve">
-    <value>ttConsejo</value>
-  </data>
-  <data name="btnHome.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="&gt;&gt;btnEnviar.Name" xml:space="preserve">
-    <value>btnEnviar</value>
-  </data>
-  <data name="tlpMenu.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ttmAbout.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
-  </data>
-  <data name="&gt;&gt;ttmAyuManual.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="mnAyuda.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 94</value>
-  </data>
-  <data name="lblDebugTitulo.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnConfiguracion.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnAyuda.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="&gt;&gt;pnlDebug.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ttmAbout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 26</value>
-  </data>
-  <data name="ttSeparador1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 6</value>
-  </data>
-  <data name="btnEnviar.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FrmPrincipal</value>
-  </data>
-  <data name="&gt;&gt;mnAyuda.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnEnviar.Parent" xml:space="preserve">
-    <value>pnlDebug</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource4" xml:space="preserve">
-    <value>event send</value>
-  </data>
-  <data name="lblReloj.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="btnConfiguracion.ToolTip" xml:space="preserve">
-    <value>Config</value>
-  </data>
-  <data name="&gt;&gt;btnConfiguracion.Name" xml:space="preserve">
-    <value>btnConfiguracion</value>
-  </data>
-  <data name="ttmAyuGeneral.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 26</value>
-  </data>
-  <data name="&gt;&gt;pnlPrincipal.Name" xml:space="preserve">
-    <value>pnlPrincipal</value>
-  </data>
-  <data name="&gt;&gt;pblEstado.Parent" xml:space="preserve">
-    <value>pnlPrincipal</value>
-  </data>
-  <data name="&gt;&gt;txtRecv.Name" xml:space="preserve">
-    <value>txtRecv</value>
-  </data>
-  <data name="btnSalir.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="&gt;&gt;btnHome.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tlpMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="btnSalir.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource5" xml:space="preserve">
-    <value>event types</value>
-  </data>
-  <data name="pnlDock.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="chkDebug.Location" type="System.Drawing.Point, System.Drawing">
-    <value>171, 3</value>
-  </data>
-  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;btnAyuda.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="pnlPrincipal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 426</value>
-  </data>
-  <data name="&gt;&gt;mnAyuda.Name" xml:space="preserve">
-    <value>mnAyuda</value>
-  </data>
-  <data name="lblReloj.Location" type="System.Drawing.Point, System.Drawing">
-    <value>217, 5</value>
-  </data>
-  <data name="&gt;&gt;lblDebugTitulo.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnConfiguracion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 50</value>
-  </data>
-  <data name="ttmAbout.Text" xml:space="preserve">
-    <value>&amp;About...</value>
-  </data>
-  <data name="&gt;&gt;ttSeparador2.Name" xml:space="preserve">
-    <value>ttSeparador2</value>
-  </data>
-  <data name="pnlDebug.Size" type="System.Drawing.Size, System.Drawing">
-    <value>460, 426</value>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>305, 426</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
-  <data name="tlpMenu.ColumnCount" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Android Virtual Management</value>
+  </data>
+  <data name="&gt;&gt;ttmAyuGeneral.Name" xml:space="preserve">
+    <value>ttmAyuGeneral</value>
   </data>
   <data name="&gt;&gt;ttmAyuGeneral.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblDebugTitulo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;trmReloj.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource7" xml:space="preserve">
-    <value>event text</value>
-  </data>
-  <data name="&gt;&gt;btnEnviar.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="lblReloj.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ttmAyuManual.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
-  </data>
-  <data name="ttmAyuGeneral.Text" xml:space="preserve">
-    <value>&amp;General info</value>
-  </data>
-  <data name="txtComando.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;ttmAbout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtRecv.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource51" xml:space="preserve">
-    <value>power status unknown</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>305, 426</value>
-  </data>
-  <data name="pblEstado.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 32</value>
-  </data>
-  <data name="btnHome.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="pnlCentral.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="&gt;&gt;lblReloj.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblReloj.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
-  </data>
-  <data name="txtComando.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="pnlDock.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="&gt;&gt;pnlDock.Parent" xml:space="preserve">
-    <value>pnlPrincipal</value>
-  </data>
-  <data name="txtComando.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;btnSalir.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ttConsejo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pnlDebug.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mnAyuda.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lblReloj.Text" xml:space="preserve">
-    <value>00:00</value>
-  </data>
-  <data name="lblDebugTitulo.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="chkDebug.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>740, 426</value>
-  </data>
-  <data name="&gt;&gt;btnEnviar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource14" xml:space="preserve">
-    <value>gsm busy</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource15" xml:space="preserve">
-    <value>gsm hold</value>
-  </data>
-  <data name="&gt;&gt;pnlDock.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource17" xml:space="preserve">
-    <value>gsm cancel</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource10" xml:space="preserve">
-    <value>geo fix</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource11" xml:space="preserve">
-    <value>gsm</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource12" xml:space="preserve">
-    <value>gsm list</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource100" xml:space="preserve">
-    <value>sensor set temperature</value>
-  </data>
-  <data name="lblDebugTitulo.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource63" xml:space="preserve">
-    <value>power health overvoltage</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource18" xml:space="preserve">
-    <value>gsm data unregistered</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource19" xml:space="preserve">
-    <value>gsm data home</value>
-  </data>
-  <data name="btnEnviar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="lblReloj.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 23</value>
-  </data>
-  <data name="txtComando.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 388</value>
-  </data>
-  <data name="btnEnviar.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource25" xml:space="preserve">
-    <value>gsm voice</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource26" xml:space="preserve">
-    <value>gsm voice unregistered</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource27" xml:space="preserve">
-    <value>gsm voice home</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource20" xml:space="preserve">
-    <value>gsm data roaming</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource21" xml:space="preserve">
-    <value>gsm data searching</value>
-  </data>
-  <data name="&gt;&gt;pnlCentral.Name" xml:space="preserve">
-    <value>pnlCentral</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource23" xml:space="preserve">
-    <value>gsm data off</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource28" xml:space="preserve">
-    <value>gsm voice roaming</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource29" xml:space="preserve">
-    <value>gsm voice searching</value>
-  </data>
-  <data name="&gt;&gt;txtComando.Name" xml:space="preserve">
-    <value>txtComando</value>
-  </data>
-  <data name="chkDebug.ToolTip" xml:space="preserve">
-    <value>Show debug console</value>
-  </data>
-  <data name="lblDebugTitulo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 7</value>
-  </data>
-  <data name="&gt;&gt;btnSalir.Parent" xml:space="preserve">
-    <value>tlpMenu</value>
-  </data>
-  <data name="&gt;&gt;trmReloj.Name" xml:space="preserve">
-    <value>trmReloj</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource34" xml:space="preserve">
-    <value>gsm signal</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource35" xml:space="preserve">
-    <value>cdma</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource36" xml:space="preserve">
-    <value>cdma ssource</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource37" xml:space="preserve">
-    <value>cdma prl_version</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource30" xml:space="preserve">
-    <value>gsm voice denied</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource31" xml:space="preserve">
-    <value>gsm voice off</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource32" xml:space="preserve">
-    <value>gsm voice on</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource33" xml:space="preserve">
-    <value>gsm status</value>
-  </data>
-  <data name="&gt;&gt;tlpMenu.Parent" xml:space="preserve">
-    <value>pnlDock</value>
-  </data>
-  <data name="lblDebugTitulo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnEnviar.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource38" xml:space="preserve">
-    <value>kill</value>
-  </data>
-  <data name="txtComando.AutoCompleteCustomSource39" xml:space="preserve">
-    <value>network</value>
+  <data name="&gt;&gt;ttSeparador2.Name" xml:space="preserve">
+    <value>ttSeparador2</value>
   </data>
   <data name="&gt;&gt;ttSeparador2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="txtComando.AutoCompleteCustomSource" xml:space="preserve">
-    <value>h</value>
+  <data name="&gt;&gt;ttmAyuManual.Name" xml:space="preserve">
+    <value>ttmAyuManual</value>
   </data>
-  <data name="&gt;&gt;btnHome.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;ttmAyuManual.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnHome.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="&gt;&gt;ttSeparador1.Name" xml:space="preserve">
+    <value>ttSeparador1</value>
   </data>
-  <data name="btnEnviar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="&gt;&gt;ttSeparador1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtComando.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;ttmAbout.Name" xml:space="preserve">
+    <value>ttmAbout</value>
   </data>
-  <data name="txtComando.AutoCompleteCustomSource6" xml:space="preserve">
-    <value>event codes</value>
+  <data name="&gt;&gt;ttmAbout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnConfiguracion.Parent" xml:space="preserve">
-    <value>tlpMenu</value>
+  <data name="&gt;&gt;trmReloj.Name" xml:space="preserve">
+    <value>trmReloj</value>
   </data>
-  <data name="&gt;&gt;chkDebug.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;trmReloj.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <metadata name="ttConsejo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>115, 17</value>
-  </metadata>
-  <metadata name="trmReloj.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="mnAyuda.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>219, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>27</value>
-  </metadata>
+  <data name="&gt;&gt;ttConsejo.Name" xml:space="preserve">
+    <value>ttConsejo</value>
+  </data>
+  <data name="&gt;&gt;ttConsejo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FrmPrincipal</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

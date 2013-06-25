@@ -55,4 +55,6 @@
   <tag clave="sen_y_axis_tt" valor="Valor en el eje Y" />
   <tag clave="sen_z_axis" valor="Eje Z:" />
   <tag clave="sen_z_axis_tt" valor="Valor en el eje Z" />
+
+  <tag clave="url_manual" valor="https://github.com/jafs/avm/wiki/Gu%C3%ADa-de-usuario" />
 </idioma>

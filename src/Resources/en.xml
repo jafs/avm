@@ -55,4 +55,6 @@
   <tag clave="sen_y_axis_tt" valor="Value in Y axis" />
   <tag clave="sen_z_axis" valor="Z-Axis:" />
   <tag clave="sen_z_axis_tt" valor="Value in Z axis" />
+
+  <tag clave="url_manual" valor="https://github.com/jafs/avm/wiki/User's-Guide" />
 </idioma>

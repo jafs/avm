@@ -31,6 +31,10 @@ Public Class FrmPrincipal
     Private bModoConsulta As Boolean = False
     ''' <summary>Indica si es la primera carga. Para la gestión del reloj.</summary>
     Private bInicial As Boolean = True
+    ''' <summary>Controla la posici?n del ratón para el desplazamiento de la ventana.</summary>
+    Private objPosCursor As Point
+    ''' <summary>Indica si el botón izquierdo del ratón está pulsado.</summary>
+    Private bMouseDown As Boolean = False
 
     ' TODO mejorar control de formularios
     ''' <summary>Formulario de conexión.</summary>
@@ -49,12 +53,6 @@ Public Class FrmPrincipal
     Private ctrSensor As New CtrSensor(Me)
     ''' <summary>Formulario de mensajería.</summary>
     Private ctrSms As New CtrSms(Me)
-    ''' <summary>Indica si la ventana está siendo arrastrada.</summary>
-    Private bMoviendo As Boolean = False
-    ''' <summary>Posición X de inicio de clic.</summary>
-    Private iInicioX As Integer
-    ''' <summary>Posición Y de inicio de clic.</summary>
-    Private iInicioY As Integer
 
 
     ''' <summary>Propiedad que obtiene o establece el modo consulta en la aplicación.</summary>
@@ -128,6 +126,7 @@ Public Class FrmPrincipal
     ''' <summary>Carga inicial del formulario.</summary>
     Private Sub frmPrincipal_Load() Handles MyBase.Load
         Me.Text = My.Application.Info.ProductName & " " & My.Application.Info.Version.ToString
+        lblTitulo.Text = My.Application.Info.AssemblyName.ToUpper & " " & My.Application.Info.Version.ToString
         updateHora()
         trmReloj.Interval = 60000 - (TimeOfDay.Second * 1000)
         lanzar(TipoApp.Connect)
@@ -178,7 +177,7 @@ Public Class FrmPrincipal
 
     ''' <summary>Abre la guía de usuario.</summary>
     Private Sub ttmAyuManual_Click() Handles ttmAyuManual.Click
-        System.Diagnostics.Process.Start(My.Resources.sUrlManual)
+        System.Diagnostics.Process.Start(Idioma.traducir("url_manual"))
     End Sub
 
 
@@ -196,6 +195,44 @@ Public Class FrmPrincipal
         Else
             Me.pnlDebug.Visible = False
             ttConsejo.SetToolTip(chkDebug, Idioma.traducir("frm_debug_show"))
+        End If
+    End Sub
+
+
+    ''' <summary>Controla la pulsación del botón izquierdo sobre la barra de título.</summary>
+    ''' <param name="sender">Emisor del evento.</param>
+    ''' <param name="e">Datos del evento.</param>
+    Private Sub pblEstado_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs) Handles pblEstado.MouseDown, lblReloj.MouseDown, lblTitulo.MouseDown
+        If e.Button = MouseButtons.Left Then
+            Dim objControl As Control = CType(sender, Control)
+            If objControl.Name = lblReloj.Name Or objControl.Name = lblTitulo.Name Then
+                objPosCursor = New Point(-e.X - objControl.Location.X, -e.Y - objControl.Location.Y)
+            Else
+                objPosCursor = New Point(-e.X, -e.Y)
+            End If
+            bMouseDown = True
+        End If
+    End Sub
+
+
+    ''' <summary>Controla el movimiento del ratón sobre la barra de título.</summary>
+    ''' <param name="sender">Emisor del evento.</param>
+    ''' <param name="e">Datos del evento.</param>
+    Private Sub pblEstado_MouseMove(ByVal sender As Object, ByVal e As MouseEventArgs) Handles pblEstado.MouseMove, lblReloj.MouseMove, lblTitulo.MouseMove
+        If bMouseDown Then
+            Dim objPosicion As Point = Control.MousePosition
+            objPosicion.Offset(objPosCursor.X, objPosCursor.Y)
+            Location = objPosicion
+        End If
+    End Sub
+
+
+    ''' <summary>Controla el fin del evento de arrastre del ratón en la barra de título.</summary>
+    ''' <param name="sender">Emisor del evento.</param>
+    ''' <param name="e">Datos del evento.</param>
+    Private Sub pblEstado_MouseUp(ByVal sender As Object, ByVal e As MouseEventArgs) Handles pblEstado.MouseUp, lblReloj.MouseUp, lblTitulo.MouseUp
+        If e.Button = MouseButtons.Left Then
+            bMouseDown = False
         End If
     End Sub
 
@@ -320,42 +357,6 @@ Public Class FrmPrincipal
         Else
             ctrGsmCalls.parar()
             lanzar(TipoApp.Connect)
-        End If
-    End Sub
-
-
-    ''' <summary>Controla el clic sobre la cabecera de la aplicación.</summary>
-    ''' <param name="sender">Emisor del evento.</param>
-    ''' <param name="e">Datos del evento.</param>
-    Private Sub pblEstado_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs) Handles pblEstado.MouseDown
-        If e.Button = MouseButtons.Left Then
-            bMoviendo = True
-            iInicioX = e.X
-            iInicioY = e.Y
-        End If
-    End Sub
-
-
-    ''' <summary>Controla el fin de clic del ratón sobre la cabecera.</summary>
-    ''' <param name="sender">Emisor del evento.</param>
-    ''' <param name="e">Datos del evento.</param>
-    Private Sub pblEstado_MouseUp(ByVal sender As Object, ByVal e As MouseEventArgs) Handles pblEstado.MouseUp
-        If e.Button = MouseButtons.Left Then
-            bMoviendo = False
-        End If
-    End Sub
-
-
-    ''' <summary>Controla el movimiento del ratón.</summary>
-    ''' <param name="sender">Emisor del evento.</param>
-    ''' <param name="e">Datos del evento.</param>
-    Private Sub pblEstado_MouseMove(ByVal sender As Object, ByVal e As MouseEventArgs) Handles pblEstado.MouseMove
-        If bMoviendo Then
-            Dim objPunto As Point = New Point()
-            objPunto.X = Me.Location.X + (e.X - iInicioX)
-            objPunto.Y = Me.Location.Y + (e.Y - iInicioY)
-            Me.Location = objPunto
-            objPunto = Nothing
         End If
     End Sub
 End Class

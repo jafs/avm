@@ -40,6 +40,7 @@ Partial Class FrmPrincipal
         Me.btnAyuda = New System.Windows.Forms.Button()
         Me.chkDebug = New System.Windows.Forms.CheckBox()
         Me.pblEstado = New System.Windows.Forms.Panel()
+        Me.lblTitulo = New System.Windows.Forms.Label()
         Me.lblReloj = New System.Windows.Forms.Label()
         Me.trmReloj = New System.Windows.Forms.Timer(Me.components)
         Me.ttConsejo = New System.Windows.Forms.ToolTip(Me.components)
@@ -55,8 +56,8 @@ Partial Class FrmPrincipal
         '
         'txtRecv
         '
-        resources.ApplyResources(Me.txtRecv, "txtRecv")
         Me.txtRecv.BackColor = System.Drawing.Color.Gainsboro
+        resources.ApplyResources(Me.txtRecv, "txtRecv")
         Me.txtRecv.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.txtRecv.Name = "txtRecv"
         Me.txtRecv.ReadOnly = True
@@ -70,7 +71,6 @@ Partial Class FrmPrincipal
         Me.txtComando.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.txtComando.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
         Me.txtComando.Name = "txtComando"
-        Me.ttConsejo.SetToolTip(Me.txtComando, resources.GetString("txtComando.ToolTip"))
         '
         'btnEnviar
         '
@@ -80,50 +80,45 @@ Partial Class FrmPrincipal
         Me.btnEnviar.FlatAppearance.BorderSize = 0
         Me.btnEnviar.ForeColor = System.Drawing.Color.White
         Me.btnEnviar.Name = "btnEnviar"
-        Me.ttConsejo.SetToolTip(Me.btnEnviar, resources.GetString("btnEnviar.ToolTip"))
         Me.btnEnviar.UseVisualStyleBackColor = False
         '
         'pnlPrincipal
         '
-        resources.ApplyResources(Me.pnlPrincipal, "pnlPrincipal")
         Me.pnlPrincipal.BackColor = System.Drawing.Color.White
         Me.pnlPrincipal.Controls.Add(Me.pnlCentral)
         Me.pnlPrincipal.Controls.Add(Me.pnlDock)
         Me.pnlPrincipal.Controls.Add(Me.pblEstado)
+        resources.ApplyResources(Me.pnlPrincipal, "pnlPrincipal")
         Me.pnlPrincipal.Name = "pnlPrincipal"
-        Me.ttConsejo.SetToolTip(Me.pnlPrincipal, resources.GetString("pnlPrincipal.ToolTip"))
         '
         'pnlCentral
         '
-        resources.ApplyResources(Me.pnlCentral, "pnlCentral")
         Me.pnlCentral.BackgroundImage = Global.Avm.My.Resources.Resources.fondo
+        resources.ApplyResources(Me.pnlCentral, "pnlCentral")
         Me.pnlCentral.Name = "pnlCentral"
-        Me.ttConsejo.SetToolTip(Me.pnlCentral, resources.GetString("pnlCentral.ToolTip"))
         '
         'pnlDock
         '
-        resources.ApplyResources(Me.pnlDock, "pnlDock")
         Me.pnlDock.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(60, Byte), Integer))
         Me.pnlDock.Controls.Add(Me.tlpMenu)
+        resources.ApplyResources(Me.pnlDock, "pnlDock")
         Me.pnlDock.Name = "pnlDock"
-        Me.ttConsejo.SetToolTip(Me.pnlDock, resources.GetString("pnlDock.ToolTip"))
         '
         'tlpMenu
         '
-        resources.ApplyResources(Me.tlpMenu, "tlpMenu")
         Me.tlpMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer))
+        resources.ApplyResources(Me.tlpMenu, "tlpMenu")
         Me.tlpMenu.Controls.Add(Me.btnConfiguracion, 0, 0)
         Me.tlpMenu.Controls.Add(Me.btnSalir, 4, 0)
         Me.tlpMenu.Controls.Add(Me.btnHome, 2, 0)
         Me.tlpMenu.Controls.Add(Me.btnAyuda, 1, 0)
         Me.tlpMenu.Controls.Add(Me.chkDebug, 3, 0)
         Me.tlpMenu.Name = "tlpMenu"
-        Me.ttConsejo.SetToolTip(Me.tlpMenu, resources.GetString("tlpMenu.ToolTip"))
         '
         'btnConfiguracion
         '
-        resources.ApplyResources(Me.btnConfiguracion, "btnConfiguracion")
         Me.btnConfiguracion.ContextMenuStrip = Me.mnAyuda
+        resources.ApplyResources(Me.btnConfiguracion, "btnConfiguracion")
         Me.btnConfiguracion.FlatAppearance.BorderSize = 0
         Me.btnConfiguracion.Image = Global.Avm.My.Resources.Resources.icoConfig48
         Me.btnConfiguracion.Name = "btnConfiguracion"
@@ -132,12 +127,11 @@ Partial Class FrmPrincipal
         '
         'mnAyuda
         '
-        resources.ApplyResources(Me.mnAyuda, "mnAyuda")
         Me.mnAyuda.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.mnAyuda.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ttmAyuGeneral, Me.ttSeparador2, Me.ttmAyuManual, Me.ttSeparador1, Me.ttmAbout})
         Me.mnAyuda.Name = "mnAyuda"
         Me.mnAyuda.ShowImageMargin = False
-        Me.ttConsejo.SetToolTip(Me.mnAyuda, resources.GetString("mnAyuda.ToolTip"))
+        resources.ApplyResources(Me.mnAyuda, "mnAyuda")
         '
         'ttmAyuGeneral
         '
@@ -148,8 +142,8 @@ Partial Class FrmPrincipal
         '
         'ttSeparador2
         '
-        resources.ApplyResources(Me.ttSeparador2, "ttSeparador2")
         Me.ttSeparador2.Name = "ttSeparador2"
+        resources.ApplyResources(Me.ttSeparador2, "ttSeparador2")
         '
         'ttmAyuManual
         '
@@ -160,13 +154,13 @@ Partial Class FrmPrincipal
         '
         'ttSeparador1
         '
-        resources.ApplyResources(Me.ttSeparador1, "ttSeparador1")
         Me.ttSeparador1.Name = "ttSeparador1"
+        resources.ApplyResources(Me.ttSeparador1, "ttSeparador1")
         '
         'ttmAbout
         '
-        resources.ApplyResources(Me.ttmAbout, "ttmAbout")
         Me.ttmAbout.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        resources.ApplyResources(Me.ttmAbout, "ttmAbout")
         Me.ttmAbout.ForeColor = System.Drawing.Color.White
         Me.ttmAbout.Name = "ttmAbout"
         Me.ttmAbout.Padding = New System.Windows.Forms.Padding(2)
@@ -191,8 +185,8 @@ Partial Class FrmPrincipal
         '
         'btnAyuda
         '
-        resources.ApplyResources(Me.btnAyuda, "btnAyuda")
         Me.btnAyuda.ContextMenuStrip = Me.mnAyuda
+        resources.ApplyResources(Me.btnAyuda, "btnAyuda")
         Me.btnAyuda.FlatAppearance.BorderSize = 0
         Me.btnAyuda.Image = Global.Avm.My.Resources.Resources.mn_ayuda48
         Me.btnAyuda.Name = "btnAyuda"
@@ -211,22 +205,26 @@ Partial Class FrmPrincipal
         '
         'pblEstado
         '
-        resources.ApplyResources(Me.pblEstado, "pblEstado")
         Me.pblEstado.BackColor = System.Drawing.Color.Transparent
         Me.pblEstado.BackgroundImage = Global.Avm.My.Resources.Resources.superior
+        Me.pblEstado.Controls.Add(Me.lblTitulo)
         Me.pblEstado.Controls.Add(Me.lblReloj)
-        Me.pblEstado.Cursor = System.Windows.Forms.Cursors.NoMove2D
+        Me.pblEstado.Cursor = System.Windows.Forms.Cursors.SizeAll
+        resources.ApplyResources(Me.pblEstado, "pblEstado")
         Me.pblEstado.ForeColor = System.Drawing.Color.White
         Me.pblEstado.Name = "pblEstado"
-        Me.ttConsejo.SetToolTip(Me.pblEstado, resources.GetString("pblEstado.ToolTip"))
+        '
+        'lblTitulo
+        '
+        resources.ApplyResources(Me.lblTitulo, "lblTitulo")
+        Me.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.lblTitulo.Name = "lblTitulo"
         '
         'lblReloj
         '
         resources.ApplyResources(Me.lblReloj, "lblReloj")
-        Me.lblReloj.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.lblReloj.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.lblReloj.Name = "lblReloj"
-        Me.ttConsejo.SetToolTip(Me.lblReloj, resources.GetString("lblReloj.ToolTip"))
         '
         'trmReloj
         '
@@ -240,14 +238,13 @@ Partial Class FrmPrincipal
         '
         'pnlDebug
         '
-        resources.ApplyResources(Me.pnlDebug, "pnlDebug")
         Me.pnlDebug.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pnlDebug.Controls.Add(Me.lblDebugTitulo)
         Me.pnlDebug.Controls.Add(Me.txtRecv)
         Me.pnlDebug.Controls.Add(Me.txtComando)
         Me.pnlDebug.Controls.Add(Me.btnEnviar)
+        resources.ApplyResources(Me.pnlDebug, "pnlDebug")
         Me.pnlDebug.Name = "pnlDebug"
-        Me.ttConsejo.SetToolTip(Me.pnlDebug, resources.GetString("pnlDebug.ToolTip"))
         '
         'lblDebugTitulo
         '
@@ -255,7 +252,6 @@ Partial Class FrmPrincipal
         Me.lblDebugTitulo.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.lblDebugTitulo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.lblDebugTitulo.Name = "lblDebugTitulo"
-        Me.ttConsejo.SetToolTip(Me.lblDebugTitulo, resources.GetString("lblDebugTitulo.ToolTip"))
         '
         'FrmPrincipal
         '
@@ -268,13 +264,13 @@ Partial Class FrmPrincipal
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MaximizeBox = False
         Me.Name = "FrmPrincipal"
-        Me.ttConsejo.SetToolTip(Me, resources.GetString("$this.ToolTip"))
         Me.pnlPrincipal.ResumeLayout(False)
         Me.pnlDock.ResumeLayout(False)
         Me.tlpMenu.ResumeLayout(False)
         Me.tlpMenu.PerformLayout()
         Me.mnAyuda.ResumeLayout(False)
         Me.pblEstado.ResumeLayout(False)
+        Me.pblEstado.PerformLayout()
         Me.pnlDebug.ResumeLayout(False)
         Me.pnlDebug.PerformLayout()
         Me.ResumeLayout(False)
@@ -304,5 +300,6 @@ Partial Class FrmPrincipal
     Friend WithEvents ttSeparador2 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents ttSeparador1 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents lblDebugTitulo As System.Windows.Forms.Label
+    Friend WithEvents lblTitulo As System.Windows.Forms.Label
 
 End Class

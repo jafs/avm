@@ -127,9 +127,6 @@
   <data name="icoAyuda16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icoAyuda16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sUrlManual" xml:space="preserve">
-    <value>https://github.com/jafs/avm/wiki/Gu%C3%ADa-de-usuario</value>
-  </data>
   <data name="sUrlCorreo" xml:space="preserve">
     <value>jafs@jafs.es</value>
   </data>
