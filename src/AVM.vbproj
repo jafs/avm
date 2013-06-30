@@ -139,8 +139,10 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="source\android\AndroidStatus.vb" />
     <Compile Include="source\android\AndTelnet.vb" />
     <Compile Include="source\android\Comando.vb" />
+    <Compile Include="source\android\AndroidXml.vb" />
     <Compile Include="source\controles\CtrConectar.Designer.vb">
       <DependentUpon>CtrConectar.vb</DependentUpon>
     </Compile>

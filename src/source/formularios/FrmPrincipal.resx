@@ -598,7 +598,7 @@
     <value>&amp;About...</value>
   </data>
   <data name="mnAyuda.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 116</value>
+    <value>177, 94</value>
   </data>
   <data name="&gt;&gt;mnAyuda.Name" xml:space="preserve">
     <value>mnAyuda</value>
@@ -608,9 +608,6 @@
   </data>
   <data name="btnConfiguracion.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
-  </data>
-  <data name="btnConfiguracion.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="btnConfiguracion.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -973,7 +970,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pnlPrincipal.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="lblDebugTitulo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1033,7 +1030,52 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pnlDebug.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
+  </data>
+  <metadata name="mnOpciones.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>323, 17</value>
+  </metadata>
+  <data name="ttmImportar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="ttmImportar.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+Alt+I</value>
+  </data>
+  <data name="ttmImportar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 24</value>
+  </data>
+  <data name="ttmImportar.Text" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="ttSeparador3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 6</value>
+  </data>
+  <data name="ttmExportar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="ttmExportar.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+Alt+E</value>
+  </data>
+  <data name="ttmExportar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 24</value>
+  </data>
+  <data name="ttmExportar.Text" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="mnOpciones.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 58</value>
+  </data>
+  <data name="&gt;&gt;mnOpciones.Name" xml:space="preserve">
+    <value>mnOpciones</value>
+  </data>
+  <data name="&gt;&gt;mnOpciones.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <metadata name="sfdExportar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>443, 17</value>
+  </metadata>
+  <data name="sfdExportar.Filter" xml:space="preserve">
+    <value>XML files|*.xml|All files|*.*</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1676,6 +1718,30 @@
   </data>
   <data name="&gt;&gt;ttConsejo.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ttmImportar.Name" xml:space="preserve">
+    <value>ttmImportar</value>
+  </data>
+  <data name="&gt;&gt;ttmImportar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ttSeparador3.Name" xml:space="preserve">
+    <value>ttSeparador3</value>
+  </data>
+  <data name="&gt;&gt;ttSeparador3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ttmExportar.Name" xml:space="preserve">
+    <value>ttmExportar</value>
+  </data>
+  <data name="&gt;&gt;ttmExportar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sfdExportar.Name" xml:space="preserve">
+    <value>sfdExportar</value>
+  </data>
+  <data name="&gt;&gt;sfdExportar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FrmPrincipal</value>

@@ -134,6 +134,8 @@ Public Class FrmPrincipal
         Me.Close()
     End Sub
 
+
+    ''' <summary>Controla el click sobre el botón minimizar.</summary>
     Private Sub btnMinimizar_Click() Handles btnMinimizar.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
@@ -160,8 +162,17 @@ Public Class FrmPrincipal
 
 
     ''' <summary>Abre el menú de ayuda.</summary>
-    Private Sub btnAyuda_Click() Handles btnAyuda.Click
-        mnAyuda.Show(btnAyuda, 0, -80)
+    ''' <param name="sender">Emisor del evento.</param>
+    ''' <param name="e">Datos del evento.</param>
+    Private Sub btnAyuda_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAyuda.Click
+        mnAyuda.Show(btnAyuda, 0, -93)
+    End Sub
+
+    ''' <summary>Abre el menú de configuración.</summary>
+    ''' <param name="sender">Emisor del evento.</param>
+    ''' <param name="e">Datos del evento.</param>
+    Private Sub btnConfiguracion_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnConfiguracion.Click
+        mnOpciones.Show(btnConfiguracion, 0, -60)
     End Sub
 
 
@@ -227,6 +238,17 @@ Public Class FrmPrincipal
     End Sub
 
 
+    ''' <summary>Controla el click sobre el elemento de menú de exportación de datos.</summary>
+    ''' <param name="sender">Emisor del evento.</param>
+    ''' <param name="e">Datos del evento.</param>
+    Private Sub ttmExportar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ttmExportar.Click
+        If sfdExportar.ShowDialog = Windows.Forms.DialogResult.OK Then
+            ' TODO: es necesario obtener antes la configuración.
+            AndroidXml.saveXml(New AndroidStatus(), sfdExportar.FileName)
+        End If
+    End Sub
+
+
     ' ######################################
     ' GENERAL
     ' ######################################
@@ -263,7 +285,6 @@ Public Class FrmPrincipal
     Public Sub lanzar(ByVal eTipo As TipoApp)
         pnlCentral.Controls.Clear()
         AcceptButton = Nothing
-
         Select Case eTipo
             Case TipoApp.Gps
                 pnlCentral.Controls.Add(ctrGps)
@@ -324,6 +345,7 @@ Public Class FrmPrincipal
         btnEnviar.Enabled = (objTelnet.Conectado And txtComando.Text.Length > 0)
         txtComando.Enabled = objTelnet.Conectado
         btnHome.Enabled = objTelnet.Conectado
+        btnConfiguracion.Enabled = objTelnet.Conectado
 
         If objTelnet.Conectado Then
             lanzar(TipoApp.Menu)

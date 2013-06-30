@@ -46,12 +46,18 @@ Partial Class FrmPrincipal
         Me.ttConsejo = New System.Windows.Forms.ToolTip(Me.components)
         Me.pnlDebug = New System.Windows.Forms.Panel()
         Me.lblDebugTitulo = New System.Windows.Forms.Label()
+        Me.mnOpciones = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ttmImportar = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ttSeparador3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ttmExportar = New System.Windows.Forms.ToolStripMenuItem()
+        Me.sfdExportar = New System.Windows.Forms.SaveFileDialog()
         Me.pnlPrincipal.SuspendLayout()
         Me.pnlDock.SuspendLayout()
         Me.tlpMenu.SuspendLayout()
         Me.mnAyuda.SuspendLayout()
         Me.pblEstado.SuspendLayout()
         Me.pnlDebug.SuspendLayout()
+        Me.mnOpciones.SuspendLayout()
         Me.SuspendLayout()
         '
         'txtRecv
@@ -261,6 +267,35 @@ Partial Class FrmPrincipal
         Me.lblDebugTitulo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.lblDebugTitulo.Name = "lblDebugTitulo"
         '
+        'mnOpciones
+        '
+        Me.mnOpciones.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.mnOpciones.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ttmImportar, Me.ttSeparador3, Me.ttmExportar})
+        Me.mnOpciones.Name = "mnOpciones"
+        Me.mnOpciones.ShowImageMargin = False
+        resources.ApplyResources(Me.mnOpciones, "mnOpciones")
+        '
+        'ttmImportar
+        '
+        resources.ApplyResources(Me.ttmImportar, "ttmImportar")
+        Me.ttmImportar.ForeColor = System.Drawing.Color.White
+        Me.ttmImportar.Name = "ttmImportar"
+        '
+        'ttSeparador3
+        '
+        Me.ttSeparador3.Name = "ttSeparador3"
+        resources.ApplyResources(Me.ttSeparador3, "ttSeparador3")
+        '
+        'ttmExportar
+        '
+        resources.ApplyResources(Me.ttmExportar, "ttmExportar")
+        Me.ttmExportar.ForeColor = System.Drawing.Color.White
+        Me.ttmExportar.Name = "ttmExportar"
+        '
+        'sfdExportar
+        '
+        resources.ApplyResources(Me.sfdExportar, "sfdExportar")
+        '
         'FrmPrincipal
         '
         Me.AcceptButton = Me.btnEnviar
@@ -281,6 +316,7 @@ Partial Class FrmPrincipal
         Me.pblEstado.PerformLayout()
         Me.pnlDebug.ResumeLayout(False)
         Me.pnlDebug.PerformLayout()
+        Me.mnOpciones.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -309,5 +345,10 @@ Partial Class FrmPrincipal
     Friend WithEvents lblTitulo As System.Windows.Forms.Label
     Friend WithEvents btnMinimizar As System.Windows.Forms.Button
     Friend WithEvents btnCerrar As System.Windows.Forms.Button
+    Friend WithEvents mnOpciones As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents ttmImportar As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ttSeparador3 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents ttmExportar As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents sfdExportar As System.Windows.Forms.SaveFileDialog
 
 End Class
