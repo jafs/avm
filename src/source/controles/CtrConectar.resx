@@ -117,29 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="txtPuerto.MaxLength" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="&gt;&gt;txtPuerto.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="txtPuerto.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  <data name="btnConectar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 196</value>
   </data>
   <data name="&gt;&gt;lblInfo.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lblPuerto.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="lblError.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CtrConectar</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lblError.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lblPuerto.Text" xml:space="preserve">
-    <value>Port:</value>
+  <data name="txtPuerto.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
   <data name="txtPuerto.Text" xml:space="preserve">
     <value>5554</value>
@@ -150,8 +150,11 @@
   <data name="lblPuerto.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 338</value>
+  <data name="btnConectar.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="&gt;&gt;lblPuerto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="txtPuerto.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
@@ -165,15 +168,11 @@
   <data name="&gt;&gt;lblInfo.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;lblError.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="txtPuerto.MaxLength" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="&gt;&gt;lblError.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblError.Text" xml:space="preserve">
-    <value>Enter a valid port number
-(between 1 and 65535)</value>
   </data>
   <data name="&gt;&gt;txtPuerto.Parent" xml:space="preserve">
     <value>$this</value>
@@ -187,14 +186,8 @@
   <data name="txtPuerto.Location" type="System.Drawing.Point, System.Drawing">
     <value>131, 156</value>
   </data>
-  <data name="&gt;&gt;lblPuerto.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="&gt;&gt;btnConectar.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnConectar.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="lblInfo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -202,8 +195,8 @@
   <data name="lblError.Size" type="System.Drawing.Size, System.Drawing">
     <value>186, 40</value>
   </data>
-  <data name="&gt;&gt;txtPuerto.Name" xml:space="preserve">
-    <value>txtPuerto</value>
+  <data name="&gt;&gt;lblError.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;lblPuerto.Name" xml:space="preserve">
     <value>lblPuerto</value>
@@ -211,23 +204,20 @@
   <data name="&gt;&gt;txtPuerto.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
   <data name="lblInfo.Location" type="System.Drawing.Point, System.Drawing">
     <value>35, 22</value>
   </data>
-  <data name="lblPuerto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>81, 159</value>
+  <data name="lblError.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="lblError.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="btnConectar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 196</value>
+  <data name="lblPuerto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 159</value>
   </data>
-  <data name="&gt;&gt;txtPuerto.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;btnConectar.Name" xml:space="preserve">
+    <value>btnConectar</value>
   </data>
   <data name="btnConectar.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -235,29 +225,27 @@
   <data name="btnConectar.Size" type="System.Drawing.Size, System.Drawing">
     <value>113, 32</value>
   </data>
-  <data name="lblError.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 285</value>
+  <data name="&gt;&gt;txtPuerto.Name" xml:space="preserve">
+    <value>txtPuerto</value>
   </data>
-  <data name="lblPuerto.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;btnConectar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>CtrConectar</value>
-  </data>
-  <data name="lblInfo.Text" xml:space="preserve">
-    <value>Welcome to Android Virtual
-Management. To start, enter
-a valid port for connect to
-emulator and press connect.</value>
+  <data name="lblError.Text" xml:space="preserve">
+    <value>Enter a valid port number
+(between 1 and 65535)</value>
   </data>
   <data name="lblPuerto.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 20</value>
   </data>
-  <data name="&gt;&gt;lblError.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnConectar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblPuerto.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="lblInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblPuerto.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="lblInfo.Size" type="System.Drawing.Size, System.Drawing">
     <value>210, 80</value>
@@ -268,11 +256,11 @@ emulator and press connect.</value>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
   </data>
-  <data name="btnConectar.Text" xml:space="preserve">
-    <value>Connect</value>
+  <data name="lblError.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 285</value>
   </data>
-  <data name="&gt;&gt;btnConectar.Name" xml:space="preserve">
-    <value>btnConectar</value>
+  <data name="&gt;&gt;btnConectar.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="btnConectar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -286,20 +274,32 @@ emulator and press connect.</value>
   <data name="&gt;&gt;lblPuerto.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;lblPuerto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;lblError.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="btnConectar.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
+  <data name="lblInfo.Text" xml:space="preserve">
+    <value>Welcome to Android Virtual
+Management. To start, enter
+a valid port for connect to
+emulator and press connect.</value>
+  </data>
+  <data name="btnConectar.Text" xml:space="preserve">
+    <value>Connect</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="txtPuerto.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="lblInfo.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 338</value>
   </data>
-  <data name="&gt;&gt;btnConectar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblPuerto.Text" xml:space="preserve">
+    <value>Port:</value>
+  </data>
+  <data name="btnConectar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

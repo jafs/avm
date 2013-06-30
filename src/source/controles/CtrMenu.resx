@@ -132,9 +132,8 @@
   <data name="&gt;&gt;btnSensors.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnGps.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
+  <data name="&gt;&gt;btnGps.Name" xml:space="preserve">
+    <value>btnGps</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnCalls.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -143,11 +142,15 @@
   <data name="btnSms.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnSensors.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
   <data name="btnGsm.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
+  </data>
+  <data name="btnGsm.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>CtrMenu</value>
@@ -171,14 +174,11 @@
   <data name="&gt;&gt;btnGsm.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="btnCalls.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 3</value>
-  </data>
   <data name="&gt;&gt;btnGps.Parent" xml:space="preserve">
     <value>tblMenu</value>
   </data>
-  <data name="btnGps.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 3</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
   </data>
   <data name="btnDesconectar.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
@@ -188,9 +188,6 @@
   </data>
   <data name="btnGps.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 94</value>
-  </data>
-  <data name="btnPower.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="btnPower.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 94</value>
@@ -273,20 +270,29 @@
   <data name="&gt;&gt;btnDesconectar.Name" xml:space="preserve">
     <value>btnDesconectar</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
   <data name="btnGps.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="btnPower.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
   <data name="btnSms.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
+  </data>
+  <data name="btnGps.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;btnCalls.Parent" xml:space="preserve">
+    <value>tblMenu</value>
   </data>
   <data name="btnGsm.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="btnDesconectar.Location" type="System.Drawing.Point, System.Drawing">
     <value>141, 103</value>
+  </data>
+  <data name="btnGps.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 3</value>
   </data>
   <data name="btnDesconectar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -303,14 +309,11 @@
   <data name="btnGsm.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;btnCalls.Parent" xml:space="preserve">
-    <value>tblMenu</value>
+  <data name="btnCalls.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 3</value>
   </data>
-  <data name="tblMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="&gt;&gt;btnGps.Name" xml:space="preserve">
-    <value>btnGps</value>
+  <data name="btnPower.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="tblMenu.ColumnCount" type="System.Int32, mscorlib">
     <value>4</value>
@@ -326,9 +329,6 @@
   </data>
   <data name="&gt;&gt;tblMenu.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="btnPower.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
   </data>
   <data name="btnCalls.Text" xml:space="preserve">
     <value>Calls</value>
@@ -351,8 +351,8 @@
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
     <value>278, 336</value>
   </data>
-  <data name="btnGsm.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="&gt;&gt;btnPower.Name" xml:space="preserve">
+    <value>btnPower</value>
   </data>
   <data name="btnSms.Text" xml:space="preserve">
     <value>SMS</value>
@@ -402,8 +402,8 @@
   <data name="&gt;&gt;btnGps.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnPower.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
+  <data name="tblMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="btnSms.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 94</value>
@@ -426,8 +426,8 @@
   <data name="btnSms.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;btnPower.Name" xml:space="preserve">
-    <value>btnPower</value>
+  <data name="btnPower.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="btnDesconectar.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 94</value>

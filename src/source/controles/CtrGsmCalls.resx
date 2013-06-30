@@ -120,6 +120,9 @@
   <data name="&gt;&gt;lblNumero.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;lblGsmLlamadas.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="colDataTipo.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -164,11 +167,11 @@
   <data name="&gt;&gt;txtGsmPrefijo.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;lblPrefijo.Name" xml:space="preserve">
-    <value>lblPrefijo</value>
+  <data name="txtGsmNumero.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;lblGsmLlamadas.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;lblNumero.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;txtGsmPrefijo.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -201,14 +204,14 @@
   <data name="&gt;&gt;txtGsmNumero.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="colNumber.MinimumWidth" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
   <data name="colStatus.Width" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
   <data name="&gt;&gt;colDataTipo.Name" xml:space="preserve">
     <value>colDataTipo</value>
-  </data>
-  <data name="&gt;&gt;lblNumero.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>84, 263</value>
@@ -239,20 +242,14 @@ well as make incoming calls.</value>
   <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="lblPrefijo.Text" xml:space="preserve">
-    <value>Prefix:</value>
-  </data>
   <data name="btnGsmCall.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
-  </data>
-  <data name="txtGsmNumero.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="&gt;&gt;colDataEstado.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnGsmCall.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="lblPrefijo.Text" xml:space="preserve">
+    <value>Prefix:</value>
   </data>
   <data name="lblPrefijo.ToolTip" xml:space="preserve">
     <value>International prefix</value>
@@ -268,9 +265,6 @@ well as make incoming calls.</value>
   </data>
   <data name="colNumber.HeaderText" xml:space="preserve">
     <value>Numero</value>
-  </data>
-  <data name="colCancel.Width" type="System.Int32, mscorlib">
-    <value>20</value>
   </data>
   <data name="colCancel.MinimumWidth" type="System.Int32, mscorlib">
     <value>20</value>
@@ -299,14 +293,14 @@ well as make incoming calls.</value>
   <data name="&gt;&gt;lblPrefijo.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;dgvGsmLlamadas.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="colNumber.MinimumWidth" type="System.Int32, mscorlib">
-    <value>100</value>
+  <data name="colCancel.Width" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
   <data name="&gt;&gt;dgvGsmLlamadas.Parent" xml:space="preserve">
     <value>$this</value>
@@ -392,6 +386,9 @@ well as make incoming calls.</value>
   <data name="PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 257</value>
   </data>
+  <data name="btnGsmCall.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
   <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -413,8 +410,8 @@ well as make incoming calls.</value>
   <data name="&gt;&gt;colType.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="colCancel.HeaderText" xml:space="preserve">
-    <value>Cancel</value>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -455,6 +452,9 @@ well as make incoming calls.</value>
   <data name="&gt;&gt;PictureBox1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="colCancel.HeaderText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
   <data name="&gt;&gt;dgvGsmLlamadas.Name" xml:space="preserve">
     <value>dgvGsmLlamadas</value>
   </data>
@@ -464,8 +464,8 @@ well as make incoming calls.</value>
   <data name="&gt;&gt;dgvGsmLlamadas.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;lblPrefijo.Name" xml:space="preserve">
+    <value>lblPrefijo</value>
   </data>
   <data name="&gt;&gt;btnGsmCall.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -521,13 +521,13 @@ well as make incoming calls.</value>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>es</value>
   </metadata>
-  <metadata name="colCancel.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="colType.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="colType.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="colDataEstado.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="colNumber.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -536,7 +536,7 @@ well as make incoming calls.</value>
   <metadata name="colBusy.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="colDataEstado.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="colCancel.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="tmrGsm.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

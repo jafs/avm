@@ -128,8 +128,8 @@
   <data name="nudSenValor3.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 23</value>
   </data>
-  <data name="&gt;&gt;cmbSensores.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="imgSensores.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
   </data>
   <data name="&gt;&gt;nudSenValor2.Name" xml:space="preserve">
     <value>nudSenValor2</value>
@@ -170,14 +170,11 @@
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>CtrSensor</value>
   </data>
-  <data name="nudSenValor3.ToolTip" xml:space="preserve">
-    <value />
+  <data name="btnSenSet.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="cmbSensores.Items2" xml:space="preserve">
     <value>orientation</value>
-  </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 338</value>
   </data>
   <data name="&gt;&gt;nudSenValor1.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -187,6 +184,9 @@
   </data>
   <data name="&gt;&gt;cmbSensores.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="imgSensores.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 64</value>
   </data>
   <data name="&gt;&gt;imgSensores.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -206,6 +206,9 @@
   <data name="&gt;&gt;lblSenValor2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="cmbSensores.Items3" xml:space="preserve">
+    <value>temperature</value>
+  </data>
   <data name="&gt;&gt;btnSenSet.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
@@ -224,8 +227,8 @@
   <data name="&gt;&gt;lblSensor.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;lblSenValor1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="lblSenDesc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 235</value>
   </data>
   <data name="lblSenValor3.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -233,8 +236,8 @@
   <data name="nudSenValor2.Location" type="System.Drawing.Point, System.Drawing">
     <value>85, 98</value>
   </data>
-  <data name="&gt;&gt;btnSenSet.Name" xml:space="preserve">
-    <value>btnSenSet</value>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 338</value>
   </data>
   <data name="&gt;&gt;nudSenValor3.Parent" xml:space="preserve">
     <value>$this</value>
@@ -275,17 +278,14 @@
   <data name="btnSenUpdate.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;btnSenUpdate.Name" xml:space="preserve">
-    <value>btnSenUpdate</value>
-  </data>
-  <data name="&gt;&gt;lblSensor.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblSenValor1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="lblSenDesc.Size" type="System.Drawing.Size, System.Drawing">
     <value>187, 68</value>
   </data>
-  <data name="lblSenDesc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 235</value>
+  <data name="&gt;&gt;btnSenUpdate.Name" xml:space="preserve">
+    <value>btnSenUpdate</value>
   </data>
   <data name="&gt;&gt;lblSensor.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -302,8 +302,11 @@
   <data name="lblSenValor3.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 17</value>
   </data>
-  <data name="nudSenValor3.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
+  <data name="nudSenValor3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSenValor1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="$this.ToolTip" xml:space="preserve">
     <value />
@@ -353,9 +356,6 @@ press the Set Values button.</value>
   <data name="cmbSensores.Items4" xml:space="preserve">
     <value>proximity</value>
   </data>
-  <data name="nudSenValor1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="cmbSensores.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 24</value>
   </data>
@@ -368,18 +368,14 @@ press the Set Values button.</value>
   <data name="&gt;&gt;nudSenValor3.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="lblSensor.Text" xml:space="preserve">
-    <value>Sensor:</value>
-  </data>
-  <data name="imgSensores.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
+  <data name="&gt;&gt;btnSenSet.Name" xml:space="preserve">
+    <value>btnSenSet</value>
   </data>
   <data name="nudSenValor1.Location" type="System.Drawing.Point, System.Drawing">
     <value>85, 59</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="nudSenValor1.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="btnSenSet.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 32</value>
@@ -387,11 +383,11 @@ press the Set Values button.</value>
   <data name="cmbSensores.Location" type="System.Drawing.Point, System.Drawing">
     <value>85, 20</value>
   </data>
-  <data name="btnSenSet.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;cmbSensores.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnSenUpdate.Text" xml:space="preserve">
-    <value>Update</value>
+  <data name="btnSenSet.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
   </data>
   <data name="lblSenValor1.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -408,8 +404,8 @@ press the Set Values button.</value>
   <data name="nudSenValor2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="lblSenValor1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="btnSenUpdate.Text" xml:space="preserve">
+    <value>Update</value>
   </data>
   <data name="&gt;&gt;lblSenDesc.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -429,11 +425,15 @@ press the Set Values button.</value>
   <data name="nudSenValor2.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
-  <data name="cmbSensores.Items3" xml:space="preserve">
-    <value>temperature</value>
+  <data name="nudSenValor3.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
   </data>
   <data name="lblSenValor1.Text" xml:space="preserve">
     <value>Not used:</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="lblSenValor2.Text" xml:space="preserve">
     <value>Not used:</value>
@@ -455,6 +455,9 @@ press the Set Values button.</value>
   </data>
   <data name="&gt;&gt;btnSenSet.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblSensor.Text" xml:space="preserve">
+    <value>Sensor:</value>
   </data>
   <data name="nudSenValor2.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 23</value>
@@ -504,8 +507,8 @@ press the Set Values button.</value>
   <data name="&gt;&gt;lblSenValor2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="imgSensores.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 64</value>
+  <data name="&gt;&gt;lblSensor.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="lblSenValor3.ToolTip" xml:space="preserve">
     <value />
@@ -515,9 +518,6 @@ press the Set Values button.</value>
   </data>
   <data name="btnSenSet.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt, style=Bold</value>
-  </data>
-  <data name="btnSenSet.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

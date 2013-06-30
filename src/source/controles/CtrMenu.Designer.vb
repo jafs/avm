@@ -125,8 +125,6 @@ Partial Class CtrMenu
         Me.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Controls.Add(Me.tblMenu)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.MaximumSize = New System.Drawing.Size(280, 338)
-        Me.MinimumSize = New System.Drawing.Size(280, 338)
         Me.Name = "CtrMenu"
         Me.tblMenu.ResumeLayout(False)
         Me.ResumeLayout(False)

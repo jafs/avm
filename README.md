@@ -17,6 +17,10 @@ Requirements
 
 Version History
 ---------------
+Versión 1.0 - In proccess
+* Export current Android emulator status.
+* New clean style.
+
 Version 0.6 - 2012/11/09
 * Spanish translation.
 * Validation of commands when press enter key in debug window.

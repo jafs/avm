@@ -179,7 +179,4 @@ y pulsar Guardar.</value>
   <data name="imgSensores.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 244</value>
   </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>278, 338</value>
-  </data>
 </root>

@@ -151,7 +151,4 @@ llamadas entrantes.</value>
   <data name="lblNumero.Text" xml:space="preserve">
     <value>Número de teléfono:</value>
   </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>278, 338</value>
-  </data>
 </root>
