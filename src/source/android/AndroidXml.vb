@@ -33,8 +33,17 @@ Public Class AndroidXml
                 ' Sección GSM
                 writer.WriteStartElement("section")
                 writer.WriteAttributeString("name", "gsm")
-                addProperty(writer, "gsm_data", status.GsmData.ToString)
-                addProperty(writer, "gsm_voice", status.GsmVoice.ToString)
+
+                If status.GsmData = AndroidStatus.GsmStatus.g_on Then
+                    addProperty(writer, "gsm_data", "on")
+                Else
+                    addProperty(writer, "gsm_data", status.GsmData.ToString)
+                End If
+                If status.GsmVoice = AndroidStatus.GsmStatus.g_on Then
+                    addProperty(writer, "gsm_voice", "on")
+                Else
+                    addProperty(writer, "gsm_voice", status.GsmVoice.ToString)
+                End If
                 writer.WriteEndElement()
 
                 ' Sección Sensores

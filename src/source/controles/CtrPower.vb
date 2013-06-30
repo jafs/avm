@@ -117,6 +117,14 @@
                 Next
             End If
 
+            ' Establece el valor de energía con los valores cargados actualmente.
+            Try
+                frmPadre.setPower(chkCargaAc.Checked, AndroidStatus.getPowerStatus(cmbBatStat.SelectedItem.ToString), _
+                                AndroidStatus.getPowerHealth(cmbBatHealth.SelectedItem.ToString), chkBatPresent.Checked, _
+                                Convert.ToInt32(nudBatCapacity.Value))
+            Catch exception As Exception
+            End Try
+
             frmPadre.Consulta = False
         End If
     End Sub

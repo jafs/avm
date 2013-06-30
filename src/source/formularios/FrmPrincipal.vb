@@ -27,6 +27,8 @@ Public Class FrmPrincipal
 
     ''' <summary>Objeto de conexión a Telnet.</summary>
     Private objTelnet As New AndTelnet()
+    ''' <summary>Objeto que indica el estado actual de la máquina virtual de Android.</summary>
+    Private objStatus As New AndroidStatus()
     ''' <summary>Indica si actualmente se está en modo consulta.</summary>
     Private bModoConsulta As Boolean = False
     ''' <summary>Controla la posici?n del ratón para el desplazamiento de la ventana.</summary>
@@ -243,8 +245,10 @@ Public Class FrmPrincipal
     ''' <param name="e">Datos del evento.</param>
     Private Sub ttmExportar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ttmExportar.Click
         If sfdExportar.ShowDialog = Windows.Forms.DialogResult.OK Then
-            ' TODO: es necesario obtener antes la configuración.
-            AndroidXml.saveXml(New AndroidStatus(), sfdExportar.FileName)
+            objStatus.CurrentDate = Date.Now
+            ctrPower.getBateria()
+            ctrGsmStatus.getGsmStatus()
+            AndroidXml.saveXml(objStatus, sfdExportar.FileName)
         End If
     End Sub
 
@@ -353,6 +357,32 @@ Public Class FrmPrincipal
             ctrGsmCalls.parar()
             lanzar(TipoApp.Connect)
         End If
+    End Sub
+
+
+    ''' <summary>Establece los valores relacionados con la energía al estado actual.</summary>
+    ''' <param name="bPowerAc">Indica si está conectado a corriente.</param>
+    ''' <param name="enPowerStatus">Estado de carga del sistema.</param>
+    ''' <param name="enPowerHealth">Estado de la batería.</param>
+    ''' <param name="bPowerPresent">Indica si hay batería conectada.</param>
+    ''' <param name="iPowerCapacity">Capacidad de carga de la batería.</param>
+    Public Sub setPower(ByVal bPowerAc As Boolean, ByVal enPowerStatus As AndroidStatus.PowStatus, _
+                        ByVal enPowerHealth As AndroidStatus.PowHealth, ByVal bPowerPresent As Boolean, _
+                        ByVal iPowerCapacity As Integer)
+        objStatus.PowerAc = bPowerAc
+        objStatus.PowerStatus = enPowerStatus
+        objStatus.PowerHealth = enPowerHealth
+        objStatus.PowerPresent = bPowerPresent
+        objStatus.PowerCapacity = iPowerCapacity
+    End Sub
+
+
+    ''' <summary>Establece los valores de comunicaciones GSM.</summary>
+    ''' <param name="enGsmData">Valor actual para la conexión de datos.</param>
+    ''' <param name="enGsmVoice">Valor actual para la conexión de voz.</param>
+    Public Sub setGsm(ByVal enGsmData As AndroidStatus.GsmStatus, ByVal enGsmVoice As AndroidStatus.GsmStatus)
+        objStatus.GsmData = enGsmData
+        objStatus.GsmVoice = enGsmVoice
     End Sub
 End Class
 

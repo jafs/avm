@@ -117,6 +117,12 @@
                 Next
             End If
 
+            Try
+                frmPadre.setGsm(AndroidStatus.getGsmStatus(cmbGsmDatos.SelectedItem.ToString), _
+                                AndroidStatus.getGsmStatus(cmbGsmVoz.SelectedItem.ToString))
+            Catch exception As Exception
+            End Try
+
             frmPadre.Consulta = False
         End If
     End Sub
