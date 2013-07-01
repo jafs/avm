@@ -1,4 +1,6 @@
-﻿Public Class AndroidStatus
+﻿Imports System.Globalization
+
+Public Class AndroidStatus
     ''' <summary>Enumeración de estados de carga.</summary>
     Enum PowStatus
         ''' <summary>Valor de energía desconocido.</summary>
@@ -53,9 +55,9 @@
     ''' <summary>Indica si hay conexión con corriente alterna.</summary>
     Private bPowerAc As Boolean = False
     ''' <summary>Indica el estado de carga.</summary>
-    Private enPowerStatus As PowStatus = PowStatus.unknown
+    Private enPowerStatus As PowStatus = PowStatus.Unknown
     ''' <summary>Indica la salud de la batería.</summary>
-    Private enPowerHealth As PowHealth = PowHealth.unknown
+    Private enPowerHealth As PowHealth = PowHealth.Unknown
     ''' <summary>Indica si hay batería presente.</summary>
     Private bPowerPresent As Boolean = False
     ''' <summary>Indica la capacidad de carga de la batería.</summary>
@@ -68,17 +70,17 @@
 
     ''' <summary>Indica el valor del sensor de aceleración.</summary>
     ''' <remarks>Especificar descripción de ejes.</remarks>
-    Private ardSensorAcceleration() As Double = {0, 0, 0}
+    Private ardSensorAcceleration() As Decimal = {0, 0, 0}
     ''' <summary>Indica el valor del sensor de campo magnético.</summary>
     ''' <remarks>Especificar descripción de ejes.</remarks>
-    Private ardSensorMagnetic() As Double = {0, 0, 0}
+    Private ardSensorMagnetic() As Decimal = {0, 0, 0}
     ''' <summary>Indica el valor del sensor de orientación.</summary>
     ''' <remarks>Especificar descripción de ejes.</remarks>
-    Private ardSensorOrientation() As Double = {0, 0, 0}
+    Private ardSensorOrientation() As Decimal = {0, 0, 0}
     ''' <summary>Indica el valor del sensor de proximidad.</summary>
-    Private iSensorProximity As Integer = 0
+    Private iSensorProximity As Decimal = 0
     ''' <summary>Indica el valor del sensor de temperatura.</summary>
-    Private iSensorTemperature As Integer = 0
+    Private iSensorTemperature As Decimal = 0
 
 
     ''' <summary>Propiedad de fecha de generación de la configuración.</summary>
@@ -188,11 +190,11 @@
     ''' <summary>Propiedad de valores para el sensor de aceleración.</summary>
     ''' <value>Valor del sensor de aceleración a establecer.</value>
     ''' <returns>Valor del sensor de aceleración actual.</returns>
-    Public Property SensorAcceleration As Double()
+    Public Property SensorAcceleration As Decimal()
         Get
             Return ardSensorAcceleration
         End Get
-        Set(ByVal value As Double())
+        Set(ByVal value As Decimal())
             ardSensorAcceleration = value
         End Set
     End Property
@@ -214,11 +216,11 @@
     ''' <summary>Propiedad de valores para el sensor de campo magnético.</summary>
     ''' <value>Valor del sensor de campo magnético a establecer.</value>
     ''' <returns>Valor del sensor de campo magnético actual.</returns>
-    Public Property SensorMagnetic As Double()
+    Public Property SensorMagnetic As Decimal()
         Get
             Return ardSensorMagnetic
         End Get
-        Set(ByVal value As Double())
+        Set(ByVal value As Decimal())
             ardSensorMagnetic = value
         End Set
     End Property
@@ -240,11 +242,11 @@
     ''' <summary>Propiedad de valores para el sensor de orientación.</summary>
     ''' <value>Valor del sensor de orientación a establecer.</value>
     ''' <returns>Valor del sensor de orientación actual.</returns>
-    Public Property SensorOrientation As Double()
+    Public Property SensorOrientation As Decimal()
         Get
             Return ardSensorOrientation
         End Get
-        Set(ByVal value As Double())
+        Set(ByVal value As Decimal())
             ardSensorOrientation = value
         End Set
     End Property
@@ -266,11 +268,11 @@
     ''' <summary>Propiedad de valores para el sensor de proximidad.</summary>
     ''' <value>Valor del sensor de proximidad a establecer.</value>
     ''' <returns>Valor del sensor de proximidad actual.</returns>
-    Public Property SensorProximity As Integer
+    Public Property SensorProximity As Decimal
         Get
             Return iSensorProximity
         End Get
-        Set(ByVal value As Integer)
+        Set(ByVal value As Decimal)
             iSensorProximity = value
         End Set
     End Property
@@ -279,11 +281,11 @@
     ''' <summary>Propiedad de valores para el sensor de temperatura</summary>
     ''' <value>Valor de sensor a establecer.</value>
     ''' <returns>Valor de sensor de temperatura a devolver.</returns>
-    Public Property SensorTemperature As Integer
+    Public Property SensorTemperature As Decimal
         Get
             Return iSensorTemperature
         End Get
-        Set(ByVal value As Integer)
+        Set(ByVal value As Decimal)
             iSensorTemperature = value
         End Set
     End Property
@@ -293,18 +295,18 @@
     ''' <param name="valor">Valor por el que buscar el estado.</param>
     ''' <returns>Valor de carga de energía actual.</returns>
     Public Shared Function getPowerStatus(ByVal valor As String) As PowStatus
-        Dim enEstado As PowStatus = PowStatus.unknown
+        Dim enEstado As PowStatus = PowStatus.Unknown
 
         If Not valor Is Nothing And valor.Length > 0 Then
             Select Case valor
                 Case "Charging"
-                    enEstado = PowStatus.charging
+                    enEstado = PowStatus.Charging
                 Case "Discharging"
-                    enEstado = PowStatus.discharging
+                    enEstado = PowStatus.Discharging
                 Case "Not-charging"
-                    enEstado = PowStatus.not_charging
+                    enEstado = PowStatus.Not_charging
                 Case "Full"
-                    enEstado = PowStatus.full
+                    enEstado = PowStatus.Full
             End Select
         End If
 

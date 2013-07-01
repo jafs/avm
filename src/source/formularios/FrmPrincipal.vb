@@ -248,6 +248,7 @@ Public Class FrmPrincipal
             objStatus.CurrentDate = Date.Now
             ctrPower.getBateria()
             ctrGsmStatus.getGsmStatus()
+            ctrSensor.updateSensors()
             AndroidXml.saveXml(objStatus, sfdExportar.FileName)
         End If
     End Sub
@@ -383,6 +384,41 @@ Public Class FrmPrincipal
     Public Sub setGsm(ByVal enGsmData As AndroidStatus.GsmStatus, ByVal enGsmVoice As AndroidStatus.GsmStatus)
         objStatus.GsmData = enGsmData
         objStatus.GsmVoice = enGsmVoice
+    End Sub
+
+
+    ''' <summary>Establece los valores de los sensores con un conjunto de tres atributos.</summary>
+    ''' <param name="sSensor">Nombre del sensor.</param>
+    ''' <param name="iEjeX">Valor del eje X.</param>
+    ''' <param name="iEjeY">Valor del eje Y.</param>
+    ''' <param name="iEjeZ">Valor del eje Z.</param>
+    ''' <remarks></remarks>
+    Public Sub setSensor(ByVal sSensor As String, ByVal iEjeX As Decimal, ByVal iEjeY As Decimal, ByVal iEjeZ As Decimal)
+        If Not sSensor Is Nothing Then
+            Select Case sSensor
+                Case Comando.SEN_ACCELERATION
+                    objStatus.SensorAcceleration = New Decimal() {iEjeX, iEjeY, iEjeZ}
+                Case Comando.SEN_MAGNETIC_FIELD
+                    objStatus.SensorMagnetic = New Decimal() {iEjeX, iEjeY, iEjeZ}
+                Case Comando.SEN_ORIENTATION
+                    objStatus.SensorOrientation = New Decimal() {iEjeX, iEjeY, iEjeZ}
+            End Select
+        End If
+    End Sub
+
+
+    ''' <summary>Establece el valor de los sensores con un sólo atributo.</summary>
+    ''' <param name="sSensor">Nombre del sensor.</param>
+    ''' <param name="iValue">Valor del sensor.</param>
+    Public Sub setSensor(ByVal sSensor As String, ByVal iValue As Decimal)
+        If Not sSensor Is Nothing Then
+            Select sSensor
+                Case Comando.SEN_PROXIMITY
+                    objStatus.SensorProximity = iValue
+                Case Comando.SEN_TEMPERATURE
+                    objStatus.SensorTemperature = iValue
+            End Select
+        End If
     End Sub
 End Class
 

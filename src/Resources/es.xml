@@ -11,7 +11,7 @@
   <tag clave="err_call_prefix" valor="Introduce un prefijo válido" />
   <tag clave="err_command" valor="Introduce un comando" />
   <tag clave="err_connection" valor="Error de conexión con la máquina virtual" />
-  <tag clave="err_sensor_read" valor="Error when read some sensor value" />
+  <tag clave="err_sensor_read" valor="Error al leer un valor de sensores" />
   <tag clave="err_sensor_select" valor="Debes seleccionar un sensor." />
   <tag clave="err_sms_send" valor="Introduce un mensaje a enviar." />
   <tag clave="err_socket" valor="Socket desconectado" />

@@ -41,7 +41,7 @@
             MessageBox.Show(Idioma.traducir("err_sensor_select"), Idioma.traducir("warning"), MessageBoxButtons.OK, MessageBoxIcon.Warning)
             cmbSensores.Focus()
         Else
-            getSensor(cmbSensores.SelectedItem.ToString)
+            getSensor(cmbSensores.SelectedItem.ToString, True)
         End If
     End Sub
 
@@ -62,6 +62,9 @@
     End Sub
 
 
+    ' ######################################
+    ' GENERAL
+    ' ######################################
     ''' <summary>Actualiza el estado de sensores así como sus valores.</summary>
     ''' <param name="sSensor">Nombre del sensor</param>
     Private Sub cambiarSensor(ByRef sSensor As String)
@@ -126,18 +129,28 @@
                 ttConsejo.SetToolTip(lblSenValor3, "")
                 nudSenValor3.Enabled = False
                 nudSenValor3.Value = 0
+            Case Else
+                lblSenValor1.Text = Idioma.traducir("sen_not_used")
+                ttConsejo.SetToolTip(lblSenValor1, String.Empty)
+                nudSenValor1.Enabled = False
+                nudSenValor1.Value = 0
+                lblSenValor2.Text = Idioma.traducir("sen_not_used")
+                ttConsejo.SetToolTip(lblSenValor2, String.Empty)
+                nudSenValor2.Enabled = False
+                nudSenValor2.Value = 0
+                lblSenValor3.Text = Idioma.traducir("sen_not_used")
+                ttConsejo.SetToolTip(lblSenValor3, String.Empty)
+                nudSenValor3.Enabled = False
+                nudSenValor3.Value = 0
         End Select
 
-        getSensor(sSensor)
+        getSensor(sSensor, True)
     End Sub
 
 
-    ' ######################################
-    ' GENERAL
-    ' ######################################
     ''' <summary>Obtiene el estado del sensor recibido como argumento.</summary>
     ''' <param name="sSensor">Nombre del sensor</param>
-    Private Sub getSensor(ByRef sSensor As String)
+    Private Sub getSensor(ByRef sSensor As String, ByVal bPaint As Boolean)
         Dim sResultado As String = frmPadre.consultar(Comando.SENSOR_GET & sSensor)
 
         If Not sResultado Is Nothing Then
@@ -153,13 +166,21 @@
                             Try
                                 Select Case sSensor
                                     Case Comando.SEN_ACCELERATION, Comando.SEN_MAGNETIC_FIELD, Comando.SEN_ORIENTATION
-                                        nudSenValor1.Value = Utilidades.cadToDecimal(arsDatos(0))
-                                        nudSenValor2.Value = Utilidades.cadToDecimal(arsDatos(1))
-                                        nudSenValor3.Value = Utilidades.cadToDecimal(arsDatos(2))
+                                        If bPaint Then
+                                            nudSenValor1.Value = Utilidades.cadToDecimal(arsDatos(0))
+                                            nudSenValor2.Value = Utilidades.cadToDecimal(arsDatos(1))
+                                            nudSenValor3.Value = Utilidades.cadToDecimal(arsDatos(2))
+                                        End If
+
+                                        frmPadre.setSensor(sSensor, Utilidades.cadToDecimal(arsDatos(0)), _
+                                                           Utilidades.cadToDecimal(arsDatos(1)), _
+                                                           Utilidades.cadToDecimal(arsDatos(2)))
                                     Case Else
-                                        nudSenValor1.Value = Utilidades.cadToDecimal(arsDatos(0))
-                                        nudSenValor2.Value = 0
-                                        nudSenValor3.Value = 0
+                                        If bPaint Then
+                                            nudSenValor1.Value = Utilidades.cadToDecimal(arsDatos(0))
+                                        End If
+
+                                        frmPadre.setSensor(sSensor, Utilidades.cadToDecimal(arsDatos(0)))
                                 End Select
                             Catch e As ArgumentException
                                 MessageBox.Show(Idioma.traducir("err_sensor_read"), Idioma.traducir("error"), MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -169,5 +190,22 @@
                 End If
             End If
         End If
+    End Sub
+
+
+    ''' <summary>Actualiza todos los valores de sensores existentes.</summary>
+    Public Sub updateSensors()
+        'Dim sActual As String = String.Empty
+        'If Not cmbSensores.SelectedItem Is Nothing Then
+        '    sActual = cmbSensores.SelectedItem.ToString
+        'End If
+
+        getSensor(Comando.SEN_ACCELERATION, False)
+        getSensor(Comando.SEN_MAGNETIC_FIELD, False)
+        getSensor(Comando.SEN_ORIENTATION, False)
+        getSensor(Comando.SEN_PROXIMITY, False)
+        getSensor(Comando.SEN_TEMPERATURE, False)
+
+        'cambiarSensor(sActual)
     End Sub
 End Class
